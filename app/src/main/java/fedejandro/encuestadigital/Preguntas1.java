@@ -72,6 +72,31 @@ public class Preguntas1 extends AppCompatActivity {
         String[] materialPared = new String[] {
                 "Madera","Ladrillo","Tapia","Bahareque","Otro, ¿cuál?"
         };
+        String[] tipoEducacion = new String[] {
+                "Pública","Privada","Ninguna"
+        };
+        String[] afiliacionSalud = new String[] {
+                "Régimen Contributivo (EPS)","Régimen Subsidiado","Régimen Especial","No afiliado","No sabe"
+        };
+        String[] establecimientoSalud = new String[] {
+                "Hospital","Clínica","Centro de Salud","Puesto de Salud"
+        };
+        String[] entidadesAcuicolas = new String[] {
+                "AUNAP","ICA","CAR-CORPOCESAR","UMATA","Otras"
+        };
+        String[] periodicaPermanente = new String[] {
+                "Periódica","Permanente"
+        };
+        String[] entidadesCredito = new String[] {
+                "No Aplica","Banco comercial","Sociedad o cooperativas de crédito","Prestamista","Proveedores de insumos","Familiares o amigos","Gobierno","Otro, ¿cuál?"
+        };
+        String[] entidadesAsistencia = new String[] {
+                "No Aplica","Organizaciones gubernamentales","ONG, ¿cuál?","Asociaciones de productores","Otro, ¿cuál?"
+        };
+        String[] gratisPago = new String[] {
+                "No Aplica","Gratis","Pago"
+        };
+
 
         Spinner ans1 = (Spinner) findViewById(R.id.ans1);
         ArrayAdapter<String> adapterAns1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, departamentos);
@@ -197,5 +222,100 @@ public class Preguntas1 extends AppCompatActivity {
         ArrayAdapter<String> adapterAns26 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, materialPared);
         adapterAns26.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans26.setAdapter(adapterAns26);
+
+        Spinner ans28 = (Spinner) findViewById(R.id.ans28);
+        ArrayAdapter<String> adapterAns28 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sino);
+        adapterAns28.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans28.setAdapter(adapterAns28);
+
+        Spinner ans29 = (Spinner) findViewById(R.id.ans29);
+        ArrayAdapter<String> adapterAns29 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sino);
+        adapterAns29.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans29.setAdapter(adapterAns29);
+
+        Spinner ans30 = (Spinner) findViewById(R.id.ans30);
+        ArrayAdapter<String> adapterAns30 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sino);
+        adapterAns30.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans30.setAdapter(adapterAns30);
+
+        Spinner ans31 = (Spinner) findViewById(R.id.ans31);
+        ArrayAdapter<String> adapterAns31 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, tipoEducacion);
+        adapterAns31.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans31.setAdapter(adapterAns31);
+
+        Spinner ans32_1 = (Spinner) findViewById(R.id.ans32_1);
+        ArrayAdapter<String> adapterAns32_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, gradoEstudio);
+        adapterAns32_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans32_1.setAdapter(adapterAns32_1);
+
+        Spinner ans33 = (Spinner) findViewById(R.id.ans33);
+        ArrayAdapter<String> adapterAns33 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, afiliacionSalud);
+        adapterAns33.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans33.setAdapter(adapterAns33);
+
+        Spinner ans33_1 = (Spinner) findViewById(R.id.ans33_1);
+        ArrayAdapter<String> adapterAns33_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, establecimientoSalud);
+        adapterAns33_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans33_1.setAdapter(adapterAns33_1);
+
+        Spinner ans34 = (Spinner) findViewById(R.id.ans34);
+        ArrayAdapter<String> adapterAns34 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, entidadesAcuicolas);
+        adapterAns34.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans34.setAdapter(adapterAns34);
+
+        Spinner ans39 = (Spinner) findViewById(R.id.ans39);
+        ArrayAdapter<String> adapterAns39 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, periodicaPermanente);
+        adapterAns39.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans39.setAdapter(adapterAns39);
+
+        Spinner ans40 = (Spinner) findViewById(R.id.ans40);
+        ArrayAdapter<String> adapterAns40 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sino);
+        adapterAns40.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans40.setAdapter(adapterAns40);
+
+        Spinner ans40_1 = (Spinner) findViewById(R.id.ans40_1);
+        ArrayAdapter<String> adapterAns40_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, entidadesCredito);
+        adapterAns40_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans40_1.setAdapter(adapterAns40_1);
+
+        Spinner ans41 = (Spinner) findViewById(R.id.ans41);
+        ArrayAdapter<String> adapterAns41 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sino);
+        adapterAns41.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans41.setAdapter(adapterAns41);
+
+        Spinner ans41_1 = (Spinner) findViewById(R.id.ans41_1);
+        ArrayAdapter<String> adapterAns41_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, entidadesAsistencia);
+        adapterAns41_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans41_1.setAdapter(adapterAns41_1);
+
+        Spinner ans41_3 = (Spinner) findViewById(R.id.ans41_3);
+        ArrayAdapter<String> adapterAns41_3 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sino);
+        adapterAns41_3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans41_3.setAdapter(adapterAns41_3);
+
+        Spinner ans41_4 = (Spinner) findViewById(R.id.ans41_4);
+        ArrayAdapter<String> adapterAns41_4 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, gratisPago);
+        adapterAns41_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans41_4.setAdapter(adapterAns41_4);
+
+        Spinner ans42 = (Spinner) findViewById(R.id.ans42);
+        ArrayAdapter<String> adapterAns42 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sino);
+        adapterAns42.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans42.setAdapter(adapterAns42);
+
+        Spinner ans42_1 = (Spinner) findViewById(R.id.ans42_1);
+        ArrayAdapter<String> adapterAns42_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, entidadesAsistencia);
+        adapterAns42_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans42_1.setAdapter(adapterAns42_1);
+
+        Spinner ans42_3 = (Spinner) findViewById(R.id.ans42_3);
+        ArrayAdapter<String> adapterAns42_3 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sino);
+        adapterAns42_3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans42_3.setAdapter(adapterAns42_3);
+
+        Spinner ans42_4 = (Spinner) findViewById(R.id.ans42_4);
+        ArrayAdapter<String> adapterAns42_4 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, gratisPago);
+        adapterAns42_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans42_4.setAdapter(adapterAns42_4);
     }
 }
