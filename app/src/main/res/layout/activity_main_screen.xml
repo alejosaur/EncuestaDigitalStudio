@@ -12,7 +12,6 @@
         android:id="@+id/Title"
         android:layout_width="0dp"
         android:layout_height="73dp"
-        android:layout_marginBottom="84dp"
         android:layout_marginEnd="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
@@ -24,21 +23,9 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:fontFamily="serif"
-        app:layout_constraintBottom_toBottomOf="@+id/textFecha"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textFecha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="45dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:text="Fecha:"
-        app:layout_constraintBottom_toTopOf="@+id/textNoVisita"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textNoVisita"
@@ -47,7 +34,7 @@
         android:layout_marginBottom="73dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="76dp"
         android:text="N° de Visita:"
         app:layout_constraintBottom_toBottomOf="@+id/textEncuestador"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,12 +44,14 @@
         android:id="@+id/textEncuestador"
         android:layout_width="wrap_content"
         android:layout_height="19dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginBottom="100dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="101dp"
         android:text="Encuestador:"
-        app:layout_constraintBottom_toBottomOf="@+id/encuestadorText"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/nextButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fechaButton" />
 
     <EditText
         android:id="@+id/fechaText"
@@ -70,11 +59,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="52dp"
         android:ems="10"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/fechaButton"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
 
     <EditText
         android:id="@+id/consecutivoText"
@@ -94,10 +84,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Registre el nombre del encuestador"
         android:inputType="textPersonName"
+        android:singleLine="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/consecutivoText" />
 
@@ -105,11 +96,30 @@
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="91dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="89dp"
         android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/encuestadorText" />
+        app:layout_constraintTop_toTopOf="@+id/encuestadorText" />
+
+    <Button
+        android:id="@+id/fechaButton"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="63dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Fecha:"
+        app:layout_constraintBottom_toBottomOf="@+id/consecutivoText"
+        app:layout_constraintEnd_toStartOf="@+id/fechaText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        tools:text="Fecha:" />
 
 </android.support.constraint.ConstraintLayout>
