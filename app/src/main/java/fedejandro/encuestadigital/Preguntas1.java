@@ -51,6 +51,27 @@ public class Preguntas1 extends AppCompatActivity {
         String[] tiempoJornada = new String[] {
                 "Jornada completa","Jornada parcial"
         };
+        String[] etapasProduccion = new String[] {
+                "Etapa de producción","Etapa de transformación","Etapa de comercialización"
+        };
+        String[] fijoIndependiente = new String[] {
+                "Empleado fijo (algún tipo de contrato)","Trabajador independiente"
+        };
+        String[] tipoIndependiente = new String[] {
+                "No Aplica","Empleador","Trabaja por cuenta propia","Trabajador familiar no retribuído","Socio de cooperativa de productores","Otro, ¿cuál?"
+        };
+        String[] tipoVivienda = new String[] {
+                "Propia","Arrendada","Familiar","Posesión","Otro, ¿cuál?"
+        };
+        String[] materialTecho = new String[] {
+                "Madera","Teja de barro","Teja de asbesto","Zinc","Palma","Otro, ¿cuál?"
+        };
+        String[] materialPiso = new String[] {
+                "Tierra","Madera","Cemento","Baldosa","Otro, ¿cuál?"
+        };
+        String[] materialPared = new String[] {
+                "Madera","Ladrillo","Tapia","Bahareque","Otro, ¿cuál?"
+        };
 
         Spinner ans1 = (Spinner) findViewById(R.id.ans1);
         ArrayAdapter<String> adapterAns1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, departamentos);
@@ -136,5 +157,45 @@ public class Preguntas1 extends AppCompatActivity {
         ArrayAdapter<String> adapterAns20_2 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, tiempoJornada);
         adapterAns20_2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans20_2.setAdapter(adapterAns20_2);
+
+        Spinner ans20_3 = (Spinner) findViewById(R.id.ans20_3);
+        ArrayAdapter<String> adapterAns20_3 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, etapasProduccion);
+        adapterAns20_3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans20_3.setAdapter(adapterAns20_3);
+
+        Spinner ans21 = (Spinner) findViewById(R.id.ans21);
+        ArrayAdapter<String> adapterAns21 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, fijoIndependiente);
+        adapterAns21.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans21.setAdapter(adapterAns21);
+
+        Spinner ans21_1 = (Spinner) findViewById(R.id.ans21_1);
+        ArrayAdapter<String> adapterAns21_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, tipoIndependiente);
+        adapterAns21_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans21_1.setAdapter(adapterAns21_1);
+
+        Spinner ans22 = (Spinner) findViewById(R.id.ans22);
+        ArrayAdapter<String> adapterAns22 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sino);
+        adapterAns22.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans22.setAdapter(adapterAns22);
+
+        Spinner ans23 = (Spinner) findViewById(R.id.ans23);
+        ArrayAdapter<String> adapterAns23 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, tipoVivienda);
+        adapterAns23.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans23.setAdapter(adapterAns23);
+
+        Spinner ans24 = (Spinner) findViewById(R.id.ans24);
+        ArrayAdapter<String> adapterAns24 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, materialTecho);
+        adapterAns24.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans24.setAdapter(adapterAns24);
+
+        Spinner ans25 = (Spinner) findViewById(R.id.ans25);
+        ArrayAdapter<String> adapterAns25 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, materialPiso);
+        adapterAns25.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans25.setAdapter(adapterAns25);
+
+        Spinner ans26 = (Spinner) findViewById(R.id.ans26);
+        ArrayAdapter<String> adapterAns26 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, materialPared);
+        adapterAns26.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans26.setAdapter(adapterAns26);
     }
 }
