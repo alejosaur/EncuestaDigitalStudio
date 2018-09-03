@@ -415,7 +415,7 @@
                 app:fontFamily="serif" />
 
             <TextView
-                android:id="@+id/TextoComposicionFamilia"
+                android:id="@+id/textoSituacionFamiliar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -632,6 +632,84 @@
                 android:gravity="top|left"
                 android:hint="Registre unicamente la profesión de las\npersonas que aprobaron estudios\ntécnicos, tecnológicos, profesionales, o\nde postgrado"
                 android:inputType="text" />
+
+            <TextView
+                android:id="@+id/tituloSituacionFamiliarLaboral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="SITUACIÓN LABORAL Y ECONÓMICA DEL GRUPO FAMILIAR DEL PRODUCTOR"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                app:fontFamily="serif" />
+
+            <TextView
+                android:id="@+id/textoSituacionFamiliarLaboral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="left|center_vertical|fill"
+                android:text="Indique la situación de los ingresos y participación laboral de los miembros del grupo familiar en la unidad de producción acuícola y/o pesquero artesanal bajo los siguientes parámetros:"
+                android:textColor="#2b2b2b" />
+
+            <TextView
+                android:id="@+id/ques20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="20. Actualmente usted se encuentra:" />
+
+            <Spinner
+                android:id="@+id/ans20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques20-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="20.1. ¿Dónde se encuentra empleado la mayor parte del tiempo?:" />
+
+            <Spinner
+                android:id="@+id/ans20-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques20-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="20.2 ¿Cuánto tiempo emplea para la actividad principal?:" />
+
+            <Spinner
+                android:id="@+id/ans20-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
 
         </LinearLayout>
     </ScrollView>
