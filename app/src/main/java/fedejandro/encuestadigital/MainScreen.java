@@ -47,9 +47,9 @@ public class MainScreen extends AppCompatActivity {
                             "").getBytes());
                     fos.write(fechaText.getText().toString().getBytes());
                     fos.write("\t".getBytes());
-                    fos.write(encuestadorText.getText().toString().getBytes());
-                    fos.write("\t".getBytes());
                     fos.write(consecutivoText.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(encuestadorText.getText().toString().getBytes());
                     fos.close();
 
                     Intent preg1 = new Intent(getApplicationContext(), Preguntas1.class);
@@ -58,7 +58,6 @@ public class MainScreen extends AppCompatActivity {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                encuestadorText.setText(myExternalFile.getAbsolutePath());
             }
         });
 
