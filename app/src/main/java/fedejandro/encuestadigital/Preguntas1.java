@@ -1,11 +1,19 @@
 package fedejandro.encuestadigital;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 public class Preguntas1 extends AppCompatActivity {
+
+    Button nextButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -317,5 +325,19 @@ public class Preguntas1 extends AppCompatActivity {
         ArrayAdapter<String> adapterAns42_4 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, gratisPago);
         adapterAns42_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans42_4.setAdapter(adapterAns42_4);
+
+        nextButton =  (Button) findViewById(R.id.nextButton);
+        nextButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                //try {
+                    Intent preg2 = new Intent(getApplicationContext(), Preguntas2.class);
+                    startActivity(preg2);
+
+                /*} catch (IOException e) {
+                    e.printStackTrace();
+                }*/
+            }
+        });
     }
 }

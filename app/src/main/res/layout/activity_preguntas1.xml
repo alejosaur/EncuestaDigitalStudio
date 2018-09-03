@@ -306,7 +306,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Tiempo en valores numéricos"
-                android:inputType="number" />
+                android:inputType="number|numberDecimal" />
 
             <TextView
                 android:id="@+id/ques13"
@@ -326,7 +326,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Valor en años y meses"
-                android:inputType="number" />
+                android:inputType="number|numberDecimal" />
 
             <TextView
                 android:id="@+id/ques14"
@@ -1157,7 +1157,7 @@
                 android:ems="10"
                 android:gravity="top|left"
                 android:hint="Distancia en Kilómetros"
-                android:inputType="number" />
+                android:inputType="number|numberDecimal" />
 
             <TextView
                 android:id="@+id/ques32-3"
@@ -1178,7 +1178,7 @@
                 android:ems="10"
                 android:gravity="top|left"
                 android:hint="Tiempo en horas"
-                android:inputType="number" />
+                android:inputType="time" />
 
             <TextView
                 android:id="@+id/ques32-4"
@@ -1293,7 +1293,7 @@
                 android:ems="10"
                 android:gravity="top|left"
                 android:hint="Distancia en Kilómetros"
-                android:inputType="number" />
+                android:inputType="number|numberDecimal" />
 
             <TextView
                 android:id="@+id/ques33-3"
@@ -1314,7 +1314,7 @@
                 android:ems="10"
                 android:gravity="top|left"
                 android:hint="Valor numérico en horas"
-                android:inputType="number" />
+                android:inputType="time" />
 
             <TextView
                 android:id="@+id/ques33-4"
@@ -1411,7 +1411,7 @@
                 android:ems="10"
                 android:gravity="top|left"
                 android:hint="Distancia en Kilómetros"
-                android:inputType="number" />
+                android:inputType="number|numberDecimal" />
 
             <TextView
                 android:id="@+id/ques34-2"
@@ -1432,7 +1432,7 @@
                 android:ems="10"
                 android:gravity="top|left"
                 android:hint="Valor numérico en horas"
-                android:inputType="number" />
+                android:inputType="time" />
 
             <TextView
                 android:id="@+id/ques34-3"
@@ -1518,7 +1518,7 @@
                 android:ems="10"
                 android:gravity="top|left"
                 android:hint="Distancia en kilómetros"
-                android:inputType="number" />
+                android:inputType="number|numberDecimal" />
 
             <TextView
                 android:id="@+id/ques37"
@@ -1539,7 +1539,7 @@
                 android:ems="10"
                 android:gravity="top|left"
                 android:hint="Tiempo en horas"
-                android:inputType="number" />
+                android:inputType="time" />
 
             <TextView
                 android:id="@+id/ques38"
@@ -1971,6 +1971,13 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Continuar" />
 
         </LinearLayout>
     </ScrollView>

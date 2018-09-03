@@ -89,7 +89,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="left|center_vertical"
-                android:hint="Registre el valor numérico y haga la \ndescripción para cada unidad de producción"
+                android:hint="Valor numérico y descripción para\ncada unidad de producción"
                 android:inputType="textLongMessage"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="357dp" />
@@ -171,7 +171,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el área en metros cuadrados (m²)"
+                android:hint="Área en metros cuadrados (m²)"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -191,7 +191,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el área en metros cuadrados (m²)"
+                android:hint="Área en metros cuadrados (m²)"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -211,7 +211,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el área en metros cuadrados (m²)"
+                android:hint="Área en metros cuadrados (m²)"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -231,7 +231,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el área en metros cuadrados (m²)"
+                android:hint="Área en metros cuadrados (m²)"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -251,7 +251,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el volumen en metros cúbicos (m³)"
+                android:hint="Volumen en metros cúbicos (m³)"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -336,7 +336,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el valor en kilómetros"
+                android:hint="Valor en kilómetros"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -347,7 +347,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="56. ¿Cuáles son los meses de mayor precipitación?" />
+                android:text="57. ¿Cuáles son los meses de mayor precipitación?" />
 
             <EditText
                 android:id="@+id/ans57"
@@ -356,7 +356,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato"
+                android:hint="Meses separados por coma"
                 android:inputType="text" />
 
             <TextView
@@ -376,7 +376,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato"
+                android:hint="Meses separados por coma"
                 android:inputType="text" />
 
             <TextView
@@ -416,7 +416,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato"
+                android:hint="Tipo de Suelos"
                 android:inputType="text" />
 
             <TextView
@@ -436,7 +436,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato"
+                android:hint="Pendiente"
                 android:inputType="text" />
 
             <TextView
@@ -476,7 +476,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato"
+                android:hint="Precio"
                 android:inputType="text" />
 
             <TextView
@@ -526,7 +526,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato"
+                android:hint="Fuente(s) de abastecimiento"
                 android:inputType="text" />
 
             <TextView
@@ -706,7 +706,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el evento descrito por el encuestado"
+                android:hint="Breve descripción del suceso"
                 android:inputType="textLongMessage" />
 
             <TextView
@@ -977,7 +977,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato en número de meses"
+                android:hint="Número de meses"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -997,7 +997,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el área en m²"
+                android:hint="Área en m²"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1017,7 +1017,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato en m²/m³ según el tipo de cultivo"
+                android:hint="Dato en m²/m³ según el tipo de cultivo"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1037,7 +1037,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato en m²/m³ según el tipo de cultivo"
+                android:hint="Dato en m²/m³ según el tipo de cultivo"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1057,7 +1057,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato en términos de porcentaje (%)"
+                android:hint="Dato en términos de porcentaje (%)"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1077,7 +1077,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el N° de aniamles sembrados por ciclo"
+                android:hint="N° de Animales sembrados por ciclo"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1097,7 +1097,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el N° de aniamles cosechados por ciclo"
+                android:hint="N° de aniamles cosechados por ciclo"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1117,7 +1117,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato en gramos"
+                android:hint="Dato en gramos"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1137,7 +1137,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato en gramos"
+                android:hint="Dato en gramos"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1157,7 +1157,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato en gramos"
+                android:hint="Dato en gramos"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1177,7 +1177,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato en kilogramos"
+                android:hint="Dato en kilogramos"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1197,7 +1197,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato en términos de porcentaje (%)"
+                android:hint="Dato en términos de porcentaje (%)"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1217,7 +1217,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato en términos de porcentaje (%)"
+                android:hint="Dato en términos de porcentaje (%)"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1237,7 +1237,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato en kilogramos"
+                android:hint="Dato en kilogramos"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1257,7 +1257,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato"
+                android:hint="Cantidad de reproductores"
                 android:inputType="number" />
 
             <TextView
@@ -1277,7 +1277,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato en términos de porcentaje (%)"
+                android:hint="Dato en términos de porcentaje (%)"
                 android:inputType="textShortMessage" />
 
             <TextView
@@ -1297,7 +1297,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato en m²/m³ según el tipo de cultivo"
+                android:hint="Dato en m²/m³ según el tipo de cultivo"
                 android:inputType="numberDecimal" />
 
         </LinearLayout>
