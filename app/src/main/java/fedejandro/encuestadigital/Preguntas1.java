@@ -73,5 +73,44 @@ public class Preguntas1 extends AppCompatActivity {
         ArrayAdapter<String> adapterAns16 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sino);
         adapterAns16.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans16.setAdapter(adapterAns16);
+
+        String[] relacionPersonas = new String[] {
+                "Cónyuge","Hijo/a","Yerno/Nuera","Nieto/a, Bisnieto/a","Padre o madre del cónyuge","Otro pariente","No emparentado"
+        };
+        Spinner ans19_1 = (Spinner) findViewById(R.id.ans19_1);
+        ArrayAdapter<String> adapterAns19_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, relacionPersonas);
+        adapterAns19_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans19_1.setAdapter(adapterAns19_1);
+
+        Spinner ans19_2 = (Spinner) findViewById(R.id.ans19_2);
+        ArrayAdapter<String> adapterAns19_2 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, genero);
+        adapterAns19_2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans19_2.setAdapter(adapterAns19_2);
+
+        String[] estadoCivil = new String[] {
+                "Soltero","Casado","Unión Libre","Separado","Divorciado","Viudo"
+        };
+        Spinner ans19_4 = (Spinner) findViewById(R.id.ans19_4);
+        ArrayAdapter<String> adapterAns19_4 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, estadoCivil);
+        adapterAns19_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans19_4.setAdapter(adapterAns19_4);
+
+        Spinner ans19_5 = (Spinner) findViewById(R.id.ans19_5);
+        ArrayAdapter<String> adapterAns19_5 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sino);
+        adapterAns19_5.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans19_5.setAdapter(adapterAns19_5);
+
+        Spinner ans19_6 = (Spinner) findViewById(R.id.ans19_6);
+        ArrayAdapter<String> adapterAns19_6 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sino);
+        adapterAns19_6.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans19_6.setAdapter(adapterAns19_6);
+
+        String[] gradoEstudio = new String[] {
+                "Ninguno","Básica primaria (1° a 5° grado)","Básica secundaria (6° a 9° grado)","Media (10° a 11° grado)","Técnico","Tecnólogo","Profesional pregrado","Postgrado"
+        };
+        Spinner ans19_7 = (Spinner) findViewById(R.id.ans19_7);
+        ArrayAdapter<String> adapterAns19_7 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, gradoEstudio);
+        adapterAns19_7.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans19_7.setAdapter(adapterAns19_7);
     }
 }
