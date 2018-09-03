@@ -58,8 +58,8 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
                     fos.write(consecutivoText.getText().toString().getBytes());
                     fos.close();
 
-                    Intent preg1 = new Intent(getApplicationContext(), Preguntas1.class);
-                    startActivity(preg1);
+                    Intent preg2 = new Intent(getApplicationContext(), Preguntas2.class);
+                    startActivity(preg2);
 
                 } catch (IOException e) {
                     e.printStackTrace();
