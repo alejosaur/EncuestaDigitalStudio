@@ -36,17 +36,17 @@
                 app:fontFamily="serif" />
 
             <TextView
-                android:id="@+id/ques44"
+                android:id="@+id/ques43"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="44. ¿La acuicultura es una actividad económica principal o complementaria?" />
+                android:text="43. ¿La acuicultura es una actividad económica principal o complementaria?" />
 
             <Spinner
-                android:id="@+id/ans44"
+                android:id="@+id/ans43"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -54,7 +54,7 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques44-1"
+                android:id="@+id/ques43-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -64,7 +64,7 @@
                 android:text="44.1. Si la acuicultura es complementaria, ¿Cuál es su principal actividad económica?" />
 
             <Spinner
-                android:id="@+id/ans44-1"
+                android:id="@+id/ans43-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -72,17 +72,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques45"
+                android:id="@+id/ques44"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="45. ¿Cuántas unidades de producción acuicola están bajo su cargo?" />
+                android:text="44. ¿Cuántas unidades de producción acuicola están bajo su cargo?" />
 
             <EditText
-                android:id="@+id/ans45"
+                android:id="@+id/ans44"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -95,6 +95,26 @@
                 tools:layout_editor_absoluteY="357dp" />
 
             <TextView
+                android:id="@+id/ques45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="45. ¿La unidad de producción acuícola es?" />
+
+            <Spinner
+                android:id="@+id/ans45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
                 android:id="@+id/ques46"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -102,7 +122,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="46. ¿La unidad de producción acuícola es?" />
+                android:text="46. ¿Qué tipo de cultivo implementa en la UPAC?" />
 
             <Spinner
                 android:id="@+id/ans46"
@@ -122,7 +142,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="47. ¿Qué tipo de cultivo implementa en la UPAC?" />
+                android:text="47. ¿El sistema de cultivo de la UPAC es?" />
 
             <Spinner
                 android:id="@+id/ans47"
@@ -142,17 +162,17 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="48. ¿El sistema de cultivo de la UPAC es?" />
+                android:text="48. ¿Cuál es el área total de su predio?" />
 
-            <Spinner
+            <EditText
                 android:id="@+id/ans48"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:spinnerMode="dialog" />
+                android:ems="10"
+                android:hint="Área en metros cuadrados (m²)"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/ques49"
@@ -162,7 +182,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="49. ¿Cuál es el área total de su predio?" />
+                android:text="49. ¿Cuál es el área destinada a la producción acuícola?" />
 
             <EditText
                 android:id="@+id/ans49"
@@ -182,7 +202,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="50. ¿Cuál es el área destinada a la producción acuícola?" />
+                android:text="50. ¿Cuál es el área de acuicultura en tierra?" />
 
             <EditText
                 android:id="@+id/ans50"
@@ -202,7 +222,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="51. ¿Cuál es el área de acuicultura en tierra?" />
+                android:text="51. ¿Cuál es el área de acuicultura en aguas continentales?" />
 
             <EditText
                 android:id="@+id/ans51"
@@ -222,30 +242,10 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="52. ¿Cuál es el área de acuicultura en aguas continentales?" />
+                android:text="52. ¿Cuál es el volumen total de las jaulas que emplea en la acuicultura de aguas continentales?" />
 
             <EditText
                 android:id="@+id/ans52"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Área en metros cuadrados (m²)"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques53"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="53. ¿Cuál es el volumen total de las jaulas que emplea en la acuicultura de aguas continentales?" />
-
-            <EditText
-                android:id="@+id/ans53"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -280,6 +280,26 @@
                 android:textColor="#2b2b2b" />
 
             <TextView
+                android:id="@+id/ques53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="53. ¿La fuente de agua para los cultivos en estanques es?" />
+
+            <Spinner
+                android:id="@+id/ans53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
                 android:id="@+id/ques54"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -287,7 +307,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="54. ¿La fuente de agua para los cultivos en estanques es?" />
+                android:text="54. ¿Qué método utiliza para transportar el agua desde la fuente de captación hacia la unidad de producción?" />
 
             <Spinner
                 android:id="@+id/ans54"
@@ -307,30 +327,10 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="55. ¿Qué método utiliza para transportar el agua desde la fuente de captación hacia la unidad de producción?" />
-
-            <Spinner
-                android:id="@+id/ans55"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques56"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="56. ¿Cuál es la distancia entre la fuente de captación y la unidad de producción?" />
+                android:text="55. ¿Cuál es la distancia entre la fuente de captación y la unidad de producción?" />
 
             <EditText
-                android:id="@+id/ans56"
+                android:id="@+id/ans55"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -340,6 +340,26 @@
                 android:inputType="numberDecimal" />
 
             <TextView
+                android:id="@+id/ques56"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="56. ¿Cuáles son los meses de mayor precipitación?" />
+
+            <EditText
+                android:id="@+id/ans56"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Meses separados por coma"
+                android:inputType="text" />
+
+            <TextView
                 android:id="@+id/ques57"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -347,7 +367,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="57. ¿Cuáles son los meses de mayor precipitación?" />
+                android:text="57. ¿Cuáles son los meses de menor precipitación?" />
 
             <EditText
                 android:id="@+id/ans57"
@@ -367,16 +387,36 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="58. ¿Cuáles son los meses de menor precipitación?" />
+                android:text="58. ¿Conoce el tipo de suelos de la UPAC?" />
 
-            <EditText
+            <Spinner
                 android:id="@+id/ans58"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques58-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="58.1. ¿Qué tipo de suelos hay en la UPAC?" />
+
+            <EditText
+                android:id="@+id/ans58-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Meses separados por coma"
+                android:hint="Tipo de Suelos"
                 android:inputType="text" />
 
             <TextView
@@ -387,36 +427,16 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="59. ¿Conoce el tipo de suelos de la UPAC?" />
+                android:text="59. ¿Cuál es la pendiente del terreno?" />
 
-            <Spinner
+            <EditText
                 android:id="@+id/ans59"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques59-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="59.1. ¿Qué tipo de suelos hay en la UPAC?" />
-
-            <EditText
-                android:id="@+id/ans59-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Tipo de Suelos"
+                android:hint="Pendiente"
                 android:inputType="text" />
 
             <TextView
@@ -427,30 +447,10 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="60. ¿Cuál es la pendiente del terreno?" />
-
-            <EditText
-                android:id="@+id/ans60"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Pendiente"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/ques61"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="61. ¿Paga por el suministro de agua?" />
+                android:text="60. ¿Paga por el suministro de agua?" />
 
             <Spinner
-                android:id="@+id/ans61"
+                android:id="@+id/ans60"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -460,17 +460,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques61-1"
+                android:id="@+id/ques60-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="61.1. ¿Cuál es el precio en términos del volumen de agua empleado?" />
+                android:text="60.1. ¿Cuál es el precio en términos del volumen de agua empleado?" />
 
             <EditText
-                android:id="@+id/ans61-1"
+                android:id="@+id/ans60-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -490,6 +490,186 @@
                 android:textColor="#2b2b2b" />
 
             <TextView
+                android:id="@+id/ques61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="61. ¿Conoce los parámetros físico químos del agua utiizada en sus cultivos?" />
+
+            <Spinner
+                android:id="@+id/ans61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques61-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="61.1. Fuente de abastecimiento:" />
+
+            <EditText
+                android:id="@+id/ans61-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Fuente(s) de abastecimiento"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques61-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="61.2. Temperatura en °C:" />
+
+            <EditText
+                android:id="@+id/ans61-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato"
+                android:inputType="numberSigned|numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques61-3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="61.3. pH:" />
+
+            <EditText
+                android:id="@+id/ans61-3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques61-4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="62.4. Oxígeno disuelto OD (ppm):" />
+
+            <EditText
+                android:id="@+id/ans61-4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques61-5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="61.5. Alcalinidad (mg/l):" />
+
+            <EditText
+                android:id="@+id/ans61-5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques61-6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="61.6. Dureza (mg/l):" />
+
+            <EditText
+                android:id="@+id/ans61-6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques61-7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="62.7. Turbidez (cm Secchi):" />
+
+            <EditText
+                android:id="@+id/ans61-7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato"
+                android:inputType="numberSigned|numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques61-8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="61.8. Amonio NH³⁺:" />
+
+            <EditText
+                android:id="@+id/ans61-8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato"
+                android:inputType="numberSigned|numberDecimal" />
+
+            <TextView
                 android:id="@+id/ques62"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -497,7 +677,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="62. ¿Conoce los parámetros físico químos del agua utiizada en sus cultivos?" />
+                android:text="62. ¿En el último año ha observado eventos de contaminación de aguas?" />
 
             <Spinner
                 android:id="@+id/ans62"
@@ -517,190 +697,10 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="62.1. Fuente de abastecimiento:" />
+                android:text="62.1. ¿Cómo sucedió la contaminación de la fuente de agua?" />
 
             <EditText
                 android:id="@+id/ans62-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Fuente(s) de abastecimiento"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/ques62-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="62.2. Temperatura en °C:" />
-
-            <EditText
-                android:id="@+id/ans62-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre el dato"
-                android:inputType="numberSigned|numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques62-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="62.3. pH:" />
-
-            <EditText
-                android:id="@+id/ans62-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre el dato"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques62-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="62.4. Oxígeno disuelto OD (ppm):" />
-
-            <EditText
-                android:id="@+id/ans62-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre el dato"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques62-5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="62.5. Alcalinidad (mg/l):" />
-
-            <EditText
-                android:id="@+id/ans62-5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre el dato"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques62-6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="62.6. Dureza (mg/l):" />
-
-            <EditText
-                android:id="@+id/ans62-6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre el dato"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques62-7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="62.7. Turbidez (cm Secchi):" />
-
-            <EditText
-                android:id="@+id/ans62-7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre el dato"
-                android:inputType="numberSigned|numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques62-8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="62.8. Amonio NH³⁺:" />
-
-            <EditText
-                android:id="@+id/ans62-8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre el dato"
-                android:inputType="numberSigned|numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques63"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="63. ¿En el último año ha observado eventos de contaminación de aguas?" />
-
-            <Spinner
-                android:id="@+id/ans63"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques63-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="63.1. ¿Cómo sucedió la contaminación de la fuente de agua?" />
-
-            <EditText
-                android:id="@+id/ans63-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -725,6 +725,66 @@
                 app:fontFamily="serif" />
 
             <TextView
+                android:id="@+id/ques63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="63. ¿Los productos de la UPAC se destinan para?" />
+
+            <Spinner
+                android:id="@+id/ans63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques63-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="63.1. ¿Qué porcentaje se destina para el autoconsumo?" />
+
+            <EditText
+                android:id="@+id/ans63-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el porcentaje (%)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques63-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="63.2. ¿Qué porcemtaje se destina para la comercialización?" />
+
+            <EditText
+                android:id="@+id/ans63-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el porcentaje (%)"
+                android:inputType="numberDecimal" />
+
+            <TextView
                 android:id="@+id/ques64"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -732,7 +792,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="64. ¿Los productos de la UPAC se destinan para?" />
+                android:text="64. ¿Cuál es el tipo de producción que realiza?" />
 
             <Spinner
                 android:id="@+id/ans64"
@@ -745,46 +805,6 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques64-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="64.1. ¿Qué porcentaje se destina para el autoconsumo?" />
-
-            <EditText
-                android:id="@+id/ans64-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre el porcentaje (%)"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques64-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="64.2. ¿Qué porcemtaje se destina para la comercialización?" />
-
-            <EditText
-                android:id="@+id/ans64-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre el porcentaje (%)"
-                android:inputType="numberDecimal" />
-
-            <TextView
                 android:id="@+id/ques65"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -792,17 +812,63 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="65. ¿Cuál es el tipo de producción que realiza?" />
+                android:text="65. ¿Qué especies cultiva?" />
 
-            <Spinner
-                android:id="@+id/ans65"
+            <CheckBox
+                android:id="@+id/ans65a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:spinnerMode="dialog" />
+                android:text="Peces" />
+
+            <CheckBox
+                android:id="@+id/ans65b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Plantas" />
+
+            <CheckBox
+                android:id="@+id/ans65c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Ranas" />
+
+            <CheckBox
+                android:id="@+id/ans65d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Caimanes" />
+
+            <CheckBox
+                android:id="@+id/ans65e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Cocodrilos" />
+
+            <CheckBox
+                android:id="@+id/ans65f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Tortugas" />
+
+            <CheckBox
+                android:id="@+id/ans65g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Otra, ¿Cuál?" />
 
             <TextView
                 android:id="@+id/ques66"
@@ -812,76 +878,10 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="66. ¿Qué especies cultiva?" />
-
-            <CheckBox
-                android:id="@+id/ans66a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Peces" />
-
-            <CheckBox
-                android:id="@+id/ans66b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Plantas" />
-
-            <CheckBox
-                android:id="@+id/ans66c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Ranas" />
-
-            <CheckBox
-                android:id="@+id/ans66d"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Caimanes" />
-
-            <CheckBox
-                android:id="@+id/ans66e"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Cocodrilos" />
-
-            <CheckBox
-                android:id="@+id/ans66f"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Tortugas" />
-
-            <CheckBox
-                android:id="@+id/ans66g"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Otra, ¿Cuál?" />
-
-            <TextView
-                android:id="@+id/ques67"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="67. ¿Produce bajo la práctica de?" />
+                android:text="66. ¿Produce bajo la práctica de?" />
 
             <Spinner
-                android:id="@+id/ans67"
+                android:id="@+id/ans66"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -901,6 +901,26 @@
                 android:textColor="#2b2b2b" />
 
             <TextView
+                android:id="@+id/ques67"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="67. ¿Cuál es el precio de compra de la semilla?" />
+
+            <EditText
+                android:id="@+id/ans67"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el precio"
+                android:inputType="numberDecimal" />
+
+            <TextView
                 android:id="@+id/ques68"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -908,7 +928,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="68. ¿Cuál es el precio de compra de la semilla?" />
+                android:text="68. ¿Cuál es el porcentaje de sobrevivencia de los alevines?" />
 
             <EditText
                 android:id="@+id/ans68"
@@ -917,7 +937,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el precio"
+                android:hint="Registre el porcentaje (%)"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -928,30 +948,10 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="69. ¿Cuál es el porcentaje de sobrevivencia de los alevines?" />
+                android:text="69. ¿Qué especie o especies cultiva?" />
 
             <EditText
                 android:id="@+id/ans69"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre el porcentaje (%)"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques70"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="70. ¿Qué especie o especies cultiva?" />
-
-            <EditText
-                android:id="@+id/ans70"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -961,6 +961,26 @@
                 android:inputType="text" />
 
             <TextView
+                android:id="@+id/ques70"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="70. ¿Cuántos meses dura el ciclo de producción?" />
+
+            <EditText
+                android:id="@+id/ans70"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Número de meses"
+                android:inputType="numberDecimal" />
+
+            <TextView
                 android:id="@+id/ques71"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -968,7 +988,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="71. ¿Cuántos meses dura el ciclo de producción?" />
+                android:text="71. ¿Cuál es el área de cultivo?" />
 
             <EditText
                 android:id="@+id/ans71"
@@ -977,7 +997,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Número de meses"
+                android:hint="Área en m²"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -988,7 +1008,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="72. ¿Cuál es el área de cultivo?" />
+                android:text="72. ¿Cuál es la densidad inicial?" />
 
             <EditText
                 android:id="@+id/ans72"
@@ -997,7 +1017,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Área en m²"
+                android:hint="Dato en m²/m³ según el tipo de cultivo"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1008,7 +1028,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="73. ¿Cuál es la densidad inicial?" />
+                android:text="73. ¿Cuál es la densidad final?" />
 
             <EditText
                 android:id="@+id/ans73"
@@ -1028,7 +1048,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="74. ¿Cuál es la densidad final?" />
+                android:text="74. ¿Cuántos animales siembra por ciclo?" />
 
             <EditText
                 android:id="@+id/ans74"
@@ -1037,7 +1057,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Dato en m²/m³ según el tipo de cultivo"
+                android:hint="N° de Animales sembrados por ciclo"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1048,7 +1068,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="75. ¿Cuál es el porcentaje de sobrevivencia?" />
+                android:text="75. ¿Cuántos animales cosecha por ciclo?" />
 
             <EditText
                 android:id="@+id/ans75"
@@ -1057,7 +1077,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Dato en términos de porcentaje (%)"
+                android:hint="N° de aniamles cosechados por ciclo"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1068,7 +1088,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="76. ¿Cuántos animales siembra por ciclo?" />
+                android:text="76. ¿Cuál es el peso inial en gramos (g) de los animales?" />
 
             <EditText
                 android:id="@+id/ans76"
@@ -1077,7 +1097,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="N° de Animales sembrados por ciclo"
+                android:hint="Dato en gramos"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1088,7 +1108,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="77. ¿Cuántos animales cosecha por ciclo?" />
+                android:text="77. ¿Cuál es el peso bruto final en gramos (g) de los animales?" />
 
             <EditText
                 android:id="@+id/ans77"
@@ -1097,7 +1117,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="N° de aniamles cosechados por ciclo"
+                android:hint="Dato en gramos"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1108,7 +1128,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="78. ¿Cuál es el peso inial en gramos (g) de los animales?" />
+                android:text="78. ¿Cuál es el peso neto final en gramos (g) de los animales?" />
 
             <EditText
                 android:id="@+id/ans78"
@@ -1128,7 +1148,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="79. ¿Cuál es el peso bruto final en gramos (g) de los animales?" />
+                android:text="79. ¿Cuál es la producción bruta por ciclo (Kg)?" />
 
             <EditText
                 android:id="@+id/ans79"
@@ -1137,7 +1157,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Dato en gramos"
+                android:hint="Dato en kilogramos"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1148,7 +1168,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="80. ¿Cuál es el peso neto final en gramos (g) de los animales?" />
+                android:text="80. ¿Cuál es el porcentaje de pérdida por vísceras?" />
 
             <EditText
                 android:id="@+id/ans80"
@@ -1157,7 +1177,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Dato en gramos"
+                android:hint="Dato en términos de porcentaje (%)"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1168,7 +1188,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="81. ¿Cuál es la producción bruta por ciclo (Kg)?" />
+                android:text="81. ¿Cuál es el porcentaje de pérdida por transformación?" />
 
             <EditText
                 android:id="@+id/ans81"
@@ -1177,7 +1197,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Dato en kilogramos"
+                android:hint="Dato en términos de porcentaje (%)"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1188,7 +1208,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="82. ¿Cuál es el porcentaje de pérdida por vísceras?" />
+                android:text="82. ¿Cuál es la producción neta por ciclo?" />
 
             <EditText
                 android:id="@+id/ans82"
@@ -1197,7 +1217,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Dato en términos de porcentaje (%)"
+                android:hint="Dato en kilogramos"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1208,50 +1228,10 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="83. ¿Cuál es el porcentaje de pérdida por transformación?" />
+                android:text="83. ¿Cuántos reproductores tiene?" />
 
             <EditText
                 android:id="@+id/ans83"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Dato en términos de porcentaje (%)"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques84"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="84. ¿Cuál es la producción neta por ciclo?" />
-
-            <EditText
-                android:id="@+id/ans84"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Dato en kilogramos"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques85"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="82. ¿Cuántos reproductores tiene?" />
-
-            <EditText
-                android:id="@+id/ans85"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1261,17 +1241,17 @@
                 android:inputType="number" />
 
             <TextView
-                android:id="@+id/ques86"
+                android:id="@+id/ques84"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="86. ¿Cuál es la proporción sexual?" />
+                android:text="84. ¿Cuál es la proporción sexual?" />
 
             <EditText
-                android:id="@+id/ans86"
+                android:id="@+id/ans84"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1281,6 +1261,46 @@
                 android:inputType="textShortMessage" />
 
             <TextView
+                android:id="@+id/ques85"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="85. ¿Cuál es la densidad de siembra?" />
+
+            <EditText
+                android:id="@+id/ans85"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Dato en m²/m³ según el tipo de cultivo"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques86"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="86. ¿Cómo obtiene los reproductores?" />
+
+            <Spinner
+                android:id="@+id/ans86"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
                 android:id="@+id/ques87"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1288,7 +1308,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="87. ¿Cuál es la densidad de siembra?" />
+                android:text="87. ¿Cuál es el precio promedio que pagó por cada reproductor?" />
 
             <EditText
                 android:id="@+id/ans87"
@@ -1297,8 +1317,584 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Dato en m²/m³ según el tipo de cultivo"
+                android:hint="Registre el valor en pesos"
                 android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques88"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="88. ¿Cuál es el precio promedio que pagó por cada reproductor?" />
+
+            <EditText
+                android:id="@+id/ans88"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques89"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="89. ¿Cuál es el porcentaje de (%) de sobrevivencia?" />
+
+            <EditText
+                android:id="@+id/ans89"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato en términos de porcentaje (%) "
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques90"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="90. ¿Cuál es el área del cultivo?" />
+
+            <EditText
+                android:id="@+id/ans90"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato en m²"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques91"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="91. ¿Cuál es la densidad inicial?" />
+
+            <EditText
+                android:id="@+id/ans91"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato en m² / m³ según el tipo de cultivo "
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques92"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="92. ¿Cuál es la densidad final?" />
+
+            <EditText
+                android:id="@+id/ans92"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato en m² / m³ según el tipo de cultivo "
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques93"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="93. ¿Cuántos días dura el ciclo de alevinaje?" />
+
+            <EditText
+                android:id="@+id/ans93"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques94"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="93. ¿Mensualmente cuantos animales produce?" />
+
+            <EditText
+                android:id="@+id/ans94"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato N° animales/mes"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques95"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="95. ¿Cuál es el peso de comercialización?" />
+
+            <EditText
+                android:id="@+id/ans95"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Gramos, registre el valor numérico "
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques96"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="96. ¿Cuál es la talla de comercialización?" />
+
+            <EditText
+                android:id="@+id/ans96"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Centímetros, registre el valor numérico "
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques97"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="97. ¿Cuál es el precio de venta (pesos)?" />
+
+            <EditText
+                android:id="@+id/ans97"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el precio "
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques98"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="98. ¿Qué tipo de Procesamiento, transformación, agregación de valor (Valor agregado) le da al producto?" />
+
+            <CheckBox
+                android:id="@+id/ans98a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Lavado" />
+
+            <CheckBox
+                android:id="@+id/ans98b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Enhielado" />
+
+            <CheckBox
+                android:id="@+id/ans98c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Clasificado" />
+
+            <CheckBox
+                android:id="@+id/ans98d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Eviscerado" />
+
+            <CheckBox
+                android:id="@+id/ans98e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Descabezado" />
+
+            <CheckBox
+                android:id="@+id/ans98f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Fileteado" />
+
+            <CheckBox
+                android:id="@+id/ans98g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Postas" />
+
+            <CheckBox
+                android:id="@+id/ans98h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Corte mariposa" />
+
+            <CheckBox
+                android:id="@+id/ans98i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Empacado al vacío" />
+
+            <CheckBox
+                android:id="@+id/ans98j"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Empacado en canastillas" />
+
+            <CheckBox
+                android:id="@+id/ans98k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Otra trnasformción, ¿Cuál?" />
+
+            <TextView
+                android:id="@+id/ques99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="99. ¿Cómo es el procedimiento para la conservación del producto desde la cosecha hasta  la comercialización?" />
+
+            <EditText
+                android:id="@+id/ans99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Describa el procedimiento"
+                android:inputType="textLongMessage" />
+
+            <TextView
+                android:id="@+id/ques100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="100. ¿Implementa BBPA?" />
+
+            <Spinner
+                android:id="@+id/ans100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques100-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="100.1. ¿Cuáles BBPA implementa?" />
+
+            <EditText
+                android:id="@+id/ans100-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la información "
+                android:inputType="textLongMessage" />
+
+            <TextView
+                android:id="@+id/ques101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="101. ¿Ha sufrido alguno de los siguientes desastres naturales?" />
+
+            <Spinner
+                android:id="@+id/ans101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques102"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="103. ¿Ha sufrido pérdidas por presencia de predadores cómo?" />
+
+            <Spinner
+                android:id="@+id/ans102"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques103"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="103. ¿Ha sufrido pérdida por enfermedades o patologías asociadas a?" />
+
+            <Spinner
+                android:id="@+id/ans103"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques104"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="104. ¿Utiliza fungicidas, antibióticos, pesticidas, u otros elementos químicos? " />
+
+            <Spinner
+                android:id="@+id/ans104"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/subtituloMediosProd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="left|center_vertical"
+                android:text="Indique información respecto a los medios de producción de la UPAC de acuerdo con las siguientes preguntas."
+                android:textColor="#2b2b2b" />
+
+            <TextView
+                android:id="@+id/ques105"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="105. ¿Con qué maquinaria o equipos cuenta la UPAC? " />
+
+            <CheckBox
+                android:id="@+id/ans105a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Tractores" />
+
+            <CheckBox
+                android:id="@+id/ans105b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Bombas de agua" />
+
+            <CheckBox
+                android:id="@+id/ans105c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Equipo de drenaje y canalización de aguas " />
+
+            <CheckBox
+                android:id="@+id/ans105d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Aireadores" />
+
+            <CheckBox
+                android:id="@+id/ans105e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Generadores eléctricos " />
+
+            <CheckBox
+                android:id="@+id/ans105f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Equipos de frío" />
+
+            <TextView
+                android:id="@+id/ques106"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="106. ¿Cuál es la capacidad de almacenamiento de los equipos de frio (Kg/día)?" />
+
+            <EditText
+                android:id="@+id/ans106"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el valor en  Kg/día "
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques107"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="107.  Para cada máquina o equipo de la UPAC registre  el tipo de tenencia ¿La maquinaria y equipos que utiliza en la UPAC  son?" />
+
+            <Spinner
+                android:id="@+id/ans107"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/subtituloConstrucciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="left|center_vertical"
+                android:text="Indique si la  UPAC cuenta con las siguientes construcciones"
+                android:textColor="#2b2b2b" />
+
+            <TextView
+                android:id="@+id/ques108"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="108. Sistema de Cultivo:" />
+
+            <Spinner
+                android:id="@+id/ans108"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
 
         </LinearLayout>
     </ScrollView>

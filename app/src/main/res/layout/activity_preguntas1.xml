@@ -988,7 +988,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="20dp"
                 android:gravity="center_vertical|center_horizontal"
-                android:text="TENENCIA Y CARACTERIZACIÓN DE LA VIVIENDA DEL PRODUCTOR (INDICADOR NBI)"
+                android:text="SEGURIDAD ALIMENTARIA"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="24sp"
                 app:fontFamily="serif" />
@@ -1000,7 +1000,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:gravity="left|center_vertical|fill"
-                android:text="Indique la forma de tenencia, características de su vivienda y el acceso a servicios públicos bajo los siguientes parámetros:"
+                android:text="Indique la situación alimentaria de su grupo familiar de acuerdo con los siguientes ítems:"
                 android:textColor="#2b2b2b" />
 
             <TextView
