@@ -1,19 +1,20 @@
 package fedejandro.encuestadigital;
 
 import android.content.Intent;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.Spinner;
+import android.widget.*;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 public class Preguntas1 extends AppCompatActivity {
 
     Button nextButton;
+    private String filename = "datos.txt";
+    private String filepath = "EncuestaDatos";
+    File myExternalFile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +31,7 @@ public class Preguntas1 extends AppCompatActivity {
                 "No Aplica","Afrocolombiano","Indígena","Mestizo","Otro, ¿Cuál?"
         };
         String[] genero = new String[] {
-                "Masculino","Femenino","Otro","Prefiero no decirlo"
+                "Masculino","Femenino"
         };
         String[] tipoPersona = new String[] {
                 "Natural","Jurídica"
@@ -48,7 +49,7 @@ public class Preguntas1 extends AppCompatActivity {
                 "Soltero","Casado","Unión Libre","Separado","Divorciado","Viudo"
         };
         String[] gradoEstudio = new String[] {
-                "Ninguno","Básica primaria (1° a 5° grado)","Básica secundaria (6° a 9° grado)","Media (10° a 11° grado)","Técnico","Tecnólogo","Profesional pregrado","Postgrado"
+                "Básica primaria (1° a 5° grado)","Básica secundaria (6° a 9° grado)","Media (10° a 11° grado)","Técnico","Tecnólogo","Profesional pregrado","Postgrado","Ninguno"
         };
         String[] estadoEmpleo = new String[] {
                 "Empleado","Desempleado"
@@ -326,18 +327,420 @@ public class Preguntas1 extends AppCompatActivity {
         adapterAns42_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans42_4.setAdapter(adapterAns42_4);
 
+
         nextButton =  (Button) findViewById(R.id.nextButton);
         nextButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                //try {
+                try {
+
+                    EditText ans2 = (EditText) findViewById(R.id.ans2);
+                    EditText ans3 = (EditText) findViewById(R.id.ans3);
+                    EditText ans4 = (EditText) findViewById(R.id.ans4);
+                    EditText ans5 = (EditText) findViewById(R.id.ans5);
+                    EditText ans6 = (EditText) findViewById(R.id.ans6);
+                    EditText ans7 = (EditText) findViewById(R.id.ans7);
+                    EditText ans8_1 = (EditText) findViewById(R.id.ans8_1);
+                    EditText ans10 = (EditText) findViewById(R.id.ans10);
+                    EditText ans12 = (EditText) findViewById(R.id.ans12);
+                    EditText ans13 = (EditText) findViewById(R.id.ans13);
+                    EditText ans17 = (EditText) findViewById(R.id.ans17);
+                    EditText ans18 = (EditText) findViewById(R.id.ans18);
+                    EditText ans19 = (EditText) findViewById(R.id.ans19);
+                    EditText ans19_3 = (EditText) findViewById(R.id.ans19_3);
+                    EditText ans19_8 = (EditText) findViewById(R.id.ans19_8);
+                    EditText ans32 = (EditText) findViewById(R.id.ans32);
+                    EditText ans32_2 = (EditText) findViewById(R.id.ans32_2);
+                    EditText ans32_3 = (EditText) findViewById(R.id.ans32_3);
+                    EditText ans33_2 = (EditText) findViewById(R.id.ans33_2);
+                    EditText ans33_3 = (EditText) findViewById(R.id.ans33_3);
+                    EditText ans34_1 = (EditText) findViewById(R.id.ans34_1);
+                    EditText ans34_2 = (EditText) findViewById(R.id.ans34_2);
+                    EditText ans35 = (EditText) findViewById(R.id.ans35);
+                    EditText ans36 = (EditText) findViewById(R.id.ans36);
+                    EditText ans37 = (EditText) findViewById(R.id.ans37);
+                    EditText ans40_2 = (EditText) findViewById(R.id.ans40_2);
+
+                    Spinner ans1 = (Spinner) findViewById(R.id.ans1);
+                    Spinner ans8 = (Spinner) findViewById(R.id.ans8);
+                    Spinner ans9 = (Spinner) findViewById(R.id.ans9);
+                    Spinner ans11 = (Spinner) findViewById(R.id.ans11);
+                    Spinner ans14 = (Spinner) findViewById(R.id.ans14);
+                    Spinner ans15 = (Spinner) findViewById(R.id.ans15);
+                    Spinner ans15_1 = (Spinner) findViewById(R.id.ans15_1);
+                    Spinner ans16 = (Spinner) findViewById(R.id.ans16);
+                    Spinner ans19_1 = (Spinner) findViewById(R.id.ans19_1);
+                    Spinner ans19_2 = (Spinner) findViewById(R.id.ans19_2);
+                    Spinner ans19_4 = (Spinner) findViewById(R.id.ans19_4);
+                    Spinner ans19_5 = (Spinner) findViewById(R.id.ans19_5);
+                    Spinner ans19_6 = (Spinner) findViewById(R.id.ans19_6);
+                    Spinner ans19_7 = (Spinner) findViewById(R.id.ans19_7);
+                    Spinner ans20 = (Spinner) findViewById(R.id.ans20);
+                    Spinner ans20_1 = (Spinner) findViewById(R.id.ans20_1);
+                    Spinner ans20_2 = (Spinner) findViewById(R.id.ans20_2);
+                    Spinner ans20_3 = (Spinner) findViewById(R.id.ans20_3);
+                    Spinner ans21 = (Spinner) findViewById(R.id.ans21);
+                    Spinner ans21_1 = (Spinner) findViewById(R.id.ans21_1);
+                    Spinner ans22 = (Spinner) findViewById(R.id.ans22);
+                    Spinner ans23 = (Spinner) findViewById(R.id.ans23);
+                    Spinner ans24 = (Spinner) findViewById(R.id.ans24);
+                    Spinner ans25 = (Spinner) findViewById(R.id.ans25);
+                    Spinner ans26 = (Spinner) findViewById(R.id.ans26);
+                    Spinner ans28 = (Spinner) findViewById(R.id.ans28);
+                    Spinner ans29 = (Spinner) findViewById(R.id.ans29);
+                    Spinner ans30 = (Spinner) findViewById(R.id.ans30);
+                    Spinner ans31 = (Spinner) findViewById(R.id.ans31);
+                    Spinner ans32_1 = (Spinner) findViewById(R.id.ans32_1);
+                    Spinner ans33 = (Spinner) findViewById(R.id.ans33);
+                    Spinner ans33_1 = (Spinner) findViewById(R.id.ans33_1);
+                    Spinner ans34 = (Spinner) findViewById(R.id.ans34);
+                    Spinner ans39 = (Spinner) findViewById(R.id.ans39);
+                    Spinner ans40 = (Spinner) findViewById(R.id.ans40);
+                    Spinner ans40_1 = (Spinner) findViewById(R.id.ans40_1);
+                    Spinner ans41 = (Spinner) findViewById(R.id.ans41);
+                    Spinner ans41_1 = (Spinner) findViewById(R.id.ans41_1);
+                    Spinner ans41_3 = (Spinner) findViewById(R.id.ans41_3);
+                    Spinner ans41_4 = (Spinner) findViewById(R.id.ans41_4);
+                    Spinner ans42 = (Spinner) findViewById(R.id.ans42);
+                    Spinner ans42_1 = (Spinner) findViewById(R.id.ans42_1);
+                    Spinner ans42_3 = (Spinner) findViewById(R.id.ans42_3);
+                    Spinner ans42_4 = (Spinner) findViewById(R.id.ans42_4);
+
+                    CheckBox tieneAcueducto = (CheckBox) findViewById(R.id.tieneAcueducto);
+                    CheckBox tieneAseo = (CheckBox) findViewById(R.id.tieneAseo);
+                    CheckBox tieneAlcantarillado = (CheckBox) findViewById(R.id.tieneAlcantarillado);
+                    CheckBox tienePozoSeptico = (CheckBox) findViewById(R.id.tienePozoSeptico);
+                    CheckBox tieneLetrina = (CheckBox) findViewById(R.id.tieneLetrina);
+                    CheckBox tieneElectricidad = (CheckBox) findViewById(R.id.tieneElectricidad);
+                    CheckBox tieneGas = (CheckBox) findViewById(R.id.tieneGas);
+                    CheckBox tieneTelefono = (CheckBox) findViewById(R.id.tieneTelefono);
+                    CheckBox tieneInternet = (CheckBox) findViewById(R.id.tieneInternet);
+                    CheckBox tieneOtro = (CheckBox) findViewById(R.id.tieneOtro);
+                    CheckBox isTerrestre = (CheckBox) findViewById(R.id.isTerrestre);
+                    CheckBox isFluvial = (CheckBox) findViewById(R.id.isFluvial);
+                    CheckBox isAereo = (CheckBox) findViewById(R.id.isAereo);
+                    CheckBox isTerrestreHosp = (CheckBox) findViewById(R.id.isTerrestreHosp);
+                    CheckBox isFluvialHosp = (CheckBox) findViewById(R.id.isFluvialHosp);
+                    CheckBox isAereoHosp = (CheckBox) findViewById(R.id.isAereoHosp);
+                    CheckBox isTerrestreInst = (CheckBox) findViewById(R.id.isTerrestreInst);
+                    CheckBox isFluvialInst = (CheckBox) findViewById(R.id.isFluvialInst);
+                    CheckBox isAereoInst = (CheckBox) findViewById(R.id.isAereoInst);
+                    CheckBox isTerrestreServ = (CheckBox) findViewById(R.id.isTerrestreServ);
+                    CheckBox isFluvialServ = (CheckBox) findViewById(R.id.isFluvialServ);
+                    CheckBox isAereoServ = (CheckBox) findViewById(R.id.isAereoServ);
+                    CheckBox ayudaGestion = (CheckBox) findViewById(R.id.ayudaGestion);
+                    CheckBox ayudaInsumos = (CheckBox) findViewById(R.id.ayudaInsumos);
+                    CheckBox ayudaCredito = (CheckBox) findViewById(R.id.ayudaCredito);
+                    CheckBox ayudaTecnificacion = (CheckBox) findViewById(R.id.ayudaTecnificacion);
+                    CheckBox ayudaSaludAnimal = (CheckBox) findViewById(R.id.ayudaSaludAnimal);
+                    CheckBox ayudaDesarrolloSostenible = (CheckBox) findViewById(R.id.ayudaDesarrolloSostenible);
+                    CheckBox ayudaAgremiacion = (CheckBox) findViewById(R.id.ayudaAgremiacion);
+                    CheckBox ayudaComercializacion = (CheckBox) findViewById(R.id.ayudaComercializacion);
+                    CheckBox ayudaOtro = (CheckBox) findViewById(R.id.ayudaOtro);
+                    CheckBox formacionAmbiental = (CheckBox) findViewById(R.id.formacionAmbiental);
+                    CheckBox formacionEmpresarial = (CheckBox) findViewById(R.id.formacionEmpresarial);
+                    CheckBox formacionAcuicola = (CheckBox) findViewById(R.id.formacionAcuicola);
+                    CheckBox formacionPesquero = (CheckBox) findViewById(R.id.formacionPesquero);
+                    CheckBox formacionTecnologica = (CheckBox) findViewById(R.id.formacionTecnologica);
+                    CheckBox formacionBuenasPracticas = (CheckBox) findViewById(R.id.formacionBuenasPracticas);
+                    CheckBox formacionOtros = (CheckBox) findViewById(R.id.formacionOtros);
+
+                    FileOutputStream fos = new FileOutputStream(myExternalFile,true);
+
+                    fos.write("\t".getBytes());
+                    fos.write(ans1.getItemAtPosition(ans1.getSelectedItemPosition()).toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans2.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans3.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans4.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans5.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans6.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans7.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans8.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans8_1.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans9.getSelectedItemPosition()).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans10.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans11.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans12.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans13.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans14.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans15.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans15_1.getSelectedItemPosition()).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans16.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans17.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans18.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans19.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans19_1.getSelectedItemPosition()).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans19_2.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans19_3.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans19_4.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans19_5.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans19_6.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans19_7.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans19_8.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans20.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans20_1.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans20_2.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans20_3.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans21.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans21_1.getSelectedItemPosition()).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans22.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans23.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans24.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans25.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans26.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    if(tieneAcueducto.isChecked()){
+                        fos.write("1, ".getBytes());
+                    }
+                    if(tieneAseo.isChecked()){
+                        fos.write("2, ".getBytes());
+                    }
+                    if(tieneAlcantarillado.isChecked()){
+                        fos.write("3, ".getBytes());
+                    }
+                    if(tienePozoSeptico.isChecked()){
+                        fos.write("4, ".getBytes());
+                    }
+                    if(tieneLetrina.isChecked()){
+                        fos.write("5, ".getBytes());
+                    }
+                    if(tieneElectricidad.isChecked()){
+                        fos.write("6, ".getBytes());
+                    }
+                    if(tieneGas.isChecked()){
+                        fos.write("7, ".getBytes());
+                    }
+                    if(tieneTelefono.isChecked()){
+                        fos.write("8, ".getBytes());
+                    }
+                    if(tieneInternet.isChecked()){
+                        fos.write("9, ".getBytes());
+                    }
+                    if(tieneOtro.isChecked()){
+                        fos.write("10, ".getBytes());
+                    }
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans28.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans29.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans30.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans31.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans32.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans32_1.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans32_2.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans32_3.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    if(isTerrestre.isChecked()){
+                        fos.write("1, ".getBytes());
+                    }
+                    if(isFluvial.isChecked()){
+                        fos.write("2, ".getBytes());
+                    }
+                    if(isAereo.isChecked()){
+                        fos.write("3 ".getBytes());
+                    }
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans33.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans33_1.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans33_2.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans33_3.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    if(isTerrestreHosp.isChecked()){
+                        fos.write("1, ".getBytes());
+                    }
+                    if(isFluvialHosp.isChecked()){
+                        fos.write("2, ".getBytes());
+                    }
+                    if(isAereoHosp.isChecked()){
+                        fos.write("3 ".getBytes());
+                    }
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans34.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans34_1.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans34_2.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    if(isTerrestreInst.isChecked()){
+                        fos.write("1, ".getBytes());
+                    }
+                    if(isFluvialInst.isChecked()){
+                        fos.write("2, ".getBytes());
+                    }
+                    if(isAereoInst.isChecked()){
+                        fos.write("3 ".getBytes());
+                    }
+                    fos.write("\t".getBytes());
+                    fos.write(ans35.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans36.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans37.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    if(isTerrestreServ.isChecked()){
+                        fos.write("1, ".getBytes());
+                    }
+                    if(isFluvialServ.isChecked()){
+                        fos.write("2, ".getBytes());
+                    }
+                    if(isAereoServ.isChecked()){
+                        fos.write("3 ".getBytes());
+                    }
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans39.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans40.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans40_1.getSelectedItemPosition()).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(ans40_2.getText().toString().getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans41.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans41_1.getSelectedItemPosition()).getBytes());
+                    fos.write("\t".getBytes());
+                    if(ayudaGestion.isChecked()){
+                        fos.write("1, ".getBytes());
+                    }
+                    if(ayudaInsumos.isChecked()){
+                        fos.write("2, ".getBytes());
+                    }
+                    if(ayudaCredito.isChecked()){
+                        fos.write("3 ".getBytes());
+                    }
+                    if(ayudaTecnificacion.isChecked()){
+                        fos.write("4, ".getBytes());
+                    }
+                    if(ayudaSaludAnimal.isChecked()){
+                        fos.write("5, ".getBytes());
+                    }
+                    if(ayudaDesarrolloSostenible.isChecked()){
+                        fos.write("6 ".getBytes());
+                    }
+                    if(ayudaAgremiacion.isChecked()){
+                        fos.write("7, ".getBytes());
+                    }
+                    if(ayudaComercializacion.isChecked()){
+                        fos.write("8, ".getBytes());
+                    }
+                    if(ayudaOtro.isChecked()){
+                        fos.write("9 ".getBytes());
+                    }
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans41_3.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans41_4.getSelectedItemPosition()).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans42.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans42_1.getSelectedItemPosition()).getBytes());
+                    fos.write("\t".getBytes());
+                    if(formacionAmbiental.isChecked()){
+                        fos.write("1, ".getBytes());
+                    }
+                    if(formacionEmpresarial.isChecked()){
+                        fos.write("2, ".getBytes());
+                    }
+                    if(formacionAcuicola.isChecked()){
+                        fos.write("3 ".getBytes());
+                    }
+                    if(formacionPesquero.isChecked()){
+                        fos.write("4, ".getBytes());
+                    }
+                    if(formacionTecnologica.isChecked()){
+                        fos.write("5, ".getBytes());
+                    }
+                    if(formacionBuenasPracticas.isChecked()){
+                        fos.write("6 ".getBytes());
+                    }
+                    if(formacionOtros.isChecked()){
+                        fos.write("7, ".getBytes());
+                    }
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans42_3.getSelectedItemPosition()+1).getBytes());
+                    fos.write("\t".getBytes());
+                    fos.write(Integer.toString(ans42_4.getSelectedItemPosition()).getBytes());
+
+
                     Intent preg2 = new Intent(getApplicationContext(), Preguntas2.class);
                     startActivity(preg2);
 
-                /*} catch (IOException e) {
+                } catch (IOException e) {
                     e.printStackTrace();
-                }*/
+                }
             }
         });
+
+        if (!isExternalStorageAvailable() || isExternalStorageReadOnly()) {
+            nextButton.setEnabled(false);
+        }
+        else {
+            myExternalFile = new File(getExternalFilesDir(filepath), filename);
+        }
     }
+
+    private static boolean isExternalStorageReadOnly() {
+        String extStorageState = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED_READ_ONLY.equals(extStorageState)) {
+            return true;
+        }
+        return false;
+    }
+
+    private static boolean isExternalStorageAvailable() {
+        String extStorageState = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(extStorageState)) {
+            return true;
+        }
+        return false;
+    }
+
 }
