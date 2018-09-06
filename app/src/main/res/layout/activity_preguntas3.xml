@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Preguntas1">
+    tools:context=".Preguntas3">
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollView4"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,33 +21,32 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/TituloUbicacion"
+                android:id="@+id/TituloUPPA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="UBICACIÓN DE LA UNIDAD DE PRODUCCIÓN"
+                android:gravity="center"
+                android:text="INFORMACION GENERAL DE LA UPPA "
+                android:textAllCaps="false"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="24sp"
                 app:fontFamily="serif" />
 
             <TextView
-                android:id="@+id/ques1"
+                android:id="@+id/ques43"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="1. Nombre del departamento:"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
+                android:text="43. ¿Se dedica a la pesca de forma?" />
 
             <Spinner
-                android:id="@+id/ans1"
+                android:id="@+id/ans43"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -55,157 +54,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques2"
+                android:id="@+id/ques44"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="2. Nombre del municipio:" />
-
-            <EditText
-                android:id="@+id/ans2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="left|center_vertical"
-                android:hint="Municipio"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/ques3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="3. Nombre del resguardo indígena:" />
-
-            <EditText
-                android:id="@+id/ans3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="left|center_vertical"
-                android:hint="Resguardo Indígena"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/ques4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="4. Nombre del corregimiento, vereda o barrio:" />
-
-            <EditText
-                android:id="@+id/ans4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="left|center_vertical"
-                android:hint="Corregimiento, vereda o barrio"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/ques5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="5. Coordenadas obtenidas con el GPS:" />
-
-            <EditText
-                android:id="@+id/ans5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Coordenadas obtenidas con el GPS\nsegún el formato Grados Decimales"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/TituloInformacion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="INFORMACIÓN DEL PRODUCTOR (ACUICULTOR / PESCADOR ARTESANAL)"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="24sp"
-                app:fontFamily="serif" />
-
-            <TextView
-                android:id="@+id/ques6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:filterTouchesWhenObscured="false"
-                android:paddingTop="4dp"
-                android:text="6. ¿Cuál es su nombre?" />
-
-            <EditText
-                android:id="@+id/ans6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="left|center_vertical"
-                android:hint="Nombre del encuestado"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/ques7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="7. Número telefónico" />
-
-            <EditText
-                android:id="@+id/ans7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Número telefónico"
-                android:inputType="phone" />
-
-            <TextView
-                android:id="@+id/ques8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="8. ¿Cuál es el tipo de su documento de identidad?" />
+                android:text="44. ¿La pesca es su actividad  económica principal o complementaria?" />
 
             <Spinner
-                android:id="@+id/ans8"
+                android:id="@+id/ans44"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -213,37 +72,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques8-1"
+                android:id="@+id/ques44-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="8.1. ¿Cuál es el número de su documento de identidad?" />
-
-            <EditText
-                android:id="@+id/ans8-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Número de Documento"
-                android:inputType="number" />
-
-            <TextView
-                android:id="@+id/ques9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="9. ¿Pertenece usted a alguno de los siguientes grupos étnicos?" />
+                android:text="44.1. Si la pesca artesanal es complementaria ¿su principal actividad económica es?" />
 
             <Spinner
-                android:id="@+id/ans9"
+                android:id="@+id/ans44-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -251,231 +90,97 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques10"
+                android:id="@+id/ques45"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="10. Edad del productor:" />
-
-            <EditText
-                android:id="@+id/ans10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Edad"
-                android:inputType="number" />
-
-            <TextView
-                android:id="@+id/ques11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="11. Género del productor:" />
+                android:text="45. ¿Tiene permiso para realizar la actividad pesquera? " />
 
             <Spinner
-                android:id="@+id/ans11"
+                android:id="@+id/ans45"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques12"
+                android:id="@+id/ques45-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="12. ¿Hace cuántos años y/o meses reside en la zona?" />
-
-            <EditText
-                android:id="@+id/ans12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Tiempo en valores numéricos"
-                android:inputType="number|numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="13. ¿Hace cuántos años y/o meses se dedica a esta actividad?" />
-
-            <EditText
-                android:id="@+id/ans13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Valor en años y meses"
-                android:inputType="number|numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="14. ¿Usted está organizado como persona natural o jurídica?" />
+                android:text="45.1. ¿Quién le otorgó el permiso? " />
 
             <Spinner
-                android:id="@+id/ans14"
+                android:id="@+id/ans45-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques15"
+                android:id="@+id/ques46"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="15. ¿Ha sido víctima de desplazamiento forzado?" />
+                android:text="46. ¿Posee carnet emitido por la autoridad de pesca?" />
 
             <Spinner
-                android:id="@+id/ans15"
+                android:id="@+id/ans46"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques15-1"
+                android:id="@+id/ques47"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="15.1. ¿Cuál fue la causa del desplazamiento?" />
+                android:text="47. ¿Dónde pesca?" />
 
             <Spinner
-                android:id="@+id/ans15-1"
+                android:id="@+id/ans47"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques16"
+                android:id="@+id/ques47-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="16. ¿Es usted desmovilizado de algún grupo armado?" />
-
-            <Spinner
-                android:id="@+id/ans16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/tituloSituacionFamiliar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="SITUACIÓN DEMOGRÁFICA Y SOCIAL DEL GRUPO FAMILIAR DEL PRODUCTOR"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="24sp"
-                app:fontFamily="serif" />
-
-            <TextView
-                android:id="@+id/textoSituacionFamiliar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical"
-                android:text="Indique la composición de su grupo familiar bajo las siguientes preguntas:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques17"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="17. ¿Cuántas personas componen su grupo familiar?" />
+                android:text="47.1. Registre el nombre del lugar:" />
 
             <EditText
-                android:id="@+id/ans17"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Número de personas"
-                android:inputType="number" />
-
-            <TextView
-                android:id="@+id/ques18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="18. ¿Quién es el/la jefe del hogar?" />
-
-            <EditText
-                android:id="@+id/ans18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Nombre de la persona jefe de hogar"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/ques19"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="19. Indique su nombre" />
-
-            <EditText
-                android:id="@+id/ans19"
+                android:id="@+id/ans47-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -485,1526 +190,1824 @@
                 android:inputType="text" />
 
             <TextView
-                android:id="@+id/ques19-1"
+                android:id="@+id/ques47-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="19.1. ¿Cuál es su relación con el/la productor(a)?" />
-
-            <Spinner
-                android:id="@+id/ans19-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques19-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="19.2. Género" />
-
-            <Spinner
-                android:id="@+id/ans19-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques19-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="19.3. ¿Cuántos años tiene?" />
+                android:text="47.2. Coordenadas:" />
 
             <EditText
-                android:id="@+id/ans19-3"
+                android:id="@+id/ans47-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Edad en números"
-                android:inputType="number" />
-
-            <TextView
-                android:id="@+id/ques19-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="19.4. ¿Cuál es su estado civil?" />
-
-            <Spinner
-                android:id="@+id/ans19-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques19-5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="19.5. ¿Sabe leer y/o escribir?" />
-
-            <Spinner
-                android:id="@+id/ans19-5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques19-6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="19.6. ¿Actualmente asiste a un centro educativo?" />
-
-            <Spinner
-                android:id="@+id/ans19-6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques19-7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="19.7. ¿Cuál es el último grado de educación que estudió y aprobó?" />
-
-            <Spinner
-                android:id="@+id/ans19-7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques19-8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="19.8. ¿Cuál es su profesión?" />
-
-            <EditText
-                android:id="@+id/ans19-8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Registre unicamente la profesión de las\npersonas que aprobaron estudios\ntécnicos, tecnológicos, profesionales, o\nde postgrado"
+                android:hint="Waypoint"
                 android:inputType="text" />
 
             <TextView
-                android:id="@+id/tituloSituacionFamiliarLaboral"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="SITUACIÓN LABORAL Y ECONÓMICA DEL GRUPO FAMILIAR DEL PRODUCTOR"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="24sp"
-                app:fontFamily="serif" />
-
-            <TextView
-                android:id="@+id/textoSituacionFamiliarLaboral"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique la situación de los ingresos y participación laboral de los miembros del grupo familiar en la unidad de producción acuícola y/o pesquero artesanal bajo los siguientes parámetros:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques20"
+                android:id="@+id/ques48"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="20. Actualmente usted se encuentra:" />
-
-            <Spinner
-                android:id="@+id/ans20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques20-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="20.1. ¿Dónde se encuentra empleado la mayor parte del tiempo?:" />
-
-            <Spinner
-                android:id="@+id/ans20-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques20-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="20.2. ¿Cuánto tiempo emplea para la actividad principal?:" />
-
-            <Spinner
-                android:id="@+id/ans20-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/textoSituacionFamiliarLaboral2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique la participación del grupo familiar en los eslabones de la cadena productiva"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques20-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="20.3. ¿En cuál de las siguientes etapas de la unidad de producción se encuentra empleado?:" />
-
-            <Spinner
-                android:id="@+id/ans20-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques21"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="21. Según las siguientes categorías, usted es:" />
-
-            <Spinner
-                android:id="@+id/ans21"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques21-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="21.1. Usted trabaja de forma independiente como:" />
-
-            <Spinner
-                android:id="@+id/ans21-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques22"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="22. ¿Genera ingresos adicionales para su grupo familiar?" />
-
-            <Spinner
-                android:id="@+id/ans22"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/tituloViviendaProductor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="TENENCIA Y CARACTERIZACIÓN DE LA VIVIENDA DEL PRODUCTOR (INDICADOR NBI)"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="24sp"
-                app:fontFamily="serif" />
-
-            <TextView
-                android:id="@+id/textoViviendaProductor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique la forma de tenencia, características de su vivienda y el acceso a servicios públicos bajo los siguientes parámetros:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques23"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="23. La vivienda en la que habita es:" />
-
-            <Spinner
-                android:id="@+id/ans23"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques24"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="24. El techo está construído con:" />
-
-            <Spinner
-                android:id="@+id/ans24"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques25"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="25. El piso está construído con:" />
-
-            <Spinner
-                android:id="@+id/ans25"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques26"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="26. Las paredes están construídas con:" />
-
-            <Spinner
-                android:id="@+id/ans26"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques27"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="27. De los siguientes servicios públicos y/o privados, ¿con cuáles cuenta su vivienda?" />
-
-            <CheckBox
-                android:id="@+id/tieneAcueducto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Acueducto" />
-
-            <CheckBox
-                android:id="@+id/tieneAseo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Aseo" />
-
-            <CheckBox
-                android:id="@+id/tieneAlcantarillado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Alcantarillado" />
-
-            <CheckBox
-                android:id="@+id/tienePozoSeptico"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Pozo Séptico" />
-
-            <CheckBox
-                android:id="@+id/tieneLetrina"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Letrina" />
-
-            <CheckBox
-                android:id="@+id/tieneElectricidad"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Electricidad" />
-
-            <CheckBox
-                android:id="@+id/tieneGas"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Gas" />
-
-            <CheckBox
-                android:id="@+id/tieneTelefono"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Teléfono fijo o móvil" />
-
-            <CheckBox
-                android:id="@+id/tieneInternet"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Internet" />
-
-            <CheckBox
-                android:id="@+id/tieneOtro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Otro, ¿cuál?" />
-
-            <TextView
-                android:id="@+id/tituloSeguridadAlimentaria"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="SEGURIDAD ALIMENTARIA"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="24sp"
-                app:fontFamily="serif" />
-
-            <TextView
-                android:id="@+id/textoSeguridadAlimentaria"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique la situación alimentaria de su grupo familiar de acuerdo con los siguientes ítems:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques28"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="28. En los últimos 3 meses, por falta de dinero o recursos, ¿alguna vez en su hogar se quedaron sin alimentos?" />
-
-            <Spinner
-                android:id="@+id/ans28"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques29"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="29. En los últimos 3 meses, por falta de dinero u otros recursos, ¿alguna vez usted o algún miembro de su hogar dejó de desayunar, almorzar o cenar? " />
-
-            <Spinner
-                android:id="@+id/ans29"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques30"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="30. En los últimos 3 meses, por falta de dinero u otros recursos, ¿alguna vez usted o algún miembro de su hogar comió una sola vez al día o dejó de comer? " />
-
-            <Spinner
-                android:id="@+id/ans30"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/tituloAccesoEducacion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="ACCESO A LA EDUCACIÓN"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="24sp"
-                app:fontFamily="serif" />
-
-            <TextView
-                android:id="@+id/textoAccesoEducacion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique las condiciones de acceso a educación de acuerdo con los siguientes ítems:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques31"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="31. ¿A qué tipo de educación tiene acceso?" />
-
-            <Spinner
-                android:id="@+id/ans31"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques32"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="32. ¿Cuál es el nombre del establecimiento educativo?" />
+                android:text="48. ¿Cuál es el lugar de desembarque de la producción pesquera?" />
 
             <EditText
-                android:id="@+id/ans32"
+                android:id="@+id/ans48"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:gravity="top|left"
-                android:hint="Establecimiento educativo"
+                android:hint="Nombre"
                 android:inputType="text" />
 
             <TextView
-                android:id="@+id/ques32-1"
+                android:id="@+id/ques48-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="32.1. ¿Qué nivel educativo ofrece?" />
+                android:text="48.1. Coordenadas:" />
 
-            <Spinner
-                android:id="@+id/ans32-1"
+            <EditText
+                android:id="@+id/ans48-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registra las coordenadas obtenidas con el GPS "
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="49.  ¿Durante que parte del día pesca?" />
+
+            <Spinner
+                android:id="@+id/ans49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques32-2"
+                android:id="@+id/ques50"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="32.2. ¿Cuál es la distancia entre su vivienda y el establecimiento educativo?" />
+                android:text="50. ¿Los productos de la UPPA se destinan para? " />
 
-            <EditText
-                android:id="@+id/ans32-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Distancia en Kilómetros"
-                android:inputType="number|numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques32-3"
+            <Spinner
+                android:id="@+id/ans50"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="32.3. ¿Cuánto tiempo gasta desplazándose desde su vivienda hasta el establecimiento educativo?" />
-
-            <EditText
-                android:id="@+id/ans32-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Tiempo en horas"
-                android:inputType="time" />
+                android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques32-4"
+                android:id="@+id/ques51"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="32.4. ¿Qué medio(s) de transporte utiliza para desplazarse hasta el establecimiento educativo?" />
+                android:text="51. ¿Ha participado en actividades de acuicultura?" />
 
-            <CheckBox
-                android:id="@+id/isTerrestre"
+            <Spinner
+                android:id="@+id/ans51"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:text="Terrestre" />
-
-            <CheckBox
-                android:id="@+id/isFluvial"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Fluvial" />
-
-            <CheckBox
-                android:id="@+id/isAereo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Aéreo" />
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/tituloAccesoSalud"
+                android:id="@+id/ques52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="52. ¿Le interesa participar en proyectos de acuicultura?" />
+
+            <Spinner
+                android:id="@+id/ans52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/tituloDimProd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="ACCESO A SALUD"
+                android:gravity="center"
+                android:text="DIMENSIÓN PRODUCTIVA"
+                android:textAllCaps="false"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="24sp"
                 app:fontFamily="serif" />
 
             <TextView
-                android:id="@+id/textoAccesoSalud"
+                android:id="@+id/subtituloEsfuerzo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique las condiciones de acceso a salud de acuerdo con los siguientes ítems"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques33"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="33. ¿Está afiliado a servicio de salud?" />
-
-            <Spinner
-                android:id="@+id/ans33"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques33-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="33.1. El establecimiento se clasifica como:" />
-
-            <Spinner
-                android:id="@+id/ans33-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques33-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="33.2. ¿Qué distancia hay entre su vivienda y el centro de salud?" />
-
-            <EditText
-                android:id="@+id/ans33-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Distancia en Kilómetros"
-                android:inputType="number|numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques33-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="33.3. ¿Cuánto tiempo gasta desplazándose desde su vivienda hasta el establecimiento de salud?" />
-
-            <EditText
-                android:id="@+id/ans33-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Valor numérico en horas"
-                android:inputType="time" />
-
-            <TextView
-                android:id="@+id/ques33-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="33.4. ¿Qué medio(s) de transporte utiliza para desplazarse hacia el establecimiento de salud?" />
-
-            <CheckBox
-                android:id="@+id/isTerrestreHosp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Terrestre" />
-
-            <CheckBox
-                android:id="@+id/isFluvialHosp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Fluvial" />
-
-            <CheckBox
-                android:id="@+id/isAereoHosp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Aéreo" />
-
-            <TextView
-                android:id="@+id/tituloAccesoServiciosAgri"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="ACCESO A SERVICIOS ACUÍCOLAS Y/O PESQUEROS"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="24sp"
-                app:fontFamily="serif" />
-
-            <TextView
-                android:id="@+id/textoAccesoServiciosAgri"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique las condiciones de acceso a servicios de apoyo para la acuicultura/pesca artesanal de acuerdo con los siguientes ítems:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques34"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="34. ¿Qué entidades?" />
-
-            <Spinner
-                android:id="@+id/ans34"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques34-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="34.1. ¿Cuánta distancia recorre para acceder a los servicios ofrecidos por esta entidad?" />
-
-            <EditText
-                android:id="@+id/ans34-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Distancia en Kilómetros"
-                android:inputType="number|numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques34-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="34.2. ¿Cuánto tiempo emplea para acceder a los servicios ofrecidos por esta entidad?" />
-
-            <EditText
-                android:id="@+id/ans34-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Valor numérico en horas"
-                android:inputType="time" />
-
-            <TextView
-                android:id="@+id/ques34-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="34.3. ¿Qué medio(s) de transporte utiliza para desplazarse hacia la institución?" />
-
-            <CheckBox
-                android:id="@+id/isTerrestreInst"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Terrestre" />
-
-            <CheckBox
-                android:id="@+id/isFluvialInst"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Fluvial" />
-
-            <CheckBox
-                android:id="@+id/isAereoInst"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Aéreo" />
-
-            <TextView
-                android:id="@+id/ques35"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="35. ¿Qué servicios?" />
-
-            <EditText
-                android:id="@+id/ans35"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Servicios prestados"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/textoAccesoServiciosAgri2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique las condiciones de acceso a centros de comercialización de productos de la acuicultura/pesca artesanal (mercados) de acuerdo a los siguientes ítems:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques36"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="36. ¿Cuánta distancia recorre para acceder a un centro de comercialización?" />
-
-            <EditText
-                android:id="@+id/ans36"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Distancia en kilómetros"
-                android:inputType="number|numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques37"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="37. ¿Cuánto tiempo emplea para desplazarse hacia el centro de comercialización?" />
-
-            <EditText
-                android:id="@+id/ans37"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Tiempo en horas"
-                android:inputType="time" />
-
-            <TextView
-                android:id="@+id/ques38"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="38. ¿Qué medio(s) de transporte utiliza para desplazarse hacia el centro de comercialización?" />
-
-            <CheckBox
-                android:id="@+id/isTerrestreServ"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Terrestre" />
-
-            <CheckBox
-                android:id="@+id/isFluvialServ"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Fluvial" />
-
-            <CheckBox
-                android:id="@+id/isAereoServ"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Aéreo" />
-
-            <TextView
-                android:id="@+id/ques39"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="39. El centro de comercialización permanece en funcionamiento de manera:" />
-
-            <Spinner
-                android:id="@+id/ans39"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/textoAccesoServiciosAgri3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique las condiciones de acceso a crédito y financiación de acuerdo con los siguientes ítems:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques40"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="40. ¿Ha solicitado alguna vez crédito o financiación para desarrollar actividades acuícolas?" />
-
-            <Spinner
-                android:id="@+id/ans40"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques40-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="40.1. El crédito o la financiación fue otorgado por:" />
-
-            <Spinner
-                android:id="@+id/ans40-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques40-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="40.2. ¿Cuál fue el destino final del crédito o financiación?" />
-
-            <EditText
-                android:id="@+id/ans40-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Destino del crédito"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/textoAccesoServiciosAgri4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique las condiciones de acceso a asistencia técnica de acuerdo a los siguientes ítems"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques41"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="41. ¿Ha recibido asistencia técnica?" />
-
-            <Spinner
-                android:id="@+id/ans41"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques41-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="41.1. La asistencia técnica fue otorgada por:" />
-
-            <Spinner
-                android:id="@+id/ans41-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques41-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="41.2. ¿En cuál de los siguientes temas fue/es asesorado/asistido?" />
-
-            <CheckBox
-                android:id="@+id/ayudaGestion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Gestión de la unidad de producción" />
-
-            <CheckBox
-                android:id="@+id/ayudaInsumos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Uso de insumos fertilizantes y otros" />
-
-            <CheckBox
-                android:id="@+id/ayudaCredito"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Crédito" />
-
-            <CheckBox
-                android:id="@+id/ayudaTecnificacion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Tecnificación de la unidad de producción en todas las fases" />
-
-            <CheckBox
-                android:id="@+id/ayudaSaludAnimal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Salud animal" />
-
-            <CheckBox
-                android:id="@+id/ayudaDesarrolloSostenible"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Desarrollo sostenible" />
-
-            <CheckBox
-                android:id="@+id/ayudaAgremiacion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Agremiación" />
-
-            <CheckBox
-                android:id="@+id/ayudaComercializacion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Comercialización" />
-
-            <CheckBox
-                android:id="@+id/ayudaOtro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Otro, ¿cuál?" />
-
-            <TextView
-                android:id="@+id/ques41-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="41.3. ¿Le sirvió la asesoría?" />
-
-            <Spinner
-                android:id="@+id/ans41-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques41-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="41.4. La asistencia técnica recibida fue:" />
-
-            <Spinner
-                android:id="@+id/ans41-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/textoAccesoServiciosAgri5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique las condiciones de acceso a formación complementaria -educación no formal- de acuerdo con los siguientes ítems:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques42"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="42. ¿Ha asistido a algún taller, curso, seminario, capacitación, etc.?" />
-
-            <Spinner
-                android:id="@+id/ans42"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques42-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="42.1. La formación complementaria fue otorgada por:" />
-
-            <Spinner
-                android:id="@+id/ans42-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques42-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="42.2. ¿En cuál de las siguientes áreas recibió formación complementaria?" />
-
-            <CheckBox
-                android:id="@+id/formacionAmbiental"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Ambiental" />
-
-            <CheckBox
-                android:id="@+id/formacionEmpresarial"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Empresarial" />
-
-            <CheckBox
-                android:id="@+id/formacionAcuicola"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Productivo (acuícola)" />
-
-            <CheckBox
-                android:id="@+id/formacionPesquero"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Productivo (pesquero)" />
-
-            <CheckBox
-                android:id="@+id/formacionTecnologica"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Tecnológico/Innovación" />
-
-            <CheckBox
-                android:id="@+id/formacionBuenasPracticas"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Buenas prácticas de producción" />
-
-            <CheckBox
-                android:id="@+id/formacionOtros"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Otros, ¿cuáles?" />
-
-            <TextView
-                android:id="@+id/ques42-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="42.3. ¿Ha asistido a algún taller, curso, seminario, capacitación, otros?" />
-
-            <Spinner
-                android:id="@+id/ans42-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques42-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="42.4. La formación complementaria recibida fue:" />
-
-            <Spinner
-                android:id="@+id/ans42-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/textoSiguientePag"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="10dp"
                 android:gravity="left|center_vertical"
-                android:text='Para proceder a la encuesta de producción acuícola pulse el botón que dice "EUPAC", para continuar a la encuesta de pesca artesanal, pulse el botón que dice "UPPA"'
-                android:textColor="@android:color/holo_red_dark"
-                android:textStyle="bold" />
+                android:text="Indique información para establecer la situación del esfuerzo pesquero según las siguientes preguntas"
+                android:textColor="#2b2b2b" />
 
-            <Button
-                android:id="@+id/nextButtonEUPAC"
+            <TextView
+                android:id="@+id/ques53"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="16dp"
-                android:text="Continuar a la EUPAC" />
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="53. ¿Cuántos pescadores van en la embarcación en una jornada de pesca?" />
 
-            <Button
-                android:id="@+id/nextButtonUPPA"
+            <EditText
+                android:id="@+id/ans53"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="8dp"
-                android:text="Continuar a la UPPA" />
+                android:ems="10"
+                android:hint="Registre el número de personas"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques53-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="53.1. Aguas bajas:" />
+
+            <EditText
+                android:id="@+id/ans53-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la información para la temporada de aguas bajas"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques53-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="53.2. Aguas subiendo:" />
+
+            <EditText
+                android:id="@+id/ans53-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la información para la temporada de aguas subiendo"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques53-3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="53.3. Aguas altas:" />
+
+            <EditText
+                android:id="@+id/ans53-3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la información para la temporada de aguas altas"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques53-4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="53.4. Aguas descendiendo:" />
+
+            <EditText
+                android:id="@+id/ans53-4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la información para la temporada de aguas descendiendo "
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="54. Duración de la farna (días)" />
+
+            <TextView
+                android:id="@+id/ques54-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="54. Número (N°) de lances por faena para cada arte de pesca:" />
+
+            <EditText
+                android:id="@+id/ans54-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el número (N°) de lances por faena para cada arte de pesca"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques54-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="54.2. Tiempo de duración del lance:" />
+
+            <EditText
+                android:id="@+id/ans54-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre e tiempo de duración de cada lance en el formato Horas/minutos (hh//mm)"
+                android:inputType="text|time" />
+
+            <TextView
+                android:id="@+id/ques54-3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="54.3. N° horas madrugada:" />
+
+            <EditText
+                android:id="@+id/ans54-3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el número de Horas/Minutos (hh//mm) empleadas en la actividad pesquera durante  la madrugada"
+                android:inputType="time" />
+
+            <TextView
+                android:id="@+id/ques54-4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="54.4. N° horas mañana:" />
+
+            <EditText
+                android:id="@+id/ans54-4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el número de Horas/Minutos (hh//mm) empleadas en la actividad pesquera durante  la mañana"
+                android:inputType="time" />
+
+            <TextView
+                android:id="@+id/ques54-5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="54.5.  N° horas tarde" />
+
+            <EditText
+                android:id="@+id/ans54-5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el número de Horas/Minutos (hh//mm) empleadas en la actividad pesquera durante  la tarde"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques54-6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="54.5.  N° horas noche" />
+
+            <EditText
+                android:id="@+id/ans54-6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="N° horas noche"
+                android:inputType="time" />
+
+            <TextView
+                android:id="@+id/ques55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="55. Numero de faenas por mes:" />
+
+            <EditText
+                android:id="@+id/ans55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el número (N°) de faenas de pesca por mes"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques56"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="56. Meses del año dedicados a la pesca:" />
+
+            <EditText
+                android:id="@+id/ans56"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Meses separados por coma"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/subtituloDinamicaAguas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="left|center_vertical"
+                android:text="Según la dinámica de las aguas detalle la siguiente información "
+                android:textColor="#2b2b2b" />
+
+            <TextView
+                android:id="@+id/ques57"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="57. Aguas bajas:" />
+
+            <EditText
+                android:id="@+id/ans57"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la información para la temporada de aguas bajas"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques58"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="58. Aguas subiendo:" />
+
+            <EditText
+                android:id="@+id/ans58"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la información para la temporada de aguas subiendo"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques59"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="59. Aguas altas:" />
+
+            <EditText
+                android:id="@+id/ans59"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la información para la temporada de aguas altas"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="60. Aguas descendiendo:" />
+
+            <EditText
+                android:id="@+id/ans60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la información para la temporada de aguas descendiendo"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="61. Indique cada arte de pesca empleado durante la faena de pesca:" />
+
+            <EditText
+                android:id="@+id/ans61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el nombre del arte de pesca"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques62"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="62. Indique el nombre de las especies capturadas y desembarcadas:" />
+
+            <EditText
+                android:id="@+id/ans62"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el nombre común  de la especies capturadas y desembarcadas"
+                android:inputType="textLongMessage" />
+
+            <TextView
+                android:id="@+id/ques63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="63. Indique el peso en kilogramos de las especies capturadas:" />
+
+            <EditText
+                android:id="@+id/ans63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el peso en kilogramos (Kg)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="64. Indique el valor en pesos recibido por cada kilogramo" />
+
+            <EditText
+                android:id="@+id/ans64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el valor en pesos ($)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques65"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="65. Indique el destino de los productos pesqueros:" />
+
+            <Spinner
+                android:id="@+id/ans65"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques65-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="65.1. ¿Qué porcentaje se destina para el autoconsumo? " />
+
+            <EditText
+                android:id="@+id/ans65-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el porcentaje (%)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques65-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="65.2. ¿Qué porcentaje se destina para la comercialización? " />
+
+            <EditText
+                android:id="@+id/ans65-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el porcentaje (%)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/subtituloInsumos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="left|center_vertical"
+                android:text="Indique la cantidad de insumos y el costo de la inversión por cada faena de pesca"
+                android:textColor="#2b2b2b" />
+
+            <TextView
+                android:id="@+id/ques66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="66. Carnada:" />
+
+            <EditText
+                android:id="@+id/ans66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la cantidad"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques66-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="66.1 Costo:" />
+
+            <EditText
+                android:id="@+id/ans66-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el valor"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques67"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="67. Mano de obra (Sueldos):" />
+
+            <EditText
+                android:id="@+id/ans67"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la cantidad"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques67-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="67.1 Costo:" />
+
+            <EditText
+                android:id="@+id/ans67-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el valor"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques68"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="68. Alimentación:" />
+
+            <EditText
+                android:id="@+id/ans68"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la cantidad"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques68-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="68.1 Costo:" />
+
+            <EditText
+                android:id="@+id/ans68-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el valor"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques69"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="69. Combustible:" />
+
+            <EditText
+                android:id="@+id/ans69"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la cantidad"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques69-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="69.1 Costo:" />
+
+            <EditText
+                android:id="@+id/ans69-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el valor"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques70"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="70. Arte de pesca (Reparación de artes de pesca):" />
+
+            <EditText
+                android:id="@+id/ans70"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la cantidad"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques70-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="70.1 Costo:" />
+
+            <EditText
+                android:id="@+id/ans70-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el valor"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques71"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="71: Embarcación:" />
+
+            <EditText
+                android:id="@+id/ans71"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la cantidad"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques71-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="71.1 Costo:" />
+
+            <EditText
+                android:id="@+id/ans71-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el valor"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques72"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="72. Arrendamiento de embarcación:" />
+
+            <EditText
+                android:id="@+id/ans72"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la cantidad"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques72-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="72.1 Costo:" />
+
+            <EditText
+                android:id="@+id/ans72-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el valor"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques73"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="73. Arrendamiento de motor:" />
+
+            <EditText
+                android:id="@+id/ans73"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la cantidad"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques73-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="73.1 Costo:" />
+
+            <EditText
+                android:id="@+id/ans73-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el valor"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques74"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="74. HIelo:" />
+
+            <EditText
+                android:id="@+id/ans74"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la cantidad"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques74-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="69.1 Costo:" />
+
+            <EditText
+                android:id="@+id/ans74-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el valor"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques75"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="75. Otros (¿Cuales?):" />
+
+            <EditText
+                android:id="@+id/ans75"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la cantidad"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques75-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="75.1 Costo:" />
+
+            <EditText
+                android:id="@+id/ans75-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el valor"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques76"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="76. ¿Distribuye el producto de cada faena?" />
+
+            <Spinner
+                android:id="@+id/ans76"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques77"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="77. ¿Qué tipo de Procesamiento, transformación, agregación de valor (Valor agregado) le da al producto pesquero?" />
+
+            <CheckBox
+                android:id="@+id/ans77a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Lavado del pescado" />
+
+            <CheckBox
+                android:id="@+id/ans77b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Re Enhielado" />
+
+            <CheckBox
+                android:id="@+id/ans77c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Clasificado" />
+
+            <CheckBox
+                android:id="@+id/ans77d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Eviscerado" />
+
+            <CheckBox
+                android:id="@+id/ans77e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Descabezado" />
+
+            <CheckBox
+                android:id="@+id/ans77f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Fileteado" />
+
+            <CheckBox
+                android:id="@+id/ans77g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Postas" />
+
+            <CheckBox
+                android:id="@+id/ans77h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Corte mariposa" />
+
+            <CheckBox
+                android:id="@+id/ans77i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Empacado al vacío" />
+
+            <CheckBox
+                android:id="@+id/ans77j"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Empacado en canastillas" />
+
+            <CheckBox
+                android:id="@+id/ans77k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Otra tansformción, ¿Cuál?" />
+
+            <CheckBox
+                android:id="@+id/ans77l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Ninguna transformación" />
+
+            <TextView
+                android:id="@+id/ques78"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="78.  ¿Cómo es el procedimiento para la conservación del pescado desde la captura hasta  la comercialización?" />
+
+            <EditText
+                android:id="@+id/ans78"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Describa el procedimiento"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques78-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="78.1. ¿Utiliza hielo para la conservación del producto?" />
+
+            <Spinner
+                android:id="@+id/ans78-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques79"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="79. ¿Implementa Buenas prácticas pesqueras artesanales?" />
+
+            <Spinner
+                android:id="@+id/ans79"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques79-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="79.1. 'CUáles buenas prácticas pesqueras artesanales?" />
+
+            <EditText
+                android:id="@+id/ans79-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre las BPP implementadas "
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques80"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="80. ¿El porcentaje (%)  de captura ha sido afectado por alguno de los siguientes fenómenos naturales?" />
+
+            <CheckBox
+                android:id="@+id/ans80a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Inundaciones" />
+
+            <CheckBox
+                android:id="@+id/ans80b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Sequías" />
+
+            <CheckBox
+                android:id="@+id/ans80c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Vientos fuertes" />
+
+            <CheckBox
+                android:id="@+id/ans80d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Sismos" />
+
+            <CheckBox
+                android:id="@+id/ans80e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Otros, ¿Cuál?" />
+
+            <CheckBox
+                android:id="@+id/ans80f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Ninguno" />
+
+            <TextView
+                android:id="@+id/ques80-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="80.1. ¿Cuál fue el porcentaje (%) de disminución de la captura?" />
+
+            <Spinner
+                android:id="@+id/ans80-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques81"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="81.  ¿El porcentaje (%)  de captura ha sido afectado por  la presencia de predadores cómo?" />
+
+            <Spinner
+                android:id="@+id/ans81"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques82"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="82. ¿El porcentaje (%)  de captura ha sido afectado por  la contaminación de las fuentes de agua?" />
+
+            <Spinner
+                android:id="@+id/ans82"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques83"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="83. ¿Utiliza embarcación?" />
+
+            <Spinner
+                android:id="@+id/ans83"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques83-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="83.1. ¿Cuántas embarcaciones utiliza?" />
+
+            <EditText
+                android:id="@+id/ans83-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el valor numérico"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques83-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="83.2.¿De qué tipo es la embarcación que utiliza?" />
+
+            <Spinner
+                android:id="@+id/ans83-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques83-3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="83.3. ¿La embarcación utilizada está construida en?" />
+
+            <Spinner
+                android:id="@+id/ans83-3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques83-4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="83.4. ¿Qué elemento de propulsión emplea?" />
+
+            <Spinner
+                android:id="@+id/ans83-4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques83-5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="83.5 ¿Cuál es la potencia del motor?" />
+
+            <EditText
+                android:id="@+id/ans83-5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Motor fuera de borda (propulsión del motor)"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques83-6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="83.6.  ¿La embarcación  que utiliza es?" />
+
+            <Spinner
+                android:id="@+id/ans83-6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques83-7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="83.7. ¿Está registrada ante la inspección fluvial?" />
+
+            <Spinner
+                android:id="@+id/ans83-7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques83-8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="83.8 ¿Posee equipos de Seguridad?" />
+
+            <Spinner
+                android:id="@+id/ans83-8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques83-9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="83.9 ¿Qué equipos de seguridad posee en la embarcación?" />
+
+            <EditText
+                android:id="@+id/ans83-9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre los equipos de seguridad presentes en la embarcación"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques84"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84. De la siguiente lista ¿Qué artes de pesca utiliza?" />
+
+            <CheckBox
+                android:id="@+id/ans84a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Trasmallo (Red de enmalle)" />
+
+            <CheckBox
+                android:id="@+id/ans84b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Atarraya" />
+
+            <CheckBox
+                android:id="@+id/ans84c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Chinchorro" />
+
+            <CheckBox
+                android:id="@+id/ans84d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Flechas" />
+
+            <CheckBox
+                android:id="@+id/ans84e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Nasas" />
+
+            <CheckBox
+                android:id="@+id/ans84f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Líneas de mano" />
+
+            <CheckBox
+                android:id="@+id/ans84g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Línea de anzuelos (calandria, palangre)" />
+
+            <CheckBox
+                android:id="@+id/ans84h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Arpón" />
+
+            <CheckBox
+                android:id="@+id/ans84i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Buceo" />
+
+            <CheckBox
+                android:id="@+id/ans84j"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Otras, ¿Cuáles?" />
+
+            <TextView
+                android:id="@+id/subtituloInstalaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="left|center_vertical"
+                android:text="Indique si la  UPPA cuenta con las siguientes instalaciones"
+                android:textColor="#2b2b2b" />
+
+            <TextView
+                android:id="@+id/ques85"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="85. Bodega para fines mixtos " />
+
+            <Spinner
+                android:id="@+id/ans85"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques85-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="85.1. ¿La instalación es?" />
+
+            <Spinner
+                android:id="@+id/ans85-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques86"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="86. Oficinas" />
+
+            <Spinner
+                android:id="@+id/ans86"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques86-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="86.1. ¿La instalación es?" />
+
+            <Spinner
+                android:id="@+id/ans86-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques87"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="87. Planta de  beneficio de los animales" />
+
+            <Spinner
+                android:id="@+id/ans87"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques87-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="87.1. ¿La instalación es?" />
+
+            <Spinner
+                android:id="@+id/ans87-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog" />
 
         </LinearLayout>
     </ScrollView>
-
 </android.support.constraint.ConstraintLayout>
