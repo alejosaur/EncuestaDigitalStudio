@@ -250,6 +250,16 @@
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
 
+            <EditText
+                android:id="@+id/ans9Other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿cuál?"
+                android:inputType="textPersonName" />
+
             <TextView
                 android:id="@+id/ques10"
                 android:layout_width="match_parent"
@@ -775,6 +785,16 @@
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
 
+            <EditText
+                android:id="@+id/ans21_1Other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿cuál?"
+                android:inputType="textPersonName" />
+
             <TextView
                 android:id="@+id/ques22"
                 android:layout_width="match_parent"
@@ -835,6 +855,16 @@
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
 
+            <EditText
+                android:id="@+id/ans23Other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿cuál?"
+                android:inputType="textPersonName" />
+
             <TextView
                 android:id="@+id/ques24"
                 android:layout_width="match_parent"
@@ -852,6 +882,16 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/ans24Other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿cuál?"
+                android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/ques25"
@@ -871,6 +911,16 @@
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
 
+            <EditText
+                android:id="@+id/ans25Other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿cuál?"
+                android:inputType="textPersonName" />
+
             <TextView
                 android:id="@+id/ques26"
                 android:layout_width="match_parent"
@@ -888,6 +938,16 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/ans26Other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿cuál?"
+                android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/ques27"
@@ -978,6 +1038,16 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:text="Otro, ¿cuál?" />
+
+            <EditText
+                android:id="@+id/ans27Other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿cuál?"
+                android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/tituloSeguridadAlimentaria"
@@ -1392,6 +1462,16 @@
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
 
+            <EditText
+                android:id="@+id/ans34Other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿cuál?"
+                android:inputType="textPersonName" />
+
             <TextView
                 android:id="@+id/ques34-1"
                 android:layout_width="match_parent"
@@ -1639,6 +1719,16 @@
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
 
+            <EditText
+                android:id="@+id/ans40-1Other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿cuál?"
+                android:inputType="textPersonName" />
+
             <TextView
                 android:id="@+id/ques40-2"
                 android:layout_width="match_parent"
@@ -1705,6 +1795,16 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/ans41-1Other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿cuál?"
+                android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/ques41-2"
@@ -1870,6 +1970,16 @@
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
 
+            <EditText
+                android:id="@+id/ans42-1Other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿cuál?"
+                android:inputType="textPersonName" />
+
             <TextView
                 android:id="@+id/ques42-2"
                 android:layout_width="match_parent"
@@ -1935,6 +2045,16 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:text="Otros, ¿cuáles?" />
+
+            <EditText
+                android:id="@+id/ans42-2Other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿cuál?"
+                android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/ques42-3"
