@@ -36,9 +36,6 @@ public class Preguntas3 extends AppCompatActivity {
         String[] destinoProductos = new String[] {
                 "Autoconsumo", "Comercialización"
         };
-        String[] desastres = new String[] {
-                "Inundaciones", "Sequías", "Vientos fuertes", "Sismos", "Otras, ¿Cuáles?", "Ninguno"
-        };
         String[] disminucionCaptura = new String[] {
                 "Menor al 20% (Pérdidas mínimas)", "Entre el 20% y el 40% (Pérdidas moderadas)", "Mayor al 40% (Perdidas graves)"
         };
@@ -60,7 +57,24 @@ public class Preguntas3 extends AppCompatActivity {
         String[] instalacion = new String[] {
                 "Propia", "Arrendada", "Otro tipo de tenencia, ¿Cuál?"
         };
-
+        String[] fuentesEnergia = new String[] {
+                "Red eléctrica publica", "Generador eléctrico a gasolina o diésel", "Energía solar", "Energía eólica", "Combustibles fósiles", "Otra, ¿Cuál?"
+        };
+        String[] tipoAsociacion = new String[] {
+                "Cooperativa", "Asociación ", "Sindicato", "Otra, ¿Cuál?"
+        };
+        String[] departamentos = new String[] {
+                "Amazonas","Antioquia","Arauca","Atlántico","Bolívar","Boyacá","Caldas","Caquetá","Casanare","Cauca","Cesar","Chocó","Córdoba","Cundinamarca","Guainía","Guaviare","Huila","La Guajira","Magdalena","Meta","Nariño","Norte de Santander","Putumayo","Quindío","Risaralda","San Andrés y Providencia","Santander","Sucre","Tolima","Valle del Cauca","Vaupés","Vichada"
+        };
+        String[] lugarVenta = new String[] {
+                "Venta en el lugar de desembarco", "Centro de acopio", "Centro de comercialización"
+        };
+        String[] compradores = new String[] {
+                "Intermediario", "Almacén de cadena", "Restaurante", "Consumidor final"
+        };
+        String[] presentacion = new String[] {
+                "Entero", "Vivo", "Eviscerado", "Empacado en canastillas", "Empacado al vacío", "Seco", "Salado", "Sin escama", "Sin branquias", "Postas", "Descabezado", "Otro, ¿Cuál?"
+        };
 
         Spinner ans43 = (Spinner) findViewById(R.id.ans43);
         ArrayAdapter<String> adapterAns43 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, formaPesca);
@@ -216,5 +230,136 @@ public class Preguntas3 extends AppCompatActivity {
         ArrayAdapter<String> adapterAns87_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, instalacion);
         adapterAns87_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans87_1.setAdapter(adapterAns87_1);
+
+        Spinner ans88 = (Spinner) findViewById(R.id.ans88);
+        ArrayAdapter<String> adapterAns88 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns88.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans88.setAdapter(adapterAns88);
+
+        Spinner ans89 = (Spinner) findViewById(R.id.ans89);
+        ArrayAdapter<String> adapterAns89 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns89.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans89.setAdapter(adapterAns89);
+
+        Spinner ans90 = (Spinner) findViewById(R.id.ans90);
+        ArrayAdapter<String> adapterAns90 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns90.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans90.setAdapter(adapterAns90);
+
+        Spinner ans91 = (Spinner) findViewById(R.id.ans91);
+        ArrayAdapter<String> adapterAns91 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns91.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans91.setAdapter(adapterAns91);
+
+        Spinner ans92 = (Spinner) findViewById(R.id.ans92);
+        ArrayAdapter<String> adapterAns92 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns92.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans92.setAdapter(adapterAns92);
+
+        Spinner ans93 = (Spinner) findViewById(R.id.ans93);
+        ArrayAdapter<String> adapterAns93 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns93.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans93.setAdapter(adapterAns93);
+
+        Spinner ans93_1 = (Spinner) findViewById(R.id.ans93_1);
+        ArrayAdapter<String> adapterAns93_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns93_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans93_1.setAdapter(adapterAns93_1);
+
+        Spinner ans94 = (Spinner) findViewById(R.id.ans94);
+        ArrayAdapter<String> adapterAns94 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns94.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans94.setAdapter(adapterAns94);
+
+        Spinner ans94_1 = (Spinner) findViewById(R.id.ans94_1);
+        ArrayAdapter<String> adapterAns94_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns94_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans94_1.setAdapter(adapterAns94_1);
+
+        Spinner ans95 = (Spinner) findViewById(R.id.ans95);
+        ArrayAdapter<String> adapterAns95 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns95.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans95.setAdapter(adapterAns95);
+
+        Spinner ans95_1 = (Spinner) findViewById(R.id.ans95_1);
+        ArrayAdapter<String> adapterAns95_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns95_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans95_1.setAdapter(adapterAns95_1);
+
+        Spinner ans96 = (Spinner) findViewById(R.id.ans96);
+        ArrayAdapter<String> adapterAns96 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, fuentesEnergia);
+        adapterAns96.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans96.setAdapter(adapterAns96);
+
+        Spinner ans97 = (Spinner) findViewById(R.id.ans97);
+        ArrayAdapter<String> adapterAns97 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns97.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans97.setAdapter(adapterAns97);
+
+        Spinner ans97_1 = (Spinner) findViewById(R.id.ans97_1);
+        ArrayAdapter<String> adapterAns97_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, tipoAsociacion);
+        adapterAns97_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans97_1.setAdapter(adapterAns97_1);
+
+        Spinner ans97_2 = (Spinner) findViewById(R.id.ans97_2);
+        ArrayAdapter<String> adapterAns97_2 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns97_2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans97_2.setAdapter(adapterAns97_2);
+
+        Spinner ans97_7 = (Spinner) findViewById(R.id.ans97_7);
+        ArrayAdapter<String> adapterAns97_7 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, departamentos);
+        adapterAns97_7.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans97_7.setAdapter(adapterAns97_7);
+
+        Spinner ans97_9 = (Spinner) findViewById(R.id.ans97_9);
+        ArrayAdapter<String> adapterAns97_9 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns97_9.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans97_9.setAdapter(adapterAns97_9);
+
+        Spinner ans98 = (Spinner) findViewById(R.id.ans98);
+        ArrayAdapter<String> adapterAns98 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns98.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans98.setAdapter(adapterAns98);
+
+        Spinner ans102 = (Spinner) findViewById(R.id.ans102);
+        ArrayAdapter<String> adapterAns102 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, lugarVenta);
+        adapterAns102.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans102.setAdapter(adapterAns102);
+
+        Spinner ans103 = (Spinner) findViewById(R.id.ans103);
+        ArrayAdapter<String> adapterAns103 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, compradores);
+        adapterAns103.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans103.setAdapter(adapterAns103);
+
+        Spinner ans105 = (Spinner) findViewById(R.id.ans105);
+        ArrayAdapter<String> adapterAns105 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, presentacion);
+        adapterAns105.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans105.setAdapter(adapterAns105);
+
+        Spinner ans106 = (Spinner) findViewById(R.id.ans106);
+        ArrayAdapter<String> adapterAns106 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns106.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans106.setAdapter(adapterAns106);
+
+        Spinner ans107 = (Spinner) findViewById(R.id.ans107);
+        ArrayAdapter<String> adapterAns107 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns107.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans107.setAdapter(adapterAns107);
+
+        Spinner ans108 = (Spinner) findViewById(R.id.ans108);
+        ArrayAdapter<String> adapterAns108 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns108.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans108.setAdapter(adapterAns108);
+
+        Spinner ans109 = (Spinner) findViewById(R.id.ans109);
+        ArrayAdapter<String> adapterAns109 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns109.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans109.setAdapter(adapterAns109);
+
+        Spinner ans110 = (Spinner) findViewById(R.id.ans110);
+        ArrayAdapter<String> adapterAns110 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns110.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans110.setAdapter(adapterAns110);
+
     }
 }

@@ -71,6 +71,18 @@
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
 
+            <EditText
+                android:id="@+id/ans43-1otro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="357dp" />
+
             <TextView
                 android:id="@+id/ques44"
                 android:layout_width="match_parent"
@@ -113,6 +125,18 @@
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
                 android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/ans45otro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="357dp" />
 
             <TextView
                 android:id="@+id/ques46"
@@ -298,6 +322,18 @@
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
                 android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/ans53otro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="357dp" />
 
             <TextView
                 android:id="@+id/ques54"
@@ -869,6 +905,18 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:text="Otra, ¿Cuál?" />
+
+            <EditText
+                android:id="@+id/ans65otro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="357dp" />
 
             <TextView
                 android:id="@+id/ques66"
@@ -1618,6 +1666,18 @@
                 android:layout_marginRight="16dp"
                 android:text="Otra tansformción, ¿Cuál?" />
 
+            <EditText
+                android:id="@+id/ans98otro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="357dp" />
+
             <TextView
                 android:id="@+id/ques99"
                 android:layout_width="match_parent"
@@ -1698,6 +1758,18 @@
                 android:paddingTop="5dp"
                 android:spinnerMode="dialog" />
 
+            <EditText
+                android:id="@+id/ans101otro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="357dp" />
+
             <TextView
                 android:id="@+id/ques102"
                 android:layout_width="match_parent"
@@ -1737,6 +1809,18 @@
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
                 android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/ans103otro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="357dp" />
 
             <TextView
                 android:id="@+id/ques104"
@@ -2521,6 +2605,18 @@
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
 
+            <EditText
+                android:id="@+id/ans113-2otro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="357dp" />
+
             <TextView
                 android:id="@+id/ques113-3"
                 android:layout_width="match_parent"
@@ -2708,6 +2804,18 @@
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
 
+            <EditText
+                android:id="@+id/ans118otro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="357dp" />
+
             <TextView
                 android:id="@+id/tituloDEmpresarial"
                 android:layout_width="match_parent"
@@ -2772,6 +2880,18 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/ans119-1otro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="357dp" />
 
             <TextView
                 android:id="@+id/ques119-2"
@@ -3122,7 +3242,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato de la entidad"
+                android:hint="Registre el dato en valor numérico"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -3667,6 +3787,13 @@
                 android:ems="10"
                 android:hint="Registre el dato "
                 android:inputType="text" />
+
+            <Button
+                android:id="@+id/endButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Terminar y guardar" />
 
         </LinearLayout>
     </ScrollView>
