@@ -1058,7 +1058,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="20dp"
                 android:gravity="center_vertical|center_horizontal"
-                android:text="TENENCIA Y CARACTERIZACIÓN DE LA VIVIENDA DEL PRODUCTOR (INDICADOR NBI)"
+                android:text="SEGURIDAD ALIMENTARIA"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="24sp"
                 app:fontFamily="serif" />
@@ -1070,7 +1070,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:gravity="left|center_vertical|fill"
-                android:text="Indique la forma de tenencia, características de su vivienda y el acceso a servicios públicos bajo los siguientes parámetros:"
+                android:text="Indique la situación alimentaria de su grupo familiar de acuerdo con los siguientes ítems:"
                 android:textColor="#2b2b2b" />
 
             <TextView
@@ -2092,12 +2092,37 @@
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
 
-            <Button
-                android:id="@+id/nextButton"
+            <TextView
+                android:id="@+id/textoSiguientePag"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:text="Continuar" />
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left|center_vertical"
+                android:text='Para proceder a la encuesta de producción acuícola pulse el botón que dice "EUPAC", para continuar a la encuesta de pesca artesanal, pulse el botón que dice "UPPA"'
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/nextButtonEUPAC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Continuar a la EUPAC" />
+
+            <Button
+                android:id="@+id/nextButtonUPPA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Continuar a la UPPA" />
 
         </LinearLayout>
     </ScrollView>

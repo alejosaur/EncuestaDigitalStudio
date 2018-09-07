@@ -11,7 +11,7 @@ import java.io.*;
 
 public class Preguntas1 extends AppCompatActivity {
 
-    Button nextButton;
+    Button nextButtonEUPAC, nextButtonUPPA;
     private String filename = "datos.txt";
     private String filepath = "EncuestaDatos";
     File myExternalFile;
@@ -562,8 +562,8 @@ public class Preguntas1 extends AppCompatActivity {
             }
         });
 
-        nextButton =  (Button) findViewById(R.id.nextButton);
-        nextButton.setOnClickListener(new View.OnClickListener(){
+        nextButtonEUPAC =  (Button) findViewById(R.id.nextButtonEUPAC);
+        nextButtonEUPAC.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 try {
@@ -974,6 +974,20 @@ public class Preguntas1 extends AppCompatActivity {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+            }
+        });
+
+	nextButtonUPPA =  (Button) findViewById(R.id.nextButtonUPPA);
+        nextButtonUPPA.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                //try {
+                Intent preg3 = new Intent(getApplicationContext(), Preguntas3.class);
+                startActivity(preg3);
+
+                /*} catch (IOException e) {
+                    e.printStackTrace();
+                }*/
             }
         });
 
