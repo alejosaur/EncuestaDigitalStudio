@@ -61,7 +61,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="44.1. Si la acuicultura es complementaria, ¿Cuál es su principal actividad económica?" />
+                android:text="43.1. Si la acuicultura es complementaria, ¿Cuál es su principal actividad económica?" />
 
             <Spinner
                 android:id="@+id/ans43-1"
@@ -72,13 +72,14 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans43-1otro"
+                android:id="@+id/ans43-1other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="left|center_vertical"
+                android:hint="¿Cuál?"
                 android:inputType="text"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="357dp" />
@@ -127,13 +128,14 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans45otro"
+                android:id="@+id/ans45other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="left|center_vertical"
+                android:hint="¿Cuál?"
                 android:inputType="text"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="357dp" />
@@ -324,13 +326,14 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans53otro"
+                android:id="@+id/ans53other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="left|center_vertical"
+                android:hint="¿Cuál?"
                 android:inputType="text"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="357dp" />
@@ -907,13 +910,14 @@
                 android:text="Otra, ¿Cuál?" />
 
             <EditText
-                android:id="@+id/ans65otro"
+                android:id="@+id/ans65other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="left|center_vertical"
+                android:hint="¿Cuál?"
                 android:inputType="text"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="357dp" />
@@ -1667,7 +1671,7 @@
                 android:text="Otra tansformción, ¿Cuál?" />
 
             <EditText
-                android:id="@+id/ans98otro"
+                android:id="@+id/ans98other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1759,7 +1763,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans101otro"
+                android:id="@+id/ans101other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1778,7 +1782,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="103. ¿Ha sufrido pérdidas por presencia de predadores cómo?" />
+                android:text="102. ¿Ha sufrido pérdidas por presencia de predadores cómo?" />
 
             <Spinner
                 android:id="@+id/ans102"
@@ -1811,13 +1815,14 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans103otro"
+                android:id="@+id/ans103other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="left|center_vertical"
+                android:hint="¿Cuál?"
                 android:inputType="text"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="357dp" />
@@ -2606,7 +2611,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans113-2otro"
+                android:id="@+id/ans113-2other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2805,13 +2810,14 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans118otro"
+                android:id="@+id/ans118other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="left|center_vertical"
+                android:hint="¿Cuál?"
                 android:inputType="text"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="357dp" />
@@ -2882,13 +2888,14 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans119-1otro"
+                android:id="@+id/ans119-1other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="left|center_vertical"
+                android:hint="¿Cuál?"
                 android:inputType="text"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="357dp" />

@@ -251,7 +251,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans9Other"
+                android:id="@+id/ans9other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -786,7 +786,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans21_1Other"
+                android:id="@+id/ans21_1other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -856,7 +856,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans23Other"
+                android:id="@+id/ans23other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -884,7 +884,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans24Other"
+                android:id="@+id/ans24other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -912,7 +912,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans25Other"
+                android:id="@+id/ans25other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -940,7 +940,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans26Other"
+                android:id="@+id/ans26other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1040,7 +1040,7 @@
                 android:text="Otro, ¿cuál?" />
 
             <EditText
-                android:id="@+id/ans27Other"
+                android:id="@+id/ans27other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1463,7 +1463,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans34Other"
+                android:id="@+id/ans34other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1720,7 +1720,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans40-1Other"
+                android:id="@+id/ans40-1other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1797,7 +1797,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans41-1Other"
+                android:id="@+id/ans41-1other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1888,6 +1888,15 @@
                 android:layout_marginRight="16dp"
                 android:text="Otro, ¿cuál?" />
 
+            <EditText
+                android:id="@+id/ans41-2other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿cuál?" />
+
             <TextView
                 android:id="@+id/ques41-3"
                 android:layout_width="match_parent"
@@ -1971,7 +1980,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans42-1Other"
+                android:id="@+id/ans42-1other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2047,7 +2056,7 @@
                 android:text="Otros, ¿cuáles?" />
 
             <EditText
-                android:id="@+id/ans42-2Other"
+                android:id="@+id/ans42-2other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
