@@ -54,12 +54,13 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans43otro"
+                android:id="@+id/ans43other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView
@@ -99,12 +100,13 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans44-1otro"
+                android:id="@+id/ans44-1other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView
@@ -148,12 +150,13 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans45-1otro"
+                android:id="@+id/ans45-1other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView
@@ -1239,7 +1242,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="69.1 Costo:" />
+                android:text="74.1 Costo:" />
 
             <EditText
                 android:id="@+id/ans74-1"
@@ -1418,12 +1421,13 @@
                 android:text="Ninguna transformación" />
 
             <EditText
-                android:id="@+id/ans77otro"
+                android:id="@+id/ans77other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView
@@ -1565,12 +1569,13 @@
                 android:text="Ninguno" />
 
             <EditText
-                android:id="@+id/ans80otro"
+                android:id="@+id/ans80other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView
@@ -1614,12 +1619,13 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans81otro"
+                android:id="@+id/ans81other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView
@@ -1703,12 +1709,13 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans83-2otro"
+                android:id="@+id/ans83-2other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView
@@ -1732,12 +1739,13 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans83-3otro"
+                android:id="@+id/ans83-3other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView
@@ -1761,12 +1769,13 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans83-4otro"
+                android:id="@+id/ans83-4other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView
@@ -1810,7 +1819,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans83-6otro"
+                android:id="@+id/ans83-6other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1969,7 +1978,7 @@
                 android:text="Otras, ¿Cuáles?" />
 
             <EditText
-                android:id="@+id/ans84otro"
+                android:id="@+id/ans84other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2028,12 +2037,13 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans85-1otro"
+                android:id="@+id/ans85-1other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView
@@ -2077,12 +2087,13 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans86-1otro"
+                android:id="@+id/ans86-1other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView
@@ -2126,12 +2137,13 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans87-1otro1"
+                android:id="@+id/ans87-1other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView
@@ -2430,7 +2442,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans96otro"
+                android:id="@+id/ans96other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2481,7 +2493,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="95.1. ¿Cumple la norma sobre artes de pesca prohibidas?" />
+                android:text="97.1. ¿Cumple la norma sobre artes de pesca prohibidas?" />
 
             <Spinner
                 android:id="@+id/ans97-1"
@@ -2494,12 +2506,13 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans97-1otro"
+                android:id="@+id/ans97-1other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView
@@ -2859,12 +2872,13 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans105otro"
+                android:id="@+id/ans105other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView

@@ -2,7 +2,12 @@ package fedejandro.encuestadigital;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.Spinner;
 
 public class Preguntas3 extends AppCompatActivity {
@@ -360,6 +365,355 @@ public class Preguntas3 extends AppCompatActivity {
         ArrayAdapter<String> adapterAns110 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
         adapterAns110.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans110.setAdapter(adapterAns110);
+
+        EditText ans43other = (EditText) findViewById(R.id.ans43other);
+        ans43other.setVisibility(View.GONE);
+
+        EditText ans44_1other = (EditText) findViewById(R.id.ans44_1other);
+        ans44_1other.setVisibility(View.GONE);
+
+        EditText ans45_1other = (EditText) findViewById(R.id.ans45_1other);
+        ans45_1other.setVisibility(View.GONE);
+
+        EditText ans77other = (EditText) findViewById(R.id.ans77other);
+        ans77other.setVisibility(View.GONE);
+
+        EditText ans80other = (EditText) findViewById(R.id.ans80other);
+        ans80other.setVisibility(View.GONE);
+
+        EditText ans81other = (EditText) findViewById(R.id.ans81other);
+        ans81other.setVisibility(View.GONE);
+
+        EditText ans83_2other = (EditText) findViewById(R.id.ans83_2other);
+        ans83_2other.setVisibility(View.GONE);
+
+        EditText ans83_3other = (EditText) findViewById(R.id.ans83_3other);
+        ans83_3other.setVisibility(View.GONE);
+
+        EditText ans83_4other = (EditText) findViewById(R.id.ans83_4other);
+        ans83_4other.setVisibility(View.GONE);
+
+        EditText ans83_6other = (EditText) findViewById(R.id.ans83_6other);
+        ans83_6other.setVisibility(View.GONE);
+
+        EditText ans84other = (EditText) findViewById(R.id.ans84other);
+        ans84other.setVisibility(View.GONE);
+
+        EditText ans85_1other = (EditText) findViewById(R.id.ans85_1other);
+        ans85_1other.setVisibility(View.GONE);
+
+        EditText ans86_1other = (EditText) findViewById(R.id.ans86_1other);
+        ans86_1other.setVisibility(View.GONE);
+
+        EditText ans87_1other = (EditText) findViewById(R.id.ans87_1other);
+        ans87_1other.setVisibility(View.GONE);
+
+        EditText ans96other = (EditText) findViewById(R.id.ans96other);
+        ans96other.setVisibility(View.GONE);
+
+        EditText ans97_1other = (EditText) findViewById(R.id.ans97_1other);
+        ans97_1other.setVisibility(View.GONE);
+
+        EditText ans105other = (EditText) findViewById(R.id.ans105other);
+        ans105other.setVisibility(View.GONE);
+
+        CheckBox ans77k = (CheckBox) findViewById(R.id.ans77k);
+        CheckBox ans80e = (CheckBox) findViewById(R.id.ans80e);
+        CheckBox ans84j = (CheckBox) findViewById(R.id.ans84j);
+
+        ans43.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans43 = (Spinner) findViewById(R.id.ans43);
+                EditText ans43other = (EditText) findViewById(R.id.ans43other);
+                if(ans43.getSelectedItemPosition()==3) {
+                    ans43other.setVisibility(View.VISIBLE);
+                }else{
+                    ans43other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans44_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans44_1 = (Spinner) findViewById(R.id.ans44_1);
+                EditText ans44_1other = (EditText) findViewById(R.id.ans44_1other);
+                if(ans44_1.getSelectedItemPosition()==8) {
+                    ans44_1other.setVisibility(View.VISIBLE);
+                }else{
+                    ans44_1other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans45_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans45_1 = (Spinner) findViewById(R.id.ans45_1);
+                EditText ans45_1other = (EditText) findViewById(R.id.ans45_1other);
+                if(ans45_1.getSelectedItemPosition()==3) {
+                    ans45_1other.setVisibility(View.VISIBLE);
+                }else{
+                    ans45_1other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans77k.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans77k = (CheckBox) findViewById(R.id.ans77k);
+                EditText ans77other = (EditText) findViewById(R.id.ans77other);
+                if(ans77k.isChecked()){
+                    ans77other.setVisibility(View.VISIBLE);
+                }
+                else {
+                    ans77other.setVisibility(View.GONE);
+                }
+            }
+        });
+
+        ans80e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans80e = (CheckBox) findViewById(R.id.ans80e);
+                EditText ans80other = (EditText) findViewById(R.id.ans80other);
+                if(ans80e.isChecked()){
+                    ans80other.setVisibility(View.VISIBLE);
+                }
+                else {
+                    ans80other.setVisibility(View.GONE);
+                }
+            }
+        });
+
+        ans81.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans81 = (Spinner) findViewById(R.id.ans81);
+                EditText ans81other = (EditText) findViewById(R.id.ans81other);
+                if(ans81.getSelectedItemPosition()==7) {
+                    ans81other.setVisibility(View.VISIBLE);
+                }else{
+                    ans81other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans83_2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans83_2 = (Spinner) findViewById(R.id.ans83_2);
+                EditText ans83_2other = (EditText) findViewById(R.id.ans83_2other);
+                if(ans83_2.getSelectedItemPosition()==4) {
+                    ans83_2other.setVisibility(View.VISIBLE);
+                }else{
+                    ans83_2other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans83_3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans83_3 = (Spinner) findViewById(R.id.ans83_3);
+                EditText ans83_3other = (EditText) findViewById(R.id.ans83_3other);
+                if(ans83_3.getSelectedItemPosition()==3) {
+                    ans83_3other.setVisibility(View.VISIBLE);
+                }else{
+                    ans83_3other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans83_4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans83_4 = (Spinner) findViewById(R.id.ans83_4);
+                EditText ans83_4other = (EditText) findViewById(R.id.ans83_4other);
+                if(ans83_4.getSelectedItemPosition()==3) {
+                    ans83_4other.setVisibility(View.VISIBLE);
+                }else{
+                    ans83_4other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans83_6.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans83_6 = (Spinner) findViewById(R.id.ans83_6);
+                EditText ans83_6other = (EditText) findViewById(R.id.ans83_6other);
+                if(ans83_6.getSelectedItemPosition()==4) {
+                    ans83_6other.setVisibility(View.VISIBLE);
+                }else{
+                    ans83_6other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans84j.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans84j = (CheckBox) findViewById(R.id.ans84j);
+                EditText ans84other = (EditText) findViewById(R.id.ans84other);
+                if(ans84j.isChecked()){
+                    ans84other.setVisibility(View.VISIBLE);
+                }
+                else {
+                    ans84other.setVisibility(View.GONE);
+                }
+            }
+        });
+
+        ans85_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans85_1 = (Spinner) findViewById(R.id.ans85_1);
+                EditText ans85_1other = (EditText) findViewById(R.id.ans85_1other);
+                if(ans85_1.getSelectedItemPosition()==2) {
+                    ans85_1other.setVisibility(View.VISIBLE);
+                }else{
+                    ans85_1other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans86_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans86_1 = (Spinner) findViewById(R.id.ans86_1);
+                EditText ans86_1other = (EditText) findViewById(R.id.ans86_1other);
+                if(ans86_1.getSelectedItemPosition()==2) {
+                    ans86_1other.setVisibility(View.VISIBLE);
+                }else{
+                    ans86_1other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans87_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans87_1 = (Spinner) findViewById(R.id.ans87_1);
+                EditText ans87_1other = (EditText) findViewById(R.id.ans87_1other);
+                if(ans87_1.getSelectedItemPosition()==2) {
+                    ans87_1other.setVisibility(View.VISIBLE);
+                }else{
+                    ans87_1other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans96.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans96 = (Spinner) findViewById(R.id.ans96);
+                EditText ans96other = (EditText) findViewById(R.id.ans96other);
+                if(ans96.getSelectedItemPosition()==5) {
+                    ans96other.setVisibility(View.VISIBLE);
+                }else{
+                    ans96other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans97_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans97_1 = (Spinner) findViewById(R.id.ans97_1);
+                EditText ans97_1other = (EditText) findViewById(R.id.ans97_1other);
+                if(ans97_1.getSelectedItemPosition()==3) {
+                    ans97_1other.setVisibility(View.VISIBLE);
+                }else{
+                    ans97_1other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans105.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans105 = (Spinner) findViewById(R.id.ans105);
+                EditText ans105other = (EditText) findViewById(R.id.ans105other);
+                if(ans105.getSelectedItemPosition()==11) {
+                    ans105other.setVisibility(View.VISIBLE);
+                }else{
+                    ans105other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
     }
 }
