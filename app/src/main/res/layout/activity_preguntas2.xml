@@ -616,7 +616,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="62.4. Oxígeno disuelto OD (ppm):" />
+                android:text="61.4. Oxígeno disuelto OD (ppm):" />
 
             <EditText
                 android:id="@+id/ans61-4"
@@ -676,7 +676,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="62.7. Turbidez (cm Secchi):" />
+                android:text="61.7. Turbidez (cm Secchi):" />
 
             <EditText
                 android:id="@+id/ans61-7"
@@ -1140,7 +1140,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="76. ¿Cuál es el peso inial en gramos (g) de los animales?" />
+                android:text="76. ¿Cuál es el peso inicial en gramos (g) de los animales?" />
 
             <EditText
                 android:id="@+id/ans76"
@@ -2693,7 +2693,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="115. ¿Realiza algún tipo de tratamiento  para los lodos producidos en la UPAC?"
+                android:text="115. ¿Realiza  disposición adecuado de los desechos sólidos por faenado y/o transformación  (vísceras, huesos, escamas, otros)?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
@@ -2970,7 +2970,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="119.5. ¿Cuántas personas   participan en la asociación?"
+                android:text="119.5. ¿Cuántas personas participan en la asociación?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
