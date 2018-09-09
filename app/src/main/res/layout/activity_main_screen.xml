@@ -31,27 +31,21 @@
         android:id="@+id/textNoVisita"
         android:layout_width="wrap_content"
         android:layout_height="19dp"
-        android:layout_marginBottom="73dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="76dp"
         android:text="N° de Visita:"
-        app:layout_constraintBottom_toBottomOf="@+id/textEncuestador"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fechaText" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/consecutivoText"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textEncuestador"
         android:layout_width="wrap_content"
         android:layout_height="19dp"
-        android:layout_marginBottom="100dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="101dp"
         android:text="Encuestador:"
-        app:layout_constraintBottom_toBottomOf="@+id/nextButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fechaButton" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/encuestadorText"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/fechaText"
@@ -111,17 +105,14 @@
         android:id="@+id/fechaButton"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="63dp"
         android:layout_marginEnd="49dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="49dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="60dp"
         android:text="Fecha:"
-        app:layout_constraintBottom_toBottomOf="@+id/consecutivoText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fechaText"
         app:layout_constraintEnd_toStartOf="@+id/fechaText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Title"
         tools:text="Fecha:" />
 
 </android.support.constraint.ConstraintLayout>

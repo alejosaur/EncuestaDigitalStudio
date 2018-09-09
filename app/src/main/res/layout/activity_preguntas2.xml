@@ -1500,7 +1500,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="93. ¿Mensualmente cuantos animales produce?" />
+                android:text="94. ¿Mensualmente cuantos animales produce?" />
 
             <EditText
                 android:id="@+id/ans94"
@@ -1668,7 +1668,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:text="Otra tansformción, ¿Cuál?" />
+                android:text="Otra tansformación, ¿Cuál?" />
 
             <EditText
                 android:id="@+id/ans98other"
@@ -2013,7 +2013,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="108.2.  ¿Cuál es el área promedio de los estanques?" />
+                android:text="109.1.  ¿Cuál es el área promedio de los estanques?" />
 
             <EditText
                 android:id="@+id/ans109-1"
@@ -2173,7 +2173,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="¿Cuál es el volumen promedio de las jaulas?" />
+                android:text="110.1. ¿Cuál es el volumen promedio de las jaulas?" />
 
             <EditText
                 android:id="@+id/ans110-1"
@@ -2693,7 +2693,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="114. ¿Realiza algún tipo de tratamiento  para los lodos producidos en la UPAC?"
+                android:text="115. ¿Realiza algún tipo de tratamiento  para los lodos producidos en la UPAC?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 

@@ -596,7 +596,7 @@ public class Preguntas1 extends AppCompatActivity {
         nextButtonEUPAC.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                escribir();
+                escribir("EUPAC");
                 Intent preg2 = new Intent(getApplicationContext(), Preguntas2.class);
                 startActivity(preg2);
             }
@@ -606,7 +606,7 @@ public class Preguntas1 extends AppCompatActivity {
         nextButtonUPPA.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                escribir();
+                escribir("UPPA");
                 Intent preg3 = new Intent(getApplicationContext(), Preguntas3.class);
                 startActivity(preg3);
 
@@ -638,7 +638,7 @@ public class Preguntas1 extends AppCompatActivity {
         return false;
     }
 
-    private void escribir(){
+    private void escribir(String destino){
         try {
 
             EditText ans2 = (EditText) findViewById(R.id.ans2);
@@ -766,6 +766,8 @@ public class Preguntas1 extends AppCompatActivity {
 
             FileOutputStream fos = new FileOutputStream(myExternalFile,true);
 
+            fos.write("\t".getBytes());
+            fos.write(destino.getBytes());
             fos.write("\t".getBytes());
             fos.write(ans1.getItemAtPosition(ans1.getSelectedItemPosition()).toString().getBytes());
             fos.write("\t".getBytes());

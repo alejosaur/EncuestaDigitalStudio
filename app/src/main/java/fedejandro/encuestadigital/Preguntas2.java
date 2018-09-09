@@ -1,16 +1,17 @@
 package fedejandro.encuestadigital;
 
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.EditText;
-import android.widget.Spinner;
+import android.widget.*;
+import java.io.*;
 
 public class Preguntas2 extends AppCompatActivity {
+
+    private String filename = "datos.txt";
+    private String filepath = "EncuestaDatos";
+    File myExternalFile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -449,6 +450,9 @@ public class Preguntas2 extends AppCompatActivity {
         EditText ans103other = (EditText) findViewById(R.id.ans103other);
         ans103other.setVisibility(View.GONE);
 
+        EditText ans113_2other = (EditText) findViewById(R.id.ans113_2other);
+        ans113_2other.setVisibility(View.GONE);
+
         EditText ans118other = (EditText) findViewById(R.id.ans118other);
         ans118other.setVisibility(View.GONE);
 
@@ -456,6 +460,7 @@ public class Preguntas2 extends AppCompatActivity {
         ans119_1other.setVisibility(View.GONE);
 
         CheckBox ans65g = (CheckBox) findViewById(R.id.ans65g);
+        CheckBox ans98k = (CheckBox) findViewById(R.id.ans98k);
 
         ans43_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -493,6 +498,24 @@ public class Preguntas2 extends AppCompatActivity {
             }
         });
 
+        ans53.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans53 = (Spinner) findViewById(R.id.ans53);
+                EditText ans53other = (EditText) findViewById(R.id.ans53other);
+                if(ans53.getSelectedItemPosition()==8) {
+                    ans53other.setVisibility(View.VISIBLE);
+                }else{
+                    ans53other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         ans65g.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -503,6 +526,20 @@ public class Preguntas2 extends AppCompatActivity {
                 }
                 else {
                     ans65other.setVisibility(View.GONE);
+                }
+            }
+        });
+
+        ans98k.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans98k = (CheckBox) findViewById(R.id.ans98k);
+                EditText ans98other = (EditText) findViewById(R.id.ans98other);
+                if(ans98k.isChecked()){
+                    ans98other.setVisibility(View.VISIBLE);
+                }
+                else {
+                    ans98other.setVisibility(View.GONE);
                 }
             }
         });
@@ -534,6 +571,24 @@ public class Preguntas2 extends AppCompatActivity {
                     ans103other.setVisibility(View.VISIBLE);
                 }else{
                     ans103other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans113_2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans113_2 = (Spinner) findViewById(R.id.ans113_2);
+                EditText ans113_2other = (EditText) findViewById(R.id.ans113_2other);
+                if(ans113_2.getSelectedItemPosition()==2) {
+                    ans113_2other.setVisibility(View.VISIBLE);
+                }else{
+                    ans113_2other.setVisibility(View.GONE);
                 }
             }
 
@@ -579,5 +634,643 @@ public class Preguntas2 extends AppCompatActivity {
             }
         });
 
+        if (!isExternalStorageAvailable() || isExternalStorageReadOnly()) {
+
+        }
+        else {
+            myExternalFile = new File(getExternalFilesDir(filepath), filename);
+        }
+
+    }
+
+    private static boolean isExternalStorageReadOnly() {
+        String extStorageState = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED_READ_ONLY.equals(extStorageState)) {
+            return true;
+        }
+        return false;
+    }
+
+    private static boolean isExternalStorageAvailable() {
+        String extStorageState = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(extStorageState)) {
+            return true;
+        }
+        return false;
+    }
+
+    private void escribir(String destino) {
+        try {
+
+            EditText ans44 = (EditText) findViewById(R.id.ans44);
+            EditText ans48 = (EditText) findViewById(R.id.ans48);
+            EditText ans49 = (EditText) findViewById(R.id.ans49);
+            EditText ans50 = (EditText) findViewById(R.id.ans50);
+            EditText ans51 = (EditText) findViewById(R.id.ans51);
+            EditText ans52 = (EditText) findViewById(R.id.ans52);
+            EditText ans55 = (EditText) findViewById(R.id.ans55);
+            EditText ans56 = (EditText) findViewById(R.id.ans56);
+            EditText ans57 = (EditText) findViewById(R.id.ans57);
+            EditText ans58_1 = (EditText) findViewById(R.id.ans58_1);
+            EditText ans59 = (EditText) findViewById(R.id.ans59);
+            EditText ans60_1 = (EditText) findViewById(R.id.ans60_1);
+            EditText ans61_1 = (EditText) findViewById(R.id.ans61_1);
+            EditText ans61_2 = (EditText) findViewById(R.id.ans61_2);
+            EditText ans61_3 = (EditText) findViewById(R.id.ans61_3);
+            EditText ans61_4 = (EditText) findViewById(R.id.ans61_4);
+            EditText ans61_5 = (EditText) findViewById(R.id.ans61_5);
+            EditText ans61_6 = (EditText) findViewById(R.id.ans61_6);
+            EditText ans61_7 = (EditText) findViewById(R.id.ans61_7);
+            EditText ans61_8 = (EditText) findViewById(R.id.ans61_8);
+            EditText ans62_1 = (EditText) findViewById(R.id.ans62_1);
+            EditText ans63_1 = (EditText) findViewById(R.id.ans63_1);
+            EditText ans63_2 = (EditText) findViewById(R.id.ans63_2);
+            EditText ans67 = (EditText) findViewById(R.id.ans67);
+            EditText ans68 = (EditText) findViewById(R.id.ans68);
+            EditText ans69 = (EditText) findViewById(R.id.ans69);
+            EditText ans70 = (EditText) findViewById(R.id.ans70);
+            EditText ans71 = (EditText) findViewById(R.id.ans71);
+            EditText ans72 = (EditText) findViewById(R.id.ans72);
+            EditText ans73 = (EditText) findViewById(R.id.ans73);
+            EditText ans74 = (EditText) findViewById(R.id.ans74);
+            EditText ans75 = (EditText) findViewById(R.id.ans75);
+            EditText ans76 = (EditText) findViewById(R.id.ans76);
+            EditText ans77 = (EditText) findViewById(R.id.ans77);
+            EditText ans78 = (EditText) findViewById(R.id.ans78);
+            EditText ans79 = (EditText) findViewById(R.id.ans79);
+            EditText ans80 = (EditText) findViewById(R.id.ans80);
+            EditText ans81 = (EditText) findViewById(R.id.ans81);
+            EditText ans82 = (EditText) findViewById(R.id.ans82);
+            EditText ans83 = (EditText) findViewById(R.id.ans83);
+            EditText ans84 = (EditText) findViewById(R.id.ans84);
+            EditText ans85 = (EditText) findViewById(R.id.ans85);
+            EditText ans87 = (EditText) findViewById(R.id.ans87);
+            EditText ans88 = (EditText) findViewById(R.id.ans88);
+            EditText ans89 = (EditText) findViewById(R.id.ans89);
+            EditText ans90 = (EditText) findViewById(R.id.ans90);
+            EditText ans91 = (EditText) findViewById(R.id.ans91);
+            EditText ans92 = (EditText) findViewById(R.id.ans92);
+            EditText ans93 = (EditText) findViewById(R.id.ans93);
+            EditText ans94 = (EditText) findViewById(R.id.ans94);
+            EditText ans95 = (EditText) findViewById(R.id.ans95);
+            EditText ans96 = (EditText) findViewById(R.id.ans96);
+            EditText ans97 = (EditText) findViewById(R.id.ans97);
+            EditText ans99 = (EditText) findViewById(R.id.ans99);
+            EditText ans100_1 = (EditText) findViewById(R.id.ans100_1);
+            EditText ans106 = (EditText) findViewById(R.id.ans106);
+            EditText ans109 = (EditText) findViewById(R.id.ans109);
+            EditText ans109_1 = (EditText) findViewById(R.id.ans109_1);
+            EditText ans109_2 = (EditText) findViewById(R.id.ans109_2);
+            EditText ans109_3 = (EditText) findViewById(R.id.ans109_3);
+            EditText ans109_4 = (EditText) findViewById(R.id.ans109_4);
+            EditText ans109_5 = (EditText) findViewById(R.id.ans109_5);
+            EditText ans109_6 = (EditText) findViewById(R.id.ans109_6);
+            EditText ans110 = (EditText) findViewById(R.id.ans110);
+            EditText ans110_1 = (EditText) findViewById(R.id.ans110_1);
+            EditText ans110_2 = (EditText) findViewById(R.id.ans110_2);
+            EditText ans110_3 = (EditText) findViewById(R.id.ans110_3);
+            EditText ans110_4 = (EditText) findViewById(R.id.ans110_4);
+            EditText ans110_5 = (EditText) findViewById(R.id.ans110_5);
+            EditText ans110_6 = (EditText) findViewById(R.id.ans110_6);
+            EditText ans110_7 = (EditText) findViewById(R.id.ans110_7);
+            EditText ans111_4 = (EditText) findViewById(R.id.ans111_4);
+            EditText ans111_5 = (EditText) findViewById(R.id.ans111_5);
+            EditText ans112_1 = (EditText) findViewById(R.id.ans112_1);
+            EditText ans113_1 = (EditText) findViewById(R.id.ans113_1);
+            EditText ans113_3 = (EditText) findViewById(R.id.ans113_3);
+            EditText ans114_1 = (EditText) findViewById(R.id.ans114_1);
+            EditText ans115_1 = (EditText) findViewById(R.id.ans115_1);
+            EditText ans117_1 = (EditText) findViewById(R.id.ans117_1);
+            EditText ans119_3 = (EditText) findViewById(R.id.ans119_3);
+            EditText ans119_5 = (EditText) findViewById(R.id.ans119_5);
+            EditText ans119_6 = (EditText) findViewById(R.id.ans119_6);
+            EditText ans119_7 = (EditText) findViewById(R.id.ans119_7);
+            EditText ans119_8 = (EditText) findViewById(R.id.ans119_8);
+            EditText ans119_9 = (EditText) findViewById(R.id.ans119_9);
+            EditText ans119_11 = (EditText) findViewById(R.id.ans119_11);
+            EditText ans121_1 = (EditText) findViewById(R.id.ans121_1);
+            EditText ans122 = (EditText) findViewById(R.id.ans122);
+            EditText ans123 = (EditText) findViewById(R.id.ans123);
+            EditText ans123_1 = (EditText) findViewById(R.id.ans123_1);
+            EditText ans126 = (EditText) findViewById(R.id.ans126);
+            EditText ans128_1 = (EditText) findViewById(R.id.ans128_1);
+            EditText ans130_1 = (EditText) findViewById(R.id.ans130_1);
+            EditText ans145 = (EditText) findViewById(R.id.ans145);
+
+            Spinner ans43 = (Spinner) findViewById(R.id.ans43);
+            Spinner ans43_1 = (Spinner) findViewById(R.id.ans43_1);
+            Spinner ans45 = (Spinner) findViewById(R.id.ans45);
+            Spinner ans46 = (Spinner) findViewById(R.id.ans46);
+            Spinner ans47 = (Spinner) findViewById(R.id.ans47);
+            Spinner ans53 = (Spinner) findViewById(R.id.ans53);
+            Spinner ans54 = (Spinner) findViewById(R.id.ans54);
+            Spinner ans58 = (Spinner) findViewById(R.id.ans58);
+            Spinner ans60 = (Spinner) findViewById(R.id.ans60);
+            Spinner ans61 = (Spinner) findViewById(R.id.ans61);
+            Spinner ans62 = (Spinner) findViewById(R.id.ans62);
+            Spinner ans63 = (Spinner) findViewById(R.id.ans63);
+            Spinner ans64 = (Spinner) findViewById(R.id.ans64);
+            Spinner ans66 = (Spinner) findViewById(R.id.ans66);
+            Spinner ans86 = (Spinner) findViewById(R.id.ans86);
+            Spinner ans100 = (Spinner) findViewById(R.id.ans100);
+            Spinner ans101 = (Spinner) findViewById(R.id.ans101);
+            Spinner ans102 = (Spinner) findViewById(R.id.ans102);
+            Spinner ans103 = (Spinner) findViewById(R.id.ans103);
+            Spinner ans104 = (Spinner) findViewById(R.id.ans104);
+            Spinner ans107 = (Spinner) findViewById(R.id.ans107);
+            Spinner ans108 = (Spinner) findViewById(R.id.ans108);
+            Spinner ans109_7 = (Spinner) findViewById(R.id.ans109_7);
+            Spinner ans111 = (Spinner) findViewById(R.id.ans111);
+            Spinner ans111_1 = (Spinner) findViewById(R.id.ans111_1);
+            Spinner ans111_2 = (Spinner) findViewById(R.id.ans111_2);
+            Spinner ans111_3 = (Spinner) findViewById(R.id.ans111_3);
+            Spinner ans112 = (Spinner) findViewById(R.id.ans112);
+            Spinner ans112_2 = (Spinner) findViewById(R.id.ans112_2);
+            Spinner ans113 = (Spinner) findViewById(R.id.ans113);
+            Spinner ans113_2 = (Spinner) findViewById(R.id.ans113_2);
+            Spinner ans114 = (Spinner) findViewById(R.id.ans114);
+            Spinner ans115 = (Spinner) findViewById(R.id.ans115);
+            Spinner ans116 = (Spinner) findViewById(R.id.ans116);
+            Spinner ans117 = (Spinner) findViewById(R.id.ans117);
+            Spinner ans118 = (Spinner) findViewById(R.id.ans118);
+            Spinner ans119 = (Spinner) findViewById(R.id.ans119);
+            Spinner ans119_1 = (Spinner) findViewById(R.id.ans119_1);
+            Spinner ans119_2 = (Spinner) findViewById(R.id.ans119_2);
+            Spinner ans119_4 = (Spinner) findViewById(R.id.ans119_4);
+            Spinner ans119_10 = (Spinner) findViewById(R.id.ans119_10);
+            Spinner ans120 = (Spinner) findViewById(R.id.ans120);
+            Spinner ans121 = (Spinner) findViewById(R.id.ans121);
+            Spinner ans124 = (Spinner) findViewById(R.id.ans124);
+            Spinner ans125 = (Spinner) findViewById(R.id.ans125);
+            Spinner ans127 = (Spinner) findViewById(R.id.ans127);
+            Spinner ans128 = (Spinner) findViewById(R.id.ans128);
+            Spinner ans129 = (Spinner) findViewById(R.id.ans129);
+            Spinner ans129_1 = (Spinner) findViewById(R.id.ans129_1);
+            Spinner ans130 = (Spinner) findViewById(R.id.ans130);
+            Spinner ans131 = (Spinner) findViewById(R.id.ans131);
+            Spinner ans132 = (Spinner) findViewById(R.id.ans132);
+            Spinner ans133 = (Spinner) findViewById(R.id.ans133);
+            Spinner ans134 = (Spinner) findViewById(R.id.ans134);
+            Spinner ans135 = (Spinner) findViewById(R.id.ans135);
+            Spinner ans136 = (Spinner) findViewById(R.id.ans136);
+            Spinner ans137 = (Spinner) findViewById(R.id.ans137);
+            Spinner ans138 = (Spinner) findViewById(R.id.ans138);
+            Spinner ans139 = (Spinner) findViewById(R.id.ans139);
+            Spinner ans140 = (Spinner) findViewById(R.id.ans140);
+            Spinner ans141 = (Spinner) findViewById(R.id.ans141);
+            Spinner ans142 = (Spinner) findViewById(R.id.ans142);
+            Spinner ans143 = (Spinner) findViewById(R.id.ans143);
+            Spinner ans144 = (Spinner) findViewById(R.id.ans144);
+
+            EditText ans43_1other = (EditText) findViewById(R.id.ans43_1other);
+            EditText ans45other = (EditText) findViewById(R.id.ans45other);
+            EditText ans53other = (EditText) findViewById(R.id.ans53other);
+            EditText ans65other = (EditText) findViewById(R.id.ans65other);
+            EditText ans98other = (EditText) findViewById(R.id.ans98other);
+            EditText ans101other = (EditText) findViewById(R.id.ans101other);
+            EditText ans103other = (EditText) findViewById(R.id.ans103other);
+            EditText ans113_2other = (EditText) findViewById(R.id.ans113_2other);
+            EditText ans118other = (EditText) findViewById(R.id.ans118other);
+            EditText ans119_1other = (EditText) findViewById(R.id.ans119_1other);
+
+            CheckBox ans65a = (CheckBox) findViewById(R.id.ans65a);
+            CheckBox ans65b = (CheckBox) findViewById(R.id.ans65b);
+            CheckBox ans65c = (CheckBox) findViewById(R.id.ans65c);
+            CheckBox ans65d = (CheckBox) findViewById(R.id.ans65d);
+            CheckBox ans65e = (CheckBox) findViewById(R.id.ans65e);
+            CheckBox ans65f = (CheckBox) findViewById(R.id.ans65f);
+            CheckBox ans65g = (CheckBox) findViewById(R.id.ans65g);
+            CheckBox ans98a = (CheckBox) findViewById(R.id.ans98a);
+            CheckBox ans98b = (CheckBox) findViewById(R.id.ans98b);
+            CheckBox ans98c = (CheckBox) findViewById(R.id.ans98c);
+            CheckBox ans98d = (CheckBox) findViewById(R.id.ans98d);
+            CheckBox ans98e = (CheckBox) findViewById(R.id.ans98e);
+            CheckBox ans98f = (CheckBox) findViewById(R.id.ans98f);
+            CheckBox ans98g = (CheckBox) findViewById(R.id.ans98g);
+            CheckBox ans98h = (CheckBox) findViewById(R.id.ans98h);
+            CheckBox ans98i = (CheckBox) findViewById(R.id.ans98i);
+            CheckBox ans98j = (CheckBox) findViewById(R.id.ans98j);
+            CheckBox ans98k = (CheckBox) findViewById(R.id.ans98k);
+            CheckBox ans105a = (CheckBox) findViewById(R.id.ans105a);
+            CheckBox ans105b = (CheckBox) findViewById(R.id.ans105b);
+            CheckBox ans105c = (CheckBox) findViewById(R.id.ans105c);
+            CheckBox ans105d = (CheckBox) findViewById(R.id.ans105d);
+            CheckBox ans105e = (CheckBox) findViewById(R.id.ans105e);
+            CheckBox ans105f = (CheckBox) findViewById(R.id.ans105f);
+
+            FileOutputStream fos = new FileOutputStream(myExternalFile,true);
+
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans43.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans43_1.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans43_1other.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans44.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans45.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans45other.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans46.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans47.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans48.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans49.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans50.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans51.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans52.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans53.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans53other.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans54.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans55.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans56.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans57.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans58.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans58_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans59.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans60.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans60_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans61.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans61_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans61_2.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans61_3.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans61_4.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans61_5.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans61_6.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans61_7.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans61_8.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans62.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans62_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans63.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans63_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans63_2.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans64.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            if(ans65a.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans65b.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans65c.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans65d.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans65e.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans65f.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans65g.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            fos.write(ans65other.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans66.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans67.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans68.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans69.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans70.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans71.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans72.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans73.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans74.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans75.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans76.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans77.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans78.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans79.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans80.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans81.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans82.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans83.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans84.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans85.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans86.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans87.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans88.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans89.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans90.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans91.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans92.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans93.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans94.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans95.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans96.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans97.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            if(ans98a.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans98b.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans98c.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans98d.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans98e.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans98f.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans98g.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans98h.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans98i.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans98j.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans98k.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            fos.write(ans98other.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans99.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans100.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans100_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans101.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans101other.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans102.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans103.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans103other.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans104.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            if(ans105a.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans105b.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans105c.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans105d.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans105e.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans105f.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            fos.write("\t".getBytes());
+            fos.write(ans106.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans107.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans108.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans109.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans109_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans109_2.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans109_3.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans109_4.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans109_5.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans109_6.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans109_7.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans110.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans110_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans110_2.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans110_3.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans110_4.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans110_5.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans110_6.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans110_7.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans111.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans111_1.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans111_2.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans111_3.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans111_4.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans111_5.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans112.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans112_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans112_2.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans113.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans113_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans113_2.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans113_2other.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans113_3.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans114.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans114_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans115.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans115_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans116.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans117.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans117_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans118.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans118other.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans119.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans119_1.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans119_1other.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans119_2.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans119_3.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans119_4.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans119_5.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans119_6.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans119_7.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans119_8.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans119_9.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans119_10.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans119_11.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans120.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans121.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans121_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans122.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans123.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans123_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans124.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans125.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans126.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans127.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans128.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans128_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans129.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans129_1.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans130.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans130_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans131.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans132.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans133.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans134.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans135.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans136.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans137.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans138.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans139.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans140.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans141.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans142.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans143.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans144.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans145.getText().toString().getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
