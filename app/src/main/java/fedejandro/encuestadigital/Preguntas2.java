@@ -1,5 +1,6 @@
 package fedejandro.encuestadigital;
 
+import android.content.Intent;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import java.io.*;
 
 public class Preguntas2 extends AppCompatActivity {
 
+    Button saveButton;
     private String filename = "datos.txt";
     private String filepath = "EncuestaDatos";
     File myExternalFile;
@@ -634,6 +636,16 @@ public class Preguntas2 extends AppCompatActivity {
             }
         });
 
+        saveButton =  (Button) findViewById(R.id.saveButton1);
+        saveButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                escribir();
+                Intent main = new Intent(getApplicationContext(), MainScreen.class);
+                startActivity(main);
+            }
+        });
+
         if (!isExternalStorageAvailable() || isExternalStorageReadOnly()) {
 
         }
@@ -659,7 +671,7 @@ public class Preguntas2 extends AppCompatActivity {
         return false;
     }
 
-    private void escribir(String destino) {
+    private void escribir() {
         try {
 
             EditText ans44 = (EditText) findViewById(R.id.ans44);
@@ -735,6 +747,7 @@ public class Preguntas2 extends AppCompatActivity {
             EditText ans110_7 = (EditText) findViewById(R.id.ans110_7);
             EditText ans111_4 = (EditText) findViewById(R.id.ans111_4);
             EditText ans111_5 = (EditText) findViewById(R.id.ans111_5);
+            EditText ans111_6 = (EditText) findViewById(R.id.ans111_6);
             EditText ans112_1 = (EditText) findViewById(R.id.ans112_1);
             EditText ans113_1 = (EditText) findViewById(R.id.ans113_1);
             EditText ans113_3 = (EditText) findViewById(R.id.ans113_3);
@@ -864,14 +877,12 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write(Integer.toString(ans43.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans43_1.getSelectedItemPosition()+1).getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans43_1other.getText().toString().getBytes());
+            fos.write((", " + ans43_1other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(ans44.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans45.getSelectedItemPosition()+1).getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans45other.getText().toString().getBytes());
+            fos.write((", " + ans45other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans46.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
@@ -888,8 +899,7 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write(ans52.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans53.getSelectedItemPosition()+1).getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans53other.getText().toString().getBytes());
+            fos.write((", " + ans53other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans54.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
@@ -960,7 +970,7 @@ public class Preguntas2 extends AppCompatActivity {
             if(ans65g.isChecked()){
                 fos.write("1, ".getBytes());
             }
-            fos.write(ans65other.getText().toString().getBytes());
+            fos.write((", " + ans65other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans66.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
@@ -1059,7 +1069,7 @@ public class Preguntas2 extends AppCompatActivity {
             if(ans98k.isChecked()){
                 fos.write("1, ".getBytes());
             }
-            fos.write(ans98other.getText().toString().getBytes());
+            fos.write((", " + ans98other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(ans99.getText().toString().getBytes());
             fos.write("\t".getBytes());
@@ -1068,14 +1078,12 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write(ans100_1.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans101.getSelectedItemPosition()+1).getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans101other.getText().toString().getBytes());
+            fos.write((", " + ans101other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans102.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans103.getSelectedItemPosition()+1).getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans103other.getText().toString().getBytes());
+            fos.write((", " + ans103other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans104.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
@@ -1148,6 +1156,8 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(ans111_5.getText().toString().getBytes());
             fos.write("\t".getBytes());
+            fos.write(ans111_6.getText().toString().getBytes());
+            fos.write("\t".getBytes());
             fos.write(Integer.toString(ans112.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(ans112_1.getText().toString().getBytes());
@@ -1159,8 +1169,7 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write(ans113_1.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans113_2.getSelectedItemPosition()+1).getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans113_2other.getText().toString().getBytes());
+            fos.write((", " + ans113_2other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(ans113_3.getText().toString().getBytes());
             fos.write("\t".getBytes());
@@ -1179,14 +1188,12 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write(ans117_1.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans118.getSelectedItemPosition()+1).getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans118other.getText().toString().getBytes());
+            fos.write((", " + ans118other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans119.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans119_1.getSelectedItemPosition()+1).getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans119_1other.getText().toString().getBytes());
+            fos.write((", " + ans119_1other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans119_2.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
@@ -1204,7 +1211,7 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(ans119_9.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            fos.write(Integer.toString(ans119_10.getSelectedItemPosition()+1).getBytes());
+            fos.write(ans119_10.getItemAtPosition(ans119_10.getSelectedItemPosition()).toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(ans119_11.getText().toString().getBytes());
             fos.write("\t".getBytes());
