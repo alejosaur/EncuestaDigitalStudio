@@ -953,22 +953,22 @@ public class Preguntas2 extends AppCompatActivity {
                 fos.write("1, ".getBytes());
             }
             if(ans65b.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("2, ".getBytes());
             }
             if(ans65c.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("3, ".getBytes());
             }
             if(ans65d.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("4, ".getBytes());
             }
             if(ans65e.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("5, ".getBytes());
             }
             if(ans65f.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("6, ".getBytes());
             }
             if(ans65g.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("7, ".getBytes());
             }
             fos.write((", " + ans65other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
@@ -1040,34 +1040,34 @@ public class Preguntas2 extends AppCompatActivity {
                 fos.write("1, ".getBytes());
             }
             if(ans98b.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("2, ".getBytes());
             }
             if(ans98c.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("3, ".getBytes());
             }
             if(ans98d.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("4, ".getBytes());
             }
             if(ans98e.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("5, ".getBytes());
             }
             if(ans98f.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("6, ".getBytes());
             }
             if(ans98g.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("7, ".getBytes());
             }
             if(ans98h.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("8, ".getBytes());
             }
             if(ans98i.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("9, ".getBytes());
             }
             if(ans98j.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("10, ".getBytes());
             }
             if(ans98k.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("11, ".getBytes());
             }
             fos.write((", " + ans98other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
@@ -1091,19 +1091,19 @@ public class Preguntas2 extends AppCompatActivity {
                 fos.write("1, ".getBytes());
             }
             if(ans105b.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("2, ".getBytes());
             }
             if(ans105c.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("3, ".getBytes());
             }
             if(ans105d.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("4, ".getBytes());
             }
             if(ans105e.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("5, ".getBytes());
             }
             if(ans105f.isChecked()){
-                fos.write("1, ".getBytes());
+                fos.write("6, ".getBytes());
             }
             fos.write("\t".getBytes());
             fos.write(ans106.getText().toString().getBytes());

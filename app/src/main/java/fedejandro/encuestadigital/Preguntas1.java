@@ -1013,8 +1013,8 @@ public class Preguntas1 extends AppCompatActivity {
             fos.write(Integer.toString(ans42.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans42_1.getSelectedItemPosition()).getBytes());
-            fos.write("\t".getBytes());
             fos.write(("," + ans42_1other.getText().toString()).getBytes());
+            fos.write("\t".getBytes());
             if(formacionAmbiental.isChecked()){
                 fos.write("1, ".getBytes());
             }
