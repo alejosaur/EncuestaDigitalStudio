@@ -1,5 +1,6 @@
 package fedejandro.encuestadigital;
 
+import android.content.Intent;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import java.io.*;
 
 public class Preguntas3 extends AppCompatActivity {
 
+    Button saveButton;
     private String filename = "datos.txt";
     private String filepath = "EncuestaDatos";
     File myExternalFile;
@@ -714,6 +716,16 @@ public class Preguntas3 extends AppCompatActivity {
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
+            }
+        });
+
+        saveButton =  (Button) findViewById(R.id.saveButton1);
+        saveButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                escribir();
+                Intent main = new Intent(getApplicationContext(), MainScreen.class);
+                startActivity(main);
             }
         });
 
