@@ -502,7 +502,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="54. Número (N°) de lances por faena para cada arte de pesca:" />
+                android:text="54.1. Número (N°) de lances por faena para cada arte de pesca:" />
 
             <EditText
                 android:id="@+id/ans54-1"
@@ -602,7 +602,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="54.5.  N° horas noche" />
+                android:text="54.6.  N° horas noche" />
 
             <EditText
                 android:id="@+id/ans54-6"
@@ -1498,7 +1498,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="79.1. 'CUáles buenas prácticas pesqueras artesanales?" />
+                android:text="79.1. ¿Cuáles buenas prácticas pesqueras artesanales?" />
 
             <EditText
                 android:id="@+id/ans79-1"
@@ -1825,6 +1825,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView
@@ -1984,7 +1985,208 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques84-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84.1. ¿Cuál es el arte de pesca primario?" />
+
+            <EditText
+                android:id="@+id/ans84-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre cual es el arte de pesca principal"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques84-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84.2. ¿Cuántos utiliza?" />
+
+            <EditText
+                android:id="@+id/ans84-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre cuantas artes de pesca utiliza"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/ques84-3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84.3. Largo (m):" />
+
+            <EditText
+                android:id="@+id/ans84-3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el largo (m)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques84-4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84.4. Altura (m):" />
+
+            <EditText
+                android:id="@+id/ans84-4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre la altura (m)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques84-5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84.5. Ojo de la malla (pulgadas):" />
+
+            <EditText
+                android:id="@+id/ans84-5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el valor del ojo de malla (pulgadas)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques84-6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84.6. Tipo de material:" />
+
+            <EditText
+                android:id="@+id/ans84-6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el tipo de material de las artes de pesca"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques84-7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84.7. N° de paños:" />
+
+            <EditText
+                android:id="@+id/ans84-7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el número (N°) de paños  que componente la red de pesca"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques84-8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84.8. N° de líneas:" />
+
+            <EditText
+                android:id="@+id/ans84-8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el número (N°) de líneas"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/ques84-9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84.9. Anzuelos N°:" />
+
+            <EditText
+                android:id="@+id/ans84-9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el número (N°)  del tamaño de los anzuelos"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques84-10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84.10. Cantidad de anzuelos:" />
+
+            <EditText
+                android:id="@+id/ans84-10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre cRegistre la cantidad de anzuelos"
+                android:inputType="number" />
 
             <TextView
                 android:id="@+id/subtituloInstalaciones"
@@ -2448,6 +2650,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
 
             <TextView
@@ -2493,7 +2696,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="97.1. ¿Cumple la norma sobre artes de pesca prohibidas?" />
+                android:text="97.1. ¿Qué tipo de asociación?" />
 
             <Spinner
                 android:id="@+id/ans97-1"
@@ -2733,7 +2936,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="99.¿'Qué especies vende?" />
+                android:text="99. ¿Qué especies vende?" />
 
             <EditText
                 android:id="@+id/ans99"
