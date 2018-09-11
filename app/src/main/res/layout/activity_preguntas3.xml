@@ -494,6 +494,16 @@
                 android:paddingTop="5dp"
                 android:text="54. Duración de la farna (días)" />
 
+            <EditText
+                android:id="@+id/ans54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el número de personas"
+                android:inputType="numberDecimal" />
+
             <TextView
                 android:id="@+id/ques54-1"
                 android:layout_width="match_parent"
