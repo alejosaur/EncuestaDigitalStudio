@@ -719,7 +719,7 @@ public class Preguntas3 extends AppCompatActivity {
             }
         });
 
-        saveButton =  (Button) findViewById(R.id.saveButton1);
+        saveButton =  (Button) findViewById(R.id.endButton2);
         saveButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
