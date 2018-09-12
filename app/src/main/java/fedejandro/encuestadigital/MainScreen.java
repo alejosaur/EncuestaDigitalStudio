@@ -2,6 +2,7 @@ package fedejandro.encuestadigital;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,7 +24,7 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
     EditText fechaText;
     EditText encuestadorText;
     EditText consecutivoText;
-    Button nextButton, fechaButton;
+    Button nextButton, fechaButton, downloadButton;
     private int day, month, year;
 
     private String filename = "datos.txt";
@@ -64,6 +65,14 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+            }
+        });
+
+        downloadButton =  (Button) findViewById(R.id.downloadButton);
+        downloadButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                compartirArchivo();
             }
         });
 
@@ -110,4 +119,12 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
         }
 
     }
+
+    private void compartirArchivo(){
+        Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+        sharingIntent.setType("text/*");
+        sharingIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("file://" + myExternalFile.getAbsolutePath()));
+        startActivity(Intent.createChooser(sharingIntent, "share file with"));
+    }
+
 }

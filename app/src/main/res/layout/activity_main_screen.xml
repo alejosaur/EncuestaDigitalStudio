@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="21dp"
         android:ems="10"
         android:hint="Nombre del encuestador"
         android:inputType="textPersonName"
@@ -90,21 +90,18 @@
 
     <Button
         android:id="@+id/nextButton"
-        android:layout_width="wrap_content"
+        android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="91dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginTop="89dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
         android:text="Continuar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/encuestadorText" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/downloadButton"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/fechaButton"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="39dp"
         android:layout_marginEnd="49dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="49dp"
@@ -114,5 +111,19 @@
         app:layout_constraintEnd_toStartOf="@+id/fechaText"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="Fecha:" />
+
+    <Button
+        android:id="@+id/downloadButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="115dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="32dp"
+        android:text="Compartir archivo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
