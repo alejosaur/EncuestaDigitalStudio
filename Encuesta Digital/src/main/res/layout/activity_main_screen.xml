@@ -55,7 +55,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginTop="52dp"
         android:ems="10"
-        android:hint="dd/mm/aaaa"
+        android:hint='Presione el botón "FECHA"'
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fechaButton"
