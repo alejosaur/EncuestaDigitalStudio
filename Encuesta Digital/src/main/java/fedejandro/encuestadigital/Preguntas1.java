@@ -1,7 +1,15 @@
 package fedejandro.encuestadigital;
 
+import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Environment;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,10 +24,30 @@ public class Preguntas1 extends AppCompatActivity {
     private String filepath = "EncuestaDatos";
     File myExternalFile;
 
+    private static final long MINIMUM_DISTANCE_CHANGE_FOR_UPDATES = 100; // in Meters
+    private static final long MINIMUM_TIME_BETWEEN_UPDATES = 1000; // in Milliseconds
+    protected LocationManager locationManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preguntas1);
+
+        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+
+        if ( ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_COARSE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
+
+            ActivityCompat.requestPermissions( this, new String[] {  android.Manifest.permission.ACCESS_COARSE_LOCATION  },
+                    11);
+        }
+
+        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        locationManager.requestLocationUpdates(
+                LocationManager.GPS_PROVIDER,
+                MINIMUM_TIME_BETWEEN_UPDATES,
+                MINIMUM_DISTANCE_CHANGE_FOR_UPDATES,
+                new MyLocationListener()
+        );
 
         String[] departamentos = new String[] {
                 "Amazonas","Antioquia","Arauca","Atlántico","Bolívar","Boyacá","Caldas","Caquetá","Casanare","Cauca","Cesar","Chocó","Córdoba","Cundinamarca","Guainía","Guaviare","Huila","La Guajira","Magdalena","Meta","Nariño","Norte de Santander","Putumayo","Quindío","Risaralda","San Andrés y Providencia","Santander","Sucre","Tolima","Valle del Cauca","Vaupés","Vichada"
@@ -596,9 +624,11 @@ public class Preguntas1 extends AppCompatActivity {
         nextButtonEUPAC.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                escribir("EUPAC");
+                ActivityCompat.requestPermissions(Preguntas1.this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+                showCurrentLocation();
+                /*escribir("EUPAC");
                 Intent preg2 = new Intent(getApplicationContext(), Preguntas2.class);
-                startActivity(preg2);
+                startActivity(preg2);*/
             }
         });
 
@@ -1048,4 +1078,47 @@ public class Preguntas1 extends AppCompatActivity {
 
     }
 
+    protected void showCurrentLocation(){
+
+        if ( ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_COARSE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
+
+            ActivityCompat.requestPermissions( this, new String[] {  android.Manifest.permission.ACCESS_COARSE_LOCATION  },
+                    11);
+        }
+
+        Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
+        if(location != null){
+
+        }else{
+
+        }
+    }
+
+    private class MyLocationListener implements LocationListener{
+
+        @Override
+        public void onLocationChanged(Location location) {
+            EditText ans5 = (EditText) findViewById(R.id.ans5);
+            ans5.setText(Double.toString(location.getLatitude()) + ", " + Double.toString(location.getLongitude()));
+        }
+
+        @Override
+        public void onStatusChanged(String provider, int status, Bundle extras) {
+            Toast.makeText(Preguntas1.this, "Provider status changed",
+                    Toast.LENGTH_LONG).show();
+        }
+
+        @Override
+        public void onProviderEnabled(String provider) {
+            Toast.makeText(Preguntas1.this, "Provider enabled by the user. GPS turned on",
+                    Toast.LENGTH_LONG).show();
+        }
+
+        @Override
+        public void onProviderDisabled(String provider) {
+            Toast.makeText(Preguntas1.this, "Provider enabled by the user. GPS turned off",
+                    Toast.LENGTH_LONG).show();
+        }
+    }
 }

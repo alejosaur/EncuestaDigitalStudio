@@ -135,7 +135,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="top|left"
-                android:hint="Coordenadas obtenidas con el GPS\nsegún el formato Grados Decimales"
+                android:hint="Obteniendo Coordenadas..."
                 android:inputType="textPersonName" />
 
             <TextView
