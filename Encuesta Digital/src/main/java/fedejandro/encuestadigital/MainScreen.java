@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -40,6 +41,8 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
         fechaText = (EditText) findViewById(R.id.fechaText);
         encuestadorText = (EditText) findViewById(R.id.encuestadorText);
         consecutivoText = (EditText) findViewById(R.id.consecutivoText);
+
+        encuestadorText.setFilters(new InputFilter[] {new InputFilter.AllCaps()});
 
         fechaButton = (Button) findViewById(R.id.fechaButton);
         fechaButton.setOnClickListener(this);
