@@ -64,16 +64,12 @@
                 android:paddingTop="5dp"
                 android:text="2. Nombre del municipio:" />
 
-            <EditText
+            <Spinner
                 android:id="@+id/ans2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="left|center_vertical"
-                android:hint="Municipio"
-                android:inputType="textPersonName" />
+                android:layout_marginRight="16dp" />
 
             <TextView
                 android:id="@+id/ques3"
