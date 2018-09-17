@@ -481,37 +481,17 @@
                 android:inputType="text" />
 
             <TextView
-                android:id="@+id/ques19"
+                android:id="@+id/ques18-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="19. Indique su nombre" />
-
-            <EditText
-                android:id="@+id/ans19"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Nombre"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/ques19-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="19.1. ¿Cuál es su relación con el/la productor(a)?" />
+                android:text="18.1. ¿Cuál es su relación con el/la productor(a)?" />
 
             <Spinner
-                android:id="@+id/ans19-1"
+                android:id="@+id/ans18-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -519,17 +499,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques19-2"
+                android:id="@+id/ques18-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="19.2. Género" />
+                android:text="18.2. Género" />
 
             <Spinner
-                android:id="@+id/ans19-2"
+                android:id="@+id/ans18-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -537,17 +517,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques19-3"
+                android:id="@+id/ques18-3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="19.3. ¿Cuántos años tiene?" />
+                android:text="18.3. ¿Cuántos años tiene?" />
 
             <EditText
-                android:id="@+id/ans19-3"
+                android:id="@+id/ans18-3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -557,17 +537,17 @@
                 android:inputType="number" />
 
             <TextView
-                android:id="@+id/ques19-4"
+                android:id="@+id/ques18-4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="19.4. ¿Cuál es su estado civil?" />
+                android:text="18.4. ¿Cuál es su estado civil?" />
 
             <Spinner
-                android:id="@+id/ans19-4"
+                android:id="@+id/ans18-4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -575,17 +555,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques19-5"
+                android:id="@+id/ques18-5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="19.5. ¿Sabe leer y/o escribir?" />
+                android:text="18.5. ¿Sabe leer y/o escribir?" />
 
             <Spinner
-                android:id="@+id/ans19-5"
+                android:id="@+id/ans18-5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -593,17 +573,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques19-6"
+                android:id="@+id/ques18-6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="19.6. ¿Actualmente asiste a un centro educativo?" />
+                android:text="18.6. ¿Actualmente asiste a un centro educativo?" />
 
             <Spinner
-                android:id="@+id/ans19-6"
+                android:id="@+id/ans18-6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -611,17 +591,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques19-7"
+                android:id="@+id/ques18-7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="19.7. ¿Cuál es el último grado de educación que estudió y aprobó?" />
+                android:text="18.7. ¿Cuál es el último grado de educación que estudió y aprobó?" />
 
             <Spinner
-                android:id="@+id/ans19-7"
+                android:id="@+id/ans18-7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -629,17 +609,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques19-8"
+                android:id="@+id/ques18-8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="19.8. ¿Cuál es su profesión?" />
+                android:text="18.8. ¿Cuál es su profesión?" />
 
             <EditText
-                android:id="@+id/ans19-8"
+                android:id="@+id/ans18-8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -674,6 +654,24 @@
                 android:textColor="#2b2b2b" />
 
             <TextView
+                android:id="@+id/ques19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="19. Actualmente usted se encuentra:" />
+
+            <Spinner
+                android:id="@+id/ans19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
                 android:id="@+id/ques20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -681,7 +679,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="20. Actualmente usted se encuentra:" />
+                android:text="20. ¿Según las siguientes categorías usted es?" />
 
             <Spinner
                 android:id="@+id/ans20"
@@ -699,7 +697,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="20.1. ¿Dónde se encuentra empleado la mayor parte del tiempo?:" />
+                android:text="20.1. ¿Usted trabaja de forma independiente cómo?" />
 
             <Spinner
                 android:id="@+id/ans20-1"
@@ -709,51 +707,15 @@
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
 
-            <TextView
-                android:id="@+id/ques20-2"
+            <EditText
+                android:id="@+id/ans20-1other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="20.2. ¿Cuánto tiempo emplea para la actividad principal?:" />
-
-            <Spinner
-                android:id="@+id/ans20-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/textoSituacionFamiliarLaboral2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique la participación del grupo familiar en los eslabones de la cadena productiva"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques20-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="20.3. ¿En cuál de las siguientes etapas de la unidad de producción se encuentra empleado?:" />
-
-            <Spinner
-                android:id="@+id/ans20-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
+                android:ems="10"
+                android:hint="¿cuál?"
+                android:inputType="text" />
 
             <TextView
                 android:id="@+id/ques21"
@@ -763,15 +725,17 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="21. Según las siguientes categorías, usted es:" />
+                android:text="21. ¿Cuántas personas trabajan en el hogar? " />
 
-            <Spinner
+            <EditText
                 android:id="@+id/ans21"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
+                android:ems="10"
+                android:hint="¿Registre el dato en valor numérico?"
+                android:inputType="number" />
 
             <TextView
                 android:id="@+id/ques21-1"
@@ -781,7 +745,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="21.1. Usted trabaja de forma independiente como:" />
+                android:text="21.1. En promedio, ¿Cuanto es el ingreso mensual familiar?" />
 
             <Spinner
                 android:id="@+id/ans21-1"
@@ -791,28 +755,18 @@
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
 
-            <EditText
-                android:id="@+id/ans21_1other"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="¿cuál?"
-                android:inputType="textPersonName" />
-
             <TextView
-                android:id="@+id/ques22"
+                android:id="@+id/ques21-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="22. ¿Genera ingresos adicionales para su grupo familiar?" />
+                android:text="21.2. En promedio, ¿Cuanto son los gastos familiares?" />
 
             <Spinner
-                android:id="@+id/ans22"
+                android:id="@+id/ans21-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -844,17 +798,17 @@
                 android:textColor="#2b2b2b" />
 
             <TextView
-                android:id="@+id/ques23"
+                android:id="@+id/ques22"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="23. La vivienda en la que habita es:" />
+                android:text="22. La vivienda en la que habita es:" />
 
             <Spinner
-                android:id="@+id/ans23"
+                android:id="@+id/ans22"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -862,7 +816,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans23other"
+                android:id="@+id/ans22other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
