@@ -279,7 +279,7 @@ public class Preguntas1 extends AppCompatActivity {
                 "Sí","No"
         };
         String[] causaDesplazamiento = new String[] {
-                "No Aplica","Conflicto Armado","Ambiental","Económica"
+                "No Aplica","Conflicto Armado","Ambiental","Económica", "Otra"
         };
         String[] relacionPersonas = new String[] {
                 "Cónyuge","Hijo/a","Yerno/Nuera","Nieto/a, Bisnieto/a","Padre o madre del cónyuge","Otro pariente",
@@ -578,6 +578,9 @@ public class Preguntas1 extends AppCompatActivity {
         EditText ans9other = (EditText) findViewById(R.id.ans9other);
         ans9other.setVisibility(View.GONE);
 
+        EditText ans15_1other = (EditText) findViewById(R.id.ans15_1other);
+        ans15_1other.setVisibility(View.GONE);
+
         EditText ans21_1other = (EditText) findViewById(R.id.ans21_1other);
         ans21_1other.setVisibility(View.GONE);
 
@@ -769,6 +772,24 @@ public class Preguntas1 extends AppCompatActivity {
                     ans9other.setVisibility(View.VISIBLE);
                 }else{
                     ans9other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans15_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans15_1 = (Spinner) findViewById(R.id.ans15_1);
+                EditText ans15_1other = (EditText) findViewById(R.id.ans15_1other);
+                if(ans15_1.getSelectedItemPosition()==4) {
+                    ans15_1other.setVisibility(View.VISIBLE);
+                }else{
+                    ans15_1other.setVisibility(View.GONE);
                 }
             }
 

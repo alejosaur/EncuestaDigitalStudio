@@ -360,7 +360,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="15. ¿Ha sido víctima de desplazamiento forzado?" />
+                android:text="15. ¿Ha sido víctima de desplazamiento?" />
 
             <Spinner
                 android:id="@+id/ans15"
@@ -387,6 +387,16 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/ans15_1other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿cuál?"
+                android:inputType="text" />
 
             <TextView
                 android:id="@+id/ques16"
@@ -438,7 +448,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="17. ¿Cuántas personas componen su grupo familiar?" />
+                android:text="17. ¿Cuántas personas componen su hogar?" />
 
             <EditText
                 android:id="@+id/ans17"
