@@ -2858,15 +2858,12 @@
                 android:paddingTop="5dp"
                 android:text="96.8. Municipio:" />
 
-            <EditText
+            <Spinner
                 android:id="@+id/ans96-8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre  el nombre del municipio"
-                android:inputType="textShortMessage" />
+                android:layout_marginRight="16dp" />
 
             <TextView
                 android:id="@+id/ques96-9"
