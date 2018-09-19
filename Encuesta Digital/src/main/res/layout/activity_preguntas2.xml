@@ -2409,15 +2409,13 @@
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <EditText
+            <Spinner
                 android:id="@+id/ans110-4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Ciudad o municipio"
-                android:inputType="text" />
+                android:spinnerMode="dialog" />
 
             <TextView
                 android:id="@+id/ques110-5"
@@ -3107,15 +3105,13 @@
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <EditText
+            <Spinner
                 android:id="@+id/ans118-11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre el nombre del municipio"
-                android:inputType="text" />
+                android:spinnerMode="dialog" />
 
             <TextView
                 android:id="@+id/ques119"

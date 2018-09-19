@@ -1640,9 +1640,9 @@ public class Preguntas3 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(ans96_6.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            fos.write(Integer.toString(ans96_7.getSelectedItemPosition()+1).getBytes());
+            fos.write(Integer.toString(ans96_7.getSelectedItemPosition()).getBytes());
             fos.write("\t".getBytes());
-            fos.write(Integer.toString(ans96_8.getSelectedItemPosition()+1).getBytes());
+            fos.write(Integer.toString(ans96_8.getSelectedItemPosition()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans96_9.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());

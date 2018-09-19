@@ -84,8 +84,220 @@ public class Preguntas2 extends AppCompatActivity {
                 "Siempre", "Casi Siempre", "Casi nunca", "Nunca"
         };
         String[] departamentos = new String[] {
-                "Amazonas","Antioquia","Arauca","Atlántico","Bolívar","Boyacá","Caldas","Caquetá","Casanare","Cauca","Cesar","Chocó","Córdoba","Cundinamarca","Guainía","Guaviare","Huila","La Guajira","Magdalena","Meta","Nariño","Norte de Santander","Putumayo","Quindío","Risaralda","San Andrés y Providencia","Santander","Sucre","Tolima","Valle del Cauca","Vaupés","Vichada"
+                "Amazonas","Antioquia","Arauca","Atlántico","Bolívar","Boyacá","Caldas","Caquetá","Casanare","Cauca","Cesar",
+                "Chocó","Córdoba","Cundinamarca","Guainía","Guaviare","Huila","La Guajira","Magdalena","Meta","Nariño",
+                "Norte de Santander","Putumayo","Quindío","Risaralda","San Andrés y Providencia","Santander","Sucre","Tolima",
+                "Valle del Cauca","Vaupés","Vichada"
         };
+        final String[] municipiosAmazonas = new String[]{
+                "Leticia", "Puerto Nariño"
+        };
+        final String[] municipiosAntioquia = new String[] {
+                "Medellín", "Abejorral", "Abriaqui", "Alejandría", "Amaga", "Amalfi", "Andes", "Angelopolis", "Angostura",
+                "Anorí", "Anza", "Apartado", "Arboletes", "Argelia", "Armenia", "Barbosa", "Bello", "Belmira", "Betania",
+                "Betulia", "Bolívar", "Briceño", "Buritica", "Cáceres", "Caicedo", "Caldas", "Campamento", "Cañasgordas",
+                "Caracolí", "Caramanta", "Carepa", "Carmen De Viboral", "Carolina", "Caucasia", "Chigorodó", "Cisneros",
+                "Cocorná", "Concepción", "Concordia", "Copacabana", "Dabeiba", "Don Matías", "Ebejico", "El Bagre",
+                "Entrerrios", "Envigado", "Fredonia", "Frontino", "Giraldo", "Girardota", "Gómez Plata", "Granada",
+                "Guadalupe", "Guarne", "Guatapé", "Heliconia", "Hispania", "Itagui", "Ituango", "Jardín", "Jericó", "La Ceja",
+                "La Estrella", "La Pintada", "La Unión", "Liborina", "Maceo", "Marinilla", "Montebello", "Murindó", "Mutatá",
+                "Nariño", "Nechí", "Necoclí", "Olaya", "Peñol", "Peque", "Pueblorrico", "Puerto Berrío", "Puerto Nare",
+                "Puerto Triunfo", "Remedios", "Retiro", "Rionegro", "Sabanalarga", "Sabaneta", "Salgar", "San Andrés",
+                "San Carlos", "San Francisco", "San Pedro De Uraba", "San José De La Montaña", "San Juan De Uraba",
+                "Santa Rosa De Osos", "San Pedro", "San Jerónimo", "San Rafael", "San Roque", "San Vicente", "Santa Bárbara",
+                "San Luis", "Santafé de Antioquia", "Santo Domingo", "Santuario", "Segovia", "Sonson", "Sopetrán", "Támesis",
+                "Taraza", "Tarso", "Titiribí", "Toledo", "Turbo", "Uramita", "Urrao", "Valdivia", "Valparaíso", "Vegachi",
+                "Venecia", "Vigía Del Fuerte", "Yali", "Yarumal", "Yolombó", "Yondó", "Zaragoza"
+        };
+        final String[] municipiosArauca = new String[] {
+                "Arauca", "Arauquita", "Cravo Norte", "Fortul", "Puerto Rondón", "Saravena", "Tame"
+        };
+        final String[] municipiosAtlantico = new String[]{
+                "Baranoa", "Barranquilla", "Campo De La Cruz", "Candelaria", "Galapa", "Juan De Acosta", "Luruaco", "Malambo",
+                "Manatí", "Palmar De Varela", "Piojó", "Polonuevo", "Ponedera", "Puerto Colombia", "Repelón", "Sabanagrande",
+                "Sabanalarga", "Santa Lucía", "Santo Tomás", "Soledad", "Suan", "Tubará", "Usiacurí"
+        };
+        final String[] municipiosBolivar = new String[]{
+                "Achí", "Altos Del Rosario", "Arenal", "Arjona", "Arroyohondo", "Barranco De Loba", "Calamar", "Cantagallo",
+                "Cartagena", "Cicuco", "Clemencia", "Córdoba", "El Carmen De Bolívar", "El Guamo", "El Peñón", "Hatillo De Loba",
+                "Magangué", "Mahates", "Margarita", "María La Baja", "Mompós", "Montecristo", "Morales", "Pinillos", "Regidor",
+                "Río Viejo", "San Cristóbal", "San Estanislao", "San Fernando", "San Jacinto", "San Jacinto Del Cauca",
+                "San Juan Nepomuceno", "San Martín De Loba", "San Pablo", "Santa Catalina", "Santa Rosa", "Santa Rosa Del Sur",
+                "Simití", "Soplaviento", "Talaigua Nuevo", "Tiquisio", "Turbaco", "Turbaná", "Villanueva", "Zambrano"
+        };
+        final String[] municipiosBoyaca = new String[]{
+                "Almeida", "Aquitania", "Arcabuco", "Belén", "Berbeo", "Betéitiva", "Boavita", "Boyacá", "Briceño", "Buenavista",
+                "Busbanzá", "Caldas", "Campohermoso", "Cerinza", "Chinavita", "Chiquinquirá", "Chíquiza", "Chiscas", "Chita",
+                "Chitaraque", "Chivatá", "Chivor", "Ciénega", "Cómbita", "Coper", "Corrales", "Covarachía", "Cubará", "Cucaita",
+                "Cuítiva", "Duitama", "El Cocuy", "El Espino", "Firavitoba", "Floresta", "Gachantivá", "Gameza", "Garagoa",
+                "Guacamayas", "Guateque", "Guayatá", "Güicán", "Iza", "Jenesano", "Jericó", "La Capilla", "La Uvita",
+                "La Victoria", "Labranzagrande", "Macanal", "Maripí", "Miraflores", "Mongua", "Monguí", "Moniquirá", "Motavita",
+                "Muzo", "Nobsa", "Nuevo Colón", "Oicatá", "Otanche", "Pachavita", "Páez", "Paipa", "Pajarito", "Panqueba",
+                "Pauna", "Paya", "Paz De Río", "Pesca", "Pisba", "Puerto Boyacá", "Quípama", "Ramiriquí", "Ráquira", "Rondón",
+                "Saboyá", "Sáchica", "Samacá", "San Eduardo", "San José De Pare", "San Luis De Gaceno", "San Mateo",
+                "San Miguel De Sema", "San Pablo De Borbur", "Santa María", "Santa Rosa De Viterbo", "Santa Sofía", "Santana",
+                "Sativanorte", "Sativasur", "Siachoque", "Soatá", "Socha", "Socotá", "Sogamoso", "Somondoco", "Sora", "Soracá",
+                "Sotaquirá", "Susacón", "Sutamarchán", "Sutatenza", "Tasco", "Tenza", "Tibaná", "Tibasosa", "Tinjacá",
+                "Tipacoque", "Toca", "Togüí", "Tópaga", "Tota", "Tunja", "Tununguá", "Turmequé", "Tuta", "Tutazá", "Umbita",
+                "Ventaquemada", "Villa De Leyva", "Viracachá", "Zetaquira"
+        };
+        final String[] municipiosCaldas = new String[]{
+                "Aguadas", "Anserma", "Aranzazu", "Belalcázar", "Chinchiná", "Filadelfia", "La Dorada", "La Merced", "Manizales",
+                "Manzanares", "Marmato", "Marquetalia", "Marulanda", "Neira", "Norcasia", "Pácora", "Palestina", "Pensilvania",
+                "Riosucio", "Risaralda", "Salamina", "Samaná", "San José", "Supía", "Victoria", "Villamaría", "Viterbo"
+        };
+        final String[] municipiosCaqueta = new String[]{
+                "Albania", "Belén De Los Andaquies", "Cartagena Del Chairá", "Curillo", "El Doncello", "El Paujil", "Florencia",
+                "La Montañita", "Milán", "Morelia", "Puerto Rico", "San José Del Fragua", "San Vicente Del Caguán", "Solano",
+                "Solita", "Valparaíso"
+        };
+        final String[] municipiosCasanare = new String[]{
+                "Aguazul", "Chameza", "Hato Corozal", "La Salina", "Maní", "Monterrey", "Nunchía", "Orocué", "Paz De Ariporo",
+                "Pore", "Recetor", "Sabanalarga", "Sácama", "San Luis De Palenque", "Támara", "Tauramena", "Trinidad",
+                "Villanueva", "Yopal"
+        };
+        final String[] municipiosCauca = new String[]{
+                "Almaguer", "Argelia", "Balboa", "Bolívar", "Buenos Aires", "Cajibío", "Caldonó", "Caloto", "Corinto",
+                "El Tambo", "Florencia", "Guapi", "Inzá", "Jambaló", "La Sierra", "La Vega", "López de Micay", "Mercaderes",
+                "Miranda", "Morales", "Padilla", "Paez", "Patía", "Piamonte", "Piendamó", "Popayán", "Puerto Tejada", "Puracé",
+                "Rosas", "San Sebastián", "Santa Rosa", "Santander De Quilichao", "Silvia", "Sotará", "Suárez", "Sucre",
+                "Timbío", "Timbiquí", "Toribío", "Totoró", "Villa Rica"
+        };
+        final String[] municipiosCesar = new String[]{
+                "Aguachica", "Agustín Codazzi", "Astrea", "Becerril", "Bosconia", "Chimichagua", "Chiriguaná", "Curumaní",
+                "El Copey", "El Paso", "Gamarra", "González", "La Gloria", "La Jagua De Ibirico", "La Paz", "Manaure",
+                "Pailitas", "Pelaya", "Pueblo Bello", "Río De Oro", "San Alberto", "San Diego", "San Martín", "Tamalameque",
+                "Valledupar"
+        };
+        final String[] municipiosChoco = new String[]{
+                "Acandí", "Alto Baudó", "Atrato", "Bagadó", "Bahía Solano", "Bajo Baudó", "Bojaya", "Carmen Del Darién",
+                "Cértegui", "Condoto", "El Cantón Del San Pablo", "El Carmen De Atrato", "El Litoral Del San Juan", "Istmina",
+                "Juradó", "Lloró", "Medio Atrato", "Medio Baudó", "Medio San Juan", "Nóvita", "Nuquí", "Quibdó", "Río Iro",
+                "Río Quito", "Riosucio", "San José Del Palmar", "Sipí", "Tadó", "Unguía", "Unión Panamericana"
+        };
+        final String[] municipiosCordoba = new String[]{
+                "Ayapel", "Buenavista", "Canalete", "Cereté", "Chimá", "Chinú", "Ciénaga De Oro", "Cotorra", "La Apartada",
+                "Los Córdobas", "Momil", "Moñitos", "Montelíbano", "Montería", "Planeta Rica", "Pueblo Nuevo",
+                "Puerto Escondido", "Puerto Libertador", "Purísima", "Sahagún", "San Andrés de Sotavento", "San Antero",
+                "San Bernardo Del Viento", "San Carlos", "San Pelayo", "Santa Cruz de Lorica", "Tierralta", "Tuchín", "Valencia"
+        };
+        final String[] municipiosCundinamarca = new String[]{
+                "Agua De Dios", "Albán", "Anapoima", "Anolaima", "Apulo", "Arbeláez", "Beltrán", "Bituima", "Bogotá", "Bojacá",
+                "Cabrera", "Cachipay", "Cajicá", "Caparrapí", "Cáqueza", "Carmen De Carupa", "Chaguaní", "Chía", "Chipaque",
+                "Choachí", "Chocontá", "Cogua", "Cota", "Cucunubá", "El Colegio", "El Peñón", "El Rosal", "Facatativá", "Fomeque",
+                "Fosca", "Funza", "Fúquene", "Fusagasugá", "Gachalá", "Gachancipá", "Gachetá", "Gama", "Girardot", "Granada",
+                "Guachetá", "Guaduas", "Guasca", "Guataquí", "Guatavita", "Guayabal De Siquima", "Guayabetal", "Gutiérrez",
+                "Jerusalén", "Junín", "La Calera", "La Mesa", "La Palma", "La Peña", "La Vega", "Lenguazaque", "Macheta",
+                "Madrid", "Manta", "Medina", "Mosquera", "Nariño", "Nemocón", "Nilo", "Nimaima", "Nocaima", "Pacho", "Paime",
+                "Pandi", "Paratebueno", "Pasca", "Puerto Salgar", "Pulí", "Quebradanegra", "Quetame", "Quipile", "Ricaurte",
+                "San Antonio Del Tequendama", "San Bernardo", "San Cayetano", "San Francisco", "San Juan De Río Seco", "Sasaima",
+                "Sesquilé", "Sibaté", "Silvania", "Simijaca", "Soacha", "Sopó", "Subachoque", "Suesca", "Supatá", "Susa",
+                "Sutatausa", "Tabio", "Tausa", "Tena", "Tenjo", "Tibacuy", "Tibirita", "Tocaima", "Tocancipá", "Topaipí",
+                "Ubalá", "Ubaque", "Ubaté", "Une", "Útica", "Venecia", "Vergara", "Vianí", "Villagómez", "Villapinzón", "Villeta",
+                "Viotá", "Yacopí", "Zipacón", "Zipaquirá"
+        };
+        final String[] municipiosGuainia = new String[]{
+                "Inírida"
+        };
+        final String[] municipiosGuaviare = new String[]{
+                "Calamar", "El Retorno", "Miraflores", "San José Del Guaviare"
+        };
+        final String[] municipiosHuila = new String[]{
+                "Acevedo", "Agrado", "Aipe", "Algeciras", "Altamira", "Baraya", "Campoalegre", "Colombia", "Elías", "Garzón",
+                "Gigante", "Guadalupe", "Hobo", "Iquira", "Isnos", "La Argentina", "La Plata", "Nátaga", "Neiva", "Oporapa",
+                "Paicol", "Palermo", "Palestina", "Pital", "Pitalito", "Rivera", "Saladoblanco", "San Agustín", "Santa María",
+                "Suaza", "Tarqui", "Tello", "Teruel", "Tesalia", "Timaná", "Villavieja", "Yaguará"
+        };
+        final String[] municipiosGuajira = new String[]{
+                "Albania", "Barrancas", "Dibulla", "Distracción", "El Molino", "Fonseca", "Hatonuevo", "La Jagua Del Pilar",
+                "Maicao", "Manaure", "Riohacha", "San Juan Del Cesar", "Uribia", "Urumita", "Villanueva"
+        };
+        final String[] municipiosMagdalena = new String[]{
+                "Algarrobo", "Aracataca", "Ariguaní", "Cerro de San Antonio", "Chibolo", "Ciénaga", "Concordia", "El Banco",
+                "El Piñon", "El Retén", "Fundación", "Guamal", "Nueva Granada", "Pedraza", "Pijiño Del Carmen", "Pivijay",
+                "Plato", "Puebloviejo", "Remolino", "Sabanas De San Angel", "Salamina", "San Sebastián De Buenavista",
+                "San Zenón", "Santa Ana", "Santa Bárbara De Pinto", "Santa Marta", "Sitionuevo", "Tenerife", "Zapayán",
+                "Zona Bananera"
+        };
+        final String[] municipiosMeta = new String[]{
+                "Acacías", "Barranca De Upía", "Cabuyaro", "Castilla La Nueva", "Cubarral", "Cumaral", "El Calvario",
+                "El Castillo", "El Dorado", "Fuente De Oro", "Granada", "Guamal", "La Macarena", "Lejanías", "Mapiripán",
+                "Mesetas", "Puerto Concordia", "Puerto Gaitán", "Puerto Lleras", "Puerto López", "Puerto Rico", "Restrepo",
+                "San Carlos De Guaroa", "San Juan De Arama", "San Juanito", "San Martín", "Uribe", "Villavicencio",
+                "Vistahermosa"
+        };
+        final String[] municipiosNarino = new String[]{
+                "Albán", "Aldana", "Ancuyá", "Arboleda", "Barbacoas", "Belén", "Buesaco", "Chachagüí", "Colón", "Consacá",
+                "Contadero", "Córdoba", "Cuaspud", "Cumbal", "Cumbitara", "El Charco", "El Peñol", "El Rosario",
+                "El Tablón De Gómez", "El Tambo", "Francisco Pizarro", "Funes", "Guachucal", "Guaitarilla", "Gualmatán", "Iles",
+                "Imués", "Ipiales", "La Cruz", "La Florida", "La Llanada", "La Tola", "La Unión", "Leiva", "Linares", "Los Andes",
+                "Magüi Payán", "Mallama", "Mosquera", "Nariño", "Olaya Herrera", "Ospina", "Pasto", "Policarpa", "Potosí",
+                "Providencia", "Puerres", "Pupiales", "Ricaurte", "Roberto Payán", "Samaniego", "San Bernardo", "San Lorenzo",
+                "San Pablo", "San Pedro De Cartago", "Sandoná", "Santa Bárbara", "Santacruz", "Sapuyes", "Taminango", "Tangua",
+                "Tumaco", "Túquerres", "Yacuanquer"
+        };
+        final String[] municipiosNdeSantander = new String[]{
+                "Abrego", "Arboledas", "Bochalema", "Bucarasica", "Cachirá", "Cácota", "Chinácota", "Chitagá", "Convención",
+                "Cúcuta", "Cucutilla", "Durania", "El Carmen", "El Tarra", "El Zulia", "Gramalote", "Hacarí", "Herrán",
+                "La Esperanza", "La Playa", "Labateca", "Los Patios", "Lourdes", "Mutiscua", "Ocaña", "Pamplona", "Pamplonita",
+                "Puerto Santander", "Ragonvalia", "Salazar de las palmas", "San Calixto", "San Cayetano", "Santiago", "Sardinata",
+                "Silos", "Teorama", "Tibú", "Toledo", "Villa Caro", "Villa Del Rosario"
+        };
+        final String[] municipiosPutumayo = new String[]{
+                "Colón", "Mocoa", "Orito", "Puerto Asís", "Puerto Caicedo", "Puerto Guzmán", "Puerto Leguízamo", "San Francisco",
+                "San Miguel", "Santiago", "Sibundoy", "Valle Del Guamuez", "Villagarzón"
+        };
+        final String[] municipiosQuindio = new String[]{
+                "Armenia", "Buenavista", "Calarcá", "Circasia", "Córdoba", "Filandia", "Génova", "La Tebaida", "Montenegro",
+                "Pijao", "Quimbaya", "Salento"
+        };
+        final String[] municipiosRisaralda = new String[]{
+                "Apía", "Balboa", "Belén De Umbría", "Dosquebradas", "Guática", "La Celia", "La Virginia", "Marsella", "Mistrató",
+                "Pereira", "Pueblo Rico", "Quinchía", "Santa Rosa De Cabal", "Santuario"
+        };
+        final String[] municipiosSanAndres = new String[]{
+                "San Andrés", "Providencia y Santa Catalina"
+        };
+        final String[] municipiosSantander = new String[]{
+                "Aguada", "Albania", "Aratoca", "Barbosa", "Barichara", "Barrancabermeja", "Betulia", "Bolívar", "Bucaramanga",
+                "Cabrera", "California", "Capitanejo", "Carcasí", "Cepitá", "Cerrito", "Charalá", "Charta", "Chima", "Chipatá",
+                "Cimitarra", "Concepción", "Confines", "Contratación", "Coromoro", "Curití", "El Carmen De Chucurí",
+                "El Guacamayo", "El Peñón", "El Playón", "Encino", "Enciso", "Florián", "Floridablanca", "Galán", "Gámbita",
+                "Girón", "Guaca", "Guadalupe", "Guapotá", "Guavatá", "Güepsa", "Hato", "Jesús María", "Jordán", "La Belleza",
+                "La Paz", "Landázuri", "Lebríja", "Los Santos", "Macaravita", "Málaga", "Matanza", "Mogotes", "Molagavita",
+                "Ocamonte", "Oiba", "Onzaga", "Palmar", "Palmas Del Socorro", "Páramo", "Piedecuesta", "Pinchote",
+                "Puente Nacional", "Puerto Parra", "Puerto Wilches", "Rionegro", "Sabana De Torres", "San Andrés", "San Benito",
+                "San Gil", "San Joaquín", "San José De Miranda", "San Miguel", "San Vicente De Chucurí", "Santa Bárbara",
+                "Santa Helena Del Opón", "Simacota", "Socorro", "Suaita", "Sucre", "Suratá", "Tona", "Valle De San José",
+                "Vélez", "Vetas", "Villanueva", "Zapatoca"
+        };
+        final String[] municipiosSucre = new String[]{
+                "Buenavista", "Caimito", "Chalán", "Colosó", "Corozal", "Coveñas", "El Roble", "Galeras", "Guaranda", "La Unión",
+                "Los Palmitos", "Majagual", "Morroa", "Ovejas", "Palmito", "Sampués", "San Benito Abad", "San Juan De Betulia",
+                "San Marcos", "San Onofre", "San Pedro", "Santiago De Tolú", "Sincé", "Sincelejo", "Sucre", "Tolú Viejo"
+        };
+        final String[] municipiosTolima = new String[]{
+                "Alpujarra", "Alvarado", "Ambalema", "Anzoátegui", "Armero Guayabal", "Ataco", "Cajamarca", "Carmen De Apicalá",
+                "Casabianca", "Chaparral", "Coello", "Coyaima", "Cunday", "Dolores", "Espinal", "Falan", "Flandes", "Fresno",
+                "Guamo", "Herveo", "Honda", "Ibagué", "Icononzo", "Lérida", "Líbano", "Mariquita", "Melgar", "Murillo",
+                "Natagaima", "Ortega", "Palocabildo", "Piedras", "Planadas", "Prado", "Purificación", "Rioblanco", "Roncesvalles",
+                "Rovira", "Saldaña", "San Antonio", "San Luis", "Santa Isabel", "Suárez", "Valle De San Juan", "Venadillo",
+                "Villahermosa", "Villarrica"
+        };
+        final String[] municipiosValle = new String[]{
+                "Alcalá", "Andalucía", "Ansermanuevo", "Argelia", "Bolívar", "Buenaventura", "Bugalagrande", "Caicedonia", "Cali",
+                "Calima el Darién", "Candelaria", "Cartago", "Dagua", "El Águila", "El Cairo", "El Cerrito", "El Dovio",
+                "Florida", "Ginebra", "Guacarí", "Guadalajara De Buga", "Jamundí", "La Cumbre", "La Unión", "La Victoria",
+                "Obando", "Palmira", "Pradera", "Restrepo", "Riofrío", "Roldanillo", "San Pedro", "Sevilla", "Toro", "Trujillo",
+                "Tuluá", "Ulloa", "Versalles", "Vijes", "Yotoco", "Yumbo", "Zarzal"
+        };
+        final String[] municipiosVaupes = new String[]{
+                "Taruru", "Mitú", "Taraira"
+        };
+        final String[] municipiosVichada = new String[]{
+                "Cumaribo", "La Primavera", "Puerto Carreño", "Santa Rosalía"
+        };
+
         String[] frecuenciaRecambio = new String[] {
                 "Mensual", "Semanal", "Diaria"
         };
@@ -252,6 +464,11 @@ public class Preguntas2 extends AppCompatActivity {
         adapterAns110_3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans110_3.setAdapter(adapterAns110_3);
 
+        Spinner ans110_4 = (Spinner) findViewById(R.id.ans110_4);
+        ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, municipiosAmazonas);
+        adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans110_4.setAdapter(adapterAns110_4);
+
         Spinner ans111 = (Spinner) findViewById(R.id.ans111);
         ArrayAdapter<String> adapterAns111 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
         adapterAns111.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -321,6 +538,11 @@ public class Preguntas2 extends AppCompatActivity {
         ArrayAdapter<String> adapterAns118_10 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, departamentos);
         adapterAns118_10.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans118_10.setAdapter(adapterAns118_10);
+
+        Spinner ans118_11 = (Spinner) findViewById(R.id.ans118_11);
+        ArrayAdapter<String> adapterAns118_11 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, municipiosAmazonas);
+        adapterAns118_11.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans118_11.setAdapter(adapterAns118_11);
 
         Spinner ans119 = (Spinner) findViewById(R.id.ans119);
         ArrayAdapter<String> adapterAns119 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
@@ -582,6 +804,148 @@ public class Preguntas2 extends AppCompatActivity {
             }
         });
 
+        ans110_3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans110_4 = (Spinner) findViewById(R.id.ans110_4);
+                Spinner ans110_3 = (Spinner) findViewById(R.id.ans110_3);
+                if(ans110_3.getSelectedItemPosition() == 0){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosAmazonas);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 1){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosAntioquia);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 2){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosArauca);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 3){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosAtlantico);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 4){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosBolivar);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 5){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosBoyaca);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 6){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCaldas);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 7){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCaqueta);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 8){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCasanare);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 9){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCauca);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 10){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCesar);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 11){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosChoco);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 12){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCordoba);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 13){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCundinamarca);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 14){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosGuainia);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 15){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosGuaviare);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 16){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosHuila);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 17){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosGuajira);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 18){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosMagdalena);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 18){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosMeta);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 20){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosNarino);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 21){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosNdeSantander);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 22){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosPutumayo);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 22){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosQuindio);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 23){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosRisaralda);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 24){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosSanAndres);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 25){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosSantander);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 26){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosSucre);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 27){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosTolima);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 28){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosValle);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 29){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosVaupes);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }else if(ans110_3.getSelectedItemPosition() == 30){
+                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosVichada);
+                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterans110_4);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         ans112_2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -627,6 +991,148 @@ public class Preguntas2 extends AppCompatActivity {
                     ans118_1other.setVisibility(View.VISIBLE);
                 }else{
                     ans118_1other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans118_10.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans118_11 = (Spinner) findViewById(R.id.ans118_11);
+                Spinner ans118_10 = (Spinner) findViewById(R.id.ans118_10);
+                if(ans118_10.getSelectedItemPosition() == 0){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosAmazonas);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 1){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosAntioquia);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 2){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosArauca);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 3){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosAtlantico);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 4){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosBolivar);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 5){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosBoyaca);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 6){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCaldas);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 7){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCaqueta);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 8){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCasanare);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 9){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCauca);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 10){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCesar);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 11){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosChoco);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 12){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCordoba);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 13){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCundinamarca);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 14){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosGuainia);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 15){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosGuaviare);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 16){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosHuila);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 17){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosGuajira);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 18){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosMagdalena);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 18){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosMeta);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 20){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosNarino);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 21){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosNdeSantander);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 22){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosPutumayo);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 22){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosQuindio);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 23){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosRisaralda);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 24){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosSanAndres);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 25){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosSantander);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 26){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosSucre);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 27){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosTolima);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 28){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosValle);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 29){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosVaupes);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
+                }else if(ans118_10.getSelectedItemPosition() == 30){
+                    ArrayAdapter<String> adapterAns2 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosVichada);
+                    adapterAns2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans118_11.setAdapter(adapterAns2);
                 }
             }
 
@@ -745,7 +1251,6 @@ public class Preguntas2 extends AppCompatActivity {
             EditText ans109_5 = (EditText) findViewById(R.id.ans109_5);
             EditText ans109_6 = (EditText) findViewById(R.id.ans109_6);
             EditText ans109_7 = (EditText) findViewById(R.id.ans109_7);
-            EditText ans110_4 = (EditText) findViewById(R.id.ans110_4);
             EditText ans110_5 = (EditText) findViewById(R.id.ans110_5);
             EditText ans110_6 = (EditText) findViewById(R.id.ans110_6);
             EditText ans111_1 = (EditText) findViewById(R.id.ans111_1);
@@ -760,7 +1265,6 @@ public class Preguntas2 extends AppCompatActivity {
             EditText ans118_7 = (EditText) findViewById(R.id.ans118_7);
             EditText ans118_8 = (EditText) findViewById(R.id.ans118_8);
             EditText ans118_9 = (EditText) findViewById(R.id.ans118_9);
-            EditText ans118_11 = (EditText) findViewById(R.id.ans118_11);
             EditText ans120_1 = (EditText) findViewById(R.id.ans120_1);
             EditText ans121 = (EditText) findViewById(R.id.ans121);
             EditText ans122 = (EditText) findViewById(R.id.ans122);
@@ -797,6 +1301,7 @@ public class Preguntas2 extends AppCompatActivity {
             Spinner ans110_1 = (Spinner) findViewById(R.id.ans110_1);
             Spinner ans110_2 = (Spinner) findViewById(R.id.ans110_2);
             Spinner ans110_3 = (Spinner) findViewById(R.id.ans110_3);
+            Spinner ans110_4 = (Spinner) findViewById(R.id.ans110_4);
             Spinner ans111 = (Spinner) findViewById(R.id.ans111);
             Spinner ans111_2 = (Spinner) findViewById(R.id.ans111_2);
             Spinner ans112 = (Spinner) findViewById(R.id.ans112);
@@ -811,6 +1316,7 @@ public class Preguntas2 extends AppCompatActivity {
             Spinner ans118_2 = (Spinner) findViewById(R.id.ans118_2);
             Spinner ans118_4 = (Spinner) findViewById(R.id.ans118_4);
             Spinner ans118_10 = (Spinner) findViewById(R.id.ans118_10);
+            Spinner ans118_11 = (Spinner) findViewById(R.id.ans118_11);
             Spinner ans119 = (Spinner) findViewById(R.id.ans119);
             Spinner ans120 = (Spinner) findViewById(R.id.ans120);
             Spinner ans123 = (Spinner) findViewById(R.id.ans123);
@@ -1150,9 +1656,9 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans110_2.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
-            fos.write(Integer.toString(ans110_3.getSelectedItemPosition()+1).getBytes());
+            fos.write(ans110_3.getItemAtPosition(ans110_3.getSelectedItemPosition()).toString().getBytes());
             fos.write("\t".getBytes());
-            fos.write(ans110_4.getText().toString().getBytes());
+            fos.write(ans110_4.getItemAtPosition(ans110_4.getSelectedItemPosition()).toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(ans110_5.getText().toString().getBytes());
             fos.write("\t".getBytes());
@@ -1213,7 +1719,7 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(ans118_10.getItemAtPosition(ans118_10.getSelectedItemPosition()).toString().getBytes());
             fos.write("\t".getBytes());
-            fos.write(ans118_11.getText().toString().getBytes());
+            fos.write(ans118_11.getItemAtPosition(ans118_11.getSelectedItemPosition()).toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans119.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
