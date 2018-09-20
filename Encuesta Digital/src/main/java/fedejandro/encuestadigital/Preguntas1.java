@@ -24,25 +24,32 @@ public class Preguntas1 extends AppCompatActivity {
     private String filepath = "EncuestaDatos";
     File myExternalFile;
 
-    private static final long MINIMUM_DISTANCE_CHANGE_FOR_UPDATES = 100; // in Meters
-    private static final long MINIMUM_TIME_BETWEEN_UPDATES = 1000; // in Milliseconds
+    private static final long MINIMUM_DISTANCE_CHANGE_FOR_UPDATES = 0; // in Meters
+    private static final long MINIMUM_TIME_BETWEEN_UPDATES = 10; // in Milliseconds
     protected LocationManager locationManager;
+    protected LocationManager locationManagerGPS;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preguntas1);
 
-        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+        if ( ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
 
-        if ( ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_COARSE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
-
-            ActivityCompat.requestPermissions( this, new String[] {  android.Manifest.permission.ACCESS_COARSE_LOCATION  },
+            ActivityCompat.requestPermissions( this, new String[] {  android.Manifest.permission.ACCESS_FINE_LOCATION  },
                     11);
         }
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         locationManager.requestLocationUpdates(
+                LocationManager.NETWORK_PROVIDER,
+                MINIMUM_TIME_BETWEEN_UPDATES,
+                MINIMUM_DISTANCE_CHANGE_FOR_UPDATES,
+                new MyLocationListener()
+        );
+
+        locationManagerGPS = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        locationManagerGPS.requestLocationUpdates(
                 LocationManager.GPS_PROVIDER,
                 MINIMUM_TIME_BETWEEN_UPDATES,
                 MINIMUM_DISTANCE_CHANGE_FOR_UPDATES,
@@ -1436,23 +1443,6 @@ public class Preguntas1 extends AppCompatActivity {
             e.printStackTrace();
         }
 
-    }
-
-    protected void showCurrentLocation(){
-
-        if ( ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_COARSE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
-
-            ActivityCompat.requestPermissions( this, new String[] {  android.Manifest.permission.ACCESS_COARSE_LOCATION  },
-                    11);
-        }
-
-        Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-
-        if(location != null){
-
-        }else{
-
-        }
     }
 
     private class MyLocationListener implements LocationListener{
