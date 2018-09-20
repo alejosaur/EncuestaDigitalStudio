@@ -772,6 +772,27 @@ public class Preguntas1 extends AppCompatActivity {
             }
         });
 
+        ans15.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans15 = (Spinner) findViewById(R.id.ans15);
+                TextView ques15_1 = (TextView) findViewById(R.id.ques15_1);
+                Spinner ans15_1 = (Spinner) findViewById(R.id.ans15_1);
+                if(ans15.getSelectedItemPosition()==1) {
+                    ques15_1.setVisibility(View.GONE);
+                    ans15_1.setVisibility(View.GONE);
+                }else{
+                    ques15_1.setVisibility(View.VISIBLE);
+                    ans15_1.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         ans15_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
