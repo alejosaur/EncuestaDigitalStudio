@@ -42,6 +42,39 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
 
         ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
 
+
+        if (!isExternalStorageAvailable() || isExternalStorageReadOnly()) {
+            nextButton.setEnabled(false);
+        }
+        else {
+            myExternalFile = new File(getExternalFilesDir(filepath), filename);
+        }
+
+        StringBuffer datax = new StringBuffer("");
+        try {
+            FileInputStream fis = new FileInputStream(myExternalFile);
+            InputStreamReader isr = new InputStreamReader ( fis ) ;
+            BufferedReader buffreader = new BufferedReader ( isr ) ;
+
+            String readString = buffreader.readLine( ) ;
+            while ( readString != null ) {
+                datax.insert(0,readString);
+                readString = buffreader.readLine ( ) ;
+            }
+
+            isr.close( ) ;
+
+            consecutivoText = (EditText) findViewById(R.id.consecutivoText);
+            String str = datax.toString();
+            String consecutivo = String.valueOf(Integer.parseInt(str.split("\t")[1])+1);
+            consecutivoText.setText(consecutivo);
+
+        }catch (IOException e){
+            consecutivoText = (EditText) findViewById(R.id.consecutivoText);
+            consecutivoText.setText("1");
+        }
+
+
         fechaText = (EditText) findViewById(R.id.fechaText);
         encuestadorText = (EditText) findViewById(R.id.encuestadorText);
         consecutivoText = (EditText) findViewById(R.id.consecutivoText);
@@ -82,13 +115,6 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
                 compartirArchivo();
             }
         });
-
-        if (!isExternalStorageAvailable() || isExternalStorageReadOnly()) {
-            nextButton.setEnabled(false);
-        }
-        else {
-            myExternalFile = new File(getExternalFilesDir(filepath), filename);
-        }
     }
 
     private static boolean isExternalStorageReadOnly() {
