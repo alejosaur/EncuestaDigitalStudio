@@ -524,6 +524,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
                 android:gravity="left|center_vertical"
                 android:text="Indique información sobre la cantidad del agua según las siguientes preguntas"
                 android:textColor="#2b2b2b" />
@@ -948,6 +949,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
                 android:gravity="left|center_vertical"
                 android:text="Indique información sobre los principales parámetros de la producción de carne según las siguientes preguntas"
                 android:textColor="#2b2b2b" />
@@ -1855,6 +1857,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
                 android:gravity="left|center_vertical"
                 android:text="Indique información respecto a los medios de producción de la UPAC de acuerdo con las siguientes preguntas."
                 android:textColor="#2b2b2b" />
@@ -2313,6 +2316,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
                 android:gravity="left|center_vertical"
                 android:text="Indique información sobre las prácticas de alimentación en la UPAC  según la siguientes preguntas"
                 android:textColor="#2b2b2b" />

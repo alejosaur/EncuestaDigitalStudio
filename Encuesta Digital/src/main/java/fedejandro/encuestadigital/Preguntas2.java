@@ -24,7 +24,7 @@ public class Preguntas2 extends AppCompatActivity {
                 "Principal", "Complementaria"
         };
         String[] actividadPrincipal = new String[] {
-                "Agricultura", "Comercio", "Construcción", "Ganadería", "Minería", "Turismo", "Pesca", "Transporte", "Otra, ¿Cuál?"
+                "No aplica", "Agricultura", "Comercio", "Construcción", "Ganadería", "Minería", "Turismo", "Pesca", "Transporte", "Otra, ¿Cuál?"
         };
         String[] tipoUnidad = new String[] {
                 "Propia", "Arrendada", "Familiar", "Posesión", "Otra, ¿Cuál?"
@@ -308,10 +308,13 @@ public class Preguntas2 extends AppCompatActivity {
                 "Red eléctrica publica", "Generador eléctrico a gasolina o diésel", "Energía solar", "Energía eólica", "Otro, ¿Cuál?"
         };
         String[] tipoAsociacion = new String[] {
-                "Cooperativa", "Asociacion", "Sindicato", "Otro, ¿Cuál?"
+                "No aplica", "Cooperativa", "Asociacion", "Sindicato", "Otro, ¿Cuál?"
+        };
+        String[] siNoNoAplica = new String[] {
+                "No aplica", "Sí", "No"
         };
         String[] cargoAsociacion = new String[] {
-                "Directivo", "Centro de acopio", "Centro de comercialización"
+                "No aplica", "Directivo", "Centro de acopio", "Centro de comercialización"
         };
         String[] lugarVenta = new String[] {
                 "Venta en la UPAC", "Socio activo", "Socio pasivo"
@@ -525,7 +528,7 @@ public class Preguntas2 extends AppCompatActivity {
         ans118_1.setAdapter(adapterAns118_1);
 
         Spinner ans118_2 = (Spinner) findViewById(R.id.ans118_2);
-        ArrayAdapter<String> adapterAns118_2 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        ArrayAdapter<String> adapterAns118_2 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNoNoAplica);
         adapterAns118_2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans118_2.setAdapter(adapterAns118_2);
 
@@ -668,11 +671,20 @@ public class Preguntas2 extends AppCompatActivity {
         EditText ans64other = (EditText) findViewById(R.id.ans64other);
         ans64other.setVisibility(View.GONE);
 
+        EditText ans97other = (EditText) findViewById(R.id.ans97other);
+        ans97other.setVisibility(View.GONE);
+
         EditText ans100other = (EditText) findViewById(R.id.ans100other);
         ans100other.setVisibility(View.GONE);
 
         EditText ans102other = (EditText) findViewById(R.id.ans102other);
         ans102other.setVisibility(View.GONE);
+
+        TextView ques105 = (TextView) findViewById(R.id.ques105);
+        ques105.setVisibility(View.GONE);
+
+        EditText ans105 = (EditText) findViewById(R.id.ans105);
+        ans105.setVisibility(View.GONE);
 
         EditText ans112_2other = (EditText) findViewById(R.id.ans112_2other);
         ans112_2other.setVisibility(View.GONE);
@@ -685,6 +697,29 @@ public class Preguntas2 extends AppCompatActivity {
 
         CheckBox ans64g = (CheckBox) findViewById(R.id.ans64g);
         CheckBox ans97k = (CheckBox) findViewById(R.id.ans97k);
+        CheckBox ans104f = (CheckBox) findViewById(R.id.ans104f);
+
+        ans42.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans42 = (Spinner) findViewById(R.id.ans42);
+                TextView ques42_1 = (TextView) findViewById(R.id.ques42_1);
+                Spinner ans42_1 = (Spinner) findViewById(R.id.ans42_1);
+                if(ans42.getSelectedItemPosition()==0) {
+                    ques42_1.setVisibility(View.GONE);
+                    ans42_1.setVisibility(View.GONE);
+                }else{
+                    ques42_1.setVisibility(View.VISIBLE);
+                    ans42_1.setVisibility(View.VISIBLE);
+
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         ans42_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -740,6 +775,132 @@ public class Preguntas2 extends AppCompatActivity {
             }
         });
 
+        ans57.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans57 = (Spinner) findViewById(R.id.ans57);
+                TextView ques57_1 = (TextView) findViewById(R.id.ques57_1);
+                EditText ans57_1 = (EditText) findViewById(R.id.ans57_1);
+                if(ans57.getSelectedItemPosition()==1) {
+                    ques57_1.setVisibility(View.GONE);
+                    ans57_1.setVisibility(View.GONE);
+                }else{
+                    ques57_1.setVisibility(View.VISIBLE);
+                    ans57_1.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans59.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans59 = (Spinner) findViewById(R.id.ans59);
+                TextView ques59_1 = (TextView) findViewById(R.id.ques59_1);
+                EditText ans59_1 = (EditText) findViewById(R.id.ans59_1);
+                if(ans59.getSelectedItemPosition()==1) {
+                    ques59_1.setVisibility(View.GONE);
+                    ans59_1.setVisibility(View.GONE);
+                }else{
+                    ques59_1.setVisibility(View.VISIBLE);
+                    ans59_1.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans60.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans60 = (Spinner) findViewById(R.id.ans60);
+                TextView ques60_1 = (TextView) findViewById(R.id.ques60_1);
+                EditText ans60_1 = (EditText) findViewById(R.id.ans60_1);
+                TextView ques60_2 = (TextView) findViewById(R.id.ques60_2);
+                EditText ans60_2 = (EditText) findViewById(R.id.ans60_2);
+                TextView ques60_3 = (TextView) findViewById(R.id.ques60_3);
+                EditText ans60_3 = (EditText) findViewById(R.id.ans60_3);
+                TextView ques60_4 = (TextView) findViewById(R.id.ques60_4);
+                EditText ans60_4 = (EditText) findViewById(R.id.ans60_4);
+                TextView ques60_5 = (TextView) findViewById(R.id.ques60_5);
+                EditText ans60_5 = (EditText) findViewById(R.id.ans60_5);
+                TextView ques60_6 = (TextView) findViewById(R.id.ques60_6);
+                EditText ans60_6 = (EditText) findViewById(R.id.ans60_6);
+                TextView ques60_7 = (TextView) findViewById(R.id.ques60_7);
+                EditText ans60_7 = (EditText) findViewById(R.id.ans60_7);
+                TextView ques60_8 = (TextView) findViewById(R.id.ques60_8);
+                EditText ans60_8 = (EditText) findViewById(R.id.ans60_8);
+                if(ans60.getSelectedItemPosition()==1) {
+                    ques60_1.setVisibility(View.GONE);
+                    ans60_1.setVisibility(View.GONE);
+                    ques60_2.setVisibility(View.GONE);
+                    ans60_2.setVisibility(View.GONE);
+                    ques60_3.setVisibility(View.GONE);
+                    ans60_3.setVisibility(View.GONE);
+                    ques60_4.setVisibility(View.GONE);
+                    ans60_4.setVisibility(View.GONE);
+                    ques60_5.setVisibility(View.GONE);
+                    ans60_5.setVisibility(View.GONE);
+                    ques60_6.setVisibility(View.GONE);
+                    ans60_6.setVisibility(View.GONE);
+                    ques60_7.setVisibility(View.GONE);
+                    ans60_7.setVisibility(View.GONE);
+                    ques60_8.setVisibility(View.GONE);
+                    ans60_8.setVisibility(View.GONE);
+                }else{
+                    ques60_1.setVisibility(View.VISIBLE);
+                    ans60_1.setVisibility(View.VISIBLE);
+                    ques60_2.setVisibility(View.VISIBLE);
+                    ans60_2.setVisibility(View.VISIBLE);
+                    ques60_3.setVisibility(View.VISIBLE);
+                    ans60_3.setVisibility(View.VISIBLE);
+                    ques60_4.setVisibility(View.VISIBLE);
+                    ans60_4.setVisibility(View.VISIBLE);
+                    ques60_5.setVisibility(View.VISIBLE);
+                    ans60_5.setVisibility(View.VISIBLE);
+                    ques60_6.setVisibility(View.VISIBLE);
+                    ans60_6.setVisibility(View.VISIBLE);
+                    ques60_7.setVisibility(View.VISIBLE);
+                    ans60_7.setVisibility(View.VISIBLE);
+                    ques60_8.setVisibility(View.VISIBLE);
+                    ans60_8.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans61.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans61 = (Spinner) findViewById(R.id.ans61);
+                TextView ques61_1 = (TextView) findViewById(R.id.ques61_1);
+                EditText ans61_1 = (EditText) findViewById(R.id.ans61_1);
+                if(ans61.getSelectedItemPosition()==1) {
+                    ques61_1.setVisibility(View.GONE);
+                    ans61_1.setVisibility(View.GONE);
+                }else{
+                    ques61_1.setVisibility(View.VISIBLE);
+                    ans61_1.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         ans64g.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -754,6 +915,27 @@ public class Preguntas2 extends AppCompatActivity {
             }
         });
 
+        ans85.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans85 = (Spinner) findViewById(R.id.ans85);
+                TextView ques86 = (TextView) findViewById(R.id.ques86);
+                EditText ans86 = (EditText) findViewById(R.id.ans86);
+                if(ans85.getSelectedItemPosition()==0) {
+                    ques86.setVisibility(View.GONE);
+                    ans86.setVisibility(View.GONE);
+                }else{
+                    ques86.setVisibility(View.VISIBLE);
+                    ans86.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         ans97k.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -765,6 +947,27 @@ public class Preguntas2 extends AppCompatActivity {
                 else {
                     ans97other.setVisibility(View.GONE);
                 }
+            }
+        });
+
+        ans99.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans99 = (Spinner) findViewById(R.id.ans99);
+                TextView ques99_1 = (TextView) findViewById(R.id.ques99_1);
+                EditText ans99_1 = (EditText) findViewById(R.id.ans99_1);
+                if(ans99.getSelectedItemPosition()==1) {
+                    ques99_1.setVisibility(View.GONE);
+                    ans99_1.setVisibility(View.GONE);
+                }else{
+                    ques99_1.setVisibility(View.VISIBLE);
+                    ans99_1.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
             }
         });
 
@@ -795,6 +998,139 @@ public class Preguntas2 extends AppCompatActivity {
                     ans102other.setVisibility(View.VISIBLE);
                 }else{
                     ans102other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans104f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans104f = (CheckBox) findViewById(R.id.ans104f);
+                TextView ques105 = (TextView) findViewById(R.id.ques105);
+                EditText ans105 = (EditText) findViewById(R.id.ans105);
+                if(ans104f.isChecked()){
+                    ques105.setVisibility(View.VISIBLE);
+                    ans105.setVisibility(View.VISIBLE);
+                }
+                else {
+                    ques105.setVisibility(View.GONE);
+                    ans105.setVisibility(View.GONE);
+                }
+            }
+        });
+
+        ans107.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans107 = (Spinner) findViewById(R.id.ans107);
+                TextView ques108 = (TextView) findViewById(R.id.ques108);
+                EditText ans108 = (EditText) findViewById(R.id.ans108);
+                TextView ques108_1 = (TextView) findViewById(R.id.ques108_1);
+                EditText ans108_1 = (EditText) findViewById(R.id.ans108_1);
+                TextView ques108_2 = (TextView) findViewById(R.id.ques108_2);
+                EditText ans108_2 = (EditText) findViewById(R.id.ans108_2);
+                TextView ques108_3 = (TextView) findViewById(R.id.ques108_3);
+                EditText ans108_3 = (EditText) findViewById(R.id.ans108_3);
+                TextView ques108_4 = (TextView) findViewById(R.id.ques108_4);
+                EditText ans108_4 = (EditText) findViewById(R.id.ans108_4);
+                TextView ques108_5 = (TextView) findViewById(R.id.ques108_5);
+                EditText ans108_5 = (EditText) findViewById(R.id.ans108_5);
+                TextView ques108_6 = (TextView) findViewById(R.id.ques108_6);
+                EditText ans108_6 = (EditText) findViewById(R.id.ans108_6);
+                TextView ques108_7 = (TextView) findViewById(R.id.ques108_7);
+                Spinner ans108_7 = (Spinner) findViewById(R.id.ans108_7);
+
+                TextView ques109 = (TextView) findViewById(R.id.ques109);
+                EditText ans109 = (EditText) findViewById(R.id.ans109);
+                TextView ques109_1 = (TextView) findViewById(R.id.ques109_1);
+                EditText ans109_1 = (EditText) findViewById(R.id.ans109_1);
+                TextView ques109_2 = (TextView) findViewById(R.id.ques109_2);
+                EditText ans109_2 = (EditText) findViewById(R.id.ans109_2);
+                TextView ques109_3 = (TextView) findViewById(R.id.ques109_3);
+                EditText ans109_3 = (EditText) findViewById(R.id.ans109_3);
+                TextView ques109_4 = (TextView) findViewById(R.id.ques109_4);
+                EditText ans109_4 = (EditText) findViewById(R.id.ans109_4);
+                TextView ques109_5 = (TextView) findViewById(R.id.ques109_5);
+                EditText ans109_5 = (EditText) findViewById(R.id.ans109_5);
+                TextView ques109_6 = (TextView) findViewById(R.id.ques109_6);
+                EditText ans109_6 = (EditText) findViewById(R.id.ans109_6);
+                TextView ques109_7 = (TextView) findViewById(R.id.ques109_7);
+                EditText ans109_7 = (EditText) findViewById(R.id.ans109_7);
+
+                if(ans107.getSelectedItemPosition()==0) {
+                    ques108.setVisibility(View.VISIBLE);
+                    ans108.setVisibility(View.VISIBLE);
+                    ques108_1.setVisibility(View.VISIBLE);
+                    ans108_1.setVisibility(View.VISIBLE);
+                    ques108_2.setVisibility(View.VISIBLE);
+                    ans108_2.setVisibility(View.VISIBLE);
+                    ques108_3.setVisibility(View.VISIBLE);
+                    ans108_3.setVisibility(View.VISIBLE);
+                    ques108_4.setVisibility(View.VISIBLE);
+                    ans108_4.setVisibility(View.VISIBLE);
+                    ques108_5.setVisibility(View.VISIBLE);
+                    ans108_5.setVisibility(View.VISIBLE);
+                    ques108_6.setVisibility(View.VISIBLE);
+                    ans108_6.setVisibility(View.VISIBLE);
+                    ques108_7.setVisibility(View.VISIBLE);
+                    ans108_7.setVisibility(View.VISIBLE);
+
+                    ques109.setVisibility(View.GONE);
+                    ans109.setVisibility(View.GONE);
+                    ques109_1.setVisibility(View.GONE);
+                    ans109_1.setVisibility(View.GONE);
+                    ques109_2.setVisibility(View.GONE);
+                    ans109_2.setVisibility(View.GONE);
+                    ques109_3.setVisibility(View.GONE);
+                    ans109_3.setVisibility(View.GONE);
+                    ques109_4.setVisibility(View.GONE);
+                    ans109_4.setVisibility(View.GONE);
+                    ques109_5.setVisibility(View.GONE);
+                    ans109_5.setVisibility(View.GONE);
+                    ques109_6.setVisibility(View.GONE);
+                    ans109_6.setVisibility(View.GONE);
+                    ques109_7.setVisibility(View.GONE);
+                    ans109_7.setVisibility(View.GONE);
+
+                }else{
+                    ques108.setVisibility(View.GONE);
+                    ans108.setVisibility(View.GONE);
+                    ques108_1.setVisibility(View.GONE);
+                    ans108_1.setVisibility(View.GONE);
+                    ques108_2.setVisibility(View.GONE);
+                    ans108_2.setVisibility(View.GONE);
+                    ques108_3.setVisibility(View.GONE);
+                    ans108_3.setVisibility(View.GONE);
+                    ques108_4.setVisibility(View.GONE);
+                    ans108_4.setVisibility(View.GONE);
+                    ques108_5.setVisibility(View.GONE);
+                    ans108_5.setVisibility(View.GONE);
+                    ques108_6.setVisibility(View.GONE);
+                    ans108_6.setVisibility(View.GONE);
+                    ques108_7.setVisibility(View.GONE);
+                    ans108_7.setVisibility(View.GONE);
+
+                    ques109.setVisibility(View.VISIBLE);
+                    ans109.setVisibility(View.VISIBLE);
+                    ques109_1.setVisibility(View.VISIBLE);
+                    ans109_1.setVisibility(View.VISIBLE);
+                    ques109_2.setVisibility(View.VISIBLE);
+                    ans109_2.setVisibility(View.VISIBLE);
+                    ques109_3.setVisibility(View.VISIBLE);
+                    ans109_3.setVisibility(View.VISIBLE);
+                    ques109_4.setVisibility(View.VISIBLE);
+                    ans109_4.setVisibility(View.VISIBLE);
+                    ques109_5.setVisibility(View.VISIBLE);
+                    ans109_5.setVisibility(View.VISIBLE);
+                    ques109_6.setVisibility(View.VISIBLE);
+                    ans109_6.setVisibility(View.VISIBLE);
+                    ques109_7.setVisibility(View.VISIBLE);
+                    ans109_7.setVisibility(View.VISIBLE);
                 }
             }
 
@@ -946,6 +1282,60 @@ public class Preguntas2 extends AppCompatActivity {
             }
         });
 
+        ans111.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans111 = (Spinner) findViewById(R.id.ans111);
+                TextView ques111_1 = (TextView) findViewById(R.id.ques111_1);
+                EditText ans111_1 = (EditText) findViewById(R.id.ans111_1);
+                TextView ques111_2 = (TextView) findViewById(R.id.ques111_2);
+                Spinner ans111_2 = (Spinner) findViewById(R.id.ans111_2);
+                if(ans111.getSelectedItemPosition()==1) {
+                    ques111_1.setVisibility(View.GONE);
+                    ans111_1.setVisibility(View.GONE);
+                    ques111_2.setVisibility(View.GONE);
+                    ans111_2.setVisibility(View.GONE);
+                }else{
+                    ques111_1.setVisibility(View.VISIBLE);
+                    ans111_1.setVisibility(View.VISIBLE);
+                    ques111_2.setVisibility(View.VISIBLE);
+                    ans111_2.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans112.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans112 = (Spinner) findViewById(R.id.ans112);
+                TextView ques112_1 = (TextView) findViewById(R.id.ques112_1);
+                EditText ans112_1 = (EditText) findViewById(R.id.ans112_1);
+                TextView ques112_2 = (TextView) findViewById(R.id.ques112_2);
+                Spinner ans112_2 = (Spinner) findViewById(R.id.ans112_2);
+                if(ans112.getSelectedItemPosition()==1) {
+                    ques112_1.setVisibility(View.GONE);
+                    ans112_1.setVisibility(View.GONE);
+                    ques112_2.setVisibility(View.GONE);
+                    ans112_2.setVisibility(View.GONE);
+                }else{
+                    ques112_1.setVisibility(View.VISIBLE);
+                    ans112_1.setVisibility(View.VISIBLE);
+                    ques112_2.setVisibility(View.VISIBLE);
+                    ans112_2.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         ans112_2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -955,6 +1345,69 @@ public class Preguntas2 extends AppCompatActivity {
                     ans112_2other.setVisibility(View.VISIBLE);
                 }else{
                     ans112_2other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans113.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans113 = (Spinner) findViewById(R.id.ans113);
+                TextView ques113_1 = (TextView) findViewById(R.id.ques113_1);
+                EditText ans113_1 = (EditText) findViewById(R.id.ans113_1);
+                if(ans113.getSelectedItemPosition()==1) {
+                    ques113_1.setVisibility(View.GONE);
+                    ans113_1.setVisibility(View.GONE);
+                }else{
+                    ques113_1.setVisibility(View.VISIBLE);
+                    ans113_1.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans114.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans114 = (Spinner) findViewById(R.id.ans114);
+                TextView ques114_1 = (TextView) findViewById(R.id.ques114_1);
+                EditText ans114_1 = (EditText) findViewById(R.id.ans114_1);
+                if(ans114.getSelectedItemPosition()==1) {
+                    ques114_1.setVisibility(View.GONE);
+                    ans114_1.setVisibility(View.GONE);
+                }else{
+                    ques114_1.setVisibility(View.VISIBLE);
+                    ans114_1.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans116.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans116 = (Spinner) findViewById(R.id.ans116);
+                TextView ques116_1 = (TextView) findViewById(R.id.ques116_1);
+                EditText ans116_1 = (EditText) findViewById(R.id.ans116_1);
+                if(ans116.getSelectedItemPosition()==1) {
+                    ques116_1.setVisibility(View.GONE);
+                    ans116_1.setVisibility(View.GONE);
+                }else{
+                    ques116_1.setVisibility(View.VISIBLE);
+                    ans116_1.setVisibility(View.VISIBLE);
                 }
             }
 
@@ -982,6 +1435,87 @@ public class Preguntas2 extends AppCompatActivity {
             }
         });
 
+        ans118.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans118 = (Spinner) findViewById(R.id.ans118);
+                TextView ques118_1 = (TextView) findViewById(R.id.ques118_1);
+                Spinner ans118_1 = (Spinner) findViewById(R.id.ans118_1);
+                TextView ques118_2 = (TextView) findViewById(R.id.ques118_2);
+                Spinner ans118_2 = (Spinner) findViewById(R.id.ans118_2);
+                TextView ques118_3 = (TextView) findViewById(R.id.ques118_3);
+                EditText ans118_3 = (EditText) findViewById(R.id.ans118_3);
+                TextView ques118_4 = (TextView) findViewById(R.id.ques118_4);
+                Spinner ans118_4 = (Spinner) findViewById(R.id.ans118_4);
+                TextView ques118_5 = (TextView) findViewById(R.id.ques118_5);
+                EditText ans118_5 = (EditText) findViewById(R.id.ans118_5);
+                TextView ques118_6 = (TextView) findViewById(R.id.ques118_6);
+                EditText ans118_6 = (EditText) findViewById(R.id.ans118_6);
+                TextView ques118_7 = (TextView) findViewById(R.id.ques118_7);
+                EditText ans118_7 = (EditText) findViewById(R.id.ans118_7);
+                TextView ques118_8 = (TextView) findViewById(R.id.ques118_8);
+                EditText ans118_8 = (EditText) findViewById(R.id.ans118_8);
+                TextView ques118_9 = (TextView) findViewById(R.id.ques118_9);
+                EditText ans118_9 = (EditText) findViewById(R.id.ans118_9);
+                TextView ques118_10 = (TextView) findViewById(R.id.ques118_10);
+                Spinner ans118_10 = (Spinner) findViewById(R.id.ans118_10);
+                TextView ques118_11 = (TextView) findViewById(R.id.ques118_11);
+                Spinner ans118_11 = (Spinner) findViewById(R.id.ans118_11);
+                if(ans118.getSelectedItemPosition()==1) {
+                    ques118_1.setVisibility(View.GONE);
+                    ans118_1.setVisibility(View.GONE);
+                    ques118_2.setVisibility(View.GONE);
+                    ans118_2.setVisibility(View.GONE);
+                    ques118_3.setVisibility(View.GONE);
+                    ans118_3.setVisibility(View.GONE);
+                    ques118_4.setVisibility(View.GONE);
+                    ans118_4.setVisibility(View.GONE);
+                    ques118_5.setVisibility(View.GONE);
+                    ans118_5.setVisibility(View.GONE);
+                    ques118_6.setVisibility(View.GONE);
+                    ans118_6.setVisibility(View.GONE);
+                    ques118_7.setVisibility(View.GONE);
+                    ans118_7.setVisibility(View.GONE);
+                    ques118_8.setVisibility(View.GONE);
+                    ans118_8.setVisibility(View.GONE);
+                    ques118_9.setVisibility(View.GONE);
+                    ans118_9.setVisibility(View.GONE);
+                    ques118_10.setVisibility(View.GONE);
+                    ans118_10.setVisibility(View.GONE);
+                    ques118_11.setVisibility(View.GONE);
+                    ans118_11.setVisibility(View.GONE);
+                }else{
+                    ques118_1.setVisibility(View.VISIBLE);
+                    ans118_1.setVisibility(View.VISIBLE);
+                    ques118_2.setVisibility(View.VISIBLE);
+                    ans118_2.setVisibility(View.VISIBLE);
+                    ques118_3.setVisibility(View.VISIBLE);
+                    ans118_3.setVisibility(View.VISIBLE);
+                    ques118_4.setVisibility(View.VISIBLE);
+                    ans118_4.setVisibility(View.VISIBLE);
+                    ques118_5.setVisibility(View.VISIBLE);
+                    ans118_5.setVisibility(View.VISIBLE);
+                    ques118_6.setVisibility(View.VISIBLE);
+                    ans118_6.setVisibility(View.VISIBLE);
+                    ques118_7.setVisibility(View.VISIBLE);
+                    ans118_7.setVisibility(View.VISIBLE);
+                    ques118_8.setVisibility(View.VISIBLE);
+                    ans118_8.setVisibility(View.VISIBLE);
+                    ques118_9.setVisibility(View.VISIBLE);
+                    ans118_9.setVisibility(View.VISIBLE);
+                    ques118_10.setVisibility(View.VISIBLE);
+                    ans118_10.setVisibility(View.VISIBLE);
+                    ques118_11.setVisibility(View.VISIBLE);
+                    ans118_11.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         ans118_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -991,6 +1525,27 @@ public class Preguntas2 extends AppCompatActivity {
                     ans118_1other.setVisibility(View.VISIBLE);
                 }else{
                     ans118_1other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans118_2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans118_2 = (Spinner) findViewById(R.id.ans118_2);
+                TextView ques118_3 = (TextView) findViewById(R.id.ques118_3);
+                EditText ans118_3 = (EditText) findViewById(R.id.ans118_3);
+                if(ans118_2.getSelectedItemPosition()==2) {
+                    ques118_3.setVisibility(View.GONE);
+                    ans118_3.setVisibility(View.GONE);
+                }else{
+                    ques118_3.setVisibility(View.VISIBLE);
+                    ans118_3.setVisibility(View.VISIBLE);
                 }
             }
 
@@ -1142,6 +1697,69 @@ public class Preguntas2 extends AppCompatActivity {
             }
         });
 
+        ans120.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans120 = (Spinner) findViewById(R.id.ans120);
+                TextView ques120_1 = (TextView) findViewById(R.id.ques120_1);
+                EditText ans120_1 = (EditText) findViewById(R.id.ans120_1);
+                if(ans120.getSelectedItemPosition()==1) {
+                    ques120_1.setVisibility(View.GONE);
+                    ans120_1.setVisibility(View.GONE);
+                }else{
+                    ques120_1.setVisibility(View.VISIBLE);
+                    ans120_1.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans127.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans127 = (Spinner) findViewById(R.id.ans127);
+                TextView ques127_1 = (TextView) findViewById(R.id.ques127_1);
+                EditText ans127_1 = (EditText) findViewById(R.id.ans127_1);
+                if(ans127.getSelectedItemPosition()==1) {
+                    ques127_1.setVisibility(View.GONE);
+                    ans127_1.setVisibility(View.GONE);
+                }else{
+                    ques127_1.setVisibility(View.VISIBLE);
+                    ans127_1.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans129.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans129 = (Spinner) findViewById(R.id.ans129);
+                TextView ques129_1 = (TextView) findViewById(R.id.ques129_1);
+                EditText ans129_1 = (EditText) findViewById(R.id.ans129_1);
+                if(ans129.getSelectedItemPosition()==1) {
+                    ques129_1.setVisibility(View.GONE);
+                    ans129_1.setVisibility(View.GONE);
+                }else{
+                    ques129_1.setVisibility(View.VISIBLE);
+                    ans129_1.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         saveButton =  (Button) findViewById(R.id.saveButton1);
         saveButton.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -1257,7 +1875,7 @@ public class Preguntas2 extends AppCompatActivity {
             EditText ans112_1 = (EditText) findViewById(R.id.ans112_1);
             EditText ans112_3 = (EditText) findViewById(R.id.ans112_3);
             EditText ans113_1 = (EditText) findViewById(R.id.ans113_1);
-            EditText ans114_1 = (EditText) findViewById(R.id.ans114_1);
+                EditText ans114_1 = (EditText) findViewById(R.id.ans114_1);
             EditText ans116_1 = (EditText) findViewById(R.id.ans116_1);
             EditText ans118_3 = (EditText) findViewById(R.id.ans118_3);
             EditText ans118_5 = (EditText) findViewById(R.id.ans118_5);
@@ -1382,7 +2000,7 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans42.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
-            fos.write(Integer.toString(ans42_1.getSelectedItemPosition()+1).getBytes());
+            fos.write(Integer.toString(ans42_1.getSelectedItemPosition()).getBytes());
             fos.write((", " + ans42_1other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(ans43.getText().toString().getBytes());
@@ -1698,14 +2316,14 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans118.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
-            fos.write(Integer.toString(ans118_1.getSelectedItemPosition()+1).getBytes());
+            fos.write(Integer.toString(ans118_1.getSelectedItemPosition()).getBytes());
             fos.write((", " + ans118_1other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
-            fos.write(Integer.toString(ans118_2.getSelectedItemPosition()+1).getBytes());
+            fos.write(Integer.toString(ans118_2.getSelectedItemPosition()).getBytes());
             fos.write("\t".getBytes());
             fos.write(ans118_3.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            fos.write(Integer.toString(ans118_4.getSelectedItemPosition()+1).getBytes());
+            fos.write(Integer.toString(ans118_4.getSelectedItemPosition()).getBytes());
             fos.write("\t".getBytes());
             fos.write(ans118_5.getText().toString().getBytes());
             fos.write("\t".getBytes());
