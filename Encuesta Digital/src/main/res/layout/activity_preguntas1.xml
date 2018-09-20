@@ -1899,6 +1899,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
                 android:gravity="left|center_vertical|fill"
                 android:text="Indique las condiciones de acceso a formación complementaria -educación no formal- de acuerdo con los siguientes ítems:"
                 android:textColor="#2b2b2b" />
@@ -2033,7 +2034,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="41.3. ¿Ha asistido a algún taller, curso, seminario, capacitación, otros?" />
+                android:text="41.3. ¿La formación complementaria fue de utilidad?" />
 
             <Spinner
                 android:id="@+id/ans41-3"
