@@ -839,7 +839,7 @@ public class Preguntas1 extends AppCompatActivity {
         ans19.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Spinner ans19 = (Spinner) findViewById(R.id.ans15);
+                Spinner ans19 = (Spinner) findViewById(R.id.ans19);
                 TextView ques20 = (TextView) findViewById(R.id.ques20);
                 Spinner ans20 = (Spinner) findViewById(R.id.ans20);
                 TextView ques20_1 = (TextView) findViewById(R.id.ques20_1);
