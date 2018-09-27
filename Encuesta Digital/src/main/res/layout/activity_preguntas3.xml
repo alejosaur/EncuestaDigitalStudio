@@ -482,7 +482,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Registre la información para la temporada de aguas descendiendo "
-                android:inputType="numberDecimal|numberSigned" />
+                android:inputType="text" />
 
             <TextView
                 android:id="@+id/ques53"
@@ -1112,7 +1112,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="70: Embarcación:" />
+                android:text="70. Embarcación:" />
 
             <EditText
                 android:id="@+id/ans70"

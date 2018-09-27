@@ -1041,7 +1041,7 @@ public class Preguntas3 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Spinner ans84_1 = (Spinner) findViewById(R.id.ans84_1);
                 EditText ans84_1other = (EditText) findViewById(R.id.ans84_1other);
-                if(ans84_1.getSelectedItemPosition()==2) {
+                if(ans84_1.getSelectedItemPosition()==3) {
                     ans84_1other.setVisibility(View.VISIBLE);
                 }else{
                     ans84_1other.setVisibility(View.GONE);
@@ -1080,7 +1080,7 @@ public class Preguntas3 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Spinner ans85_1 = (Spinner) findViewById(R.id.ans85_1);
                 EditText ans85_1other = (EditText) findViewById(R.id.ans85_1other);
-                if(ans85_1.getSelectedItemPosition()==2) {
+                if(ans85_1.getSelectedItemPosition()==3) {
                     ans85_1other.setVisibility(View.VISIBLE);
                 }else{
                     ans85_1other.setVisibility(View.GONE);
@@ -1119,7 +1119,7 @@ public class Preguntas3 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Spinner ans86_1 = (Spinner) findViewById(R.id.ans86_1);
                 EditText ans86_1other = (EditText) findViewById(R.id.ans86_1other);
-                if(ans86_1.getSelectedItemPosition()==2) {
+                if(ans86_1.getSelectedItemPosition()==3) {
                     ans86_1other.setVisibility(View.VISIBLE);
                 }else{
                     ans86_1other.setVisibility(View.GONE);

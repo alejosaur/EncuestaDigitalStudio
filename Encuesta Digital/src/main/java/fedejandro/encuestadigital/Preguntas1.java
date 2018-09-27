@@ -1283,7 +1283,7 @@ public class Preguntas1 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Spinner ans41_1 = (Spinner) findViewById(R.id.ans41_1);
                 EditText ans41_1other = (EditText) findViewById(R.id.ans41_1other);
-                if(ans41_1.getSelectedItemPosition()==4) {
+                if(ans41_1.getSelectedItemPosition()==2 || ans41_1.getSelectedItemPosition()==4) {
                     ans41_1other.setVisibility(View.VISIBLE);
                 }else{
                     ans41_1other.setVisibility(View.GONE);
