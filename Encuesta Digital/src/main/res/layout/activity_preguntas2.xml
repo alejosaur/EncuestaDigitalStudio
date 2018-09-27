@@ -475,7 +475,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Pendiente"
+                android:hint="Pendientef"
                 android:inputType="text" />
 
             <TextView
@@ -1312,7 +1312,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Dato en términos de porcentaje (%)"
-                android:inputType="textShortMessage" />
+                android:inputType="number|numberDecimal" />
 
             <TextView
                 android:id="@+id/ques84"
@@ -2440,7 +2440,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre los  kilogramos"
+                android:hint="Registre los gramos"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -2462,7 +2462,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el valor en pesos por kilogramo"
+                android:hint="Registre el valor en pesos por gramo"
                 android:inputType="numberDecimal" />
 
             <TextView

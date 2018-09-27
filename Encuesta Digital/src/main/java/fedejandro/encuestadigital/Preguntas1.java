@@ -19,7 +19,7 @@ import java.io.*;
 
 public class Preguntas1 extends AppCompatActivity {
 
-    Button nextButtonEUPAC, nextButtonUPPA;
+    Button nextButtonECUPAC, nextButtonECUPPA;
     private String filename = "datos.txt";
     private String filepath = "EncuestaDatos";
     File myExternalFile;
@@ -1310,21 +1310,21 @@ public class Preguntas1 extends AppCompatActivity {
             }
         });
 
-        nextButtonEUPAC =  (Button) findViewById(R.id.nextButtonEUPAC);
-        nextButtonEUPAC.setOnClickListener(new View.OnClickListener(){
+        nextButtonECUPAC =  (Button) findViewById(R.id.nextButtonECUPAC);
+        nextButtonECUPAC.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                escribir("EUPAC");
+                escribir("ECUPAC");
                 Intent preg2 = new Intent(getApplicationContext(), Preguntas2.class);
                 startActivity(preg2);
             }
         });
 
-	    nextButtonUPPA =  (Button) findViewById(R.id.nextButtonUPPA);
-        nextButtonUPPA.setOnClickListener(new View.OnClickListener(){
+	    nextButtonECUPPA =  (Button) findViewById(R.id.nextButtonECUPPA);
+        nextButtonECUPPA.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                escribir("UPPA");
+                escribir("ECUPPA");
                 Intent preg3 = new Intent(getApplicationContext(), Preguntas3.class);
                 startActivity(preg3);
 

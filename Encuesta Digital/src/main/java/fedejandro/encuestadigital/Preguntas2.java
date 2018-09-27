@@ -314,7 +314,7 @@ public class Preguntas2 extends AppCompatActivity {
                 "No aplica", "Sí", "No"
         };
         String[] cargoAsociacion = new String[] {
-                "No aplica", "Directivo", "Centro de acopio", "Centro de comercialización"
+                "No aplica", "Directivo"
         };
         String[] lugarVenta = new String[] {
                 "Venta en la UPAC", "Socio activo", "Socio pasivo"

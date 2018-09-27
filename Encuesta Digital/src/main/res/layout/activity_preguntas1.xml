@@ -1186,7 +1186,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="top|left"
-                android:hint="Distancia en Kilómetros"
+                android:hint="Distancia en metros"
                 android:inputType="number|numberDecimal" />
 
             <TextView
@@ -1207,7 +1207,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="top|left"
-                android:hint="Tiempo en horas"
+                android:hint="Tiempo en minutos"
                 android:inputType="time" />
 
             <TextView
@@ -1322,7 +1322,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="top|left"
-                android:hint="Distancia en Kilómetros"
+                android:hint="Distancia en metros"
                 android:inputType="number|numberDecimal" />
 
             <TextView
@@ -1343,7 +1343,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="top|left"
-                android:hint="Valor numérico en horas"
+                android:hint="Valor numérico en minutos"
                 android:inputType="time" />
 
             <TextView
@@ -1450,7 +1450,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="top|left"
-                android:hint="Distancia en Kilómetros"
+                android:hint="Distancia en metros"
                 android:inputType="number|numberDecimal" />
 
             <TextView
@@ -1471,7 +1471,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="top|left"
-                android:hint="Valor numérico en horas"
+                android:hint="Valor numérico en minutos"
                 android:inputType="time" />
 
             <TextView
@@ -1557,7 +1557,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="top|left"
-                android:hint="Distancia en kilómetros"
+                android:hint="Distancia en metros"
                 android:inputType="number|numberDecimal" />
 
             <TextView
@@ -1578,7 +1578,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="top|left"
-                android:hint="Tiempo en horas"
+                android:hint="Tiempo en minutos"
                 android:inputType="time" />
 
             <TextView
@@ -2070,29 +2070,29 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="10dp"
                 android:gravity="left|center_vertical"
-                android:text='Para proceder a la encuesta de producción acuícola pulse el botón que dice "EUPAC", para continuar a la encuesta de pesca artesanal, pulse el botón que dice "UPPA"'
+                android:text='Para proceder a la encuesta de producción acuícola pulse el botón que dice "ECUPAC", para continuar a la encuesta de pesca artesanal, pulse el botón que dice "ECUPPA"'
                 android:textColor="@android:color/holo_red_dark"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/nextButtonEUPAC"
+                android:id="@+id/nextButtonECUPAC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Continuar a la EUPAC" />
+                android:text="Continuar a la ECUPAC" />
 
             <Button
-                android:id="@+id/nextButtonUPPA"
+                android:id="@+id/nextButtonECUPPA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="8dp"
-                android:text="Continuar a la UPPA" />
+                android:text="Continuar a la ECUPPA" />
 
         </LinearLayout>
     </ScrollView>

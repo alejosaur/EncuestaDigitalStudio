@@ -482,7 +482,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Registre la información para la temporada de aguas descendiendo "
-                android:inputType="text" />
+                android:inputType="numberDecimal|numberSigned" />
 
             <TextView
                 android:id="@+id/ques53"
@@ -522,7 +522,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Registre el número (N°) de lances por faena para cada arte de pesca"
-                android:inputType="text" />
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/ques53-2"
@@ -542,7 +542,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Registre e tiempo de duración de cada lance en el formato Horas/minutos (hh//mm)"
-                android:inputType="text|time" />
+                android:inputType="time" />
 
             <TextView
                 android:id="@+id/ques53-3"
@@ -662,7 +662,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Meses separados por coma"
-                android:inputType="numberDecimal" />
+                android:inputType="text" />
 
             <TextView
                 android:id="@+id/subtituloDinamicaAguas"
@@ -1458,7 +1458,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Describa el procedimiento"
-                android:inputType="numberDecimal" />
+                android:inputType="text" />
 
             <TextView
                 android:id="@+id/ques77-1"
@@ -2786,7 +2786,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Registre la razón social"
-                android:inputType="number" />
+                android:inputType="text" />
 
             <TextView
                 android:id="@+id/ques96-5"
