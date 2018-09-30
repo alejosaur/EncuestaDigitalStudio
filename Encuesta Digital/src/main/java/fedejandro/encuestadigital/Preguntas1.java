@@ -1556,8 +1556,6 @@ public class Preguntas1 extends AppCompatActivity {
             fos.write(Integer.toString(ans21_2.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans22.getSelectedItemPosition()+1).getBytes());
-            fos.write("\t".getBytes());
-            fos.write(Integer.toString(ans22.getSelectedItemPosition()+1).getBytes());
             fos.write(("," + ans22other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans23.getSelectedItemPosition()+1).getBytes());

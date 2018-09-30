@@ -1703,7 +1703,7 @@ public class Preguntas3 extends AppCompatActivity {
             CheckBox ans83j = (CheckBox) findViewById(R.id.ans83j);
             
             FileOutputStream fos = new FileOutputStream(myExternalFile, true);
-            for (int i = 0; i < 162; i++) {
+            for (int i = 0; i < 161; i++) {
                 fos.write("\t".getBytes());
             }
 
