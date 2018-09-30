@@ -492,7 +492,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="53. Duración de la farna (días)" />
+                android:text="53. Duración de la faena (días)" />
 
             <EditText
                 android:id="@+id/ans53"
@@ -602,7 +602,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Registre el número de Horas/Minutos (hh//mm) empleadas en la actividad pesquera durante  la tarde"
-                android:inputType="numberDecimal" />
+                android:inputType="time" />
 
             <TextView
                 android:id="@+id/ques53-6"
@@ -1420,7 +1420,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:text="Otra tansformción, ¿Cuál?" />
+                android:text="Otra tansformación, ¿Cuál?" />
 
             <CheckBox
                 android:id="@+id/ans76l"
@@ -2195,7 +2195,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre cRegistre la cantidad de anzuelos"
+                android:hint="Registre la cantidad de anzuelos"
                 android:inputType="number" />
 
             <TextView

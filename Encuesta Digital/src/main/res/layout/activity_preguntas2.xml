@@ -475,8 +475,8 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Pendientef"
-                android:inputType="text" />
+                android:hint="Pendiente"
+                android:inputType="numberDecimal|numberSigned" />
 
             <TextView
                 android:id="@+id/ques59"
@@ -1131,7 +1131,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="N° de aniamles cosechados por ciclo"
+                android:hint="N° de animales cosechados por ciclo"
                 android:inputType="numberDecimal" />
 
             <TextView

@@ -943,6 +943,7 @@ public class Preguntas3 extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Spinner ans82_4 = (Spinner) findViewById(R.id.ans82_4);
+                EditText ans82_4other = (EditText) findViewById(R.id.ans82_4other);
                 TextView ques82_5 = (TextView) findViewById(R.id.ques82_5);
                 EditText ans82_5 = (EditText) findViewById(R.id.ans82_5);
                 if(ans82_4.getSelectedItemPosition()==3) {
@@ -951,6 +952,11 @@ public class Preguntas3 extends AppCompatActivity {
                 }else{
                     ques82_5.setVisibility(View.GONE);
                     ans82_5.setVisibility(View.GONE);
+                }
+                if(ans82_4.getSelectedItemPosition()==4){
+                    ans82_4other.setVisibility(View.VISIBLE);
+                }else{
+                    ans82_4other.setVisibility(View.GONE);
                 }
             }
 
