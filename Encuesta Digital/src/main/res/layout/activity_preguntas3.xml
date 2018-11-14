@@ -219,25 +219,6 @@
                 android:hint="Nombre"
                 android:inputType="text" />
 
-            <TextView
-                android:id="@+id/ques46-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="46.2. Coordenadas:" />
-
-            <EditText
-                android:id="@+id/ans46-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Waypoint"
-                android:inputType="text" />
 
             <TextView
                 android:id="@+id/ques47"
@@ -257,26 +238,6 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Nombre"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/ques47-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="47.1. Coordenadas:" />
-
-            <EditText
-                android:id="@+id/ans47-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registra las coordenadas obtenidas con el GPS "
                 android:inputType="text" />
 
             <TextView
@@ -501,7 +462,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el número de personas"
+                android:hint="Registre el número (N°) de días que dura la faena"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -541,7 +502,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre e tiempo de duración de cada lance en el formato Horas/minutos (hh//mm)"
+                android:hint="Registre el tiempo de duración de cada lance en el formato Horas/minutos (hh:mm)"
                 android:inputType="time" />
 
             <TextView
@@ -552,7 +513,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="53.3. N° horas madrugada:" />
+                android:text="53.3. N° de horas de la madrugada que dedica a pescar:" />
 
             <EditText
                 android:id="@+id/ans53-3"
@@ -561,7 +522,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el número de Horas/Minutos (hh//mm) empleadas en la actividad pesquera durante  la madrugada"
+                android:hint="Registre el número de Horas/Minutos (hh:mm) empleadas en la actividad pesquera durante  la madrugada"
                 android:inputType="time" />
 
             <TextView
@@ -572,7 +533,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="53.4. N° horas mañana:" />
+                android:text="53.4. N° de horas de la mañana que dedica a pescar:" />
 
             <EditText
                 android:id="@+id/ans53-4"
@@ -581,7 +542,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el número de Horas/Minutos (hh//mm) empleadas en la actividad pesquera durante  la mañana"
+                android:hint="Registre el número de Horas/Minutos (hh:mm) empleadas en la actividad pesquera durante  la mañana"
                 android:inputType="time" />
 
             <TextView
@@ -592,7 +553,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="53.5.  N° horas tarde" />
+                android:text="53.5.  N° de horas de la tarde que dedica a pescar" />
 
             <EditText
                 android:id="@+id/ans53-5"
@@ -601,7 +562,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el número de Horas/Minutos (hh//mm) empleadas en la actividad pesquera durante  la tarde"
+                android:hint="Registre el número de Horas/Minutos (hh:mm) empleadas en la actividad pesquera durante  la tarde"
                 android:inputType="time" />
 
             <TextView
@@ -612,7 +573,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="53.6.  N° horas noche" />
+                android:text="53.6.  N° de horas de la noche que dedica a pescar" />
 
             <EditText
                 android:id="@+id/ans53-6"
@@ -671,7 +632,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:gravity="left|center_vertical"
-                android:text="Según la dinámica de las aguas detalle la siguiente información "
+                android:text="Teniendo en cuenta la dinámica de las aguas, en cuáles meses considera de presentan: "
                 android:textColor="#2b2b2b" />
 
             <TextView
@@ -782,7 +743,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="61. Indique el nombre de las especies capturadas y desembarcadas:" />
+                android:text="61. Indique el nombre de las especies capturadas y desembarcadas por faena:" />
 
             <EditText
                 android:id="@+id/ans61"
@@ -2381,7 +2342,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="87. ¿Realiza disposición adecuado de los desechos sólidos como basuras, restos de redes y otros residuos producto de la faena de pesca?" />
+                android:text="87. ¿Realiza disposición adecuada de los desechos sólidos como basuras, restos de redes y otros residuos producto de la faena de pesca?" />
 
             <Spinner
                 android:id="@+id/ans87"

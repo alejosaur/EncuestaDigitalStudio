@@ -42,7 +42,7 @@ public class Preguntas3 extends AppCompatActivity {
                 "Río", "Ciénaga", "Embalse", "Quebrada", "Caño"
         };
         String[] tiempoDia = new String[] {
-                "Mañana", "Tarde", "Noche", "Madrugada"
+                "Mañana", "Tarde", "Noche", "Madrugada", "Madrugada y mañana", "Madrugada y tarde", "Madrugada y noche", "Mañana y tarde", "Mañana y noche", "Tarde y noche"
         };
         String[] destinoProductos = new String[] {
                 "Autoconsumo", "Comercialización"
@@ -1521,9 +1521,7 @@ public class Preguntas3 extends AppCompatActivity {
         try {
 
             EditText ans46_1 = (EditText) findViewById(R.id.ans46_1);
-            EditText ans46_2 = (EditText) findViewById(R.id.ans46_2);
             EditText ans47 = (EditText) findViewById(R.id.ans47);
-            EditText ans47_1 = (EditText) findViewById(R.id.ans47_1);
             EditText ans52 = (EditText) findViewById(R.id.ans52);
             EditText ans52_1 = (EditText) findViewById(R.id.ans52_1);
             EditText ans52_2 = (EditText) findViewById(R.id.ans52_2);
@@ -1727,11 +1725,7 @@ public class Preguntas3 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(ans46_1.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            fos.write(ans46_2.getText().toString().getBytes());
-            fos.write("\t".getBytes());
             fos.write(ans47.getText().toString().getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans47_1.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans48.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
