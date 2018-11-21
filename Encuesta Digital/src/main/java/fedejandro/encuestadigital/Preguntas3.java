@@ -48,7 +48,7 @@ public class Preguntas3 extends AppCompatActivity {
                 "Autoconsumo", "Comercialización"
         };
         String[] disminucionCaptura = new String[] {
-                "Menor al 20% (Pérdidas mínimas)", "Entre el 20% y el 40% (Pérdidas moderadas)", "Mayor al 40% (Perdidas graves)"
+                "No aplica", "Menor al 20% (Pérdidas mínimas)", "Entre el 20% y el 40% (Pérdidas moderadas)", "Mayor al 40% (Perdidas graves)"
         };
         String[] predadores = new String[] {
                 "Aves", "Anfibios", "Réptiles", "Insectos", "Peces", "Manatíes", "Nutrias", "Otros, ¿Cuáles?", "Ninguno"
@@ -72,7 +72,7 @@ public class Preguntas3 extends AppCompatActivity {
                 "No aplica", "Propia", "Arrendada", "Otro tipo de tenencia, ¿Cuál?"
         };
         String[] fuentesEnergia = new String[] {
-                "Red eléctrica publica", "Generador eléctrico a gasolina o diésel", "Energía solar", "Energía eólica", "Combustibles fósiles", "Otra, ¿Cuál?"
+                "No aplica", "Red eléctrica publica", "Generador eléctrico a gasolina o diésel", "Energía solar", "Energía eólica", "Combustibles fósiles", "Otra, ¿Cuál?"
         };
         String[] tipoAsociacion = new String[] {
                 "No aplica", "Cooperativa", "Asociación ", "Sindicato", "Otra, ¿Cuál?"
@@ -1218,6 +1218,8 @@ public class Preguntas3 extends AppCompatActivity {
                 Spinner ans96_7 = (Spinner) findViewById(R.id.ans96_7);
                 TextView ques96_8 = (TextView) findViewById(R.id.ques96_8);
                 Spinner ans96_8 = (Spinner) findViewById(R.id.ans96_8);
+                TextView ques96_9 = (TextView) findViewById(R.id.ques96_9);
+                Spinner ans96_9 = (Spinner) findViewById(R.id.ans96_9);
                 if(ans96.getSelectedItemPosition()==1) {
                     ques96_1.setVisibility(View.GONE);
                     ans96_1.setVisibility(View.GONE);
@@ -1235,6 +1237,8 @@ public class Preguntas3 extends AppCompatActivity {
                     ans96_7.setVisibility(View.GONE);
                     ques96_8.setVisibility(View.GONE);
                     ans96_8.setVisibility(View.GONE);
+                    ques96_9.setVisibility(View.VISIBLE);
+                    ans96_9.setVisibility(View.VISIBLE);
                 }else{
                     ques96_1.setVisibility(View.VISIBLE);
                     ans96_1.setVisibility(View.VISIBLE);
@@ -1252,7 +1256,10 @@ public class Preguntas3 extends AppCompatActivity {
                     ans96_7.setVisibility(View.VISIBLE);
                     ques96_8.setVisibility(View.VISIBLE);
                     ans96_8.setVisibility(View.VISIBLE);
+                    ques96_9.setVisibility(View.GONE);
+                    ans96_9.setVisibility(View.GONE);
                 }
+
             }
 
             @Override
@@ -1893,7 +1900,7 @@ public class Preguntas3 extends AppCompatActivity {
             }
             fos.write(ans79other.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            fos.write(Integer.toString(ans79_1.getSelectedItemPosition()+1).getBytes());
+            fos.write(Integer.toString(ans79_1.getSelectedItemPosition()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans80.getSelectedItemPosition()+1).getBytes());
             fos.write(ans80other.getText().toString().getBytes());
@@ -2017,7 +2024,7 @@ public class Preguntas3 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans94_1.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
-            fos.write(Integer.toString(ans95.getSelectedItemPosition()+1).getBytes());
+            fos.write(Integer.toString(ans95.getSelectedItemPosition()).getBytes());
             fos.write(ans95other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans96.getSelectedItemPosition()+1).getBytes());

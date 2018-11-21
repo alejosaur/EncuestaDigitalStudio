@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Typeface;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -12,6 +13,9 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.StyleSpan;
 import android.view.View;
 import android.widget.*;
 
@@ -290,7 +294,7 @@ public class Preguntas1 extends AppCompatActivity {
         };
         String[] relacionPersonas = new String[] {
                 "Cónyuge","Hijo/a","Yerno/Nuera","Nieto/a, Bisnieto/a","Padre o madre del cónyuge","Otro pariente",
-                "No emparentado"
+                "No emparentado", "Encuestado"
         };
         String[] estadoCivil = new String[] {
                 "Soltero","Casado","Unión Libre","Separado","Divorciado","Viudo"
@@ -338,7 +342,7 @@ public class Preguntas1 extends AppCompatActivity {
                 "No aplica", "Hospital","Clínica","Centro de Salud","Puesto de Salud"
         };
         String[] entidadesAcuicolas = new String[] {
-                "AUNAP","ICA","CAR-CORPOCESAR","UMATA","Otras"
+                "AUNAP","ICA","CAR-CORPOCESAR","UMATA","Otras", "Ninguna"
         };
         String[] periodicaPermanente = new String[] {
                 "Periódica","Permanente"
@@ -1063,16 +1067,55 @@ public class Preguntas1 extends AppCompatActivity {
             }
         });
 
+        TextView textoAccesoServiciosAgri = (TextView)findViewById(R.id.textoAccesoServiciosAgri);
+        String normalText1 = "Indique las condiciones de acceso a ";
+        String boldText = "servicios de apoyo";
+        String normalText2 = " para la acuicultura/pesca artesanal de acuerdo con los siguientes ítems:";
+        SpannableString str = new SpannableString(normalText1 + boldText + normalText2);
+        str.setSpan(new StyleSpan(Typeface.BOLD), normalText1.length(), normalText1.length()+boldText.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        textoAccesoServiciosAgri.setText(str);
+
         ans33.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Spinner ans33 = (Spinner) findViewById(R.id.ans33);
                 EditText ans33other = (EditText) findViewById(R.id.ans33other);
+                TextView ques33_1 = (TextView) findViewById(R.id.ques33_1);
+                EditText ans33_1 = (EditText) findViewById(R.id.ans33_1);
+                TextView ques33_2 = (TextView) findViewById(R.id.ques33_2);
+                EditText ans33_2 = (EditText) findViewById(R.id.ans33_2);
+                TextView ques33_3 = (TextView) findViewById(R.id.ques33_3);
+                CheckBox isTerrestreInst = (CheckBox) findViewById(R.id.isTerrestreInst);
+                CheckBox isFluvialInst = (CheckBox) findViewById(R.id.isFluvialInst);
+                CheckBox isAereoInst = (CheckBox) findViewById(R.id.isAereoInst);
                 if(ans33.getSelectedItemPosition()==4) {
                     ans33other.setVisibility(View.VISIBLE);
                 }else{
                     ans33other.setVisibility(View.GONE);
                 }
+
+                if(ans33.getSelectedItemPosition()==5) {
+                    ques33_1.setVisibility(View.GONE);
+                    ans33_1.setVisibility(View.GONE);
+                    ques33_2.setVisibility(View.GONE);
+                    ans33_2.setVisibility(View.GONE);
+                    ques33_3.setVisibility(View.GONE);
+                    isTerrestreInst.setVisibility(View.GONE);
+                    isFluvialInst.setVisibility(View.GONE);
+                    isAereoInst.setVisibility(View.GONE);
+
+                }else{
+                    ques33_1.setVisibility(View.VISIBLE);
+                    ans33_1.setVisibility(View.VISIBLE);
+                    ques33_2.setVisibility(View.VISIBLE);
+                    ans33_2.setVisibility(View.VISIBLE);
+                    ques33_3.setVisibility(View.VISIBLE);
+                    isTerrestreInst.setVisibility(View.VISIBLE);
+                    isFluvialInst.setVisibility(View.VISIBLE);
+                    isAereoInst.setVisibility(View.VISIBLE);
+
+                }
+
             }
 
             @Override
@@ -1770,20 +1813,20 @@ public class Preguntas1 extends AppCompatActivity {
 
         @Override
         public void onStatusChanged(String provider, int status, Bundle extras) {
-            Toast.makeText(Preguntas1.this, "Provider status changed",
-                    Toast.LENGTH_LONG).show();
+            //Toast.makeText(Preguntas1.this, "Provider status changed",
+            //        Toast.LENGTH_LONG).show();
         }
 
         @Override
         public void onProviderEnabled(String provider) {
-            Toast.makeText(Preguntas1.this, "Provider enabled by the user. GPS turned on",
-                    Toast.LENGTH_LONG).show();
+            //Toast.makeText(Preguntas1.this, "Provider enabled by the user. GPS turned on",
+            //        Toast.LENGTH_LONG).show();
         }
 
         @Override
         public void onProviderDisabled(String provider) {
-            Toast.makeText(Preguntas1.this, "Provider enabled by the user. GPS turned off",
-                    Toast.LENGTH_LONG).show();
+            //Toast.makeText(Preguntas1.this, "Provider enabled by the user. GPS turned off",
+            //        Toast.LENGTH_LONG).show();
         }
     }
 }

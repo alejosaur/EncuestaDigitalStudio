@@ -425,7 +425,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="20dp"
                 android:gravity="center_vertical|center_horizontal"
-                android:text="SITUACIÓN DEMOGRÁFICA Y SOCIAL DEL GRUPO FAMILIAR DEL PRODUCTOR"
+                android:text="SITUACIÓN DEMOGRÁFICA Y SOCIAL DEL HOGAR DEL PRODUCTOR"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="23sp"
                 app:fontFamily="serif" />
@@ -1119,7 +1119,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="30. ¿A qué tipo de educación tiene acceso?" />
+                android:text="30. Actualmente, ¿A qué tipo de educación tiene acceso?" />
 
             <Spinner
                 android:id="@+id/ans30"
@@ -1401,7 +1401,6 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:gravity="left|center_vertical|fill"
-                android:text="Indique las condiciones de acceso a servicios de apoyo para la acuicultura/pesca artesanal de acuerdo con los siguientes ítems:"
                 android:textColor="#2b2b2b" />
 
             <TextView
@@ -1651,7 +1650,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="39. ¿Ha solicitado alguna vez crédito o financiación para desarrollar actividades acuícolas?" />
+                android:text="39. ¿Ha obtenido alguna vez crédito o financiación para desarrollar actividades acuícolas?" />
 
             <Spinner
                 android:id="@+id/ans39"

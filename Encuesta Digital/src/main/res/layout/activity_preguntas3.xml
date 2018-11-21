@@ -207,7 +207,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="46.1. Registre el nombre del lugar:" />
+                android:text="46.1. Nombre del lugar donde pesca principalmente:" />
 
             <EditText
                 android:id="@+id/ans46-1"
@@ -308,7 +308,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="51. ¿Le interesa participar en proyectos de acuicultura?" />
+                android:text="51. ¿Le interesaría participar en proyectos de acuicultura?" />
 
             <Spinner
                 android:id="@+id/ans51"
@@ -353,7 +353,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="52. ¿Cuántos pescadores van en la embarcación en una jornada de pesca?" />
+                android:text="52. ¿Cuántos pescadores van en la embarcación en una faena de pesca?" />
 
             <EditText
                 android:id="@+id/ans52"
@@ -632,7 +632,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:gravity="left|center_vertical"
-                android:text="Teniendo en cuenta la dinámica de las aguas, en cuáles meses considera de presentan: "
+                android:text="Teniendo en cuenta la dinámica de las aguas, en cuáles meses considera se presentan: "
                 android:textColor="#2b2b2b" />
 
             <TextView
@@ -723,7 +723,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="60. Indique cada arte de pesca empleado durante la faena de pesca:" />
+                android:text="60. Indique cada arte de pesca empleado durante la faena:" />
 
             <EditText
                 android:id="@+id/ans60"
@@ -773,7 +773,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Registre el peso en kilogramos (Kg)"
-                android:inputType="numberDecimal" />
+                android:inputType="textLongMessage" />
 
             <TextView
                 android:id="@+id/ques63"
@@ -793,7 +793,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Registre el valor en pesos ($)"
-                android:inputType="numberDecimal" />
+                android:inputType="textLongMessage" />
 
             <TextView
                 android:id="@+id/ques64"
@@ -873,7 +873,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="65. Carnada:" />
+                android:text="65. Carnada (gramos):" />
 
             <EditText
                 android:id="@+id/ans65"
@@ -882,7 +882,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre la cantidad"
+                android:hint="Registre la cantidad en gramos"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -893,7 +893,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="65.1 Costo:" />
+                android:text="65.1 Costo total ($):" />
 
             <EditText
                 android:id="@+id/ans65-1"
@@ -902,7 +902,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el valor"
+                android:hint="Registre el valor en pesos"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -913,7 +913,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="66. Mano de obra (Sueldos):" />
+                android:text="66. Mano de obra (Personas):" />
 
             <EditText
                 android:id="@+id/ans66"
@@ -933,7 +933,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="66.1 Costo:" />
+                android:text="66.1 Costo total ($):" />
 
             <EditText
                 android:id="@+id/ans66-1"
@@ -973,7 +973,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="67.1 Costo:" />
+                android:text="67.1 Costo total ($):" />
 
             <EditText
                 android:id="@+id/ans67-1"
@@ -993,7 +993,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="68. Combustible:" />
+                android:text="68. Combustible (galones):" />
 
             <EditText
                 android:id="@+id/ans68"
@@ -1002,7 +1002,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre la cantidad"
+                android:hint="Registre la cantidad en galones"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1013,7 +1013,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="68.1 Costo:" />
+                android:text="68.1 Costo total ($):" />
 
             <EditText
                 android:id="@+id/ans68-1"
@@ -1053,7 +1053,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="69.1 Costo:" />
+                android:text="69.1 Costo total ($):" />
 
             <EditText
                 android:id="@+id/ans69-1"
@@ -1093,7 +1093,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="70.1 Costo:" />
+                android:text="70.1 Costo total ($):" />
 
             <EditText
                 android:id="@+id/ans70-1"
@@ -1133,7 +1133,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="71.1 Costo:" />
+                android:text="71.1 Costo total ($):" />
 
             <EditText
                 android:id="@+id/ans71-1"
@@ -1173,7 +1173,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="72.1 Costo:" />
+                android:text="72.1 Costo total ($):" />
 
             <EditText
                 android:id="@+id/ans72-1"
@@ -1213,7 +1213,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="73.1 Costo:" />
+                android:text="73.1 Costo total ($):" />
 
             <EditText
                 android:id="@+id/ans73-1"
@@ -1242,8 +1242,8 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre la cantidad"
-                android:inputType="numberDecimal" />
+                android:hint="Registre cuál"
+                android:inputType="textLongMessage" />
 
             <TextView
                 android:id="@+id/ques74-1"
@@ -1253,7 +1253,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="74.1 Costo:" />
+                android:text="74.1 Costo total ($):" />
 
             <EditText
                 android:id="@+id/ans74-1"
@@ -2047,7 +2047,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="83.5. Ojo de la malla (pulgadas):" />
+                android:text="83.5. Ojo de la malla (centímetros):" />
 
             <EditText
                 android:id="@+id/ans83-5"
@@ -2056,7 +2056,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el valor del ojo de malla (pulgadas)"
+                android:hint="Registre el valor del ojo de malla centímetros"
                 android:inputType="numberDecimal" />
 
             <TextView
