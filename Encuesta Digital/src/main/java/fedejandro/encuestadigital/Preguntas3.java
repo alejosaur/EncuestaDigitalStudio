@@ -1,9 +1,13 @@
 package fedejandro.encuestadigital;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.StyleSpan;
 import android.view.View;
 import android.widget.*;
 
@@ -302,6 +306,10 @@ public class Preguntas3 extends AppCompatActivity {
         String[] presentacion = new String[] {
                 "Entero", "Vivo", "Eviscerado", "Empacado en canastillas", "Empacado al vacío", "Seco", "Salado", "Sin escama", "Sin branquias", "Postas", "Descabezado", "Otro, ¿Cuál?"
         };
+        String[] unidadVenta = new String[] {
+                "Libra", "Kilogramo", "Arroba"
+        };
+
 
         Spinner ans42 = (Spinner) findViewById(R.id.ans42);
         ArrayAdapter<String> adapterAns42 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, formaPesca);
@@ -553,6 +561,21 @@ public class Preguntas3 extends AppCompatActivity {
         adapterAns97.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans97.setAdapter(adapterAns97);
 
+        Spinner ans98_1 = (Spinner) findViewById(R.id.ans98_1);
+        ArrayAdapter<String> adapterAns98_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, unidadVenta);
+        adapterAns98_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans98_1.setAdapter(adapterAns98_1);
+
+        Spinner ans99_1 = (Spinner) findViewById(R.id.ans99_1);
+        ArrayAdapter<String> adapterAns99_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, unidadVenta);
+        adapterAns99_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans99_1.setAdapter(adapterAns99_1);
+
+        Spinner ans100_1 = (Spinner) findViewById(R.id.ans100_1);
+        ArrayAdapter<String> adapterAns100_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, unidadVenta);
+        adapterAns100_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans100_1.setAdapter(adapterAns100_1);
+
         Spinner ans101 = (Spinner) findViewById(R.id.ans101);
         ArrayAdapter<String> adapterAns101 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, lugarVenta);
         adapterAns101.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -563,8 +586,13 @@ public class Preguntas3 extends AppCompatActivity {
         adapterAns102.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans102.setAdapter(adapterAns102);
 
+        Spinner ans103 = (Spinner) findViewById(R.id.ans103);
+        ArrayAdapter<String> adapterAns103 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, presentacion);
+        adapterAns103.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans103.setAdapter(adapterAns103);
+
         Spinner ans104 = (Spinner) findViewById(R.id.ans104);
-        ArrayAdapter<String> adapterAns104 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, presentacion);
+        ArrayAdapter<String> adapterAns104 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
         adapterAns104.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans104.setAdapter(adapterAns104);
 
@@ -587,11 +615,6 @@ public class Preguntas3 extends AppCompatActivity {
         ArrayAdapter<String> adapterAns108 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
         adapterAns108.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans108.setAdapter(adapterAns108);
-
-        Spinner ans109 = (Spinner) findViewById(R.id.ans109);
-        ArrayAdapter<String> adapterAns109 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
-        adapterAns109.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        ans109.setAdapter(adapterAns109);
 
         EditText ans42other = (EditText) findViewById(R.id.ans42other);
         ans42other.setVisibility(View.GONE);
@@ -641,8 +664,8 @@ public class Preguntas3 extends AppCompatActivity {
         EditText ans96_1other = (EditText) findViewById(R.id.ans96_1other);
         ans96_1other.setVisibility(View.GONE);
 
-        EditText ans104other = (EditText) findViewById(R.id.ans104other);
-        ans104other.setVisibility(View.GONE);
+        EditText ans103other = (EditText) findViewById(R.id.ans103other);
+        ans103other.setVisibility(View.GONE);
 
         CheckBox ans76k = (CheckBox) findViewById(R.id.ans76k);
         CheckBox ans79e = (CheckBox) findViewById(R.id.ans79e);
@@ -1007,6 +1030,14 @@ public class Preguntas3 extends AppCompatActivity {
             }
         });
 
+        TextView ques83 = (TextView)findViewById(R.id.ques83);
+        String q83normalText1 = "83. De la siguiente lista ¿Qué ";
+        String q83boldText = "artes de pesca";
+        String q83normalText2 = " utiliza?";
+        SpannableString str83 = new SpannableString(q83normalText1 + q83boldText + q83normalText2);
+        str83.setSpan(new StyleSpan(Typeface.BOLD), q83normalText1.length(), q83normalText1.length()+q83boldText.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ques83.setText(str83);
+
         ans83j.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -1138,6 +1169,14 @@ public class Preguntas3 extends AppCompatActivity {
             }
         });
 
+        TextView ques87 = (TextView)findViewById(R.id.ques87);
+        String q87normalText1 = "87. ¿Realiza disposición adecuada de los desechos sólidos como ";
+        String q87boldText = "basuras";
+        String q87normalText2 = ", restos de redes y otros residuos producto de la faena de pesca?";
+        SpannableString str87 = new SpannableString(q87normalText1 + q87boldText + q87normalText2);
+        str87.setSpan(new StyleSpan(Typeface.BOLD), q87normalText1.length(), q87normalText1.length()+q87boldText.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ques87.setText(str87);
+
         ans87.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -1158,6 +1197,14 @@ public class Preguntas3 extends AppCompatActivity {
 
             }
         });
+
+        TextView ques89 = (TextView)findViewById(R.id.ques89);
+        String q89normalText1 = "89. ¿Realiza disposición adecuada de los ";
+        String q89boldText = "desechos sólidos";
+        String q89normalText2 = " por faenado y/o transformación  (vísceras, huesos, escamas, otros)?";
+        SpannableString str89 = new SpannableString(q89normalText1 + q89boldText + q89normalText2);
+        str89.setSpan(new StyleSpan(Typeface.BOLD), q89normalText1.length(), q89normalText1.length()+q89boldText.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ques89.setText(str89);
 
         ans89.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -1449,15 +1496,15 @@ public class Preguntas3 extends AppCompatActivity {
             }
         });
 
-        ans104.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        ans103.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Spinner ans104 = (Spinner) findViewById(R.id.ans104);
-                EditText ans104other = (EditText) findViewById(R.id.ans104other);
-                if(ans104.getSelectedItemPosition()==11) {
-                    ans104other.setVisibility(View.VISIBLE);
+                Spinner ans103 = (Spinner) findViewById(R.id.ans103);
+                EditText ans103other = (EditText) findViewById(R.id.ans103other);
+                if(ans103.getSelectedItemPosition()==11) {
+                    ans103other.setVisibility(View.VISIBLE);
                 }else{
-                    ans104other.setVisibility(View.GONE);
+                    ans103other.setVisibility(View.GONE);
                 }
             }
 
@@ -1467,18 +1514,18 @@ public class Preguntas3 extends AppCompatActivity {
             }
         });
 
-        ans106.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        ans105.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Spinner ans106 = (Spinner) findViewById(R.id.ans106);
-                TextView ques106_1 = (TextView) findViewById(R.id.ques106_1);
-                EditText ans106_1 = (EditText) findViewById(R.id.ans106_1);
-                if(ans106.getSelectedItemPosition()==1) {
-                    ques106_1.setVisibility(View.GONE);
-                    ans106_1.setVisibility(View.GONE);
+                Spinner ans105 = (Spinner) findViewById(R.id.ans105);
+                TextView ques105_1 = (TextView) findViewById(R.id.ques105_1);
+                EditText ans105_1 = (EditText) findViewById(R.id.ans105_1);
+                if(ans105.getSelectedItemPosition()==1) {
+                    ques105_1.setVisibility(View.GONE);
+                    ans105_1.setVisibility(View.GONE);
                 }else{
-                    ques106_1.setVisibility(View.VISIBLE);
-                    ans106_1.setVisibility(View.VISIBLE);
+                    ques105_1.setVisibility(View.VISIBLE);
+                    ans105_1.setVisibility(View.VISIBLE);
                 }
             }
 
@@ -1598,10 +1645,12 @@ public class Preguntas3 extends AppCompatActivity {
             EditText ans96_6 = (EditText) findViewById(R.id.ans96_6);
             EditText ans97_1 = (EditText) findViewById(R.id.ans97_1);
             EditText ans98 = (EditText) findViewById(R.id.ans98);
+            EditText ans98_2 = (EditText) findViewById(R.id.ans98_2);
             EditText ans99 = (EditText) findViewById(R.id.ans99);
+            EditText ans99_2 = (EditText) findViewById(R.id.ans99_2);
             EditText ans100 = (EditText) findViewById(R.id.ans100);
-            EditText ans103 = (EditText) findViewById(R.id.ans103);
-            EditText ans106_1 = (EditText) findViewById(R.id.ans106_1);
+            EditText ans100_2 = (EditText) findViewById(R.id.ans100_2);
+            EditText ans105_1 = (EditText) findViewById(R.id.ans105_1);
 
             Spinner ans42 = (Spinner) findViewById(R.id.ans42);
             Spinner ans43 = (Spinner) findViewById(R.id.ans43);
@@ -1653,14 +1702,17 @@ public class Preguntas3 extends AppCompatActivity {
             Spinner ans96_8 = (Spinner) findViewById(R.id.ans96_8);
             Spinner ans96_9 = (Spinner) findViewById(R.id.ans96_9);
             Spinner ans97 = (Spinner) findViewById(R.id.ans97);
+            Spinner ans98_1 = (Spinner) findViewById(R.id.ans98_1);
+            Spinner ans99_1 = (Spinner) findViewById(R.id.ans99_1);
+            Spinner ans100_1 = (Spinner) findViewById(R.id.ans100_1);
             Spinner ans101 = (Spinner) findViewById(R.id.ans101);
             Spinner ans102 = (Spinner) findViewById(R.id.ans102);
+            Spinner ans103 = (Spinner) findViewById(R.id.ans103);
             Spinner ans104 = (Spinner) findViewById(R.id.ans104);
             Spinner ans105 = (Spinner) findViewById(R.id.ans105);
             Spinner ans106 = (Spinner) findViewById(R.id.ans106);
             Spinner ans107 = (Spinner) findViewById(R.id.ans107);
             Spinner ans108 = (Spinner) findViewById(R.id.ans108);
-            Spinner ans109 = (Spinner) findViewById(R.id.ans109);
 
             EditText ans42other = (EditText) findViewById(R.id.ans42other);
             EditText ans43_1other = (EditText) findViewById(R.id.ans43_1other);
@@ -1678,7 +1730,7 @@ public class Preguntas3 extends AppCompatActivity {
             EditText ans86_1other = (EditText) findViewById(R.id.ans86_1other);
             EditText ans95other = (EditText) findViewById(R.id.ans95other);
             EditText ans96_1other = (EditText) findViewById(R.id.ans96_1other);
-            EditText ans104other = (EditText) findViewById(R.id.ans104other);
+            EditText ans103other = (EditText) findViewById(R.id.ans103other);
             
             CheckBox ans76a = (CheckBox) findViewById(R.id.ans76a);
             CheckBox ans76b = (CheckBox) findViewById(R.id.ans76b);
@@ -1692,6 +1744,14 @@ public class Preguntas3 extends AppCompatActivity {
             CheckBox ans76j = (CheckBox) findViewById(R.id.ans76j);
             CheckBox ans76k = (CheckBox) findViewById(R.id.ans76k);
             CheckBox ans76l = (CheckBox) findViewById(R.id.ans76l);
+            CheckBox ans77a = (CheckBox) findViewById(R.id.ans77a);
+            CheckBox ans77b = (CheckBox) findViewById(R.id.ans77b);
+            CheckBox ans77c = (CheckBox) findViewById(R.id.ans77c);
+            CheckBox ans77d = (CheckBox) findViewById(R.id.ans77d);
+            CheckBox ans77e = (CheckBox) findViewById(R.id.ans77e);
+            CheckBox ans77f = (CheckBox) findViewById(R.id.ans77f);
+            CheckBox ans77g = (CheckBox) findViewById(R.id.ans77g);
+            CheckBox ans77h = (CheckBox) findViewById(R.id.ans77h);
             CheckBox ans79a = (CheckBox) findViewById(R.id.ans79a);
             CheckBox ans79b = (CheckBox) findViewById(R.id.ans79b);
             CheckBox ans79c = (CheckBox) findViewById(R.id.ans79c);
@@ -1876,6 +1936,31 @@ public class Preguntas3 extends AppCompatActivity {
             }
             fos.write((", " + ans76other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
+            if(ans77a.isChecked()){
+                fos.write("1, ".getBytes());
+            }
+            if(ans77b.isChecked()){
+                fos.write("2, ".getBytes());
+            }
+            if(ans77c.isChecked()){
+                fos.write("3, ".getBytes());
+            }
+            if(ans77d.isChecked()){
+                fos.write("4, ".getBytes());
+            }
+            if(ans77e.isChecked()){
+                fos.write("5, ".getBytes());
+            }
+            if(ans77f.isChecked()){
+                fos.write("6, ".getBytes());
+            }
+            if(ans77g.isChecked()){
+                fos.write("7, ".getBytes());
+            }
+            if(ans77h.isChecked()){
+                fos.write("8".getBytes());
+            }
+            fos.write("\t".getBytes());
             fos.write(ans77.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans77_1.getSelectedItemPosition()+1).getBytes());
@@ -2058,30 +2143,40 @@ public class Preguntas3 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(ans98.getText().toString().getBytes());
             fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans98_1.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans98_2.getText().toString().getBytes());
+            fos.write("\t".getBytes());
             fos.write(ans99.getText().toString().getBytes());
             fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans99_1.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans99_2.getText().toString().getBytes());
+            fos.write("\t".getBytes());
             fos.write(ans100.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans100_1.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans100_2.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans101.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans102.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
-            fos.write(ans103.getText().toString().getBytes());
+            fos.write(Integer.toString(ans103.getSelectedItemPosition()+1).getBytes());
+            fos.write((", " + ans103other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans104.getSelectedItemPosition()+1).getBytes());
-            fos.write((", " + ans104other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans105.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
-            fos.write(Integer.toString(ans106.getSelectedItemPosition()+1).getBytes());
+            fos.write(ans105_1.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            fos.write(ans106_1.getText().toString().getBytes());
+            fos.write(Integer.toString(ans106.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans107.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans108.getSelectedItemPosition()+1).getBytes());
-            fos.write("\t".getBytes());
-            fos.write(Integer.toString(ans109.getSelectedItemPosition()+1).getBytes());
 
         }catch (IOException e) {
             e.printStackTrace();

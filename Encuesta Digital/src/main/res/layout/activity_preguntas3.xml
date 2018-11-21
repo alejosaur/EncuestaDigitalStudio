@@ -1429,7 +1429,71 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="77. Selecciones las actividades que realiza el pescador desde la captura hasta  la comercialización:" />
+                android:text="77. Seleccione las actividades que realiza el pescador desde la captura hasta  la comercialización:" />
+
+            <CheckBox
+                android:id="@+id/ans77a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Captura" />
+
+            <CheckBox
+                android:id="@+id/ans77b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Eviscerado" />
+
+            <CheckBox
+                android:id="@+id/ans77c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Desescamado " />
+
+            <CheckBox
+                android:id="@+id/ans77d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Quitar agallas" />
+
+            <CheckBox
+                android:id="@+id/ans77e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Lavado" />
+
+            <CheckBox
+                android:id="@+id/ans77f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Arrollado" />
+
+            <CheckBox
+                android:id="@+id/ans77g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Enhielado" />
+
+            <CheckBox
+                android:id="@+id/ans77h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Re-enhielado" />
 
             <EditText
                 android:id="@+id/ans77"
@@ -1638,6 +1702,16 @@
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
                 android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/subtituloEmbarcacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="left|center_vertical"
+                android:text="Embarcación"
+                android:textColor="#2b2b2b" />
 
             <TextView
                 android:id="@+id/ques82"
@@ -1886,8 +1960,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="83. De la siguiente lista ¿Qué artes de pesca utiliza?" />
+                android:paddingTop="5dp" />
 
             <CheckBox
                 android:id="@+id/ans83a"
@@ -2361,8 +2434,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="87. ¿Realiza disposición adecuada de los desechos sólidos como basuras, restos de redes y otros residuos producto de la faena de pesca?" />
+                android:paddingTop="5dp" />
 
             <Spinner
                 android:id="@+id/ans87"
@@ -2421,8 +2493,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="89. ¿Realiza disposición adecuado de los desechos sólidos por faenado y/o transformación  (vísceras, huesos, escamas, otros)?" />
+                android:paddingTop="5dp" />
 
             <Spinner
                 android:id="@+id/ans89"
@@ -2937,6 +3008,48 @@
                 android:inputType="text" />
 
             <TextView
+                android:id="@+id/ques98-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="98.1. ¿Cuál es la unidad de venta?"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Spinner
+                android:id="@+id/ans98-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques98-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="98.2. ¿Cuál es el precio promedio por unidad?"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/ans98-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato en valor numérico"
+                android:inputType="numberDecimal" />
+
+            <TextView
                 android:id="@+id/ques99"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -2944,9 +3057,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="99. ¿Cuál es la unidad de venta?"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
+                android:text="99. ¿Qué especies vende?" />
 
             <EditText
                 android:id="@+id/ans99"
@@ -2955,8 +3066,50 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato"
+                android:hint="Especie"
                 android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques99-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="99.1. ¿Cuál es la unidad de venta?"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Spinner
+                android:id="@+id/ans99-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques99-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="99.2. ¿Cuál es el precio promedio por unidad?"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/ans99-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato en valor numérico"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/ques100"
@@ -2966,12 +3119,52 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="100. ¿Cuál es el precio promedio por unidad?"
+                android:text="100. ¿Qué especies vende?" />
+
+            <EditText
+                android:id="@+id/ans100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Especie"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques100-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="100.1. ¿Cuál es la unidad de venta?"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Spinner
+                android:id="@+id/ans100-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques100-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="100.2. ¿Cuál es el precio promedio por unidad?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans100"
+                android:id="@+id/ans100-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3028,19 +3221,27 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="103. ¿Qué cantidad de kilogramos vende? "
+                android:text="103. ¿Bajo qué presentación vende?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <EditText
+            <Spinner
                 android:id="@+id/ans103"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/ans103other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Cantidad en Kg"
-                android:inputType="numberDecimal" />
+                android:hint="¿Cuál?"
+                android:inputType="text" />
 
             <TextView
                 android:id="@+id/ques104"
@@ -3050,7 +3251,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="104. ¿Bajo qué presentación vende?"
+                android:text="104. ¿Lleva registros de los costos de producción?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
@@ -3062,16 +3263,6 @@
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
 
-            <EditText
-                android:id="@+id/ans104other"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="¿Cuál?"
-                android:inputType="text" />
-
             <TextView
                 android:id="@+id/ques105"
                 android:layout_width="match_parent"
@@ -3080,7 +3271,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="105. ¿Lleva registros de los costos de producción?"
+                android:text="105. ¿Ha participado en convocatorias de proyectos de inversión para la upa"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
@@ -3093,39 +3284,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques106"
+                android:id="@+id/ques105-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="106. ¿Ha participado en convocatorias de proyectos de inversión para la upa"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <Spinner
-                android:id="@+id/ans106"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques106-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="106.1. ¿Quién o qué entidad publico/privada lo capacitó?"
+                android:text="105.1. ¿Quién o qué entidad publico/privada lo capacitó?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans106-1"
+                android:id="@+id/ans105-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3150,6 +3321,26 @@
                 app:fontFamily="serif" />
 
             <TextView
+                android:id="@+id/ques106"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="106. ¿Emplea herramientas tecnologías para la comercialización de los productos?"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Spinner
+                android:id="@+id/ans106"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
                 android:id="@+id/ques107"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -3157,7 +3348,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="107. ¿Emplea herramientas tecnologías para la comercialización de los productos?"
+                android:text="107. ¿Conoce y/o emplea tecnologías para la transformación y conservación de los productos?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
@@ -3177,32 +3368,12 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="108. ¿Conoce y/o emplea tecnologías para la transformación y conservación de los productos?"
+                android:text="108. ¿Conoce y/o emplea tecnologías para la transformación y conservación de los subproductos"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
                 android:id="@+id/ans108"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques109"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="109. ¿Conoce y/o emplea tecnologías para la transformación y conservación de los subproductos"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <Spinner
-                android:id="@+id/ans109"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
