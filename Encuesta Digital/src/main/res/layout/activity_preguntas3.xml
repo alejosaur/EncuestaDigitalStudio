@@ -466,17 +466,57 @@
                 android:inputType="numberDecimal" />
 
             <TextView
-                android:id="@+id/ques53-1"
+                android:id="@+id/ques54"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="53.1. Número (N°) de lances por faena para cada arte de pesca:" />
+                android:text="54. Indique cada arte de pesca empleado durante la faena:" />
 
             <EditText
-                android:id="@+id/ans53-1"
+                android:id="@+id/ans54a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el nombre del arte de pesca"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/ans54b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el nombre del arte de pesca"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/ans54c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el nombre del arte de pesca"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques54-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="54.1. Número (N°) de lances por faena para cada arte de pesca:" />
+
+            <EditText
+                android:id="@+id/ans54-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -486,17 +526,17 @@
                 android:inputType="numberDecimal" />
 
             <TextView
-                android:id="@+id/ques53-2"
+                android:id="@+id/ques54-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="53.2. Tiempo de duración del lance:" />
+                android:text="54.2. Tiempo de duración del lance:" />
 
             <EditText
-                android:id="@+id/ans53-2"
+                android:id="@+id/ans54-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -506,17 +546,17 @@
                 android:inputType="time" />
 
             <TextView
-                android:id="@+id/ques53-3"
+                android:id="@+id/ques54-3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="53.3. N° de horas de la madrugada que dedica a pescar:" />
+                android:text="54.3. N° de horas de la madrugada que dedica a pescar:" />
 
             <EditText
-                android:id="@+id/ans53-3"
+                android:id="@+id/ans54-3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -526,17 +566,17 @@
                 android:inputType="time" />
 
             <TextView
-                android:id="@+id/ques53-4"
+                android:id="@+id/ques54-4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="53.4. N° de horas de la mañana que dedica a pescar:" />
+                android:text="54.4. N° de horas de la mañana que dedica a pescar:" />
 
             <EditText
-                android:id="@+id/ans53-4"
+                android:id="@+id/ans54-4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -546,17 +586,17 @@
                 android:inputType="time" />
 
             <TextView
-                android:id="@+id/ques53-5"
+                android:id="@+id/ques54-5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="53.5.  N° de horas de la tarde que dedica a pescar" />
+                android:text="54.5.  N° de horas de la tarde que dedica a pescar" />
 
             <EditText
-                android:id="@+id/ans53-5"
+                android:id="@+id/ans54-5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -566,17 +606,17 @@
                 android:inputType="time" />
 
             <TextView
-                android:id="@+id/ques53-6"
+                android:id="@+id/ques54-6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="53.6.  N° de horas de la noche que dedica a pescar" />
+                android:text="54.6.  N° de horas de la noche que dedica a pescar" />
 
             <EditText
-                android:id="@+id/ans53-6"
+                android:id="@+id/ans54-6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -586,17 +626,17 @@
                 android:inputType="time" />
 
             <TextView
-                android:id="@+id/ques54"
+                android:id="@+id/ques55"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="54. Numero de faenas por mes:" />
+                android:text="55. Numero de faenas por mes:" />
 
             <EditText
-                android:id="@+id/ans54"
+                android:id="@+id/ans55"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -606,17 +646,17 @@
                 android:inputType="numberDecimal" />
 
             <TextView
-                android:id="@+id/ques55"
+                android:id="@+id/ques56"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="55. Meses del año dedicados a la pesca:" />
+                android:text="56. Meses del año dedicados a la pesca:" />
 
             <EditText
-                android:id="@+id/ans55"
+                android:id="@+id/ans56"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -636,26 +676,6 @@
                 android:textColor="#2b2b2b" />
 
             <TextView
-                android:id="@+id/ques56"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="56. Aguas bajas:" />
-
-            <EditText
-                android:id="@+id/ans56"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre la información para la temporada de aguas bajas"
-                android:inputType="text" />
-
-            <TextView
                 android:id="@+id/ques57"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -663,7 +683,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="57. Aguas subiendo:" />
+                android:text="57. Aguas bajas:" />
 
             <EditText
                 android:id="@+id/ans57"
@@ -672,7 +692,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre la información para la temporada de aguas subiendo"
+                android:hint="Registre la información para la temporada de aguas bajas"
                 android:inputType="text" />
 
             <TextView
@@ -683,7 +703,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="58. Aguas altas:" />
+                android:text="58. Aguas subiendo:" />
 
             <EditText
                 android:id="@+id/ans58"
@@ -692,7 +712,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre la información para la temporada de aguas altas"
+                android:hint="Registre la información para la temporada de aguas subiendo"
                 android:inputType="text" />
 
             <TextView
@@ -703,7 +723,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="59. Aguas descendiendo:" />
+                android:text="59. Aguas altas:" />
 
             <EditText
                 android:id="@+id/ans59"
@@ -712,7 +732,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre la información para la temporada de aguas descendiendo"
+                android:hint="Registre la información para la temporada de aguas altas"
                 android:inputType="text" />
 
             <TextView
@@ -723,7 +743,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="60. Indique cada arte de pesca empleado durante la faena:" />
+                android:text="60. Aguas descendiendo:" />
 
             <EditText
                 android:id="@+id/ans60"
@@ -732,7 +752,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el nombre del arte de pesca"
+                android:hint="Registre la información para la temporada de aguas descendiendo"
                 android:inputType="text" />
 
             <TextView
@@ -783,7 +803,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="63. Indique el valor en pesos recibido por cada kilogramo" />
+                android:text="63. Indique el valor (en pesos) del total de kilogramos capturado" />
 
             <EditText
                 android:id="@+id/ans63"
@@ -873,7 +893,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="65. Carnada (gramos):" />
+                android:text="65. Carnada (libras):" />
 
             <EditText
                 android:id="@+id/ans65"
@@ -922,7 +942,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre la cantidad"
+                android:hint="Número de personas"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -1073,7 +1093,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="70. Embarcación:" />
+                android:text="70. Embarcación (reparación y mantenimiento):" />
 
             <EditText
                 android:id="@+id/ans70"
@@ -1409,7 +1429,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="77.  ¿Cómo es el procedimiento para la conservación del pescado desde la captura hasta  la comercialización?" />
+                android:text="77. Selecciones las actividades que realiza el pescador desde la captura hasta  la comercialización:" />
 
             <EditText
                 android:id="@+id/ans77"
@@ -1418,7 +1438,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Describa el procedimiento"
+                android:hint="Escriba el orden en el que se realiza el procedimiento"
                 android:inputType="text" />
 
             <TextView

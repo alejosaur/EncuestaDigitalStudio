@@ -289,6 +289,9 @@ public class Preguntas1 extends AppCompatActivity {
         String[] sino = new String[] {
                 "Sí","No"
         };
+        String[] siNoNoAplica = new String[] {
+                "No aplica", "Si", "No"
+        };
         String[] causaDesplazamiento = new String[] {
                 "No Aplica","Conflicto Armado","Ambiental","Económica", "Otra"
         };
@@ -545,7 +548,7 @@ public class Preguntas1 extends AppCompatActivity {
         ans40_1.setAdapter(adapterAns40_1);
 
         Spinner ans40_3 = (Spinner) findViewById(R.id.ans40_3);
-        ArrayAdapter<String> adapterAns40_3 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sino);
+        ArrayAdapter<String> adapterAns40_3 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNoNoAplica);
         adapterAns40_3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans40_3.setAdapter(adapterAns40_3);
 
@@ -565,7 +568,7 @@ public class Preguntas1 extends AppCompatActivity {
         ans41_1.setAdapter(adapterAns41_1);
 
         Spinner ans41_3 = (Spinner) findViewById(R.id.ans41_3);
-        ArrayAdapter<String> adapterAns41_3 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sino);
+        ArrayAdapter<String> adapterAns41_3 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNoNoAplica);
         adapterAns41_3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans41_3.setAdapter(adapterAns41_3);
 
@@ -1437,6 +1440,7 @@ public class Preguntas1 extends AppCompatActivity {
             EditText ans33other = (EditText) findViewById(R.id.ans33other);
             EditText ans39_1other = (EditText) findViewById(R.id.ans39_1other);
             EditText ans40_1other = (EditText) findViewById(R.id.ans40_1other);
+            EditText ans40_2other = (EditText) findViewById(R.id.ans40_1other);
             EditText ans41_1other = (EditText) findViewById(R.id.ans41_1other);
             EditText ans41_2other = (EditText) findViewById(R.id.ans41_2other);
 
@@ -1547,7 +1551,7 @@ public class Preguntas1 extends AppCompatActivity {
             fos.write(ans8_1.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans9.getSelectedItemPosition()).getBytes());
-            fos.write(("," + ans9other.getText().toString()).getBytes());
+            fos.write((", " + ans9other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(ans10.getText().toString().getBytes());
             fos.write("\t".getBytes());
@@ -1590,7 +1594,7 @@ public class Preguntas1 extends AppCompatActivity {
             fos.write(Integer.toString(ans20.getSelectedItemPosition()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans20_1.getSelectedItemPosition()).getBytes());
-            fos.write(("," + ans20_1other.getText().toString()).getBytes());
+            fos.write((", " + ans20_1other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(ans21.getText().toString().getBytes());
             fos.write("\t".getBytes());
@@ -1599,16 +1603,16 @@ public class Preguntas1 extends AppCompatActivity {
             fos.write(Integer.toString(ans21_2.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans22.getSelectedItemPosition()+1).getBytes());
-            fos.write(("," + ans22other.getText().toString()).getBytes());
+            fos.write((", " + ans22other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans23.getSelectedItemPosition()+1).getBytes());
-            fos.write(("," + ans23other.getText().toString()).getBytes());
+            fos.write((", " + ans23other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans24.getSelectedItemPosition()+1).getBytes());
-            fos.write(("," + ans24other.getText().toString()).getBytes());
+            fos.write((", " + ans24other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans25.getSelectedItemPosition()+1).getBytes());
-            fos.write(("," + ans25other.getText().toString()).getBytes());
+            fos.write((", " + ans25other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             if(tieneAcueducto.isChecked()){
                 fos.write("1, ".getBytes());
@@ -1638,9 +1642,9 @@ public class Preguntas1 extends AppCompatActivity {
                 fos.write("9, ".getBytes());
             }
             if(tieneOtro.isChecked()){
-                fos.write("10, ".getBytes());
+                fos.write("10".getBytes());
             }
-            fos.write(("," + ans26other.getText().toString()).getBytes());
+            fos.write((", " + ans26other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans27.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
@@ -1665,7 +1669,7 @@ public class Preguntas1 extends AppCompatActivity {
                 fos.write("2, ".getBytes());
             }
             if(isAereo.isChecked()){
-                fos.write("3 ".getBytes());
+                fos.write("3".getBytes());
             }
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans32.getSelectedItemPosition()+1).getBytes());
@@ -1683,11 +1687,11 @@ public class Preguntas1 extends AppCompatActivity {
                 fos.write("2, ".getBytes());
             }
             if(isAereoHosp.isChecked()){
-                fos.write("3 ".getBytes());
+                fos.write("3".getBytes());
             }
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans33.getSelectedItemPosition()+1).getBytes());
-            fos.write(("," + ans33other.getText().toString()).getBytes());
+            fos.write((", " + ans33other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(ans33_1.getText().toString().getBytes());
             fos.write("\t".getBytes());
@@ -1700,7 +1704,7 @@ public class Preguntas1 extends AppCompatActivity {
                 fos.write("2, ".getBytes());
             }
             if(isAereoInst.isChecked()){
-                fos.write("3 ".getBytes());
+                fos.write("3".getBytes());
             }
             fos.write("\t".getBytes());
             fos.write(ans34.getText().toString().getBytes());
@@ -1716,7 +1720,7 @@ public class Preguntas1 extends AppCompatActivity {
                 fos.write("2, ".getBytes());
             }
             if(isAereoServ.isChecked()){
-                fos.write("3 ".getBytes());
+                fos.write("3".getBytes());
             }
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans38.getSelectedItemPosition()+1).getBytes());
@@ -1724,14 +1728,14 @@ public class Preguntas1 extends AppCompatActivity {
             fos.write(Integer.toString(ans39.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans39_1.getSelectedItemPosition()).getBytes());
-            fos.write(("," + ans39_1other.getText().toString()).getBytes());
+            fos.write((", " + ans39_1other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(ans39_2.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans40.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans40_1.getSelectedItemPosition()).getBytes());
-            fos.write(("," + ans40_1other.getText().toString()).getBytes());
+            fos.write((", " + ans40_1other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             if(ayudaGestion.isChecked()){
                 fos.write("1, ".getBytes());
@@ -1740,7 +1744,7 @@ public class Preguntas1 extends AppCompatActivity {
                 fos.write("2, ".getBytes());
             }
             if(ayudaCredito.isChecked()){
-                fos.write("3 ".getBytes());
+                fos.write("3, ".getBytes());
             }
             if(ayudaTecnificacion.isChecked()){
                 fos.write("4, ".getBytes());
@@ -1749,7 +1753,7 @@ public class Preguntas1 extends AppCompatActivity {
                 fos.write("5, ".getBytes());
             }
             if(ayudaDesarrolloSostenible.isChecked()){
-                fos.write("6 ".getBytes());
+                fos.write("6, ".getBytes());
             }
             if(ayudaAgremiacion.isChecked()){
                 fos.write("7, ".getBytes());
@@ -1758,8 +1762,9 @@ public class Preguntas1 extends AppCompatActivity {
                 fos.write("8, ".getBytes());
             }
             if(ayudaOtro.isChecked()){
-                fos.write("9 ".getBytes());
+                fos.write("9".getBytes());
             }
+            fos.write((", " + ans40_2other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans40_3.getSelectedItemPosition()).getBytes());
             fos.write("\t".getBytes());
@@ -1768,7 +1773,7 @@ public class Preguntas1 extends AppCompatActivity {
             fos.write(Integer.toString(ans41.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans41_1.getSelectedItemPosition()).getBytes());
-            fos.write(("," + ans41_1other.getText().toString()).getBytes());
+            fos.write((", " + ans41_1other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             if(formacionAmbiental.isChecked()){
                 fos.write("1, ".getBytes());
@@ -1777,7 +1782,7 @@ public class Preguntas1 extends AppCompatActivity {
                 fos.write("2, ".getBytes());
             }
             if(formacionAcuicola.isChecked()){
-                fos.write("3 ".getBytes());
+                fos.write("3, ".getBytes());
             }
             if(formacionPesquero.isChecked()){
                 fos.write("4, ".getBytes());
@@ -1786,12 +1791,12 @@ public class Preguntas1 extends AppCompatActivity {
                 fos.write("5, ".getBytes());
             }
             if(formacionBuenasPracticas.isChecked()){
-                fos.write("6 ".getBytes());
+                fos.write("6, ".getBytes());
             }
             if(formacionOtros.isChecked()){
-                fos.write("7, ".getBytes());
+                fos.write("7".getBytes());
             }
-            fos.write(("," + ans41_2other.getText().toString()).getBytes());
+            fos.write((", " + ans41_2other.getText().toString()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans41_3.getSelectedItemPosition()).getBytes());
             fos.write("\t".getBytes());
