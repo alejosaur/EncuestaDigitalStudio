@@ -54,37 +54,6 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques42-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="42.1. Si la acuicultura es complementaria, ¿Cuál es su principal actividad económica?" />
-
-            <Spinner
-                android:id="@+id/ans42-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <EditText
-                android:id="@+id/ans42-1other"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="left|center_vertical"
-                android:hint="¿Cuál?"
-                android:inputType="text"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <TextView
                 android:id="@+id/ques43"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -178,17 +147,17 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="45. ¿Qué tipo de cultivo implementa en la UPAC?" />
+                android:text="45. ¿Cuál es el área total del o los predios que están bajo su cargo? (m²)" />
 
-            <Spinner
+            <EditText
                 android:id="@+id/ans45"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:spinnerMode="dialog" />
+                android:ems="10"
+                android:hint="Área en metros cuadrados (m²)"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/ques46"
@@ -198,116 +167,16 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="46. ¿El sistema de cultivo de la UPAC es?" />
+                android:text="46. ¿Cuál es el área destinada a la producción acuícola? (m)²" />
 
-            <Spinner
+            <EditText
                 android:id="@+id/ans46"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques47"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="47. ¿Cuál es el área total de su predio?" />
-
-            <EditText
-                android:id="@+id/ans47"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Área en metros cuadrados (m²)"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques48"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="48. ¿Cuál es el área destinada a la producción acuícola?" />
-
-            <EditText
-                android:id="@+id/ans48"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Área en metros cuadrados (m²)"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques49"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="49. ¿Cuál es el área de acuicultura en tierra?" />
-
-            <EditText
-                android:id="@+id/ans49"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Área en metros cuadrados (m²)"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques50"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="50. ¿Cuál es el área de acuicultura en aguas continentales?" />
-
-            <EditText
-                android:id="@+id/ans50"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Área en metros cuadrados (m²)"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques51"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="51. ¿Cuál es el volumen total de las jaulas que emplea en la acuicultura de aguas continentales?" />
-
-            <EditText
-                android:id="@+id/ans51"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Volumen en metros cúbicos (m³)"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -336,27 +205,144 @@
                 android:textColor="#2b2b2b" />
 
             <TextView
-                android:id="@+id/ques52"
+                android:id="@+id/ques47"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="52. ¿La fuente de agua para los cultivos en estanques es?" />
+                android:text="47. ¿La fuente de agua para la producción proviene de?" />
 
-            <Spinner
-                android:id="@+id/ans52"
+            <CheckBox
+                android:id="@+id/ans47a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:spinnerMode="dialog" />
+                android:text="Agua lluvia" />
+
+            <CheckBox
+                android:id="@+id/ans47b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Ríos/canales" />
+
+            <CheckBox
+                android:id="@+id/ans47c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Lagos/embalses" />
+
+            <CheckBox
+                android:id="@+id/ans47d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Diques" />
+
+            <CheckBox
+                android:id="@+id/ans47e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Pozos profundos/pozos entubados" />
+
+            <CheckBox
+                android:id="@+id/ans47f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Pozos poco profundos" />
+
+            <CheckBox
+                android:id="@+id/ans47g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Abastecimiento municipal de aguas" />
+
+            <CheckBox
+                android:id="@+id/ans47h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Aguas residuales tratadas" />
+
+            <CheckBox
+                android:id="@+id/ans47i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Otra, ¿Cuál?" />
 
             <EditText
-                android:id="@+id/ans52other"
+                android:id="@+id/ans47other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:hint="¿Cuál?"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/ques48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="48. ¿Qué método utiliza para transportar el agua desde la fuente de captación hacia la unidad de producción?" />
+
+            <CheckBox
+                android:id="@+id/ans48a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Pozos poco profundos" />
+
+            <CheckBox
+                android:id="@+id/ans48b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Abastecimiento municipal de aguas" />
+
+            <CheckBox
+                android:id="@+id/ans48c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Aguas residuales tratadas" />
+
+            <CheckBox
+                android:id="@+id/ans48d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Otra, ¿Cuál?" />
+
+            <EditText
+                android:id="@+id/ans48other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
