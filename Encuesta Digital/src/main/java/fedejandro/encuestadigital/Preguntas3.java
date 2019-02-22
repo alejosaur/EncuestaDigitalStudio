@@ -1232,7 +1232,7 @@ public class Preguntas3 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Spinner ans95 = (Spinner) findViewById(R.id.ans95);
                 EditText ans95other = (EditText) findViewById(R.id.ans95other);
-                if(ans95.getSelectedItemPosition()==5) {
+                if(ans95.getSelectedItemPosition()==6) {
                     ans95other.setVisibility(View.VISIBLE);
                 }else{
                     ans95other.setVisibility(View.GONE);
