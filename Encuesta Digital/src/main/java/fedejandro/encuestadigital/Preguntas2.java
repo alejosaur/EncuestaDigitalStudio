@@ -19,6 +19,8 @@ public class Preguntas2 extends AppCompatActivity {
     public int ans47code = 0;
     public int ans48code = 0;
     public int ans58code = 0;
+    public int ans62code = 0;
+    public int ans71code = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +39,8 @@ public class Preguntas2 extends AppCompatActivity {
         String[] tipoProd = new String[] {
                 "Animales de engorde", "Producción de crías", "Ciclo completo", "Producción de animales ornamentales", "Producción de plantas", "Producción combinda de plantas y animales","Procesamiento y/o transformación de productos", "Fines recreativos", "Otro, ¿Cuál?"
         };
-        String[] practica = new String[] {
-                "Monocultivo", "Policultivo"
+        String[] unidadVenta = new String[] {
+                "Gramos", "Kilogramos", "Arrobas", "Individuos"
         };
         String[] obtencionRepro = new String[] {
                 "Pesca", "Compra"
@@ -354,10 +356,15 @@ public class Preguntas2 extends AppCompatActivity {
         adapterAns59.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ans59.setAdapter(adapterAns59);
 
-        Spinner ans65 = (Spinner) findViewById(R.id.ans65);
-        ArrayAdapter<String> adapterAns65 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, practica);
-        adapterAns65.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        ans65.setAdapter(adapterAns65);
+        Spinner ans69_1 = (Spinner) findViewById(R.id.ans69_1);
+        ArrayAdapter<String> adapterAns69_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, unidadVenta);
+        adapterAns69_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans69_1.setAdapter(adapterAns69_1);
+
+        Spinner ans70 = (Spinner) findViewById(R.id.ans70);
+        ArrayAdapter<String> adapterAns70 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, siNo);
+        adapterAns70.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ans70.setAdapter(adapterAns70);
 
         Spinner ans85 = (Spinner) findViewById(R.id.ans85);
         ArrayAdapter<String> adapterAns85 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, obtencionRepro);
@@ -680,6 +687,25 @@ public class Preguntas2 extends AppCompatActivity {
         CheckBox ans58e = (CheckBox) findViewById(R.id.ans58e);
         CheckBox ans58f = (CheckBox) findViewById(R.id.ans58f);
         CheckBox ans58g = (CheckBox) findViewById(R.id.ans58g);
+        CheckBox ans62a = (CheckBox) findViewById(R.id.ans62a);
+        CheckBox ans62b = (CheckBox) findViewById(R.id.ans62b);
+        CheckBox ans62c = (CheckBox) findViewById(R.id.ans62c);
+        CheckBox ans62d = (CheckBox) findViewById(R.id.ans62d);
+        CheckBox ans62e = (CheckBox) findViewById(R.id.ans62e);
+        CheckBox ans62f = (CheckBox) findViewById(R.id.ans62f);
+        CheckBox ans62g = (CheckBox) findViewById(R.id.ans62g);
+        CheckBox ans62h = (CheckBox) findViewById(R.id.ans62h);
+        CheckBox ans62i = (CheckBox) findViewById(R.id.ans62i);
+        CheckBox ans62j = (CheckBox) findViewById(R.id.ans62j);
+        CheckBox ans71a = (CheckBox) findViewById(R.id.ans71a);
+        CheckBox ans71b = (CheckBox) findViewById(R.id.ans71b);
+        CheckBox ans71c = (CheckBox) findViewById(R.id.ans71c);
+        CheckBox ans71d = (CheckBox) findViewById(R.id.ans71d);
+        CheckBox ans71e = (CheckBox) findViewById(R.id.ans71e);
+        CheckBox ans71f = (CheckBox) findViewById(R.id.ans71f);
+        CheckBox ans71g = (CheckBox) findViewById(R.id.ans71g);
+        CheckBox ans71h = (CheckBox) findViewById(R.id.ans71h);
+        CheckBox ans71i = (CheckBox) findViewById(R.id.ans71i);
         CheckBox ans97k = (CheckBox) findViewById(R.id.ans97k);
         CheckBox ans104f = (CheckBox) findViewById(R.id.ans104f);
 
@@ -835,10 +861,10 @@ public class Preguntas2 extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 CheckBox ans47g = (CheckBox) findViewById(R.id.ans47g);
                 if(ans47g.isChecked()){
-                    ans47code += 58;
+                    ans47code += 64;
                 }
                 else {
-                    ans47code -= 58;
+                    ans47code -= 64;
                 }
             }
         });
@@ -1142,6 +1168,260 @@ public class Preguntas2 extends AppCompatActivity {
             }
         });
 
+        ans62a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans62a = (CheckBox) findViewById(R.id.ans62a);
+                if(ans62a.isChecked()){
+                    ans62code += 1;
+                }
+                else {
+                    ans62code -= 1;
+                }
+            }
+        });
+
+        ans62b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans62b = (CheckBox) findViewById(R.id.ans62b);
+                if(ans62b.isChecked()){
+                    ans62code += 2;
+                }
+                else {
+                    ans62code -= 2;
+                }
+            }
+        });
+
+        ans62c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans62c = (CheckBox) findViewById(R.id.ans62c);
+                if(ans62c.isChecked()){
+                    ans62code += 4;
+                }
+                else {
+                    ans62code -= 4;
+                }
+            }
+        });
+
+        ans62d.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans62d = (CheckBox) findViewById(R.id.ans62d);
+                if(ans62d.isChecked()){
+                    ans62code += 8;
+                }
+                else {
+                    ans62code -= 8;
+                }
+            }
+        });
+
+        ans62e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans62e = (CheckBox) findViewById(R.id.ans62e);
+                if(ans62e.isChecked()){
+                    ans62code += 16;
+                }
+                else {
+                    ans62code -= 16;
+                }
+            }
+        });
+
+        ans62f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans62f = (CheckBox) findViewById(R.id.ans62f);
+                if(ans62f.isChecked()){
+                    ans62code += 32;
+                }
+                else {
+                    ans62code -= 32;
+                }
+            }
+        });
+
+        ans62g.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans62g = (CheckBox) findViewById(R.id.ans62g);
+                if(ans62g.isChecked()){
+                    ans62code += 64;
+                }
+                else {
+                    ans62code -= 64;
+                }
+            }
+        });
+
+        ans62h.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans62h = (CheckBox) findViewById(R.id.ans62h);
+                if(ans62h.isChecked()){
+                    ans62code += 128;
+                }
+                else {
+                    ans62code -= 128;
+                }
+            }
+        });
+
+        ans62i.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans62i = (CheckBox) findViewById(R.id.ans62i);
+                if(ans62i.isChecked()){
+                    ans62code += 256;
+                }
+                else {
+                    ans62code -= 256;
+                }
+            }
+        });
+
+        ans62j.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans62j = (CheckBox) findViewById(R.id.ans62j);
+                EditText ans62other = (EditText) findViewById(R.id.ans62other);
+                if(ans62j.isChecked()){
+                    ans62other.setVisibility(View.VISIBLE);
+                    ans62code += 512;
+                }
+                else {
+                    ans62other.setVisibility(View.GONE);
+                    ans62code -= 512;
+                }
+            }
+        });
+
+        ans71a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans71a = (CheckBox) findViewById(R.id.ans71a);
+                if(ans71a.isChecked()){
+                    ans71code += 1;
+                }
+                else {
+                    ans71code -= 1;
+                }
+            }
+        });
+
+        ans71b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans71b = (CheckBox) findViewById(R.id.ans71b);
+                if(ans71b.isChecked()){
+                    ans71code += 2;
+                }
+                else {
+                    ans71code -= 2;
+                }
+            }
+        });
+
+        ans71c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans71c = (CheckBox) findViewById(R.id.ans71c);
+                if(ans71c.isChecked()){
+                    ans71code += 4;
+                }
+                else {
+                    ans71code -= 4;
+                }
+            }
+        });
+
+        ans71d.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans71d = (CheckBox) findViewById(R.id.ans71d);
+                if(ans71d.isChecked()){
+                    ans71code += 8;
+                }
+                else {
+                    ans71code -= 8;
+                }
+            }
+        });
+
+        ans71e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans71e = (CheckBox) findViewById(R.id.ans71e);
+                if(ans71e.isChecked()){
+                    ans71code += 16;
+                }
+                else {
+                    ans71code -= 16;
+                }
+            }
+        });
+
+        ans71f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans71f = (CheckBox) findViewById(R.id.ans71f);
+                if(ans71f.isChecked()){
+                    ans71code += 32;
+                }
+                else {
+                    ans71code -= 32;
+                }
+            }
+        });
+
+        ans71g.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans71g = (CheckBox) findViewById(R.id.ans71g);
+                if(ans71g.isChecked()){
+                    ans71code += 58;
+                }
+                else {
+                    ans71code -= 58;
+                }
+            }
+        });
+
+        ans71h.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans71h = (CheckBox) findViewById(R.id.ans71h);
+                if(ans71h.isChecked()){
+                    ans71code += 128;
+                }
+                else {
+                    ans71code -= 128;
+                }
+            }
+        });
+
+        ans71i.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans71i = (CheckBox) findViewById(R.id.ans71i);
+                EditText ans71other = (EditText) findViewById(R.id.ans71other);
+                if(ans71i.isChecked()){
+                    ans71other.setVisibility(View.VISIBLE);
+                    ans71code += 256;
+                }
+                else {
+                    ans71other.setVisibility(View.GONE);
+                    ans71code -= 256;
+
+                }
+            }
+        });
+
         ans85.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -1373,133 +1653,133 @@ public class Preguntas2 extends AppCompatActivity {
                 Spinner ans110_4 = (Spinner) findViewById(R.id.ans110_4);
                 Spinner ans110_3 = (Spinner) findViewById(R.id.ans110_3);
                 if(ans110_3.getSelectedItemPosition() == 0){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosAmazonas);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosAmazonas);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 1){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosAntioquia);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosAntioquia);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 2){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosArauca);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosArauca);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 3){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosAtlantico);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosAtlantico);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 4){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosBolivar);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosBolivar);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 5){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosBoyaca);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosBoyaca);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 6){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCaldas);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCaldas);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 7){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCaqueta);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCaqueta);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 8){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCasanare);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCasanare);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 9){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCauca);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCauca);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 10){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCesar);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCesar);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 11){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosChoco);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosChoco);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 12){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCordoba);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCordoba);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 13){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCundinamarca);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosCundinamarca);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 14){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosGuainia);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosGuainia);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 15){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosGuaviare);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosGuaviare);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 16){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosHuila);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosHuila);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 17){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosGuajira);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosGuajira);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 18){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosMagdalena);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosMagdalena);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 18){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosMeta);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosMeta);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 20){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosNarino);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosNarino);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 21){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosNdeSantander);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosNdeSantander);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 22){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosPutumayo);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosPutumayo);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 22){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosQuindio);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosQuindio);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 23){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosRisaralda);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosRisaralda);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 24){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosSanAndres);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosSanAndres);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 25){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosSantander);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosSantander);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 26){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosSucre);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosSucre);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 27){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosTolima);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosTolima);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 28){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosValle);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosValle);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 29){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosVaupes);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosVaupes);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }else if(ans110_3.getSelectedItemPosition() == 30){
-                    ArrayAdapter<String> adapterans110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosVichada);
-                    adapterans110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    ans110_4.setAdapter(adapterans110_4);
+                    ArrayAdapter<String> adapterAns110_4 = new ArrayAdapter<String>(Preguntas2.this, android.R.layout.simple_spinner_item, municipiosVichada);
+                    adapterAns110_4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ans110_4.setAdapter(adapterAns110_4);
                 }
             }
 
@@ -2042,22 +2322,20 @@ public class Preguntas2 extends AppCompatActivity {
             EditText ans56_1 = (EditText) findViewById(R.id.ans56_1);
             EditText ans57_1 = (EditText) findViewById(R.id.ans57_1);
             EditText ans57_2 = (EditText) findViewById(R.id.ans57_2);
+            EditText ans60 = (EditText) findViewById(R.id.ans60);
+            EditText ans61 = (EditText) findViewById(R.id.ans61);
+            EditText ans63 = (EditText) findViewById(R.id.ans63);
+            EditText ans64 = (EditText) findViewById(R.id.ans64);
+            EditText ans65 = (EditText) findViewById(R.id.ans65);
             EditText ans66 = (EditText) findViewById(R.id.ans66);
             EditText ans67 = (EditText) findViewById(R.id.ans67);
             EditText ans68 = (EditText) findViewById(R.id.ans68);
             EditText ans69 = (EditText) findViewById(R.id.ans69);
-            EditText ans70 = (EditText) findViewById(R.id.ans70);
-            EditText ans71 = (EditText) findViewById(R.id.ans71);
+            EditText ans69_2 = (EditText) findViewById(R.id.ans69_2);
+            EditText ans70_1 = (EditText) findViewById(R.id.ans70_1);
+            EditText ans71_1 = (EditText) findViewById(R.id.ans71_1);
+            EditText ans71_2 = (EditText) findViewById(R.id.ans71_2);
             EditText ans72 = (EditText) findViewById(R.id.ans72);
-            EditText ans73 = (EditText) findViewById(R.id.ans73);
-            EditText ans74 = (EditText) findViewById(R.id.ans74);
-            EditText ans75 = (EditText) findViewById(R.id.ans75);
-            EditText ans76 = (EditText) findViewById(R.id.ans76);
-            EditText ans77 = (EditText) findViewById(R.id.ans77);
-            EditText ans78 = (EditText) findViewById(R.id.ans78);
-            EditText ans79 = (EditText) findViewById(R.id.ans79);
-            EditText ans80 = (EditText) findViewById(R.id.ans80);
-            EditText ans81 = (EditText) findViewById(R.id.ans81);
             EditText ans82 = (EditText) findViewById(R.id.ans82);
             EditText ans83 = (EditText) findViewById(R.id.ans83);
             EditText ans84 = (EditText) findViewById(R.id.ans84);
@@ -2120,7 +2398,8 @@ public class Preguntas2 extends AppCompatActivity {
             Spinner ans56 = (Spinner) findViewById(R.id.ans56);
             Spinner ans57 = (Spinner) findViewById(R.id.ans57);
             Spinner ans59 = (Spinner) findViewById(R.id.ans59);
-            Spinner ans65 = (Spinner) findViewById(R.id.ans65);
+            Spinner ans69_1 = (Spinner) findViewById(R.id.ans69_1);
+            Spinner ans70 = (Spinner) findViewById(R.id.ans70);
             Spinner ans85 = (Spinner) findViewById(R.id.ans85);
             Spinner ans99 = (Spinner) findViewById(R.id.ans99);
             Spinner ans100 = (Spinner) findViewById(R.id.ans100);
@@ -2178,6 +2457,8 @@ public class Preguntas2 extends AppCompatActivity {
             EditText ans47other = (EditText) findViewById(R.id.ans47other);
             EditText ans48other = (EditText) findViewById(R.id.ans48other);
             EditText ans58other = (EditText) findViewById(R.id.ans58other);
+            EditText ans62other = (EditText) findViewById(R.id.ans62other);
+            EditText ans71other = (EditText) findViewById(R.id.ans71other);
             EditText ans97other = (EditText) findViewById(R.id.ans97other);
             EditText ans100other = (EditText) findViewById(R.id.ans100other);
             EditText ans102other = (EditText) findViewById(R.id.ans102other);
@@ -2189,6 +2470,8 @@ public class Preguntas2 extends AppCompatActivity {
             CheckBox ans47i = (CheckBox) findViewById(R.id.ans47i);
             CheckBox ans48d = (CheckBox) findViewById(R.id.ans48d);
             CheckBox ans58g = (CheckBox) findViewById(R.id.ans58g);
+            CheckBox ans62j = (CheckBox) findViewById(R.id.ans62j);
+            CheckBox ans71i = (CheckBox) findViewById(R.id.ans71i);
             CheckBox ans97a = (CheckBox) findViewById(R.id.ans97a);
             CheckBox ans97b = (CheckBox) findViewById(R.id.ans97b);
             CheckBox ans97c = (CheckBox) findViewById(R.id.ans97c);
@@ -2280,11 +2563,25 @@ public class Preguntas2 extends AppCompatActivity {
             if(ans58g.isChecked()){
                 fos.write(", ".getBytes());
             }
-            fos.write((", " + ans58other.getText().toString()).getBytes());
+            fos.write(ans58other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans59.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
-            fos.write(Integer.toString(ans65.getSelectedItemPosition()+1).getBytes());
+            fos.write(ans60.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans61.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans62code).getBytes());
+            if(ans62j.isChecked()){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans62other.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans63.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans64.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans65.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(ans66.getText().toString().getBytes());
             fos.write("\t".getBytes());
@@ -2294,29 +2591,25 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(ans69.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            fos.write(ans70.getText().toString().getBytes());
+            fos.write(Integer.toString(ans69_1.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
-            fos.write(ans71.getText().toString().getBytes());
+            fos.write(ans69_2.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans70.getSelectedItemPosition()+1).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans70_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans71code).getBytes());
+            if(ans71i.isChecked()){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans71other.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans71_1.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans71_2.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(ans72.getText().toString().getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans73.getText().toString().getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans74.getText().toString().getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans75.getText().toString().getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans76.getText().toString().getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans77.getText().toString().getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans78.getText().toString().getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans79.getText().toString().getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans80.getText().toString().getBytes());
-            fos.write("\t".getBytes());
-            fos.write(ans81.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(ans82.getText().toString().getBytes());
             fos.write("\t".getBytes());
