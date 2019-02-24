@@ -2232,17 +2232,17 @@
                 android:textColor="#2b2b2b" />
 
             <TextView
-                android:id="@+id/ques110"
+                android:id="@+id/ques84"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="110.  De los siguientes tipos de alimentos  ¿Cuál es el principal  en la  UPAC?" />
+                android:text="84.  De los siguientes tipos de alimentos  ¿Cuál es el principal  en la  UPAC?" />
 
             <Spinner
-                android:id="@+id/ans110"
+                android:id="@+id/ans84"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2252,128 +2252,233 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques110-1"
+                android:id="@+id/ques84-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="110.1. ¿Dónde adquiere los alimentos?" />
+                android:text="84.1. ¿Dónde adquiere los alimentos?" />
 
-            <Spinner
-                android:id="@+id/ans110-1"
+            <CheckBox
+                android:id="@+id/ans84-1a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:spinnerMode="dialog" />
+                android:text="Casas comerciales" />
+
+            <CheckBox
+                android:id="@+id/ans84-1b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Asociaciones" />
+
+            <CheckBox
+                android:id="@+id/ans84-1c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Corporaciones" />
+
+            <CheckBox
+                android:id="@+id/ans84-1d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Proyectos" />
+
+            <CheckBox
+                android:id="@+id/ans84-1e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="ONG" />
+
+            <CheckBox
+                android:id="@+id/ans84-1f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="UPAC (producción interna)" />
+
 
             <TextView
-                android:id="@+id/ques110-2"
+                android:id="@+id/ques84-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="110.2.  ¿Cuál es la frecuencia de alimentación?" />
-
-            <Spinner
-                android:id="@+id/ans110-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques110-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="110.3. ¿Cuál es el departamento donde se encuentra el proveedor?"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <Spinner
-                android:id="@+id/ans110-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques110-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="110.4. ¿Ciudad o muncipio donde se encuentra el proveedor?"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <Spinner
-                android:id="@+id/ans110-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques110-5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="110.5. ¿Cuántos kilogramos (Kg) compra?"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
+                android:text="84.2.  ¿Cuál es la frecuencia de alimentación?" />
 
             <EditText
-                android:id="@+id/ans110-5"
+                android:id="@+id/ans84-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre los gramos"
+                android:hint="Registre el dato"
                 android:inputType="numberDecimal" />
 
             <TextView
-                android:id="@+id/ques110-6"
+                android:id="@+id/ques84-3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="110.6. ¿Cuál es el precio por kilogramo (Kg)?"
+                android:text="84.3. ¿Cuál es el departamento donde se ubica el proveedor?"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Spinner
+                android:id="@+id/ans84-3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques84-4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84.4. ¿Ciudad o muncipio donde se encuentra ubicado el proveedor?"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Spinner
+                android:id="@+id/ans84-4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques84-5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84.5. ¿Qué cantidad de alimento compra?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans110-6"
+                android:id="@+id/ans84-5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el valor en pesos por gramo"
+                android:hint="Registre el dato"
                 android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques84-6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84.6. ¿Cuál es la unidad de compra?"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Spinner
+                android:id="@+id/ans84-6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/ans84-6other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:hint="¿Cuál?"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/ques84-7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84.7. ¿Cuál es el precio por unidad?"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/ans84-7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el valor en pesos por unidad"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ques84-8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="84.8. ¿Cuál es la unidad de compra?"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Spinner
+                android:id="@+id/ans84-8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/ans84-8other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:hint="¿Cuál?"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
 
             <TextView
                 android:id="@+id/tituloDAmbiental"
@@ -2397,7 +2502,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:gravity="left|center_vertical"
-                android:text="Indique la situación de manejo ambiental de los vertimientos, residuos solideos y desechos derivados de la producción en la UPAC"
+                android:text="Manejo ambiental de la producción en la UPAC"
                 android:textColor="#2b2b2b" />
 
             <TextView
