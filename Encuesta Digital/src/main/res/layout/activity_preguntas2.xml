@@ -2506,19 +2506,19 @@
                 android:textColor="#2b2b2b" />
 
             <TextView
-                android:id="@+id/ques111"
+                android:id="@+id/ques85"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="111. ¿Hace recambio de agua?"
+                android:text="85. ¿Hace recambio de agua?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans111"
+                android:id="@+id/ans85"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2526,19 +2526,39 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques111-1"
+                android:id="@+id/ques85-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="111.1. ¿Cuál es el porcentaje de recambio?"
+                android:text="85.1 ¿Con que frecuencia hace recambio (cada cuanto)?"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Spinner
+                android:id="@+id/ans85-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques85-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="85.2. ¿Cuál es el porcentaje de recambio?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans111-1"
+                android:id="@+id/ans85-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2548,19 +2568,19 @@
                 android:inputType="numberDecimal" />
 
             <TextView
-                android:id="@+id/ques111-2"
+                android:id="@+id/ques86"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="111.2 ¿Con que frecuencia hace recambio (cada cuanto)?"
+                android:text="86. ¿Realiza algún tipo de tratamiento de los vertimientos antes de enviarlos al punto de descarga?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans111-2"
+                android:id="@+id/ans86"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2568,39 +2588,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques112"
+                android:id="@+id/ques86-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="112. ¿Realiza algún tipo de tratamiento de los vertimientos antes de enviarlos al punto de descarga?"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <Spinner
-                android:id="@+id/ans112"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques112-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="112.1. Describa el  tratamiento implementa en la UPAC:"
+                android:text="86.1. Describa el  tratamiento implementa en la UPAC:"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans112-1"
+                android:id="@+id/ans86-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2610,19 +2610,19 @@
                 android:inputType="text" />
 
             <TextView
-                android:id="@+id/ques112-2"
+                android:id="@+id/ques86-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="112.2 ¿Dónde queda el punto de descarga de los vertimientos?"
+                android:text="86.2 ¿Dónde queda el punto de descarga de los vertimientos?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans112-2"
+                android:id="@+id/ans86-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2630,7 +2630,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans112-2other"
+                android:id="@+id/ans86-2other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2643,40 +2643,19 @@
                 tools:layout_editor_absoluteY="16dp" />
 
             <TextView
-                android:id="@+id/ques112-3"
+                android:id="@+id/ques87"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="112.3. Coordenadas:" />
-
-            <EditText
-                android:id="@+id/ans112-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Registre las coordenadas en formato grados decimal"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/ques113"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="113. ¿Realiza algún tipo de tratamiento  para los lodos producidos en la UPAC?"
+                android:text="87. ¿Realiza algún tipo de tratamiento  para los lodos producidos en la UPAC?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans113"
+                android:id="@+id/ans87"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2684,19 +2663,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques113-1"
+                android:id="@+id/ques87-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="113.1. ¿Qué  tratamiento realiza en la UPAC?"
+                android:text="87.1. ¿Qué  tratamiento realiza en la UPAC?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans113-1"
+                android:id="@+id/ans87-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2706,19 +2685,19 @@
                 android:inputType="text" />
 
             <TextView
-                android:id="@+id/ques114"
+                android:id="@+id/ques88"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="114. ¿Realiza  disposición adecuado de los desechos sólidos por faenado y/o transformación  (vísceras, huesos, escamas, otros)?"
+                android:text="88. ¿Realiza  disposición adecuada de los desechos sólidos por faenado y/o transformación  (vísceras, huesos, escamas, otros)?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans114"
+                android:id="@+id/ans88"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2726,19 +2705,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques114-1"
+                android:id="@+id/ques88-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="114.1. Describa el procedimiento:"
+                android:text="88.1. Describa el procedimiento:"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans114-1"
+                android:id="@+id/ans88-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2748,19 +2727,19 @@
                 android:inputType="text" />
 
             <TextView
-                android:id="@+id/ques115"
+                android:id="@+id/ques89"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="115. ¿Implementa planes de saneamiento y bioseguridad en la UPAC?"
+                android:text="89. ¿Implementa planes de saneamiento y bioseguridad en la UPAC?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans115"
+                android:id="@+id/ans89"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2768,19 +2747,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques116"
+                android:id="@+id/ques90"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="116. ¿Implementa actividades para la protección de las fuentes de agua?"
+                android:text="90. ¿Implementa actividades para la protección de las fuentes de agua?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans116"
+                android:id="@+id/ans90"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2788,19 +2767,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques116-1"
+                android:id="@+id/ques90-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="116.1. ¿Qué actividades implementa para la protección de las fuentes de agua?"
+                android:text="90.1. ¿Qué actividades implementa para la protección de las fuentes de agua?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans116-1"
+                android:id="@+id/ans90-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2810,19 +2789,19 @@
                 android:inputType="text" />
 
             <TextView
-                android:id="@+id/ques117"
+                android:id="@+id/ques91"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="117. ¿La principal  fuente de energía utilizada en la UPAC es?"
+                android:text="91. ¿La principal  fuente de energía utilizada en la UPAC es?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans117"
+                android:id="@+id/ans91"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2830,7 +2809,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans117other"
+                android:id="@+id/ans91other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2864,23 +2843,23 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:gravity="left|center_vertical"
-                android:text="Indique la situación de la asociatividad según las siguientes preguntas"
+                android:text="Estado de la asociatividad según las siguientes preguntas"
                 android:textColor="#2b2b2b" />
 
             <TextView
-                android:id="@+id/ques118"
+                android:id="@+id/ques92"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="118. ¿Es miembro o ha sido miembro de  alguna asociación  acuícola?"
+                android:text="92. ¿Es miembro activo de alguna asociación  acuícola?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans118"
+                android:id="@+id/ans92"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2888,19 +2867,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques118-1"
+                android:id="@+id/ques92-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="118.1. ¿Qué tipo de asociación?"
+                android:text="92.1. ¿Qué tipo de asociación?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans118-1"
+                android:id="@+id/ans92-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2908,7 +2887,7 @@
                 android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans118-1other"
+                android:id="@+id/ans92-1other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2921,81 +2900,19 @@
                 tools:layout_editor_absoluteY="16dp" />
 
             <TextView
-                android:id="@+id/ques118-2"
+                android:id="@+id/ques92-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="118.2. ¿Actualmente se encuentra activa?"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <Spinner
-                android:id="@+id/ans118-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques118-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="118.3. ¿Por qué no está activa la asociación?"
+                android:text="92.2. ¿Cuántas personas participan en la asociación?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans118-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre la causa"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/ques118-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="118.4. ¿Qué cargo desempeña dentro de la asociación"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <Spinner
-                android:id="@+id/ans118-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques118-5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="118.5. ¿Cuántas personas participan en la asociación?"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <EditText
-                android:id="@+id/ans118-5"
+                android:id="@+id/ans92-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3005,19 +2922,19 @@
                 android:inputType="number" />
 
             <TextView
-                android:id="@+id/ques118-6"
+                android:id="@+id/ques92-3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="118.6. ¿Cuál es el nombre de la asociación?"
+                android:text="92.3. ¿Cuál es el nombre de la asociación?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans118-6"
+                android:id="@+id/ans92-3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3027,41 +2944,19 @@
                 android:inputType="text" />
 
             <TextView
-                android:id="@+id/ques118-7"
+                android:id="@+id/ques92-4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="118.7. NIT"
+                android:text="92.4. Nombre del representante legal"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans118-7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre el N° del NIT "
-                android:inputType="number|numberSigned|numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques118-8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="118.8. Nombre del representante legal"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <EditText
-                android:id="@+id/ans118-8"
+                android:id="@+id/ans92-4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3071,19 +2966,19 @@
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/ques118-9"
+                android:id="@+id/ques92-5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="118.9. Número de teléfono fijo o móvil del representante legal"
+                android:text="92.5. Número de teléfono fijo o móvil del representante legal"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans118-9"
+                android:id="@+id/ans92-5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3093,19 +2988,19 @@
                 android:inputType="text|textNoSuggestions|phone" />
 
             <TextView
-                android:id="@+id/ques118-10"
+                android:id="@+id/ques92-6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="118.10. Departamento:"
+                android:text="92.6. Departamento:"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans118-10"
+                android:id="@+id/ans92-6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3113,19 +3008,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques118-11"
+                android:id="@+id/ques92-7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="118.11. Municipio:"
+                android:text="92.11. Municipio:"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans118-11"
+                android:id="@+id/ans92-7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3133,19 +3028,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques119"
+                android:id="@+id/ques93"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="119. ¿Le interesa formar parte de alguna asociación?"
+                android:text="93. ¿Le interesa formar parte de alguna asociación?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans119"
+                android:id="@+id/ans93"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3153,19 +3048,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques120"
+                android:id="@+id/ques94"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="120. ¿Ha recibido apoyo para el fomento de la asociatividad por parte de alguna entidad pública o privada?"
+                android:text="94. ¿Ha recibido apoyo para el fomento de la asociatividad por parte de alguna entidad pública o privada?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans120"
+                android:id="@+id/ans94"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3173,19 +3068,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques120-1"
+                android:id="@+id/ques94-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="120.1. ¿Cuál es el nombre de la entidad?"
+                android:text="94.1. ¿Cuál es el nombre de la entidad?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans120-1"
+                android:id="@+id/ans94-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3201,89 +3096,65 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:gravity="left|center_vertical"
-                android:text="Indique información sobre aspectos relevantes de la comercialización de los productos de la UPAC según las siguientes preguntas"
+                android:text="Comercialización de los productos de la UPAC"
                 android:textColor="#2b2b2b" />
 
             <TextView
-                android:id="@+id/ques121"
+                android:id="@+id/ques95"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="121. ¿Qué especies vende?"
+                android:text="95. ¿Dónde vende?"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Spinner
+                android:id="@+id/ans95"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques95-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="95.1. Destino de la venta"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans121"
+                android:id="@+id/ans95-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Registre el dato"
+                android:hint="Registre la información"
                 android:inputType="text" />
 
             <TextView
-                android:id="@+id/ques122"
+                android:id="@+id/ques96"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="122. ¿Cuál es la unidad de venta?"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <EditText
-                android:id="@+id/ans122"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre el dato"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/ques122-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="122.1. ¿Cuál es el precio promedio por unidad?"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <EditText
-                android:id="@+id/ans122-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre el dato en valor numérico"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques123"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="123. ¿Dónde vende?"
+                android:text="96. ¿Quién le compra?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans123"
+                android:id="@+id/ans96"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3291,19 +3162,111 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques124"
+                android:id="@+id/ques97"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="124. ¿Quién le compra?"
+                android:text="97. ¿Bajo qué presentación vende?"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <CheckBox
+                android:id="@+id/ans97a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Entero" />
+
+            <CheckBox
+                android:id="@+id/ans97b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Vivo" />
+
+            <CheckBox
+                android:id="@+id/ans97c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Eviscerado" />
+
+            <CheckBox
+                android:id="@+id/ans97d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Empacado" />
+
+            <CheckBox
+                android:id="@+id/ans97e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Seco" />
+
+            <CheckBox
+                android:id="@+id/ans97f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Salado" />
+
+            <CheckBox
+                android:id="@+id/ans97g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Sin escama" />
+
+            <CheckBox
+                android:id="@+id/ans97h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Sin branquias" />
+
+            <CheckBox
+                android:id="@+id/ans97i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Fileteado" />
+
+            <CheckBox
+                android:id="@+id/ans97j"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Otro" />
+
+            <TextView
+                android:id="@+id/ques98"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="98. ¿Los productos de la UPAC  cuentan con algún certificado de calidad?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans124"
+                android:id="@+id/ans98"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3311,81 +3274,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques125"
+                android:id="@+id/ques98-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="125. ¿Qué cantidad de kilogramos vende? "
+                android:text="98.1. ¿Cuál es el certificado de calidad con el que cuenta la UPAC?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans125"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Cantidad en Kg"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques126"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="126. ¿Bajo qué presentación vende?"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <Spinner
-                android:id="@+id/ans126"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques127"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="127. ¿Los productos de la UPAC  cuentan con algún certificado de calidad?"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <Spinner
-                android:id="@+id/ans127"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques127-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="127.1.   ¿Cuál es el certificado de calidad con el que cuenta la UPAC?"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <EditText
-                android:id="@+id/ans127-1"
+                android:id="@+id/ans98-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3395,29 +3296,51 @@
                 android:inputType="text" />
 
             <TextView
+                android:id="@+id/ques98-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="98.2. ¿Quién expide el certificado?"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/ans98-2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Registre el dato"
+                android:inputType="text" />
+
+            <TextView
                 android:id="@+id/subtituloContabilidad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:gravity="left|center_vertical"
-                android:text="Indique información sobre la contabilidad  y el registro de  costos en la UPAC según las siguientes preguntas"
+                android:text="Contabilidad y registro de costos en la UPAC"
                 android:textColor="#2b2b2b" />
 
             <TextView
-                android:id="@+id/ques128"
+                android:id="@+id/ques99"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="128. ¿Lleva registros de los costos de producción?"
+                android:text="99. ¿Lleva registros de los costos de producción?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans128"
+                android:id="@+id/ans99"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3425,19 +3348,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques128-1"
+                android:id="@+id/ques100"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="128.1. ¿Ha participado en convocatorias de proyectos de inversión para la UPAC?"
+                android:text="100. ¿Ha participado en convocatorias de proyectos de inversión para la UPAC?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans128-1"
+                android:id="@+id/ans100"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3445,19 +3368,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques129"
+                android:id="@+id/ques100-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="129. ¿Está capacitado para la formulación de proyectos de inversión?"
+                android:text="100.1. ¿Ha participado en capacitaciones para la formulación de proyectos de inversión?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans129"
+                android:id="@+id/ans100-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3465,19 +3388,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques129-1"
+                android:id="@+id/ques100-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="129.1. ¿Quién lo capacitó? "
+                android:text="100.2. ¿Quién lo capacitó? "
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans129-1"
+                android:id="@+id/ans100-2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3508,21 +3431,21 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:gravity="left|center_vertical"
-                android:text="Indique la información sobre paquetes tecnológicos e innovación de acuerdo con las siguientes preguntas"
+                android:text="Paquetes tecnológicos e innovación"
                 android:textColor="#2b2b2b" />
 
             <TextView
-                android:id="@+id/ques130"
+                android:id="@+id/ques101"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="130. ¿Emplea técnicas de reproducción?" />
+                android:text="101. ¿Implementa algun tipo de tecnologia en la producción?" />
 
             <Spinner
-                android:id="@+id/ans130"
+                android:id="@+id/ans101"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3532,59 +3455,103 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques131"
+                android:id="@+id/ques101-1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="131. ¿Emplea técnicas de incubación?" />
+                android:text="101.1 ¿Qué tipo de tecnología implementa?" />
 
-            <Spinner
-                android:id="@+id/ans131"
+            <CheckBox
+                android:id="@+id/ans101-1a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:spinnerMode="dialog" />
+                android:text="Inseminación artificial" />
+
+            <CheckBox
+                android:id="@+id/ans101-1b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Reversión sexual" />
+
+            <CheckBox
+                android:id="@+id/ans101-1c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Fertilización externa" />
+
+            <CheckBox
+                android:id="@+id/ans101-1d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Uso de hormonas" />
+
+            <CheckBox
+                android:id="@+id/ans101-1e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Incubación artificial" />
+
+            <CheckBox
+                android:id="@+id/ans101-1f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Selección genética " />
+
+            <CheckBox
+                android:id="@+id/ans101-1g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Uso de identificadores para animales" />
+
+            <CheckBox
+                android:id="@+id/ans101-1h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Otros ¿Cuáles?" />
+
+            <EditText
+                android:id="@+id/ans101-1other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿Cuál?"
+                android:inputType="text" />
 
             <TextView
-                android:id="@+id/ques132"
+                android:id="@+id/ques102"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="132. ¿Emplea semilla mejorada?" />
-
-            <Spinner
-                android:id="@+id/ans132"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques133"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="133. ¿Posee planta de procesamiento para alimentos? "
+                android:text="102. ¿Posee planta de procesamiento para alimentos? "
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans133"
+                android:id="@+id/ans102"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3592,17 +3559,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques134"
+                android:id="@+id/ques103"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="134. ¿Emplea cultivos pro bióticos para la nutrición animal? " />
+                android:text="103. ¿Emplea cultivos pro bióticos para la nutrición animal? " />
 
             <Spinner
-                android:id="@+id/ans134"
+                android:id="@+id/ans103"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3612,17 +3579,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques135"
+                android:id="@+id/ques104"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="135. ¿Alimentación automatizada?" />
+                android:text="104. ¿Alimentación automatizada?" />
 
             <Spinner
-                android:id="@+id/ans135"
+                android:id="@+id/ans104"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3632,17 +3599,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques136"
+                android:id="@+id/ques105"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="136. ¿Emplea herramientas tecnológicas, como redes sociales, para la comercialización de los productos?" />
+                android:text="105. ¿Emplea herramientas tecnológicas, como redes sociales, para la comercialización de los productos?" />
 
             <Spinner
-                android:id="@+id/ans136"
+                android:id="@+id/ans105"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3652,19 +3619,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques137"
+                android:id="@+id/ques106"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="137. ¿Conoce y/o emplea software para llevar los registros de la UPAC?"
+                android:text="106. ¿Conoce y/o emplea software para llevar los registros de la UPAC?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans137"
+                android:id="@+id/ans106"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3672,17 +3639,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques138"
+                android:id="@+id/ques107"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="138. ¿Conoce y/o emplea tecnologías para la transformación y conservación de los productos?" />
+                android:text="107. ¿Conoce y/o emplea tecnologías para la transformación y conservación de los productos?" />
 
             <Spinner
-                android:id="@+id/ans138"
+                android:id="@+id/ans107"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3692,17 +3659,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques139"
+                android:id="@+id/ques108"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="139. ¿Conoce y/o emplea tecnologías para la transformación y conservación de los subproductos" />
+                android:text="108. ¿Conoce y/o emplea tecnologías para la transformación y conservación de los subproductos" />
 
             <Spinner
-                android:id="@+id/ans139"
+                android:id="@+id/ans108"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3712,39 +3679,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques140"
+                android:id="@+id/ques109"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="140. Recirculación de aguas:" />
-
-            <Spinner
-                android:id="@+id/ans140"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques141"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="141. Aireación:"
+                android:text="109. Aireación:"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans141"
+                android:id="@+id/ans109"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3752,39 +3699,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques142"
+                android:id="@+id/ques110"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="142. Biofloc:" />
-
-            <Spinner
-                android:id="@+id/ans142"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques143"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="143. Raceway:"
+                android:text="110. Raceway (Sistemas de flujo continuo):"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <Spinner
-                android:id="@+id/ans143"
+                android:id="@+id/ans110"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -3792,19 +3719,19 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques144"
+                android:id="@+id/ques111"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="144. Otro, ¿Cuál?"
+                android:text="111. Otro, ¿Cuál?"
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/ans144"
+                android:id="@+id/ans111"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
