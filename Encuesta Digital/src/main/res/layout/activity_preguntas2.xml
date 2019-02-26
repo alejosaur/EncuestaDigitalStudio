@@ -149,14 +149,56 @@
                 android:paddingTop="5dp"
                 android:text="45. ¿Cuál es el área total del o los predios que están bajo su cargo? (m²)" />
 
+            <!-- TODO Answers 45 and 46: Figure out how to add separate EditText for each option of answer 44. -->
+
             <EditText
-                android:id="@+id/ans45"
+                android:id="@+id/ans45a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Área en metros cuadrados (m²)"
+                android:hint="Unidades PROPIAS: Área en (m²)"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/ans45b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Unidades ARRENDADAS: Área en (m²)"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/ans45c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Unidades FAMILIARES: Área en (m²)"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/ans45d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Unidades en POSESIÓN: Área en (m²)"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/ans45e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="OTRO tipo de tenencia: Área en (m²)"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -170,13 +212,53 @@
                 android:text="46. ¿Cuál es el área destinada a la producción acuícola? (m)²" />
 
             <EditText
-                android:id="@+id/ans46"
+                android:id="@+id/ans46a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Área en metros cuadrados (m²)"
+                android:hint="Unidades PROPIAS: Área en (m²)"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/ans46b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Unidades ARRENDADAS: Área en (m²)"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/ans46c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Unidades FAMILIARES: Área en (m²)"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/ans46d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Unidades en POSESIÓN: Área en (m²)"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/ans46e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="OTRO tipo de tenencia: Área en (m²)"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -503,7 +585,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:gravity="left|center_vertical"
-                android:text="Indique información sobre la cantidad del agua según las siguientes preguntas"
+                android:text="Indique información sobre la calidad del agua según las siguientes preguntas"
                 android:textColor="#2b2b2b" />
 
             <TextView
@@ -879,6 +961,19 @@
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
                 android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/ans59other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:hint="¿Cuál?"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="16dp" />
 
             <TextView
                 android:id="@+id/subtituloDimension"
@@ -1451,7 +1546,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="73_2. ¿Cuál es el precio promedio que pagó por cada reproductor?" />
+                android:text="73.2. ¿Cuál es el precio promedio que pagó por cada reproductor?" />
 
             <EditText
                 android:id="@+id/ans73_2"
@@ -1620,7 +1715,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:gravity="left|center_vertical"
                 android:text="Influencia del entorno"
                 android:textColor="#2b2b2b" />
@@ -1782,7 +1877,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="76.1. ¿Cuál fue el porcentaje (%) de perdida?" />
+                android:text="77.1. ¿Cuál fue el porcentaje (%) de perdida?" />
 
             <Spinner
                 android:id="@+id/ans77-1"
@@ -1899,7 +1994,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:gravity="left|center_vertical"
                 android:text="Medios de producción de la UPAC"
                 android:textColor="#2b2b2b" />
@@ -2022,6 +2117,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
                 android:gravity="left|center_vertical"
                 android:text="Indique las caracteristicas de la UPAC"
                 android:textColor="#2b2b2b" />
@@ -2208,7 +2304,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="83.2.  Material de la jaula:" />
+                android:text="83.2. Material de la jaula:" />
 
             <EditText
                 android:id="@+id/ans83-2"

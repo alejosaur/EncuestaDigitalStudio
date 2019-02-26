@@ -302,23 +302,11 @@ public class Preguntas2 extends AppCompatActivity {
         String[] tipoAsociacion = new String[] {
                 "No aplica", "Cooperativa", "Asociacion", "Sindicato", "Otro, ¿Cuál?"
         };
-        String[] siNoNoAplica = new String[] {
-                "No aplica", "Sí", "No"
-        };
         String[] lugarVenta = new String[]{
                 "Venta en la UPAC", "Centro de acopio", "Centro de comercialización", "Otro"
         };
         String[] compradores = new String[] {
                 "Intermediario", "Almacén de cadena", "Consumidor", "Tienda", "Restaurante", "Industria", "Exportador"
-        };
-        String[] presentacion = new String[] {
-                "Entero", "Vivo", "Eviscerado", "Empacado", "Seco", "Salado", "Sin escama", "Sin branquias", "Postas"
-        };
-        String[] tecnicasReproduccion = new String[] {
-                "Reproducción natural", "Reproducción artificial"
-        };
-        String[] tecnicasIncubacion = new String[] {
-                "Incubación natural", "Incubación artificial"
         };
 
         Spinner ans42 = (Spinner) findViewById(R.id.ans42);
@@ -599,6 +587,36 @@ public class Preguntas2 extends AppCompatActivity {
         EditText ans44other = (EditText) findViewById(R.id.ans44other);
         ans44other.setVisibility(View.GONE);
 
+        EditText ans45a = (EditText) findViewById(R.id.ans45a);
+        ans45a.setVisibility(View.GONE);
+
+        EditText ans45b = (EditText) findViewById(R.id.ans45b);
+        ans45b.setVisibility(View.GONE);
+
+        EditText ans45c = (EditText) findViewById(R.id.ans45c);
+        ans45c.setVisibility(View.GONE);
+
+        EditText ans45d = (EditText) findViewById(R.id.ans45d);
+        ans45d.setVisibility(View.GONE);
+
+        EditText ans45e = (EditText) findViewById(R.id.ans45e);
+        ans45e.setVisibility(View.GONE);
+
+        EditText ans46a = (EditText) findViewById(R.id.ans46a);
+        ans46a.setVisibility(View.GONE);
+
+        EditText ans46b = (EditText) findViewById(R.id.ans46b);
+        ans46b.setVisibility(View.GONE);
+
+        EditText ans46c = (EditText) findViewById(R.id.ans46c);
+        ans46c.setVisibility(View.GONE);
+
+        EditText ans46d = (EditText) findViewById(R.id.ans46d);
+        ans46d.setVisibility(View.GONE);
+
+        EditText ans46e = (EditText) findViewById(R.id.ans46e);
+        ans46e.setVisibility(View.GONE);
+
         EditText ans47other = (EditText) findViewById(R.id.ans47other);
         ans47other.setVisibility(View.GONE);
 
@@ -608,11 +626,23 @@ public class Preguntas2 extends AppCompatActivity {
         EditText ans58other = (EditText) findViewById(R.id.ans58other);
         ans58other.setVisibility(View.GONE);
 
+        EditText ans62other = (EditText) findViewById(R.id.ans62other);
+        ans62other.setVisibility(View.GONE);
+
+        EditText ans71other = (EditText) findViewById(R.id.ans71other);
+        ans71other.setVisibility(View.GONE);
+
         EditText ans76other = (EditText) findViewById(R.id.ans76other);
         ans76other.setVisibility(View.GONE);
 
         EditText ans78other = (EditText) findViewById(R.id.ans78other);
         ans78other.setVisibility(View.GONE);
+
+        EditText ans79other = (EditText) findViewById(R.id.ans79other);
+        ans79other.setVisibility(View.GONE);
+
+        EditText ans82other = (EditText) findViewById(R.id.ans82other);
+        ans82other.setVisibility(View.GONE);
 
         TextView ques82_1 = (TextView) findViewById(R.id.ques82_1);
         ques82_1.setVisibility(View.GONE);
@@ -657,6 +687,9 @@ public class Preguntas2 extends AppCompatActivity {
 
         EditText ans92_1other = (EditText) findViewById(R.id.ans92_1other);
         ans92_1other.setVisibility(View.GONE);
+
+        EditText ans101_1other = (EditText) findViewById(R.id.ans101_1other);
+        ans101_1other.setVisibility(View.GONE);
 
         CheckBox ans44a = (CheckBox) findViewById(R.id.ans44a);
         CheckBox ans44b = (CheckBox) findViewById(R.id.ans44b);
@@ -761,11 +794,18 @@ public class Preguntas2 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 CheckBox ans44a = (CheckBox) findViewById(R.id.ans44a);
+                EditText ans45a = (EditText) findViewById(R.id.ans45a);
+                EditText ans46a = (EditText) findViewById(R.id.ans46a);
+
                 if(ans44a.isChecked()){
                     ans44code += 1;
+                    ans45a.setVisibility(View.VISIBLE);
+                    ans46a.setVisibility(View.VISIBLE);
                 }
                 else {
                     ans44code -= 1;
+                    ans45a.setVisibility(View.GONE);
+                    ans46a.setVisibility(View.GONE);
                 }
             }
         });
@@ -774,11 +814,17 @@ public class Preguntas2 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 CheckBox ans44b = (CheckBox) findViewById(R.id.ans44b);
+                EditText ans45b = (EditText) findViewById(R.id.ans45b);
+                EditText ans46b = (EditText) findViewById(R.id.ans46b);
                 if(ans44b.isChecked()){
                     ans44code += 2;
+                    ans45b.setVisibility(View.VISIBLE);
+                    ans46b.setVisibility(View.VISIBLE);
                 }
                 else {
                     ans44code -= 2;
+                    ans45b.setVisibility(View.GONE);
+                    ans46b.setVisibility(View.GONE);
                 }
             }
         });
@@ -787,11 +833,17 @@ public class Preguntas2 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 CheckBox ans44c = (CheckBox) findViewById(R.id.ans44c);
+                EditText ans45c = (EditText) findViewById(R.id.ans45c);
+                EditText ans46c = (EditText) findViewById(R.id.ans46c);
                 if(ans44c.isChecked()){
                     ans44code += 4;
+                    ans45c.setVisibility(View.VISIBLE);
+                    ans46c.setVisibility(View.VISIBLE);
                 }
                 else {
                     ans44code -= 4;
+                    ans45c.setVisibility(View.GONE);
+                    ans46c.setVisibility(View.GONE);
                 }
             }
         });
@@ -800,11 +852,17 @@ public class Preguntas2 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 CheckBox ans44d = (CheckBox) findViewById(R.id.ans44d);
+                EditText ans45d = (EditText) findViewById(R.id.ans45d);
+                EditText ans46d = (EditText) findViewById(R.id.ans46d);
                 if(ans44d.isChecked()){
                     ans44code += 8;
+                    ans45d.setVisibility(View.VISIBLE);
+                    ans46d.setVisibility(View.VISIBLE);
                 }
                 else {
                     ans44code -= 8;
+                    ans45d.setVisibility(View.GONE);
+                    ans46d.setVisibility(View.GONE);
                 }
             }
         });
@@ -814,13 +872,19 @@ public class Preguntas2 extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 CheckBox ans44e = (CheckBox) findViewById(R.id.ans44e);
                 EditText ans44other = (EditText) findViewById(R.id.ans44other);
+                EditText ans45e = (EditText) findViewById(R.id.ans45e);
+                EditText ans46e = (EditText) findViewById(R.id.ans46e);
                 if(ans44e.isChecked()){
-                    ans44other.setVisibility(View.VISIBLE);
                     ans44code += 16;
+                    ans44other.setVisibility(View.VISIBLE);
+                    ans45e.setVisibility(View.VISIBLE);
+                    ans46e.setVisibility(View.VISIBLE);
                 }
                 else {
-                    ans44other.setVisibility(View.GONE);
                     ans44code -= 16;
+                    ans44other.setVisibility(View.GONE);
+                    ans45e.setVisibility(View.GONE);
+                    ans46e.setVisibility(View.GONE);
 
                 }
             }
@@ -1122,6 +1186,33 @@ public class Preguntas2 extends AppCompatActivity {
             }
         });
 
+        ans57.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans57 = (Spinner) findViewById(R.id.ans57);
+                TextView ques57_1 = (TextView) findViewById(R.id.ques57_1);
+                EditText ans57_1 = (EditText) findViewById(R.id.ans57_1);
+                TextView ques57_2 = (TextView) findViewById(R.id.ques57_2);
+                EditText ans57_2 = (EditText) findViewById(R.id.ans57_2);
+                if(ans57.getSelectedItemPosition()==2) {
+                    ques57_1.setVisibility(View.VISIBLE);
+                    ans57_1.setVisibility(View.VISIBLE);
+                    ques57_2.setVisibility(View.VISIBLE);
+                    ans57_2.setVisibility(View.VISIBLE);
+                }else{
+                    ques57_1.setVisibility(View.GONE);
+                    ans57_1.setVisibility(View.GONE);
+                    ques57_2.setVisibility(View.GONE);
+                    ans57_2.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         ans58a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -1213,6 +1304,24 @@ public class Preguntas2 extends AppCompatActivity {
                     ans58other.setVisibility(View.GONE);
                     ans58code -= 64;
                 }
+            }
+        });
+
+        ans59.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans59 = (Spinner) findViewById(R.id.ans59);
+                EditText ans59other = (EditText) findViewById(R.id.ans59other);
+                if(ans59.getSelectedItemPosition()==8) {
+                    ans59other.setVisibility(View.VISIBLE);
+                }else{
+                    ans59other.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
             }
         });
 
@@ -1470,6 +1579,57 @@ public class Preguntas2 extends AppCompatActivity {
             }
         });
 
+        ans73.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans73 = (Spinner) findViewById(R.id.ans73);
+                TextView ques73_1 = (TextView) findViewById(R.id.ques73_1);
+                Spinner ans73_1 = (Spinner) findViewById(R.id.ans73_1);
+                TextView ques73_2 = (TextView) findViewById(R.id.ques73_2);
+                EditText ans73_2 = (EditText) findViewById(R.id.ans73_2);
+                TextView ques73_3 = (TextView) findViewById(R.id.ques73_3);
+                EditText ans73_3 = (EditText) findViewById(R.id.ans73_3);
+                TextView ques73_4 = (TextView) findViewById(R.id.ques73_4);
+                EditText ans73_4 = (EditText) findViewById(R.id.ans73_4);
+                TextView ques73_5 = (TextView) findViewById(R.id.ques73_5);
+                EditText ans73_5 = (EditText) findViewById(R.id.ans73_5);
+                TextView ques73_6 = (TextView) findViewById(R.id.ques73_6);
+                EditText ans73_6 = (EditText) findViewById(R.id.ans73_6);
+                if(ans73.getSelectedItemPosition()==1) {
+                    ques73_1.setVisibility(View.GONE);
+                    ans73_1.setVisibility(View.GONE);
+                    ques73_2.setVisibility(View.GONE);
+                    ans73_2.setVisibility(View.GONE);
+                    ques73_3.setVisibility(View.GONE);
+                    ans73_3.setVisibility(View.GONE);
+                    ques73_4.setVisibility(View.GONE);
+                    ans73_4.setVisibility(View.GONE);
+                    ques73_5.setVisibility(View.GONE);
+                    ans73_5.setVisibility(View.GONE);
+                    ques73_6.setVisibility(View.GONE);
+                    ans73_6.setVisibility(View.GONE);
+                }else{
+                    ques73_1.setVisibility(View.VISIBLE);
+                    ans73_1.setVisibility(View.VISIBLE);
+                    ques73_2.setVisibility(View.VISIBLE);
+                    ans73_2.setVisibility(View.VISIBLE);
+                    ques73_3.setVisibility(View.VISIBLE);
+                    ans73_3.setVisibility(View.VISIBLE);
+                    ques73_4.setVisibility(View.VISIBLE);
+                    ans73_4.setVisibility(View.VISIBLE);
+                    ques73_5.setVisibility(View.VISIBLE);
+                    ans73_5.setVisibility(View.VISIBLE);
+                    ques73_6.setVisibility(View.VISIBLE);
+                    ans73_6.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         ans73_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -1585,11 +1745,18 @@ public class Preguntas2 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 CheckBox ans76f = (CheckBox) findViewById(R.id.ans76f);
+                TextView ques76_1 = (TextView) findViewById(R.id.ques76_1);
+                Spinner ans76_1 = (Spinner) findViewById(R.id.ans76_1);
                 if(ans76f.isChecked()){
                     ans76code += 32;
+                    ques76_1.setVisibility(View.GONE);
+                    ans76_1.setVisibility(View.GONE);
+
                 }
                 else {
                     ans76code -= 32;
+                    ques76_1.setVisibility(View.VISIBLE);
+                    ans76_1.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -1664,11 +1831,17 @@ public class Preguntas2 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 CheckBox ans77f = (CheckBox) findViewById(R.id.ans77f);
+                TextView ques77_1 = (TextView) findViewById(R.id.ques77_1);
+                Spinner ans77_1 = (Spinner) findViewById(R.id.ans77_1);
                 if(ans77f.isChecked()){
                     ans77code += 32;
+                    ques77_1.setVisibility(View.GONE);
+                    ans77_1.setVisibility(View.GONE);
                 }
                 else {
                     ans77code -= 32;
+                    ques77_1.setVisibility(View.VISIBLE);
+                    ans77_1.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -1760,11 +1933,17 @@ public class Preguntas2 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 CheckBox ans78g = (CheckBox) findViewById(R.id.ans78g);
+                TextView ques78_1 = (TextView) findViewById(R.id.ques78_1);
+                Spinner ans78_1 = (Spinner) findViewById(R.id.ans78_1);
                 if(ans78g.isChecked()){
                     ans78code += 64;
+                    ques78_1.setVisibility(View.GONE);
+                    ans78_1.setVisibility(View.GONE);
                 }
                 else {
                     ans78code -= 64;
+                    ques78_1.setVisibility(View.VISIBLE);
+                    ans78_1.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -2464,7 +2643,7 @@ public class Preguntas2 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Spinner ans92_1 = (Spinner) findViewById(R.id.ans92_1);
                 EditText ans92_1other = (EditText) findViewById(R.id.ans92_1other);
-                if(ans92_1.getSelectedItemPosition()==3) {
+                if(ans92_1.getSelectedItemPosition()==4) {
                     ans92_1other.setVisibility(View.VISIBLE);
                 }else{
                     ans92_1other.setVisibility(View.GONE);
@@ -2819,6 +2998,55 @@ public class Preguntas2 extends AppCompatActivity {
             }
         });
 
+        ans101.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans101 = (Spinner) findViewById(R.id.ans101);
+                TextView ques101_1 = (TextView) findViewById(R.id.ques101_1);
+                CheckBox ans101_1a = (CheckBox) findViewById(R.id.ans101_1a);
+                CheckBox ans101_1b = (CheckBox) findViewById(R.id.ans101_1b);
+                CheckBox ans101_1c = (CheckBox) findViewById(R.id.ans101_1c);
+                CheckBox ans101_1d = (CheckBox) findViewById(R.id.ans101_1d);
+                CheckBox ans101_1e = (CheckBox) findViewById(R.id.ans101_1e);
+                CheckBox ans101_1f = (CheckBox) findViewById(R.id.ans101_1f);
+                CheckBox ans101_1g = (CheckBox) findViewById(R.id.ans101_1g);
+                CheckBox ans101_1h = (CheckBox) findViewById(R.id.ans101_1h);
+                EditText ans101_1other = (EditText) findViewById(R.id.ans101_1other);
+
+                if(ans101.getSelectedItemPosition()==1) {
+                    ques101_1.setVisibility(View.GONE);
+                    ans101_1a.setVisibility(View.GONE);
+                    ans101_1b.setVisibility(View.GONE);
+                    ans101_1c.setVisibility(View.GONE);
+                    ans101_1d.setVisibility(View.GONE);
+                    ans101_1e.setVisibility(View.GONE);
+                    ans101_1f.setVisibility(View.GONE);
+                    ans101_1g.setVisibility(View.GONE);
+                    ans101_1h.setVisibility(View.GONE);
+                    ans101_1other.setVisibility(View.GONE);
+
+                }else{
+                    ques101_1.setVisibility(View.VISIBLE);
+                    ans101_1a.setVisibility(View.VISIBLE);
+                    ans101_1b.setVisibility(View.VISIBLE);
+                    ans101_1c.setVisibility(View.VISIBLE);
+                    ans101_1d.setVisibility(View.VISIBLE);
+                    ans101_1e.setVisibility(View.VISIBLE);
+                    ans101_1f.setVisibility(View.VISIBLE);
+                    ans101_1g.setVisibility(View.VISIBLE);
+                    ans101_1h.setVisibility(View.VISIBLE);
+                    ans101_1other.setVisibility(View.VISIBLE);
+
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
         ans101_1a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -3087,6 +3315,7 @@ public class Preguntas2 extends AppCompatActivity {
             EditText ans47other = (EditText) findViewById(R.id.ans47other);
             EditText ans48other = (EditText) findViewById(R.id.ans48other);
             EditText ans58other = (EditText) findViewById(R.id.ans58other);
+            EditText ans59other = (EditText) findViewById(R.id.ans59other);
             EditText ans62other = (EditText) findViewById(R.id.ans62other);
             EditText ans71other = (EditText) findViewById(R.id.ans71other);
             EditText ans76other = (EditText) findViewById(R.id.ans76other);
@@ -3189,6 +3418,10 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write(ans58other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans59.getSelectedItemPosition()+1).getBytes());
+            if(ans59.getSelectedItemPosition() == 8){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans59other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(ans60.getText().toString().getBytes());
             fos.write("\t".getBytes());
