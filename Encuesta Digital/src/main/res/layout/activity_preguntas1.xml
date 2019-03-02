@@ -920,7 +920,7 @@
                 android:text="26. De los siguientes servicios públicos y/o privados, ¿con cuáles cuenta su vivienda?" />
 
             <CheckBox
-                android:id="@+id/tieneAcueducto"
+                android:id="@+id/ans26a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -928,7 +928,7 @@
                 android:text="Acueducto" />
 
             <CheckBox
-                android:id="@+id/tieneAseo"
+                android:id="@+id/ans26b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -936,7 +936,7 @@
                 android:text="Aseo" />
 
             <CheckBox
-                android:id="@+id/tieneAlcantarillado"
+                android:id="@+id/ans26c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -944,7 +944,7 @@
                 android:text="Alcantarillado" />
 
             <CheckBox
-                android:id="@+id/tienePozoSeptico"
+                android:id="@+id/ans26d"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -952,7 +952,7 @@
                 android:text="Pozo Séptico" />
 
             <CheckBox
-                android:id="@+id/tieneLetrina"
+                android:id="@+id/ans26e"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -960,7 +960,7 @@
                 android:text="Letrina" />
 
             <CheckBox
-                android:id="@+id/tieneElectricidad"
+                android:id="@+id/ans26f"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -968,7 +968,7 @@
                 android:text="Electricidad" />
 
             <CheckBox
-                android:id="@+id/tieneGas"
+                android:id="@+id/ans26g"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -976,7 +976,7 @@
                 android:text="Gas" />
 
             <CheckBox
-                android:id="@+id/tieneTelefono"
+                android:id="@+id/ans26h"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -984,7 +984,7 @@
                 android:text="Teléfono fijo o móvil" />
 
             <CheckBox
-                android:id="@+id/tieneInternet"
+                android:id="@+id/ans26i"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -992,7 +992,7 @@
                 android:text="Internet" />
 
             <CheckBox
-                android:id="@+id/tieneOtro"
+                android:id="@+id/ans26j"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1221,7 +1221,7 @@
                 android:text="31.4. ¿Qué medio(s) de transporte utiliza para desplazarse hasta el establecimiento educativo?" />
 
             <CheckBox
-                android:id="@+id/isTerrestre"
+                android:id="@+id/ans31_4a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1229,7 +1229,7 @@
                 android:text="Terrestre" />
 
             <CheckBox
-                android:id="@+id/isFluvial"
+                android:id="@+id/ans31_4b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1237,7 +1237,7 @@
                 android:text="Fluvial" />
 
             <CheckBox
-                android:id="@+id/isAereo"
+                android:id="@+id/ans31_4c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1357,7 +1357,7 @@
                 android:text="32.4. ¿Qué medio(s) de transporte utiliza para desplazarse hacia el establecimiento de salud?" />
 
             <CheckBox
-                android:id="@+id/isTerrestreHosp"
+                android:id="@+id/ans32_4a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1365,7 +1365,7 @@
                 android:text="Terrestre" />
 
             <CheckBox
-                android:id="@+id/isFluvialHosp"
+                android:id="@+id/ans32_4b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1373,7 +1373,7 @@
                 android:text="Fluvial" />
 
             <CheckBox
-                android:id="@+id/isAereoHosp"
+                android:id="@+id/ans32_4c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1484,7 +1484,7 @@
                 android:text="33.3. ¿Qué medio(s) de transporte utiliza para desplazarse hacia la institución?" />
 
             <CheckBox
-                android:id="@+id/isTerrestreInst"
+                android:id="@+id/ans33_3a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1492,7 +1492,7 @@
                 android:text="Terrestre" />
 
             <CheckBox
-                android:id="@+id/isFluvialInst"
+                android:id="@+id/ans33_3b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1500,7 +1500,7 @@
                 android:text="Fluvial" />
 
             <CheckBox
-                android:id="@+id/isAereoInst"
+                android:id="@+id/ans33_3c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1591,7 +1591,7 @@
                 android:text="37. ¿Qué medio(s) de transporte utiliza para desplazarse hacia el centro de comercialización?" />
 
             <CheckBox
-                android:id="@+id/isTerrestreServ"
+                android:id="@+id/ans37a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1599,7 +1599,7 @@
                 android:text="Terrestre" />
 
             <CheckBox
-                android:id="@+id/isFluvialServ"
+                android:id="@+id/ans37b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1607,7 +1607,7 @@
                 android:text="Fluvial" />
 
             <CheckBox
-                android:id="@+id/isAereoServ"
+                android:id="@+id/ans37c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1776,7 +1776,7 @@
                 android:text="40.2. ¿En cuál de los siguientes temas fue/es asesorado/asistido?" />
 
             <CheckBox
-                android:id="@+id/ayudaGestion"
+                android:id="@+id/ans40_2a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1784,7 +1784,7 @@
                 android:text="Gestión de la unidad de producción" />
 
             <CheckBox
-                android:id="@+id/ayudaInsumos"
+                android:id="@+id/ans40_2b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1792,7 +1792,7 @@
                 android:text="Uso de insumos fertilizantes y otros" />
 
             <CheckBox
-                android:id="@+id/ayudaCredito"
+                android:id="@+id/ans40_2c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1800,7 +1800,7 @@
                 android:text="Crédito" />
 
             <CheckBox
-                android:id="@+id/ayudaTecnificacion"
+                android:id="@+id/ans40_2d"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1808,7 +1808,7 @@
                 android:text="Tecnificación de la unidad de producción en todas las fases" />
 
             <CheckBox
-                android:id="@+id/ayudaSaludAnimal"
+                android:id="@+id/ans40_2e"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1816,7 +1816,7 @@
                 android:text="Salud animal" />
 
             <CheckBox
-                android:id="@+id/ayudaDesarrolloSostenible"
+                android:id="@+id/ans40_2f"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1824,7 +1824,7 @@
                 android:text="Desarrollo sostenible" />
 
             <CheckBox
-                android:id="@+id/ayudaAgremiacion"
+                android:id="@+id/ans40_2g"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1832,7 +1832,7 @@
                 android:text="Agremiación" />
 
             <CheckBox
-                android:id="@+id/ayudaComercializacion"
+                android:id="@+id/ans40_2h"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1840,7 +1840,7 @@
                 android:text="Comercialización" />
 
             <CheckBox
-                android:id="@+id/ayudaOtro"
+                android:id="@+id/ans40_2i"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1960,7 +1960,7 @@
                 android:text="41.2. ¿En cuál de las siguientes áreas recibió formación complementaria?" />
 
             <CheckBox
-                android:id="@+id/formacionAmbiental"
+                android:id="@+id/ans41_2a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1968,7 +1968,7 @@
                 android:text="Ambiental" />
 
             <CheckBox
-                android:id="@+id/formacionEmpresarial"
+                android:id="@+id/ans41_2b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1976,7 +1976,7 @@
                 android:text="Empresarial" />
 
             <CheckBox
-                android:id="@+id/formacionAcuicola"
+                android:id="@+id/ans41_2c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1984,7 +1984,7 @@
                 android:text="Productivo (acuícola)" />
 
             <CheckBox
-                android:id="@+id/formacionPesquero"
+                android:id="@+id/ans41_2d"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -1992,7 +1992,7 @@
                 android:text="Productivo (pesquero)" />
 
             <CheckBox
-                android:id="@+id/formacionTecnologica"
+                android:id="@+id/ans41_2e"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2000,7 +2000,7 @@
                 android:text="Tecnológico/Innovación" />
 
             <CheckBox
-                android:id="@+id/formacionBuenasPracticas"
+                android:id="@+id/ans41_2f"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2008,7 +2008,7 @@
                 android:text="Buenas prácticas de producción" />
 
             <CheckBox
-                android:id="@+id/formacionOtros"
+                android:id="@+id/ans41_2g"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"

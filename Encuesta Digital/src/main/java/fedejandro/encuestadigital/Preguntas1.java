@@ -33,6 +33,14 @@ public class Preguntas1 extends AppCompatActivity {
     protected LocationManager locationManager;
     protected LocationManager locationManagerGPS;
 
+    public int ans26code = 0;
+    public int ans31_4code = 0;
+    public int ans32_4code = 0;
+    public int ans33_3code = 0;
+    public int ans37code = 0;
+    public int ans40_2code = 0;
+    public int ans41_2code = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -619,9 +627,44 @@ public class Preguntas1 extends AppCompatActivity {
         EditText ans41_2other = (EditText) findViewById(R.id.ans41_2other);
         ans41_2other.setVisibility(View.GONE);
 
-        CheckBox tieneOtro = (CheckBox) findViewById(R.id.tieneOtro);
-        CheckBox ayudaOtro = (CheckBox) findViewById(R.id.ayudaOtro);
-        CheckBox formacionOtros = (CheckBox) findViewById(R.id.formacionOtros);
+        CheckBox ans26a = (CheckBox) findViewById(R.id.ans26a);
+        CheckBox ans26b = (CheckBox) findViewById(R.id.ans26b);
+        CheckBox ans26c = (CheckBox) findViewById(R.id.ans26c);
+        CheckBox ans26d = (CheckBox) findViewById(R.id.ans26d);
+        CheckBox ans26e = (CheckBox) findViewById(R.id.ans26e);
+        CheckBox ans26f = (CheckBox) findViewById(R.id.ans26f);
+        CheckBox ans26g = (CheckBox) findViewById(R.id.ans26g);
+        CheckBox ans26h = (CheckBox) findViewById(R.id.ans26h);
+        CheckBox ans26i = (CheckBox) findViewById(R.id.ans26i);
+        CheckBox ans26j = (CheckBox) findViewById(R.id.ans26j);
+        CheckBox ans31_4a = (CheckBox) findViewById(R.id.ans31_4a);
+        CheckBox ans31_4b = (CheckBox) findViewById(R.id.ans31_4b);
+        CheckBox ans31_4c = (CheckBox) findViewById(R.id.ans31_4c);
+        CheckBox ans32_4a = (CheckBox) findViewById(R.id.ans32_4a);
+        CheckBox ans32_4b = (CheckBox) findViewById(R.id.ans32_4b);
+        CheckBox ans32_4c = (CheckBox) findViewById(R.id.ans32_4c);
+        CheckBox ans33_3a = (CheckBox) findViewById(R.id.ans33_3a);
+        CheckBox ans33_3b = (CheckBox) findViewById(R.id.ans33_3b);
+        CheckBox ans33_3c = (CheckBox) findViewById(R.id.ans33_3c);
+        CheckBox ans37a = (CheckBox) findViewById(R.id.ans37a);
+        CheckBox ans37b = (CheckBox) findViewById(R.id.ans37b);
+        CheckBox ans37c = (CheckBox) findViewById(R.id.ans37c);
+        CheckBox ans40_2a = (CheckBox) findViewById(R.id.ans40_2a);
+        CheckBox ans40_2b = (CheckBox) findViewById(R.id.ans40_2b);
+        CheckBox ans40_2c = (CheckBox) findViewById(R.id.ans40_2c);
+        CheckBox ans40_2d = (CheckBox) findViewById(R.id.ans40_2d);
+        CheckBox ans40_2e = (CheckBox) findViewById(R.id.ans40_2e);
+        CheckBox ans40_2f = (CheckBox) findViewById(R.id.ans40_2f);
+        CheckBox ans40_2g = (CheckBox) findViewById(R.id.ans40_2g);
+        CheckBox ans40_2h = (CheckBox) findViewById(R.id.ans40_2h);
+        CheckBox ans40_2i = (CheckBox) findViewById(R.id.ans40_2i);
+        CheckBox ans41_2a = (CheckBox) findViewById(R.id.ans41_2a);
+        CheckBox ans41_2b = (CheckBox) findViewById(R.id.ans41_2b);
+        CheckBox ans41_2c = (CheckBox) findViewById(R.id.ans41_2c);
+        CheckBox ans41_2d = (CheckBox) findViewById(R.id.ans41_2d);
+        CheckBox ans41_2e = (CheckBox) findViewById(R.id.ans41_2e);
+        CheckBox ans41_2f = (CheckBox) findViewById(R.id.ans41_2f);
+        CheckBox ans41_2g = (CheckBox) findViewById(R.id.ans41_2g);
 
         ans1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -960,16 +1003,138 @@ public class Preguntas1 extends AppCompatActivity {
             }
         });
 
-        tieneOtro.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        ans26a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                CheckBox tieneOtro = (CheckBox) findViewById(R.id.tieneOtro);
+                CheckBox ans26a = (CheckBox) findViewById(R.id.ans26a);
+                if(ans26a.isChecked()){
+                    ans26code += 1;
+                }
+                else {
+                    ans26code -= 1;
+                }
+            }
+        });
+
+        ans26b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans26b = (CheckBox) findViewById(R.id.ans26b);
+                if(ans26b.isChecked()){
+                    ans26code += 2;
+                }
+                else {
+                    ans26code -= 2;
+                }
+            }
+        });
+
+        ans26c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans26c = (CheckBox) findViewById(R.id.ans26c);
+                if(ans26c.isChecked()){
+                    ans26code += 4;
+                }
+                else {
+                    ans26code -= 4;
+                }
+            }
+        });
+
+        ans26d.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans26d = (CheckBox) findViewById(R.id.ans26d);
+                if(ans26d.isChecked()){
+                    ans26code += 8;
+                }
+                else {
+                    ans26code -= 8;
+                }
+            }
+        });
+
+        ans26e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans26e = (CheckBox) findViewById(R.id.ans26e);
+                if(ans26e.isChecked()){
+                    ans26code += 16;
+                }
+                else {
+                    ans26code -= 16;
+                }
+            }
+        });
+
+        ans26f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans26f = (CheckBox) findViewById(R.id.ans26f);
+                if(ans26f.isChecked()){
+                    ans26code += 32;
+                }
+                else {
+                    ans26code -= 32;
+                }
+            }
+        });
+
+        ans26g.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans26g = (CheckBox) findViewById(R.id.ans26g);
+                if(ans26g.isChecked()){
+                    ans26code += 64;
+                }
+                else {
+                    ans26code -= 64;
+                }
+            }
+        });
+
+        ans26h.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans26h = (CheckBox) findViewById(R.id.ans26h);
+                if(ans26h.isChecked()){
+                    ans26code += 128;
+                }
+                else {
+                    ans26code -= 128;
+                }
+            }
+        });
+
+        ans26i.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans26i = (CheckBox) findViewById(R.id.ans26i);
+                if(ans26i.isChecked()){
+                    ans26code += 256;
+                }
+                else {
+                    ans26code -= 256;
+
+                }
+            }
+        });
+
+        ans26j.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans26j = (CheckBox) findViewById(R.id.ans26j);
                 EditText ans26other = (EditText) findViewById(R.id.ans26other);
-                if(tieneOtro.isChecked()){
+                if(ans26j.isChecked()){
                     ans26other.setVisibility(View.VISIBLE);
+                    ans26code += 512;
+
                 }
                 else {
                     ans26other.setVisibility(View.GONE);
+                    ans26code -= 512;
+
                 }
             }
         });
@@ -987,9 +1152,9 @@ public class Preguntas1 extends AppCompatActivity {
                 TextView ques31_3 = (TextView) findViewById(R.id.ques31_3);
                 EditText ans31_3 = (EditText) findViewById(R.id.ans31_3);
                 TextView ques31_4 = (TextView) findViewById(R.id.ques31_4);
-                CheckBox isTerrestre = (CheckBox) findViewById(R.id.isTerrestre);
-                CheckBox isFluvial = (CheckBox) findViewById(R.id.isFluvial);
-                CheckBox isAereo = (CheckBox) findViewById(R.id.isAereo);
+                CheckBox ans31_4a = (CheckBox) findViewById(R.id.ans31_4a);
+                CheckBox ans31_4b = (CheckBox) findViewById(R.id.ans31_4b);
+                CheckBox ans31_4c = (CheckBox) findViewById(R.id.ans31_4c);
                 if(ans30.getSelectedItemPosition()==2) {
                     ques31.setVisibility(View.GONE);
                     ans31.setVisibility(View.GONE);
@@ -1000,9 +1165,9 @@ public class Preguntas1 extends AppCompatActivity {
                     ques31_3.setVisibility(View.GONE);
                     ans31_3.setVisibility(View.GONE);
                     ques31_4.setVisibility(View.GONE);
-                    isTerrestre.setVisibility(View.GONE);
-                    isFluvial.setVisibility(View.GONE);
-                    isAereo.setVisibility(View.GONE);
+                    ans31_4a.setVisibility(View.GONE);
+                    ans31_4b.setVisibility(View.GONE);
+                    ans31_4c.setVisibility(View.GONE);
                 }else{
                     ques31.setVisibility(View.VISIBLE);
                     ans31.setVisibility(View.VISIBLE);
@@ -1013,9 +1178,9 @@ public class Preguntas1 extends AppCompatActivity {
                     ques31_3.setVisibility(View.VISIBLE);
                     ans31_3.setVisibility(View.VISIBLE);
                     ques31_4.setVisibility(View.VISIBLE);
-                    isTerrestre.setVisibility(View.VISIBLE);
-                    isFluvial.setVisibility(View.VISIBLE);
-                    isAereo.setVisibility(View.VISIBLE);
+                    ans31_4a.setVisibility(View.VISIBLE);
+                    ans31_4b.setVisibility(View.VISIBLE);
+                    ans31_4c.setVisibility(View.VISIBLE);
                 }
             }
 
@@ -1025,6 +1190,162 @@ public class Preguntas1 extends AppCompatActivity {
             }
         });
 
+        ans31_4a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans31_4a = (CheckBox) findViewById(R.id.ans31_4a);
+                if(ans31_4a.isChecked()){
+                    ans31_4code += 1;
+                }
+                else {
+                    ans31_4code -= 1;
+                }
+            }
+        });
+
+        ans31_4b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans31_4b = (CheckBox) findViewById(R.id.ans31_4b);
+                if(ans31_4b.isChecked()){
+                    ans31_4code += 2;
+                }
+                else {
+                    ans31_4code -= 2;
+                }
+            }
+        });
+
+        ans31_4c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans31_4c = (CheckBox) findViewById(R.id.ans31_4c);
+                if(ans31_4c.isChecked()){
+                    ans31_4code += 4;
+                }
+                else {
+                    ans31_4code -= 4;
+                }
+            }
+        });
+
+        ans32_4a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans32_4a = (CheckBox) findViewById(R.id.ans32_4a);
+                if(ans32_4a.isChecked()){
+                    ans32_4code += 1;
+                }
+                else {
+                    ans32_4code -= 1;
+                }
+            }
+        });
+
+        ans32_4b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans32_4b = (CheckBox) findViewById(R.id.ans32_4b);
+                if(ans32_4b.isChecked()){
+                    ans32_4code += 2;
+                }
+                else {
+                    ans32_4code -= 2;
+                }
+            }
+        });
+
+        ans32_4c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans32_4c = (CheckBox) findViewById(R.id.ans32_4c);
+                if(ans32_4c.isChecked()){
+                    ans32_4code += 4;
+                }
+                else {
+                    ans32_4code -= 4;
+                }
+            }
+        });
+
+        ans33_3a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans33_3a = (CheckBox) findViewById(R.id.ans33_3a);
+                if(ans33_3a.isChecked()){
+                    ans33_3code += 1;
+                }
+                else {
+                    ans33_3code -= 1;
+                }
+            }
+        });
+
+        ans33_3b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans33_3b = (CheckBox) findViewById(R.id.ans33_3b);
+                if(ans33_3b.isChecked()){
+                    ans33_3code += 2;
+                }
+                else {
+                    ans33_3code -= 2;
+                }
+            }
+        });
+
+        ans33_3c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans33_3c = (CheckBox) findViewById(R.id.ans33_3c);
+                if(ans33_3c.isChecked()){
+                    ans33_3code += 4;
+                }
+                else {
+                    ans33_3code -= 4;
+                }
+            }
+        });
+
+        ans37a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans37a = (CheckBox) findViewById(R.id.ans37a);
+                if(ans37a.isChecked()){
+                    ans37code += 1;
+                }
+                else {
+                    ans37code -= 1;
+                }
+            }
+        });
+
+        ans37b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans37b = (CheckBox) findViewById(R.id.ans37b);
+                if(ans37b.isChecked()){
+                    ans37code += 2;
+                }
+                else {
+                    ans37code -= 2;
+                }
+            }
+        });
+
+        ans37c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans37c = (CheckBox) findViewById(R.id.ans37c);
+                if(ans37c.isChecked()){
+                    ans37code += 4;
+                }
+                else {
+                    ans37code -= 4;
+                }
+            }
+        });
+        
         ans32.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -1036,9 +1357,9 @@ public class Preguntas1 extends AppCompatActivity {
                 TextView ques32_3 = (TextView) findViewById(R.id.ques32_3);
                 EditText ans32_3 = (EditText) findViewById(R.id.ans32_3);
                 TextView ques32_4 = (TextView) findViewById(R.id.ques32_4);
-                CheckBox isTerrestreHosp = (CheckBox) findViewById(R.id.isTerrestreHosp);
-                CheckBox isFluvialHosp = (CheckBox) findViewById(R.id.isFluvialHosp);
-                CheckBox isAereoHosp = (CheckBox) findViewById(R.id.isAereoHosp);
+                CheckBox ans32_4a = (CheckBox) findViewById(R.id.ans32_4a);
+                CheckBox ans32_4b = (CheckBox) findViewById(R.id.ans32_4b);
+                CheckBox ans32_4c = (CheckBox) findViewById(R.id.ans32_4c);
                 if(ans32.getSelectedItemPosition()==3) {
                     ques32_1.setVisibility(View.GONE);
                     ans32_1.setVisibility(View.GONE);
@@ -1047,9 +1368,9 @@ public class Preguntas1 extends AppCompatActivity {
                     ques32_3.setVisibility(View.GONE);
                     ans32_3.setVisibility(View.GONE);
                     ques32_4.setVisibility(View.GONE);
-                    isTerrestreHosp.setVisibility(View.GONE);
-                    isFluvialHosp.setVisibility(View.GONE);
-                    isAereoHosp.setVisibility(View.GONE);
+                    ans32_4a.setVisibility(View.GONE);
+                    ans32_4b.setVisibility(View.GONE);
+                    ans32_4c.setVisibility(View.GONE);
                 }else{
                     ques32_1.setVisibility(View.VISIBLE);
                     ans32_1.setVisibility(View.VISIBLE);
@@ -1058,9 +1379,9 @@ public class Preguntas1 extends AppCompatActivity {
                     ques32_3.setVisibility(View.VISIBLE);
                     ans32_3.setVisibility(View.VISIBLE);
                     ques32_4.setVisibility(View.VISIBLE);
-                    isTerrestreHosp.setVisibility(View.VISIBLE);
-                    isFluvialHosp.setVisibility(View.VISIBLE);
-                    isAereoHosp.setVisibility(View.VISIBLE);
+                    ans32_4a.setVisibility(View.VISIBLE);
+                    ans32_4b.setVisibility(View.VISIBLE);
+                    ans32_4c.setVisibility(View.VISIBLE);
                 }
             }
 
@@ -1088,9 +1409,9 @@ public class Preguntas1 extends AppCompatActivity {
                 TextView ques33_2 = (TextView) findViewById(R.id.ques33_2);
                 EditText ans33_2 = (EditText) findViewById(R.id.ans33_2);
                 TextView ques33_3 = (TextView) findViewById(R.id.ques33_3);
-                CheckBox isTerrestreInst = (CheckBox) findViewById(R.id.isTerrestreInst);
-                CheckBox isFluvialInst = (CheckBox) findViewById(R.id.isFluvialInst);
-                CheckBox isAereoInst = (CheckBox) findViewById(R.id.isAereoInst);
+                CheckBox ans33_3a = (CheckBox) findViewById(R.id.ans33_3a);
+                CheckBox ans33_3b = (CheckBox) findViewById(R.id.ans33_3b);
+                CheckBox ans33_3c = (CheckBox) findViewById(R.id.ans33_3c);
                 if(ans33.getSelectedItemPosition()==4) {
                     ans33other.setVisibility(View.VISIBLE);
                 }else{
@@ -1103,9 +1424,9 @@ public class Preguntas1 extends AppCompatActivity {
                     ques33_2.setVisibility(View.GONE);
                     ans33_2.setVisibility(View.GONE);
                     ques33_3.setVisibility(View.GONE);
-                    isTerrestreInst.setVisibility(View.GONE);
-                    isFluvialInst.setVisibility(View.GONE);
-                    isAereoInst.setVisibility(View.GONE);
+                    ans33_3a.setVisibility(View.GONE);
+                    ans33_3b.setVisibility(View.GONE);
+                    ans33_3c.setVisibility(View.GONE);
 
                 }else{
                     ques33_1.setVisibility(View.VISIBLE);
@@ -1113,9 +1434,9 @@ public class Preguntas1 extends AppCompatActivity {
                     ques33_2.setVisibility(View.VISIBLE);
                     ans33_2.setVisibility(View.VISIBLE);
                     ques33_3.setVisibility(View.VISIBLE);
-                    isTerrestreInst.setVisibility(View.VISIBLE);
-                    isFluvialInst.setVisibility(View.VISIBLE);
-                    isAereoInst.setVisibility(View.VISIBLE);
+                    ans33_3a.setVisibility(View.VISIBLE);
+                    ans33_3b.setVisibility(View.VISIBLE);
+                    ans33_3c.setVisibility(View.VISIBLE);
 
                 }
 
@@ -1179,15 +1500,15 @@ public class Preguntas1 extends AppCompatActivity {
                 TextView ques40_1 = (TextView) findViewById(R.id.ques40_1);
                 Spinner ans40_1 = (Spinner) findViewById(R.id.ans40_1);
                 TextView ques40_2 = (TextView) findViewById(R.id.ques40_2);
-                CheckBox ayudaGestion = (CheckBox) findViewById(R.id.ayudaGestion);
-                CheckBox ayudaInsumos = (CheckBox) findViewById(R.id.ayudaInsumos);
-                CheckBox ayudaCredito = (CheckBox) findViewById(R.id.ayudaCredito);
-                CheckBox ayudaTecnificacion = (CheckBox) findViewById(R.id.ayudaTecnificacion);
-                CheckBox ayudaSaludAnimal = (CheckBox) findViewById(R.id.ayudaSaludAnimal);
-                CheckBox ayudaDesarrolloSostenible = (CheckBox) findViewById(R.id.ayudaDesarrolloSostenible);
-                CheckBox ayudaAgremiacion = (CheckBox) findViewById(R.id.ayudaAgremiacion);
-                CheckBox ayudaComercializacion = (CheckBox) findViewById(R.id.ayudaComercializacion);
-                CheckBox ayudaOtro = (CheckBox) findViewById(R.id.ayudaOtro);
+                CheckBox ans40_2a = (CheckBox) findViewById(R.id.ans40_2a);
+                CheckBox ans40_2b = (CheckBox) findViewById(R.id.ans40_2b);
+                CheckBox ans40_2c = (CheckBox) findViewById(R.id.ans40_2c);
+                CheckBox ans40_2d = (CheckBox) findViewById(R.id.ans40_2d);
+                CheckBox ans40_2e = (CheckBox) findViewById(R.id.ans40_2e);
+                CheckBox ans40_2f = (CheckBox) findViewById(R.id.ans40_2f);
+                CheckBox ans40_2g = (CheckBox) findViewById(R.id.ans40_2g);
+                CheckBox ans40_2h = (CheckBox) findViewById(R.id.ans40_2h);
+                CheckBox ans40_2i = (CheckBox) findViewById(R.id.ans40_2i);
                 TextView ques40_3 = (TextView) findViewById(R.id.ques40_3);
                 Spinner ans40_3 = (Spinner) findViewById(R.id.ans40_3);
                 TextView ques40_4 = (TextView) findViewById(R.id.ques40_4);
@@ -1196,15 +1517,15 @@ public class Preguntas1 extends AppCompatActivity {
                     ques40_1.setVisibility(View.GONE);
                     ans40_1.setVisibility(View.GONE);
                     ques40_2.setVisibility(View.GONE);
-                    ayudaGestion.setVisibility(View.GONE);
-                    ayudaInsumos.setVisibility(View.GONE);
-                    ayudaCredito.setVisibility(View.GONE);
-                    ayudaTecnificacion.setVisibility(View.GONE);
-                    ayudaSaludAnimal.setVisibility(View.GONE);
-                    ayudaDesarrolloSostenible.setVisibility(View.GONE);
-                    ayudaAgremiacion.setVisibility(View.GONE);
-                    ayudaComercializacion.setVisibility(View.GONE);
-                    ayudaOtro.setVisibility(View.GONE);
+                    ans40_2a.setVisibility(View.GONE);
+                    ans40_2b.setVisibility(View.GONE);
+                    ans40_2c.setVisibility(View.GONE);
+                    ans40_2d.setVisibility(View.GONE);
+                    ans40_2e.setVisibility(View.GONE);
+                    ans40_2f.setVisibility(View.GONE);
+                    ans40_2g.setVisibility(View.GONE);
+                    ans40_2h.setVisibility(View.GONE);
+                    ans40_2i.setVisibility(View.GONE);
                     ques40_3.setVisibility(View.GONE);
                     ans40_3.setVisibility(View.GONE);
                     ques40_4.setVisibility(View.GONE);
@@ -1213,15 +1534,15 @@ public class Preguntas1 extends AppCompatActivity {
                     ques40_1.setVisibility(View.VISIBLE);
                     ans40_1.setVisibility(View.VISIBLE);
                     ques40_2.setVisibility(View.VISIBLE);
-                    ayudaGestion.setVisibility(View.VISIBLE);
-                    ayudaInsumos.setVisibility(View.VISIBLE);
-                    ayudaCredito.setVisibility(View.VISIBLE);
-                    ayudaTecnificacion.setVisibility(View.VISIBLE);
-                    ayudaSaludAnimal.setVisibility(View.VISIBLE);
-                    ayudaDesarrolloSostenible.setVisibility(View.VISIBLE);
-                    ayudaAgremiacion.setVisibility(View.VISIBLE);
-                    ayudaComercializacion.setVisibility(View.VISIBLE);
-                    ayudaOtro.setVisibility(View.VISIBLE);
+                    ans40_2a.setVisibility(View.VISIBLE);
+                    ans40_2b.setVisibility(View.VISIBLE);
+                    ans40_2c.setVisibility(View.VISIBLE);
+                    ans40_2d.setVisibility(View.VISIBLE);
+                    ans40_2e.setVisibility(View.VISIBLE);
+                    ans40_2f.setVisibility(View.VISIBLE);
+                    ans40_2g.setVisibility(View.VISIBLE);
+                    ans40_2h.setVisibility(View.VISIBLE);
+                    ans40_2i.setVisibility(View.VISIBLE);
                     ques40_3.setVisibility(View.VISIBLE);
                     ans40_3.setVisibility(View.VISIBLE);
                     ques40_4.setVisibility(View.VISIBLE);
@@ -1253,16 +1574,123 @@ public class Preguntas1 extends AppCompatActivity {
             }
         });
 
-        ayudaOtro.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        ans40_2a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                CheckBox ayudaOtro = (CheckBox) findViewById(R.id.ayudaOtro);
+                CheckBox ans40_2a = (CheckBox) findViewById(R.id.ans40_2a);
+                if(ans40_2a.isChecked()){
+                    ans40_2code += 1;
+                }
+                else {
+                    ans40_2code -= 1;
+                }
+            }
+        });
+
+        ans40_2b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans40_2b = (CheckBox) findViewById(R.id.ans40_2b);
+                if(ans40_2b.isChecked()){
+                    ans40_2code += 2;
+                }
+                else {
+                    ans40_2code -= 2;
+                }
+            }
+        });
+
+        ans40_2c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans40_2c = (CheckBox) findViewById(R.id.ans40_2c);
+                if(ans40_2c.isChecked()){
+                    ans40_2code += 4;
+                }
+                else {
+                    ans40_2code -= 4;
+                }
+            }
+        });
+
+        ans40_2d.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans40_2d = (CheckBox) findViewById(R.id.ans40_2d);
+                if(ans40_2d.isChecked()){
+                    ans40_2code += 8;
+                }
+                else {
+                    ans40_2code -= 8;
+                }
+            }
+        });
+
+        ans40_2e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans40_2e = (CheckBox) findViewById(R.id.ans40_2e);
+                if(ans40_2e.isChecked()){
+                    ans40_2code += 16;
+                }
+                else {
+                    ans40_2code -= 16;
+                }
+            }
+        });
+
+        ans40_2f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans40_2f = (CheckBox) findViewById(R.id.ans40_2f);
+                if(ans40_2f.isChecked()){
+                    ans40_2code += 32;
+                }
+                else {
+                    ans40_2code -= 32;
+                }
+            }
+        });
+
+        ans40_2g.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans40_2g = (CheckBox) findViewById(R.id.ans40_2g);
+                if(ans40_2g.isChecked()){
+                    ans40_2code += 64;
+                }
+                else {
+                    ans40_2code -= 64;
+                }
+            }
+        });
+
+        ans40_2h.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans40_2h = (CheckBox) findViewById(R.id.ans40_2h);
+                if(ans40_2h.isChecked()){
+                    ans40_2code += 128;
+                }
+                else {
+                    ans40_2code -= 128;
+                }
+            }
+        });
+
+        ans40_2i.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans40_2i = (CheckBox) findViewById(R.id.ans40_2i);
                 EditText ans40_2other = (EditText) findViewById(R.id.ans40_2other);
-                if(ayudaOtro.isChecked()){
+                if(ans40_2i.isChecked()){
                     ans40_2other.setVisibility(View.VISIBLE);
+                    ans40_2code += 256;
                 }
                 else {
                     ans40_2other.setVisibility(View.GONE);
+                    ans40_2code -= 256;
+
                 }
             }
         });
@@ -1274,13 +1702,13 @@ public class Preguntas1 extends AppCompatActivity {
                 TextView ques41_1 = (TextView) findViewById(R.id.ques41_1);
                 Spinner ans41_1 = (Spinner) findViewById(R.id.ans41_1);
                 TextView ques41_2 = (TextView) findViewById(R.id.ques41_2);
-                CheckBox formacionAmbiental = (CheckBox) findViewById(R.id.formacionAmbiental);
-                CheckBox formacionEmpresarial = (CheckBox) findViewById(R.id.formacionEmpresarial);
-                CheckBox formacionAcuicola = (CheckBox) findViewById(R.id.formacionAcuicola);
-                CheckBox formacionPesquero = (CheckBox) findViewById(R.id.formacionPesquero);
-                CheckBox formacionTecnologica = (CheckBox) findViewById(R.id.formacionTecnologica);
-                CheckBox formacionBuenasPracticas = (CheckBox) findViewById(R.id.formacionBuenasPracticas);
-                CheckBox formacionOtros = (CheckBox) findViewById(R.id.formacionOtros);
+                CheckBox ans41_2a = (CheckBox) findViewById(R.id.ans41_2a);
+                CheckBox ans41_2b = (CheckBox) findViewById(R.id.ans41_2b);
+                CheckBox ans41_2c = (CheckBox) findViewById(R.id.ans41_2c);
+                CheckBox ans41_2d = (CheckBox) findViewById(R.id.ans41_2d);
+                CheckBox ans41_2e = (CheckBox) findViewById(R.id.ans41_2e);
+                CheckBox ans41_2f = (CheckBox) findViewById(R.id.ans41_2f);
+                CheckBox ans41_2g = (CheckBox) findViewById(R.id.ans41_2g);
                 TextView ques41_3 = (TextView) findViewById(R.id.ques41_3);
                 Spinner ans41_3 = (Spinner) findViewById(R.id.ans41_3);
                 TextView ques41_4 = (TextView) findViewById(R.id.ques41_4);
@@ -1289,13 +1717,13 @@ public class Preguntas1 extends AppCompatActivity {
                     ques41_1.setVisibility(View.GONE);
                     ans41_1.setVisibility(View.GONE);
                     ques41_2.setVisibility(View.GONE);
-                    formacionAmbiental.setVisibility(View.GONE);
-                    formacionEmpresarial.setVisibility(View.GONE);
-                    formacionAcuicola.setVisibility(View.GONE);
-                    formacionPesquero.setVisibility(View.GONE);
-                    formacionTecnologica.setVisibility(View.GONE);
-                    formacionBuenasPracticas.setVisibility(View.GONE);
-                    formacionOtros.setVisibility(View.GONE);
+                    ans41_2a.setVisibility(View.GONE);
+                    ans41_2b.setVisibility(View.GONE);
+                    ans41_2c.setVisibility(View.GONE);
+                    ans41_2d.setVisibility(View.GONE);
+                    ans41_2e.setVisibility(View.GONE);
+                    ans41_2f.setVisibility(View.GONE);
+                    ans41_2g.setVisibility(View.GONE);
                     ques41_3.setVisibility(View.GONE);
                     ans41_3.setVisibility(View.GONE);
                     ques41_4.setVisibility(View.GONE);
@@ -1304,13 +1732,13 @@ public class Preguntas1 extends AppCompatActivity {
                     ques41_1.setVisibility(View.VISIBLE);
                     ans41_1.setVisibility(View.VISIBLE);
                     ques41_2.setVisibility(View.VISIBLE);
-                    formacionAmbiental.setVisibility(View.VISIBLE);
-                    formacionEmpresarial.setVisibility(View.VISIBLE);
-                    formacionAcuicola.setVisibility(View.VISIBLE);
-                    formacionPesquero.setVisibility(View.VISIBLE);
-                    formacionTecnologica.setVisibility(View.VISIBLE);
-                    formacionBuenasPracticas.setVisibility(View.VISIBLE);
-                    formacionOtros.setVisibility(View.VISIBLE);
+                    ans41_2a.setVisibility(View.VISIBLE);
+                    ans41_2b.setVisibility(View.VISIBLE);
+                    ans41_2c.setVisibility(View.VISIBLE);
+                    ans41_2d.setVisibility(View.VISIBLE);
+                    ans41_2e.setVisibility(View.VISIBLE);
+                    ans41_2f.setVisibility(View.VISIBLE);
+                    ans41_2g.setVisibility(View.VISIBLE);
                     ques41_3.setVisibility(View.VISIBLE);
                     ans41_3.setVisibility(View.VISIBLE);
                     ques41_4.setVisibility(View.VISIBLE);
@@ -1342,16 +1770,97 @@ public class Preguntas1 extends AppCompatActivity {
             }
         });
 
-        formacionOtros.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        ans41_2a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                CheckBox formacionOtros = (CheckBox) findViewById(R.id.formacionOtros);
+                CheckBox ans41_2a = (CheckBox) findViewById(R.id.ans41_2a);
+                if(ans41_2a.isChecked()){
+                    ans41_2code += 1;
+                }
+                else {
+                    ans41_2code -= 1;
+                }
+            }
+        });
+
+        ans41_2b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans41_2b = (CheckBox) findViewById(R.id.ans41_2b);
+                if(ans41_2b.isChecked()){
+                    ans41_2code += 2;
+                }
+                else {
+                    ans41_2code -= 2;
+                }
+            }
+        });
+
+        ans41_2c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans41_2c = (CheckBox) findViewById(R.id.ans41_2c);
+                if(ans41_2c.isChecked()){
+                    ans41_2code += 4;
+                }
+                else {
+                    ans41_2code -= 4;
+                }
+            }
+        });
+
+        ans41_2d.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans41_2d = (CheckBox) findViewById(R.id.ans41_2d);
+                if(ans41_2d.isChecked()){
+                    ans41_2code += 8;
+                }
+                else {
+                    ans41_2code -= 8;
+                }
+            }
+        });
+
+        ans41_2e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans41_2e = (CheckBox) findViewById(R.id.ans41_2e);
+                if(ans41_2e.isChecked()){
+                    ans41_2code += 16;
+                }
+                else {
+                    ans41_2code -= 16;
+                }
+            }
+        });
+
+        ans41_2f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans41_2f = (CheckBox) findViewById(R.id.ans41_2f);
+                if(ans41_2f.isChecked()){
+                    ans41_2code += 32;
+                }
+                else {
+                    ans41_2code -= 32;
+                }
+            }
+        });
+
+        ans41_2g.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans41_2g = (CheckBox) findViewById(R.id.ans41_2g);
                 EditText ans41_2other = (EditText) findViewById(R.id.ans41_2other);
-                if(formacionOtros.isChecked()){
+                if(ans41_2g.isChecked()){
                     ans41_2other.setVisibility(View.VISIBLE);
+                    ans41_2code += 64;
                 }
                 else {
                     ans41_2other.setVisibility(View.GONE);
+                    ans41_2code -= 64;
+
                 }
             }
         });
@@ -1440,7 +1949,7 @@ public class Preguntas1 extends AppCompatActivity {
             EditText ans33other = (EditText) findViewById(R.id.ans33other);
             EditText ans39_1other = (EditText) findViewById(R.id.ans39_1other);
             EditText ans40_1other = (EditText) findViewById(R.id.ans40_1other);
-            EditText ans40_2other = (EditText) findViewById(R.id.ans40_1other);
+            EditText ans40_2other = (EditText) findViewById(R.id.ans40_2other);
             EditText ans41_1other = (EditText) findViewById(R.id.ans41_1other);
             EditText ans41_2other = (EditText) findViewById(R.id.ans41_2other);
 
@@ -1487,45 +1996,10 @@ public class Preguntas1 extends AppCompatActivity {
             Spinner ans41_1 = (Spinner) findViewById(R.id.ans41_1);
             Spinner ans41_3 = (Spinner) findViewById(R.id.ans41_3);
             Spinner ans41_4 = (Spinner) findViewById(R.id.ans41_4);
-
-            CheckBox tieneAcueducto = (CheckBox) findViewById(R.id.tieneAcueducto);
-            CheckBox tieneAseo = (CheckBox) findViewById(R.id.tieneAseo);
-            CheckBox tieneAlcantarillado = (CheckBox) findViewById(R.id.tieneAlcantarillado);
-            CheckBox tienePozoSeptico = (CheckBox) findViewById(R.id.tienePozoSeptico);
-            CheckBox tieneLetrina = (CheckBox) findViewById(R.id.tieneLetrina);
-            CheckBox tieneElectricidad = (CheckBox) findViewById(R.id.tieneElectricidad);
-            CheckBox tieneGas = (CheckBox) findViewById(R.id.tieneGas);
-            CheckBox tieneTelefono = (CheckBox) findViewById(R.id.tieneTelefono);
-            CheckBox tieneInternet = (CheckBox) findViewById(R.id.tieneInternet);
-            CheckBox tieneOtro = (CheckBox) findViewById(R.id.tieneOtro);
-            CheckBox isTerrestre = (CheckBox) findViewById(R.id.isTerrestre);
-            CheckBox isFluvial = (CheckBox) findViewById(R.id.isFluvial);
-            CheckBox isAereo = (CheckBox) findViewById(R.id.isAereo);
-            CheckBox isTerrestreHosp = (CheckBox) findViewById(R.id.isTerrestreHosp);
-            CheckBox isFluvialHosp = (CheckBox) findViewById(R.id.isFluvialHosp);
-            CheckBox isAereoHosp = (CheckBox) findViewById(R.id.isAereoHosp);
-            CheckBox isTerrestreInst = (CheckBox) findViewById(R.id.isTerrestreInst);
-            CheckBox isFluvialInst = (CheckBox) findViewById(R.id.isFluvialInst);
-            CheckBox isAereoInst = (CheckBox) findViewById(R.id.isAereoInst);
-            CheckBox isTerrestreServ = (CheckBox) findViewById(R.id.isTerrestreServ);
-            CheckBox isFluvialServ = (CheckBox) findViewById(R.id.isFluvialServ);
-            CheckBox isAereoServ = (CheckBox) findViewById(R.id.isAereoServ);
-            CheckBox ayudaGestion = (CheckBox) findViewById(R.id.ayudaGestion);
-            CheckBox ayudaInsumos = (CheckBox) findViewById(R.id.ayudaInsumos);
-            CheckBox ayudaCredito = (CheckBox) findViewById(R.id.ayudaCredito);
-            CheckBox ayudaTecnificacion = (CheckBox) findViewById(R.id.ayudaTecnificacion);
-            CheckBox ayudaSaludAnimal = (CheckBox) findViewById(R.id.ayudaSaludAnimal);
-            CheckBox ayudaDesarrolloSostenible = (CheckBox) findViewById(R.id.ayudaDesarrolloSostenible);
-            CheckBox ayudaAgremiacion = (CheckBox) findViewById(R.id.ayudaAgremiacion);
-            CheckBox ayudaComercializacion = (CheckBox) findViewById(R.id.ayudaComercializacion);
-            CheckBox ayudaOtro = (CheckBox) findViewById(R.id.ayudaOtro);
-            CheckBox formacionAmbiental = (CheckBox) findViewById(R.id.formacionAmbiental);
-            CheckBox formacionEmpresarial = (CheckBox) findViewById(R.id.formacionEmpresarial);
-            CheckBox formacionAcuicola = (CheckBox) findViewById(R.id.formacionAcuicola);
-            CheckBox formacionPesquero = (CheckBox) findViewById(R.id.formacionPesquero);
-            CheckBox formacionTecnologica = (CheckBox) findViewById(R.id.formacionTecnologica);
-            CheckBox formacionBuenasPracticas = (CheckBox) findViewById(R.id.formacionBuenasPracticas);
-            CheckBox formacionOtros = (CheckBox) findViewById(R.id.formacionOtros);
+            
+            CheckBox ans26j = (CheckBox) findViewById(R.id.ans26j);
+            CheckBox ans40_2i = (CheckBox) findViewById(R.id.ans40_2i);
+            CheckBox ans41_2g = (CheckBox) findViewById(R.id.ans41_2g);
 
             FileOutputStream fos = new FileOutputStream(myExternalFile,true);
 
@@ -1551,7 +2025,10 @@ public class Preguntas1 extends AppCompatActivity {
             fos.write(ans8_1.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans9.getSelectedItemPosition()).getBytes());
-            fos.write((", " + ans9other.getText().toString()).getBytes());
+            if(ans9.getSelectedItemPosition()==4){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans9other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(ans10.getText().toString().getBytes());
             fos.write("\t".getBytes());
@@ -1594,7 +2071,10 @@ public class Preguntas1 extends AppCompatActivity {
             fos.write(Integer.toString(ans20.getSelectedItemPosition()).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans20_1.getSelectedItemPosition()).getBytes());
-            fos.write((", " + ans20_1other.getText().toString()).getBytes());
+            if(ans20_1.getSelectedItemPosition()==5){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans20_1other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(ans21.getText().toString().getBytes());
             fos.write("\t".getBytes());
@@ -1603,48 +2083,34 @@ public class Preguntas1 extends AppCompatActivity {
             fos.write(Integer.toString(ans21_2.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans22.getSelectedItemPosition()+1).getBytes());
-            fos.write((", " + ans22other.getText().toString()).getBytes());
+            if(ans22.getSelectedItemPosition()==4){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans22other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans23.getSelectedItemPosition()+1).getBytes());
-            fos.write((", " + ans23other.getText().toString()).getBytes());
+            if(ans23.getSelectedItemPosition()==5){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans23other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans24.getSelectedItemPosition()+1).getBytes());
-            fos.write((", " + ans24other.getText().toString()).getBytes());
+            if(ans24.getSelectedItemPosition()==4){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans24other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans25.getSelectedItemPosition()+1).getBytes());
-            fos.write((", " + ans25other.getText().toString()).getBytes());
+            if(ans25.getSelectedItemPosition()==4){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans25other.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            if(tieneAcueducto.isChecked()){
-                fos.write("1, ".getBytes());
+            fos.write(Integer.toString(ans26code).getBytes());
+            if(ans26j.isChecked()){
+                fos.write(", ".getBytes());
             }
-            if(tieneAseo.isChecked()){
-                fos.write("2, ".getBytes());
-            }
-            if(tieneAlcantarillado.isChecked()){
-                fos.write("3, ".getBytes());
-            }
-            if(tienePozoSeptico.isChecked()){
-                fos.write("4, ".getBytes());
-            }
-            if(tieneLetrina.isChecked()){
-                fos.write("5, ".getBytes());
-            }
-            if(tieneElectricidad.isChecked()){
-                fos.write("6, ".getBytes());
-            }
-            if(tieneGas.isChecked()){
-                fos.write("7, ".getBytes());
-            }
-            if(tieneTelefono.isChecked()){
-                fos.write("8, ".getBytes());
-            }
-            if(tieneInternet.isChecked()){
-                fos.write("9, ".getBytes());
-            }
-            if(tieneOtro.isChecked()){
-                fos.write("10".getBytes());
-            }
-            fos.write((", " + ans26other.getText().toString()).getBytes());
+            fos.write(ans26other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans27.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
@@ -1662,15 +2128,7 @@ public class Preguntas1 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(ans31_3.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            if(isTerrestre.isChecked()){
-                fos.write("1, ".getBytes());
-            }
-            if(isFluvial.isChecked()){
-                fos.write("2, ".getBytes());
-            }
-            if(isAereo.isChecked()){
-                fos.write("3".getBytes());
-            }
+            fos.write(Integer.toString(ans31_4code).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans32.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
@@ -1680,32 +2138,19 @@ public class Preguntas1 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(ans32_3.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            if(isTerrestreHosp.isChecked()){
-                fos.write("1, ".getBytes());
-            }
-            if(isFluvialHosp.isChecked()){
-                fos.write("2, ".getBytes());
-            }
-            if(isAereoHosp.isChecked()){
-                fos.write("3".getBytes());
-            }
+            fos.write(Integer.toString(ans32_4code).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans33.getSelectedItemPosition()+1).getBytes());
-            fos.write((", " + ans33other.getText().toString()).getBytes());
+            if(ans33.getSelectedItemPosition()==5){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans33other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(ans33_1.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(ans33_2.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            if(isTerrestreInst.isChecked()){
-                fos.write("1, ".getBytes());
-            }
-            if(isFluvialInst.isChecked()){
-                fos.write("2, ".getBytes());
-            }
-            if(isAereoInst.isChecked()){
-                fos.write("3".getBytes());
-            }
+            fos.write(Integer.toString(ans33_3code).getBytes());
             fos.write("\t".getBytes());
             fos.write(ans34.getText().toString().getBytes());
             fos.write("\t".getBytes());
@@ -1713,58 +2158,33 @@ public class Preguntas1 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(ans36.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            if(isTerrestreServ.isChecked()){
-                fos.write("1, ".getBytes());
-            }
-            if(isFluvialServ.isChecked()){
-                fos.write("2, ".getBytes());
-            }
-            if(isAereoServ.isChecked()){
-                fos.write("3".getBytes());
-            }
+            fos.write(Integer.toString(ans37code).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans38.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans39.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans39_1.getSelectedItemPosition()).getBytes());
-            fos.write((", " + ans39_1other.getText().toString()).getBytes());
+            if(ans39_1.getSelectedItemPosition()==7){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans39_1other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(ans39_2.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans40.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans40_1.getSelectedItemPosition()).getBytes());
-            fos.write((", " + ans40_1other.getText().toString()).getBytes());
+            if(ans40_1.getSelectedItemPosition()==4){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans40_1other.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            if(ayudaGestion.isChecked()){
-                fos.write("1, ".getBytes());
+            fos.write(Integer.toString(ans40_2code).getBytes());
+            if(ans40_2i.isChecked()){
+                fos.write(", ".getBytes());
             }
-            if(ayudaInsumos.isChecked()){
-                fos.write("2, ".getBytes());
-            }
-            if(ayudaCredito.isChecked()){
-                fos.write("3, ".getBytes());
-            }
-            if(ayudaTecnificacion.isChecked()){
-                fos.write("4, ".getBytes());
-            }
-            if(ayudaSaludAnimal.isChecked()){
-                fos.write("5, ".getBytes());
-            }
-            if(ayudaDesarrolloSostenible.isChecked()){
-                fos.write("6, ".getBytes());
-            }
-            if(ayudaAgremiacion.isChecked()){
-                fos.write("7, ".getBytes());
-            }
-            if(ayudaComercializacion.isChecked()){
-                fos.write("8, ".getBytes());
-            }
-            if(ayudaOtro.isChecked()){
-                fos.write("9".getBytes());
-            }
-            fos.write((", " + ans40_2other.getText().toString()).getBytes());
+            fos.write(ans40_2other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans40_3.getSelectedItemPosition()).getBytes());
             fos.write("\t".getBytes());
@@ -1773,30 +2193,15 @@ public class Preguntas1 extends AppCompatActivity {
             fos.write(Integer.toString(ans41.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans41_1.getSelectedItemPosition()).getBytes());
-            fos.write((", " + ans41_1other.getText().toString()).getBytes());
+            if(ans41_1.getSelectedItemPosition()==2 || ans41_1.getSelectedItemPosition()==4){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans41_1other.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            if(formacionAmbiental.isChecked()){
-                fos.write("1, ".getBytes());
+            if(ans41_2g.isChecked()){
+                fos.write(", ".getBytes());
             }
-            if(formacionEmpresarial.isChecked()){
-                fos.write("2, ".getBytes());
-            }
-            if(formacionAcuicola.isChecked()){
-                fos.write("3, ".getBytes());
-            }
-            if(formacionPesquero.isChecked()){
-                fos.write("4, ".getBytes());
-            }
-            if(formacionTecnologica.isChecked()){
-                fos.write("5, ".getBytes());
-            }
-            if(formacionBuenasPracticas.isChecked()){
-                fos.write("6, ".getBytes());
-            }
-            if(formacionOtros.isChecked()){
-                fos.write("7".getBytes());
-            }
-            fos.write((", " + ans41_2other.getText().toString()).getBytes());
+            fos.write(ans41_2other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans41_3.getSelectedItemPosition()).getBytes());
             fos.write("\t".getBytes());

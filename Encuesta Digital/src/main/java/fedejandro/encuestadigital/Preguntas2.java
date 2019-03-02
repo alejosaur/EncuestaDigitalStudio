@@ -19,6 +19,8 @@ public class Preguntas2 extends AppCompatActivity {
     public int ans44code = 0;
     public int ans47code = 0;
     public int ans48code = 0;
+    public int ans50code = 0;
+    public int ans51code = 0;
     public int ans58code = 0;
     public int ans62code = 0;
     public int ans71code = 0;
@@ -291,7 +293,7 @@ public class Preguntas2 extends AppCompatActivity {
         };
 
         String[] frecuenciaRecambio = new String[] {
-                "Mensual", "Semanal", "Diaria"
+                "Semanal", "Quincenal", "Mensual", "Otro, ¿Cuál?"
         };
         String[] puntoDescarga = new String[] {
                 "Ciénaga", "Río", "Laguna de oxidación", "Otro, ¿Cuál?"
@@ -679,6 +681,9 @@ public class Preguntas2 extends AppCompatActivity {
         EditText ans83_2 = (EditText) findViewById(R.id.ans83_2);
         ans83_2.setVisibility(View.GONE);
 
+        EditText ans85_1other = (EditText) findViewById(R.id.ans85_1other);
+        ans85_1other.setVisibility(View.GONE);
+
         EditText ans86_2other = (EditText) findViewById(R.id.ans86_2other);
         ans86_2other.setVisibility(View.GONE);
 
@@ -709,6 +714,30 @@ public class Preguntas2 extends AppCompatActivity {
         CheckBox ans48b = (CheckBox) findViewById(R.id.ans48b);
         CheckBox ans48c = (CheckBox) findViewById(R.id.ans48c);
         CheckBox ans48d = (CheckBox) findViewById(R.id.ans48d);
+        CheckBox ans50a = (CheckBox) findViewById(R.id.ans50a);
+        CheckBox ans50b = (CheckBox) findViewById(R.id.ans50b);
+        CheckBox ans50c = (CheckBox) findViewById(R.id.ans50c);
+        CheckBox ans50d = (CheckBox) findViewById(R.id.ans50d);
+        CheckBox ans50e = (CheckBox) findViewById(R.id.ans50e);
+        CheckBox ans50f = (CheckBox) findViewById(R.id.ans50f);
+        CheckBox ans50g = (CheckBox) findViewById(R.id.ans50g);
+        CheckBox ans50h = (CheckBox) findViewById(R.id.ans50h);
+        CheckBox ans50i = (CheckBox) findViewById(R.id.ans50i);
+        CheckBox ans50j = (CheckBox) findViewById(R.id.ans50j);
+        CheckBox ans50k = (CheckBox) findViewById(R.id.ans50k);
+        CheckBox ans50l = (CheckBox) findViewById(R.id.ans50l);
+        CheckBox ans51a = (CheckBox) findViewById(R.id.ans51a);
+        CheckBox ans51b = (CheckBox) findViewById(R.id.ans51b);
+        CheckBox ans51c = (CheckBox) findViewById(R.id.ans51c);
+        CheckBox ans51d = (CheckBox) findViewById(R.id.ans51d);
+        CheckBox ans51e = (CheckBox) findViewById(R.id.ans51e);
+        CheckBox ans51f = (CheckBox) findViewById(R.id.ans51f);
+        CheckBox ans51g = (CheckBox) findViewById(R.id.ans51g);
+        CheckBox ans51h = (CheckBox) findViewById(R.id.ans51h);
+        CheckBox ans51i = (CheckBox) findViewById(R.id.ans51i);
+        CheckBox ans51j = (CheckBox) findViewById(R.id.ans51j);
+        CheckBox ans51k = (CheckBox) findViewById(R.id.ans51k);
+        CheckBox ans51l = (CheckBox) findViewById(R.id.ans51l);
         CheckBox ans58a = (CheckBox) findViewById(R.id.ans58a);
         CheckBox ans58b = (CheckBox) findViewById(R.id.ans58b);
         CheckBox ans58c = (CheckBox) findViewById(R.id.ans58c);
@@ -1062,6 +1091,320 @@ public class Preguntas2 extends AppCompatActivity {
                 else {
                     ans48other.setVisibility(View.GONE);
                     ans48code -= 8;
+                }
+            }
+        });
+
+        ans50a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans50a = (CheckBox) findViewById(R.id.ans50a);
+                if(ans50a.isChecked()){
+                    ans50code += 1;
+                }
+                else {
+                    ans50code -= 1;
+                }
+            }
+        });
+
+        ans50b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans50b = (CheckBox) findViewById(R.id.ans50b);
+                if(ans50b.isChecked()){
+                    ans50code += 2;
+                }
+                else {
+                    ans50code -= 2;
+                }
+            }
+        });
+
+        ans50c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans50c = (CheckBox) findViewById(R.id.ans50c);
+                if(ans50c.isChecked()){
+                    ans50code += 4;
+                }
+                else {
+                    ans50code -= 4;
+                }
+            }
+        });
+
+        ans50d.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans50d = (CheckBox) findViewById(R.id.ans50d);
+                if(ans50d.isChecked()){
+                    ans50code += 8;
+                }
+                else {
+                    ans50code -= 8;
+                }
+            }
+        });
+
+        ans50e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans50e = (CheckBox) findViewById(R.id.ans50e);
+                if(ans50e.isChecked()){
+                    ans50code += 16;
+                }
+                else {
+                    ans50code -= 16;
+                }
+            }
+        });
+
+        ans50f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans50f = (CheckBox) findViewById(R.id.ans50f);
+                if(ans50f.isChecked()){
+                    ans50code += 32;
+                }
+                else {
+                    ans50code -= 32;
+                }
+            }
+        });
+
+        ans50g.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans50g = (CheckBox) findViewById(R.id.ans50g);
+                if(ans50g.isChecked()){
+                    ans50code += 64;
+                }
+                else {
+                    ans50code -= 64;
+                }
+            }
+        });
+
+        ans50h.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans50h = (CheckBox) findViewById(R.id.ans50h);
+                if(ans50h.isChecked()){
+                    ans50code += 128;
+                }
+                else {
+                    ans50code -= 128;
+                }
+            }
+        });
+
+        ans50i.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans50i = (CheckBox) findViewById(R.id.ans50i);
+                if(ans50i.isChecked()){
+                    ans50code += 256;
+                }
+                else {
+                    ans50code -= 256;
+
+                }
+            }
+        });
+
+        ans50j.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans50j = (CheckBox) findViewById(R.id.ans50j);
+                if(ans50j.isChecked()){
+                    ans50code += 512;
+                }
+                else {
+                    ans50code -= 512;
+                }
+            }
+        });
+
+        ans50k.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans50k = (CheckBox) findViewById(R.id.ans50k);
+                if(ans50k.isChecked()){
+                    ans50code += 1024;
+                }
+                else {
+                    ans50code -= 1024;
+                }
+            }
+        });
+
+        ans50l.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans50l = (CheckBox) findViewById(R.id.ans50l);
+                if(ans50l.isChecked()){
+                    ans50code += 2048;
+                }
+                else {
+                    ans50code -= 2048;
+                }
+            }
+        });
+
+        ans51a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans51a = (CheckBox) findViewById(R.id.ans51a);
+                if(ans51a.isChecked()){
+                    ans51code += 1;
+                }
+                else {
+                    ans51code -= 1;
+                }
+            }
+        });
+
+        ans51b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans51b = (CheckBox) findViewById(R.id.ans51b);
+                if(ans51b.isChecked()){
+                    ans51code += 2;
+                }
+                else {
+                    ans51code -= 2;
+                }
+            }
+        });
+
+        ans51c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans51c = (CheckBox) findViewById(R.id.ans51c);
+                if(ans51c.isChecked()){
+                    ans51code += 4;
+                }
+                else {
+                    ans51code -= 4;
+                }
+            }
+        });
+
+        ans51d.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans51d = (CheckBox) findViewById(R.id.ans51d);
+                if(ans51d.isChecked()){
+                    ans51code += 8;
+                }
+                else {
+                    ans51code -= 8;
+                }
+            }
+        });
+
+        ans51e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans51e = (CheckBox) findViewById(R.id.ans51e);
+                if(ans51e.isChecked()){
+                    ans51code += 16;
+                }
+                else {
+                    ans51code -= 16;
+                }
+            }
+        });
+
+        ans51f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans51f = (CheckBox) findViewById(R.id.ans51f);
+                if(ans51f.isChecked()){
+                    ans51code += 32;
+                }
+                else {
+                    ans51code -= 32;
+                }
+            }
+        });
+
+        ans51g.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans51g = (CheckBox) findViewById(R.id.ans51g);
+                if(ans51g.isChecked()){
+                    ans51code += 64;
+                }
+                else {
+                    ans51code -= 64;
+                }
+            }
+        });
+
+        ans51h.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans51h = (CheckBox) findViewById(R.id.ans51h);
+                if(ans51h.isChecked()){
+                    ans51code += 128;
+                }
+                else {
+                    ans51code -= 128;
+                }
+            }
+        });
+
+        ans51i.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans51i = (CheckBox) findViewById(R.id.ans51i);
+                if(ans51i.isChecked()){
+                    ans51code += 256;
+                }
+                else {
+                    ans51code -= 256;
+
+                }
+            }
+        });
+
+        ans51j.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans51j = (CheckBox) findViewById(R.id.ans51j);
+                if(ans51j.isChecked()){
+                    ans51code += 512;
+                }
+                else {
+                    ans51code -= 512;
+                }
+            }
+        });
+
+        ans51k.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans51k = (CheckBox) findViewById(R.id.ans51k);
+                if(ans51k.isChecked()){
+                    ans51code += 1024;
+                }
+                else {
+                    ans51code -= 1024;
+                }
+            }
+        });
+
+        ans51l.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans51l = (CheckBox) findViewById(R.id.ans51l);
+                if(ans51l.isChecked()){
+                    ans51code += 2048;
+                }
+                else {
+                    ans51code -= 2048;
                 }
             }
         });
@@ -2065,6 +2408,7 @@ public class Preguntas2 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 CheckBox ans82a = (CheckBox) findViewById(R.id.ans82a);
+                CheckBox ans82c = (CheckBox) findViewById(R.id.ans82c);
                 TextView ques82_1 = (TextView) findViewById(R.id.ques82_1);
                 EditText ans82_1 = (EditText) findViewById(R.id.ans82_1);
                 TextView ques82_2 = (TextView) findViewById(R.id.ques82_2);
@@ -2082,12 +2426,22 @@ public class Preguntas2 extends AppCompatActivity {
                 }
                 else {
                     ans82code -= 1;
-                    ques82_1.setVisibility(View.GONE);
-                    ans82_1.setVisibility(View.GONE);
-                    ques82_2.setVisibility(View.GONE);
-                    ans82_2.setVisibility(View.GONE);
-                    ques82_3.setVisibility(View.GONE);
-                    ans82_3.setVisibility(View.GONE);
+                    if(ans82c.isChecked()){
+                        ques82_1.setVisibility(View.VISIBLE);
+                        ans82_1.setVisibility(View.VISIBLE);
+                        ques82_2.setVisibility(View.VISIBLE);
+                        ans82_2.setVisibility(View.VISIBLE);
+                        ques82_3.setVisibility(View.VISIBLE);
+                        ans82_3.setVisibility(View.VISIBLE);
+                    }
+                    else{
+                        ques82_1.setVisibility(View.GONE);
+                        ans82_1.setVisibility(View.GONE);
+                        ques82_2.setVisibility(View.GONE);
+                        ans82_2.setVisibility(View.GONE);
+                        ques82_3.setVisibility(View.GONE);
+                        ans82_3.setVisibility(View.GONE);
+                    }
                 }
             }
         });
@@ -2127,6 +2481,7 @@ public class Preguntas2 extends AppCompatActivity {
         ans82c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CheckBox ans82a = (CheckBox) findViewById(R.id.ans82a);
                 CheckBox ans82c = (CheckBox) findViewById(R.id.ans82c);
                 TextView ques82_1 = (TextView) findViewById(R.id.ques82_1);
                 EditText ans82_1 = (EditText) findViewById(R.id.ans82_1);
@@ -2145,12 +2500,22 @@ public class Preguntas2 extends AppCompatActivity {
                 }
                 else {
                     ans82code -= 4;
-                    ques82_1.setVisibility(View.GONE);
-                    ans82_1.setVisibility(View.GONE);
-                    ques82_2.setVisibility(View.GONE);
-                    ans82_2.setVisibility(View.GONE);
-                    ques82_3.setVisibility(View.GONE);
-                    ans82_3.setVisibility(View.GONE);
+                    if(ans82a.isChecked()){
+                        ques82_1.setVisibility(View.VISIBLE);
+                        ans82_1.setVisibility(View.VISIBLE);
+                        ques82_2.setVisibility(View.VISIBLE);
+                        ans82_2.setVisibility(View.VISIBLE);
+                        ques82_3.setVisibility(View.VISIBLE);
+                        ans82_3.setVisibility(View.VISIBLE);
+                    }
+                    else{
+                        ques82_1.setVisibility(View.GONE);
+                        ans82_1.setVisibility(View.GONE);
+                        ques82_2.setVisibility(View.GONE);
+                        ans82_2.setVisibility(View.GONE);
+                        ques82_3.setVisibility(View.GONE);
+                        ans82_3.setVisibility(View.GONE);
+                    }
                 }
             }
         });
@@ -2446,6 +2811,24 @@ public class Preguntas2 extends AppCompatActivity {
                     ans85_2.setVisibility(View.VISIBLE);
                     ques85_1.setVisibility(View.VISIBLE);
                     ans85_1.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        ans85_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Spinner ans85_1 = (Spinner) findViewById(R.id.ans85_1);
+                EditText ans85_1other = (EditText) findViewById(R.id.ans85_1other);
+                if(ans85_1.getSelectedItemPosition()==3) {
+                    ans85_1other.setVisibility(View.VISIBLE);
+                }else{
+                    ans85_1other.setVisibility(View.GONE);
                 }
             }
 
@@ -3195,8 +3578,16 @@ public class Preguntas2 extends AppCompatActivity {
         try {
 
             EditText ans43 = (EditText) findViewById(R.id.ans43);
-            EditText ans45 = (EditText) findViewById(R.id.ans45);
-            EditText ans46 = (EditText) findViewById(R.id.ans46);
+            EditText ans45a = (EditText) findViewById(R.id.ans45a);
+            EditText ans45b = (EditText) findViewById(R.id.ans45b);
+            EditText ans45c = (EditText) findViewById(R.id.ans45c);
+            EditText ans45d = (EditText) findViewById(R.id.ans45d);
+            EditText ans45e = (EditText) findViewById(R.id.ans45e);
+            EditText ans46a = (EditText) findViewById(R.id.ans46a);
+            EditText ans46b = (EditText) findViewById(R.id.ans46b);
+            EditText ans46c = (EditText) findViewById(R.id.ans46c);
+            EditText ans46d = (EditText) findViewById(R.id.ans46d);
+            EditText ans46e = (EditText) findViewById(R.id.ans46e);
             EditText ans49 = (EditText) findViewById(R.id.ans49);
             EditText ans52_1 = (EditText) findViewById(R.id.ans52_1);
             EditText ans53 = (EditText) findViewById(R.id.ans53);
@@ -3249,7 +3640,6 @@ public class Preguntas2 extends AppCompatActivity {
             EditText ans92_4 = (EditText) findViewById(R.id.ans92_4);
             EditText ans92_5 = (EditText) findViewById(R.id.ans92_5);
             EditText ans94_1 = (EditText) findViewById(R.id.ans94_1);
-            EditText ans95_1 = (EditText) findViewById(R.id.ans95_1);
             EditText ans98_1 = (EditText) findViewById(R.id.ans98_1);
             EditText ans98_2 = (EditText) findViewById(R.id.ans98_2);
             EditText ans100_2 = (EditText) findViewById(R.id.ans100_2);
@@ -3325,6 +3715,7 @@ public class Preguntas2 extends AppCompatActivity {
             EditText ans82other = (EditText) findViewById(R.id.ans82other);
             EditText ans84_6other = (EditText) findViewById(R.id.ans84_6other);
             EditText ans84_8other = (EditText) findViewById(R.id.ans84_8other);
+            EditText ans85_1other = (EditText) findViewById(R.id.ans85_1other);
             EditText ans86_2other = (EditText) findViewById(R.id.ans86_2other);
             EditText ans91other = (EditText) findViewById(R.id.ans91other);
             EditText ans92_1other = (EditText) findViewById(R.id.ans92_1other);
@@ -3355,9 +3746,25 @@ public class Preguntas2 extends AppCompatActivity {
             }
             fos.write(ans44other.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            fos.write(ans45.getText().toString().getBytes());
+            fos.write(ans45a.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            fos.write(ans46.getText().toString().getBytes());
+            fos.write(ans45b.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans45c.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans45d.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans45e.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans46a.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans46b.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans46c.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans46d.getText().toString().getBytes());
+            fos.write("\t".getBytes());
+            fos.write(ans46e.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans47code).getBytes());
             if(ans47i.isChecked()){
@@ -3373,8 +3780,10 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(ans49.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            // TODO Answer 50 goes here
-            // TODO Answer 51 goes here
+            fos.write(Integer.toString(ans50code).getBytes());
+            fos.write("\t".getBytes());
+            fos.write(Integer.toString(ans51code).getBytes());
+            fos.write("\t".getBytes());
             fos.write(Integer.toString(ans52.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(ans52_1.getText().toString().getBytes());
@@ -3566,6 +3975,10 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write(Integer.toString(ans85.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans85_1.getSelectedItemPosition()+1).getBytes());
+            if(ans85_1.getSelectedItemPosition() == 3){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans85_1other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(ans85_2.getText().toString().getBytes());
             fos.write("\t".getBytes());
@@ -3574,7 +3987,10 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write(ans86_1.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans86_2.getSelectedItemPosition()+1).getBytes());
-            fos.write((", " + ans86_2other.getText().toString()).getBytes());
+            if(ans86_2.getSelectedItemPosition()==2){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans86_2other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans87.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
@@ -3599,7 +4015,10 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write(Integer.toString(ans92.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans92_1.getSelectedItemPosition()).getBytes());
-            fos.write((", " + ans92_1other.getText().toString()).getBytes());
+            if (ans92_1.getSelectedItemPosition() == 4){
+                fos.write(", ".getBytes());
+            }
+            fos.write(ans92_1other.getText().toString().getBytes());
             fos.write("\t".getBytes());
             fos.write(ans92_2.getText().toString().getBytes());
             fos.write("\t".getBytes());
@@ -3621,8 +4040,6 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans95.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
-            fos.write(ans95_1.getText().toString().getBytes());
-            fos.write("\t".getBytes());
             fos.write(Integer.toString(ans96.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans97code).getBytes());
@@ -3641,7 +4058,6 @@ public class Preguntas2 extends AppCompatActivity {
             fos.write("\t".getBytes());
             fos.write(ans100_2.getText().toString().getBytes());
             fos.write("\t".getBytes());
-            //TODO Pick up from here.
             fos.write(Integer.toString(ans101.getSelectedItemPosition()+1).getBytes());
             fos.write("\t".getBytes());
             fos.write(Integer.toString(ans101_1code).getBytes());

@@ -149,8 +149,6 @@
                 android:paddingTop="5dp"
                 android:text="45. ¿Cuál es el área total del o los predios que están bajo su cargo? (m²)" />
 
-            <!-- TODO Answers 45 and 46: Figure out how to add separate EditText for each option of answer 44. -->
-
             <EditText
                 android:id="@+id/ans45a"
                 android:layout_width="match_parent"
@@ -456,7 +454,6 @@
                 android:hint="Regsitre el valor en metros"
                 android:inputType="numberDecimal" />
 
-            <!-- TODO Decide what to do with questions 50 and 51. Currently answerless-->
             <TextView
                 android:id="@+id/ques50"
                 android:layout_width="match_parent"
@@ -467,6 +464,102 @@
                 android:paddingTop="5dp"
                 android:text="50. ¿Cuáles son los meses de mayor precipitación?" />
 
+            <CheckBox
+                android:id="@+id/ans50a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Enero" />
+
+            <CheckBox
+                android:id="@+id/ans50b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Febrero" />
+
+            <CheckBox
+                android:id="@+id/ans50c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Marzo" />
+
+            <CheckBox
+                android:id="@+id/ans50d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Abril" />
+
+            <CheckBox
+                android:id="@+id/ans50e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Mayo" />
+
+            <CheckBox
+                android:id="@+id/ans50f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Junio" />
+
+            <CheckBox
+                android:id="@+id/ans50g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Julio" />
+
+            <CheckBox
+                android:id="@+id/ans50h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Agosto" />
+
+            <CheckBox
+                android:id="@+id/ans50i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Septiembre" />
+
+            <CheckBox
+                android:id="@+id/ans50j"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Octubre" />
+
+            <CheckBox
+                android:id="@+id/ans50k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Noviembre" />
+
+            <CheckBox
+                android:id="@+id/ans50l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Diciembre" />
+
             <TextView
                 android:id="@+id/ques51"
                 android:layout_width="match_parent"
@@ -476,6 +569,102 @@
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
                 android:text="51. ¿Cuáles son los meses de menor precipitación?" />
+
+            <CheckBox
+                android:id="@+id/ans51a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Enero" />
+
+            <CheckBox
+                android:id="@+id/ans51b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Febrero" />
+
+            <CheckBox
+                android:id="@+id/ans51c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Marzo" />
+
+            <CheckBox
+                android:id="@+id/ans51d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Abril" />
+
+            <CheckBox
+                android:id="@+id/ans51e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Mayo" />
+
+            <CheckBox
+                android:id="@+id/ans51f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Junio" />
+
+            <CheckBox
+                android:id="@+id/ans51g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Julio" />
+
+            <CheckBox
+                android:id="@+id/ans51h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Agosto" />
+
+            <CheckBox
+                android:id="@+id/ans51i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Septiembre" />
+
+            <CheckBox
+                android:id="@+id/ans51j"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Octubre" />
+
+            <CheckBox
+                android:id="@+id/ans51k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Noviembre" />
+
+            <CheckBox
+                android:id="@+id/ans51l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Diciembre" />
 
             <TextView
                 android:id="@+id/ques52"
@@ -2641,6 +2830,16 @@
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
 
+            <EditText
+                android:id="@+id/ans85-1other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Otro, ¿Cuál?"
+                android:inputType="text" />
+
             <TextView
                 android:id="@+id/ques85-2"
                 android:layout_width="match_parent"
@@ -3214,28 +3413,6 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques95-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="95.1. Destino de la venta"
-                tools:layout_editor_absoluteX="52dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <EditText
-                android:id="@+id/ans95-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Registre la información"
-                android:inputType="text" />
 
             <TextView
                 android:id="@+id/ques96"
