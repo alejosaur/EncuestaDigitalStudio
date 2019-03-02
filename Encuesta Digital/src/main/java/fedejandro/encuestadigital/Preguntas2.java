@@ -2138,7 +2138,7 @@ public class Preguntas2 extends AppCompatActivity {
                 TextView ques76_1 = (TextView) findViewById(R.id.ques76_1);
                 Spinner ans76_1 = (Spinner) findViewById(R.id.ans76_1);
                 if(ans76f.isChecked()){
-                    ans76code += 32;
+                    ans76code = 0;
                     ques76_1.setVisibility(View.GONE);
                     ans76_1.setVisibility(View.GONE);
                     ans76a.setChecked(false);
@@ -2148,7 +2148,7 @@ public class Preguntas2 extends AppCompatActivity {
                     ans76e.setChecked(false);
                 }
                 else {
-                    ans76code -= 32;
+                    ans76code = 0;
                     ques76_1.setVisibility(View.VISIBLE);
                     ans76_1.setVisibility(View.VISIBLE);
                 }
@@ -2253,7 +2253,7 @@ public class Preguntas2 extends AppCompatActivity {
                 TextView ques77_1 = (TextView) findViewById(R.id.ques77_1);
                 Spinner ans77_1 = (Spinner) findViewById(R.id.ans77_1);
                 if(ans77f.isChecked()){
-                    ans77code += 32;
+                    ans77code = 0;
                     ques77_1.setVisibility(View.GONE);
                     ans77_1.setVisibility(View.GONE);
                     ans77a.setChecked(false);
@@ -2263,7 +2263,7 @@ public class Preguntas2 extends AppCompatActivity {
                     ans77e.setChecked(false);
                 }
                 else {
-                    ans77code -= 32;
+                    ans77code = 0;
                     ques77_1.setVisibility(View.VISIBLE);
                     ans77_1.setVisibility(View.VISIBLE);
                 }
@@ -2389,7 +2389,7 @@ public class Preguntas2 extends AppCompatActivity {
                 TextView ques78_1 = (TextView) findViewById(R.id.ques78_1);
                 Spinner ans78_1 = (Spinner) findViewById(R.id.ans78_1);
                 if(ans78g.isChecked()){
-                    ans78code += 64;
+                    ans78code = 0;
                     ques78_1.setVisibility(View.GONE);
                     ans78_1.setVisibility(View.GONE);
                     ans78a.setChecked(false);
@@ -2400,7 +2400,7 @@ public class Preguntas2 extends AppCompatActivity {
                     ans78f.setChecked(false);
                 }
                 else {
-                    ans78code -= 64;
+                    ans78code = 0;
                     ques78_1.setVisibility(View.VISIBLE);
                     ans78_1.setVisibility(View.VISIBLE);
                 }
