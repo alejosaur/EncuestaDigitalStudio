@@ -3095,13 +3095,45 @@
                 tools:layout_editor_absoluteX="52dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <Spinner
-                android:id="@+id/ans91"
+            <CheckBox
+                android:id="@+id/ans91a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
+                android:text="Red eléctrica publica" />
+
+            <CheckBox
+                android:id="@+id/ans91b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Generador eléctrico" />
+
+            <CheckBox
+                android:id="@+id/ans91c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Energía solar" />
+
+            <CheckBox
+                android:id="@+id/ans91d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Energía eólica" />
+
+            <CheckBox
+                android:id="@+id/ans91e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Otra, ¿Cuál?" />
 
             <EditText
                 android:id="@+id/ans91other"
