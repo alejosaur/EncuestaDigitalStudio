@@ -23,8 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Preguntas1" />
-        <activity android:name=".Preguntas2" />
-        <activity android:name=".Preguntas3"></activity>
+        <activity android:name=".Preguntas2" ></activity>
     </application>
 
 </manifest>

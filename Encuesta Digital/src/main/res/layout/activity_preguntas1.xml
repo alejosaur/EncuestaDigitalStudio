@@ -100,7 +100,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="4. Nombre del corregimiento, vereda o barrio:" />
+                android:text="4. Nombre del barrio, corregimiento o vereda:" />
 
             <EditText
                 android:id="@+id/ans4"
@@ -110,7 +110,7 @@
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:gravity="left|center_vertical"
-                android:hint="Corregimiento, vereda o barrio"
+                android:hint="Barrio, corregimiento o vereda"
                 android:inputType="textPersonName" />
 
             <TextView
@@ -143,7 +143,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="20dp"
                 android:gravity="center_vertical|center_horizontal"
-                android:text="INFORMACIÓN DEL PRODUCTOR (ACUICULTOR / PESCADOR ARTESANAL)"
+                android:text="INFORMACIÓN DEL PRODUCTOR"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="23sp"
                 app:fontFamily="serif" />
@@ -209,7 +209,7 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques8-1"
+                android:id="@+id/ques8_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -219,13 +219,33 @@
                 android:text="8.1. ¿Cuál es el número de su documento de identidad?" />
 
             <EditText
-                android:id="@+id/ans8-1"
+                android:id="@+id/ans8_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
                 android:hint="Número de Documento"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/ques8_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="8.2. ¿Cuál es el tamaño de su grupo familiar?" />
+
+            <EditText
+                android:id="@+id/ans8_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Tamaño del grupo familiar"
                 android:inputType="number" />
 
             <TextView
@@ -253,7 +273,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="¿cuál?"
+                android:hint="¿Cuál?"
                 android:inputType="textPersonName" />
 
             <TextView
@@ -353,6 +373,20 @@
                 android:spinnerMode="dialog" />
 
             <TextView
+                android:id="@+id/TituloAccesoServicios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="ACCESO A SERVICIOS PRIVADOS O ESTATALES"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="23sp"
+                app:fontFamily="serif" />
+
+            <TextView
                 android:id="@+id/ques15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -360,7 +394,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="15. ¿Ha sido víctima de desplazamiento?" />
+                android:text="15. ¿Ha recibido asistencia técnica y/o asesoría?" />
 
             <Spinner
                 android:id="@+id/ans15"
@@ -371,17 +405,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques15-1"
+                android:id="@+id/ques15_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="15.1. ¿Cuál fue la causa del desplazamiento?" />
+                android:text="15.1. ¿Qué entidades realizaron la asistencia y/o asesoria?" />
 
             <Spinner
-                android:id="@+id/ans15-1"
+                android:id="@+id/ans15_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -395,8 +429,84 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="¿cuál?"
+                android:hint="¿Cuál?"
                 android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques15_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="15.2. ¿En cuál de los siguientes temas fue o es  asesorado/asistido?" />
+
+            <Spinner
+                android:id="@+id/ans15_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/ans15_2other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="¿Cuáles?"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/ques15_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="15.3. ¿Le sirvió la asesoría?" />
+
+            <Spinner
+                android:id="@+id/ans15_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/ques15_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:text="15.4. ¿La asistencia técnica recibida fue?" />
+
+            <Spinner
+                android:id="@+id/ans15_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/textoFinanciacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:gravity="left|center_vertical"
+                android:text="Indique las condiciones de acceso a crédito y financiación de acuerdo con los siguientes ítems:"
+                android:textColor="#2b2b2b" />
 
             <TextView
                 android:id="@+id/ques16"
@@ -406,7 +516,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="16. ¿Es usted desmovilizado de algún grupo armado?" />
+                android:text="16. ¿Usted ha solicitado alguna vez crédito o financiación para su producción?" />
 
             <Spinner
                 android:id="@+id/ans16"
@@ -417,27 +527,15 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/tituloSituacionFamiliar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="SITUACIÓN DEMOGRÁFICA Y SOCIAL DEL HOGAR DEL PRODUCTOR"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="23sp"
-                app:fontFamily="serif" />
-
-            <TextView
-                android:id="@+id/textoSituacionFamiliar"
+                android:id="@+id/textoFormacion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
                 android:gravity="left|center_vertical"
-                android:text="Indique la composición de su grupo familiar bajo las siguientes preguntas:"
+                android:text="Indique las condiciones de acceso a formación complementaria- educación no formal de acuerdo con los siguientes ítems:"
                 android:textColor="#2b2b2b" />
 
             <TextView
@@ -448,223 +546,84 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="17. ¿Cuántas personas componen su hogar?" />
+                android:text="17. ¿Ha asistido a algún diplomado, taller, curso, seminario, capacitación, otros?" />
 
-            <EditText
+            <Spinner
                 android:id="@+id/ans17"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="Número de personas"
-                android:inputType="number" />
+                android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques18"
+                android:id="@+id/ques17_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="18. ¿Quién es el/la jefe del hogar?" />
+                android:text="17.1. La formación complementaria fue ofrecida por:" />
+
+            <Spinner
+                android:id="@+id/ans17_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:spinnerMode="dialog" />
 
             <EditText
-                android:id="@+id/ans18"
+                android:id="@+id/ans17_1other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Nombre de la persona jefe de hogar"
+                android:hint="¿Cuáles?"
                 android:inputType="text" />
 
             <TextView
-                android:id="@+id/ques18-1"
+                android:id="@+id/ques17_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="18.1. ¿Cuál es su relación con el/la productor(a)?" />
+                android:text="17.2. ¿En cuál de las siguientes áreas recibió formación complementaria?" />
 
             <Spinner
-                android:id="@+id/ans18-1"
+                android:id="@+id/ans17_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques18-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="18.2. Género" />
-
-            <Spinner
-                android:id="@+id/ans18-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques18-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="18.3. ¿Cuántos años tiene?" />
 
             <EditText
-                android:id="@+id/ans18-3"
+                android:id="@+id/ans17_2other"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:ems="10"
-                android:hint="Edad en números"
-                android:inputType="number" />
-
-            <TextView
-                android:id="@+id/ques18-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="18.4. ¿Cuál es su estado civil?" />
-
-            <Spinner
-                android:id="@+id/ans18-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques18-5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="18.5. ¿Sabe leer y/o escribir?" />
-
-            <Spinner
-                android:id="@+id/ans18-5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques18-6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="18.6. ¿Actualmente asiste a un centro educativo?" />
-
-            <Spinner
-                android:id="@+id/ans18-6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques18-7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="18.7. ¿Cuál es el último grado de educación que estudió y aprobó?" />
-
-            <Spinner
-                android:id="@+id/ans18-7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques18-8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="18.8. ¿Cuál es su profesión?" />
-
-            <EditText
-                android:id="@+id/ans18-8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Registre unicamente la profesión de las\npersonas que aprobaron estudios\ntécnicos, tecnológicos, profesionales, o\nde postgrado"
+                android:hint="¿Cuáles?"
                 android:inputType="text" />
 
             <TextView
-                android:id="@+id/tituloSituacionFamiliarLaboral"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="SITUACIÓN LABORAL Y ECONÓMICA DEL GRUPO FAMILIAR DEL PRODUCTOR"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="23sp"
-                app:fontFamily="serif" />
-
-            <TextView
-                android:id="@+id/textoSituacionFamiliarLaboral"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique la situación de los ingresos y participación laboral de los miembros del grupo familiar en la unidad de producción acuícola y/o pesquero artesanal bajo los siguientes parámetros:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques19"
+                android:id="@+id/ques17_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="19. Actualmente usted se encuentra:" />
+                android:text="17.3. ¿La formación complementaria fue de utilidad?" />
 
             <Spinner
-                android:id="@+id/ans19"
+                android:id="@+id/ans17_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -672,1389 +631,17 @@
                 android:spinnerMode="dialog" />
 
             <TextView
-                android:id="@+id/ques20"
+                android:id="@+id/ques17_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="5dp"
                 android:paddingTop="5dp"
-                android:text="20. ¿Según las siguientes categorías usted es?" />
+                android:text="17.4. ¿La formación complementaria recibida fue?" />
 
             <Spinner
-                android:id="@+id/ans20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques20-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="20.1. ¿Usted trabaja de forma independiente cómo?" />
-
-            <Spinner
-                android:id="@+id/ans20-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <EditText
-                android:id="@+id/ans20-1other"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="¿cuál?"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/ques21"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="21. ¿Cuántas personas trabajan en el hogar? " />
-
-            <EditText
-                android:id="@+id/ans21"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="¿Registre el dato en valor numérico?"
-                android:inputType="number" />
-
-            <TextView
-                android:id="@+id/ques21-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="21.1. En promedio, ¿Cuanto es el ingreso mensual familiar?" />
-
-            <Spinner
-                android:id="@+id/ans21-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques21-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="21.2. En promedio, ¿Cuanto son los gastos familiares?" />
-
-            <Spinner
-                android:id="@+id/ans21-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/tituloViviendaProductor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="TENENCIA Y CARACTERIZACIÓN DE LA VIVIENDA DEL PRODUCTOR (INDICADOR NBI)"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="23sp"
-                app:fontFamily="serif" />
-
-            <TextView
-                android:id="@+id/textoViviendaProductor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique la forma de tenencia, características de su vivienda y el acceso a servicios públicos bajo los siguientes parámetros:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques22"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="22. La vivienda en la que habita es:" />
-
-            <Spinner
-                android:id="@+id/ans22"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <EditText
-                android:id="@+id/ans22other"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="¿cuál?"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/ques23"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="23. El techo está construído con:" />
-
-            <Spinner
-                android:id="@+id/ans23"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <EditText
-                android:id="@+id/ans23other"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="¿cuál?"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/ques24"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="24. El piso está construído con:" />
-
-            <Spinner
-                android:id="@+id/ans24"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <EditText
-                android:id="@+id/ans24other"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="¿cuál?"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/ques25"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="25. Las paredes están construídas con:" />
-
-            <Spinner
-                android:id="@+id/ans25"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <EditText
-                android:id="@+id/ans25other"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="¿cuál?"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/ques26"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="26. De los siguientes servicios públicos y/o privados, ¿con cuáles cuenta su vivienda?" />
-
-            <CheckBox
-                android:id="@+id/ans26a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Acueducto" />
-
-            <CheckBox
-                android:id="@+id/ans26b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Aseo" />
-
-            <CheckBox
-                android:id="@+id/ans26c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Alcantarillado" />
-
-            <CheckBox
-                android:id="@+id/ans26d"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Pozo Séptico" />
-
-            <CheckBox
-                android:id="@+id/ans26e"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Letrina" />
-
-            <CheckBox
-                android:id="@+id/ans26f"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Electricidad" />
-
-            <CheckBox
-                android:id="@+id/ans26g"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Gas" />
-
-            <CheckBox
-                android:id="@+id/ans26h"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Teléfono fijo o móvil" />
-
-            <CheckBox
-                android:id="@+id/ans26i"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Internet" />
-
-            <CheckBox
-                android:id="@+id/ans26j"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Otro, ¿cuál?" />
-
-            <EditText
-                android:id="@+id/ans26other"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="¿cuál?"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/tituloSeguridadAlimentaria"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="SEGURIDAD ALIMENTARIA"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="23sp"
-                app:fontFamily="serif" />
-
-            <TextView
-                android:id="@+id/textoSeguridadAlimentaria"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique la situación alimentaria de su grupo familiar de acuerdo con los siguientes ítems:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques27"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="27. En los últimos 3 meses, por falta de dinero o recursos, ¿alguna vez en su hogar se quedaron sin alimentos?" />
-
-            <Spinner
-                android:id="@+id/ans27"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques28"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="28. En los últimos 3 meses, por falta de dinero u otros recursos, ¿alguna vez usted o algún miembro de su hogar dejó de desayunar, almorzar o cenar? " />
-
-            <Spinner
-                android:id="@+id/ans28"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques29"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="29. En los últimos 3 meses, por falta de dinero u otros recursos, ¿alguna vez usted o algún miembro de su hogar comió una sola vez al día o dejó de comer? " />
-
-            <Spinner
-                android:id="@+id/ans29"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/tituloAccesoEducacion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="ACCESO A LA EDUCACIÓN"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="23sp"
-                app:fontFamily="serif" />
-
-            <TextView
-                android:id="@+id/textoAccesoEducacion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique las condiciones de acceso a educación de acuerdo con los siguientes ítems:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques30"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="30. Actualmente, ¿A qué tipo de educación tiene acceso?" />
-
-            <Spinner
-                android:id="@+id/ans30"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques31"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="31. ¿Cuál es el nombre del establecimiento educativo?" />
-
-            <EditText
-                android:id="@+id/ans31"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Establecimiento educativo"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/ques31-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="31.1. ¿Qué nivel educativo ofrece?" />
-
-            <Spinner
-                android:id="@+id/ans31-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques31-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="31.2. ¿Cuál es la distancia entre su vivienda y el establecimiento educativo?" />
-
-            <EditText
-                android:id="@+id/ans31-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Distancia en metros"
-                android:inputType="number|numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques31-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="31.3. ¿Cuánto tiempo gasta desplazándose desde su vivienda hasta el establecimiento educativo?" />
-
-            <EditText
-                android:id="@+id/ans31-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Tiempo en minutos"
-                android:inputType="time" />
-
-            <TextView
-                android:id="@+id/ques31-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="31.4. ¿Qué medio(s) de transporte utiliza para desplazarse hasta el establecimiento educativo?" />
-
-            <CheckBox
-                android:id="@+id/ans31_4a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Terrestre" />
-
-            <CheckBox
-                android:id="@+id/ans31_4b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Fluvial" />
-
-            <CheckBox
-                android:id="@+id/ans31_4c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Aéreo" />
-
-            <TextView
-                android:id="@+id/tituloAccesoSalud"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="ACCESO A SALUD"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="23sp"
-                app:fontFamily="serif" />
-
-            <TextView
-                android:id="@+id/textoAccesoSalud"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique las condiciones de acceso a salud de acuerdo con los siguientes ítems"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques32"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="32. ¿Está afiliado a servicio de salud?" />
-
-            <Spinner
-                android:id="@+id/ans32"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques32-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="32.1. El establecimiento se clasifica como:" />
-
-            <Spinner
-                android:id="@+id/ans32-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques32-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="32.2. ¿Qué distancia hay entre su vivienda y el centro de salud?" />
-
-            <EditText
-                android:id="@+id/ans32-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Distancia en metros"
-                android:inputType="number|numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques32-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="32.3. ¿Cuánto tiempo gasta desplazándose desde su vivienda hasta el establecimiento de salud?" />
-
-            <EditText
-                android:id="@+id/ans32-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Valor numérico en minutos"
-                android:inputType="time" />
-
-            <TextView
-                android:id="@+id/ques32-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="32.4. ¿Qué medio(s) de transporte utiliza para desplazarse hacia el establecimiento de salud?" />
-
-            <CheckBox
-                android:id="@+id/ans32_4a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Terrestre" />
-
-            <CheckBox
-                android:id="@+id/ans32_4b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Fluvial" />
-
-            <CheckBox
-                android:id="@+id/ans32_4c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Aéreo" />
-
-            <TextView
-                android:id="@+id/tituloAccesoServiciosAgri"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="ACCESO A SERVICIOS ACUÍCOLAS Y/O PESQUEROS"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="23sp"
-                app:fontFamily="serif" />
-
-            <TextView
-                android:id="@+id/textoAccesoServiciosAgri"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques33"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="33. ¿Qué entidades?" />
-
-            <Spinner
-                android:id="@+id/ans33"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <EditText
-                android:id="@+id/ans33other"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="¿cuál?"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/ques33-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="33.1. ¿Cuánta distancia recorre para acceder a los servicios ofrecidos por esta entidad?" />
-
-            <EditText
-                android:id="@+id/ans33-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Distancia en metros"
-                android:inputType="number|numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques33-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="33.2. ¿Cuánto tiempo emplea para acceder a los servicios ofrecidos por esta entidad?" />
-
-            <EditText
-                android:id="@+id/ans33-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Valor numérico en minutos"
-                android:inputType="time" />
-
-            <TextView
-                android:id="@+id/ques33-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="33.3. ¿Qué medio(s) de transporte utiliza para desplazarse hacia la institución?" />
-
-            <CheckBox
-                android:id="@+id/ans33_3a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Terrestre" />
-
-            <CheckBox
-                android:id="@+id/ans33_3b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Fluvial" />
-
-            <CheckBox
-                android:id="@+id/ans33_3c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Aéreo" />
-
-            <TextView
-                android:id="@+id/ques34"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="34. ¿Qué servicios?" />
-
-            <EditText
-                android:id="@+id/ans34"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Servicios prestados"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/textoAccesoServiciosAgri2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique las condiciones de acceso a centros de comercialización de productos de la acuicultura/pesca artesanal (mercados) de acuerdo a los siguientes ítems:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques35"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="35. ¿Cuánta distancia recorre para acceder a un centro de comercialización?" />
-
-            <EditText
-                android:id="@+id/ans35"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Distancia en metros"
-                android:inputType="number|numberDecimal" />
-
-            <TextView
-                android:id="@+id/ques36"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="36. ¿Cuánto tiempo emplea para desplazarse hacia el centro de comercialización?" />
-
-            <EditText
-                android:id="@+id/ans36"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Tiempo en minutos"
-                android:inputType="time" />
-
-            <TextView
-                android:id="@+id/ques37"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="37. ¿Qué medio(s) de transporte utiliza para desplazarse hacia el centro de comercialización?" />
-
-            <CheckBox
-                android:id="@+id/ans37a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Terrestre" />
-
-            <CheckBox
-                android:id="@+id/ans37b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Fluvial" />
-
-            <CheckBox
-                android:id="@+id/ans37c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Aéreo" />
-
-            <TextView
-                android:id="@+id/ques38"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="38. El centro de comercialización permanece en funcionamiento de manera:" />
-
-            <Spinner
-                android:id="@+id/ans38"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/textoAccesoServiciosAgri3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique las condiciones de acceso a crédito y financiación de acuerdo con los siguientes ítems:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques39"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="39. ¿Ha obtenido alguna vez crédito o financiación para desarrollar actividades acuícolas?" />
-
-            <Spinner
-                android:id="@+id/ans39"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques39-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="39.1. El crédito o la financiación fue otorgado por:" />
-
-            <Spinner
-                android:id="@+id/ans39-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <EditText
-                android:id="@+id/ans39-1other"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="¿cuál?"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/ques39-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="39.2. ¿Cuál fue el destino final del crédito o financiación?" />
-
-            <EditText
-                android:id="@+id/ans39-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:gravity="top|left"
-                android:hint="Destino del crédito"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/textoAccesoServiciosAgri4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique las condiciones de acceso a asistencia técnica de acuerdo a los siguientes ítems"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques40"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="40. ¿Ha recibido asistencia técnica?" />
-
-            <Spinner
-                android:id="@+id/ans40"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques40-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="40.1. La asistencia técnica fue otorgada por:" />
-
-            <Spinner
-                android:id="@+id/ans40-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <EditText
-                android:id="@+id/ans40-1other"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="¿cuál?"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/ques40-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="40.2. ¿En cuál de los siguientes temas fue/es asesorado/asistido?" />
-
-            <CheckBox
-                android:id="@+id/ans40_2a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Gestión de la unidad de producción" />
-
-            <CheckBox
-                android:id="@+id/ans40_2b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Uso de insumos fertilizantes y otros" />
-
-            <CheckBox
-                android:id="@+id/ans40_2c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Crédito" />
-
-            <CheckBox
-                android:id="@+id/ans40_2d"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Tecnificación de la unidad de producción en todas las fases" />
-
-            <CheckBox
-                android:id="@+id/ans40_2e"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Salud animal" />
-
-            <CheckBox
-                android:id="@+id/ans40_2f"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Desarrollo sostenible" />
-
-            <CheckBox
-                android:id="@+id/ans40_2g"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Agremiación" />
-
-            <CheckBox
-                android:id="@+id/ans40_2h"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Comercialización" />
-
-            <CheckBox
-                android:id="@+id/ans40_2i"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Otro, ¿cuál?" />
-
-            <EditText
-                android:id="@+id/ans40-2other"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="¿cuál?" />
-
-            <TextView
-                android:id="@+id/ques40-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="40.3. ¿Le sirvió la asesoría?" />
-
-            <Spinner
-                android:id="@+id/ans40-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques40-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="40.4. La asistencia técnica recibida fue:" />
-
-            <Spinner
-                android:id="@+id/ans40-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/textoAccesoServiciosAgri5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:gravity="left|center_vertical|fill"
-                android:text="Indique las condiciones de acceso a formación complementaria -educación no formal- de acuerdo con los siguientes ítems:"
-                android:textColor="#2b2b2b" />
-
-            <TextView
-                android:id="@+id/ques41"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="41. ¿Ha asistido a algún taller, curso, seminario, capacitación, etc.?" />
-
-            <Spinner
-                android:id="@+id/ans41"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques41-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="41.1. La formación complementaria fue otorgada por:" />
-
-            <Spinner
-                android:id="@+id/ans41-1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <EditText
-                android:id="@+id/ans41-1other"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="¿cuál?"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/ques41-2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="41.2. ¿En cuál de las siguientes áreas recibió formación complementaria?" />
-
-            <CheckBox
-                android:id="@+id/ans41_2a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Ambiental" />
-
-            <CheckBox
-                android:id="@+id/ans41_2b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Empresarial" />
-
-            <CheckBox
-                android:id="@+id/ans41_2c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Productivo (acuícola)" />
-
-            <CheckBox
-                android:id="@+id/ans41_2d"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Productivo (pesquero)" />
-
-            <CheckBox
-                android:id="@+id/ans41_2e"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Tecnológico/Innovación" />
-
-            <CheckBox
-                android:id="@+id/ans41_2f"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Buenas prácticas de producción" />
-
-            <CheckBox
-                android:id="@+id/ans41_2g"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Otros, ¿cuáles?" />
-
-            <EditText
-                android:id="@+id/ans41-2other"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:ems="10"
-                android:hint="¿cuál?"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/ques41-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="41.3. ¿La formación complementaria fue de utilidad?" />
-
-            <Spinner
-                android:id="@+id/ans41-3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:spinnerMode="dialog" />
-
-            <TextView
-                android:id="@+id/ques41-4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="5dp"
-                android:paddingTop="5dp"
-                android:text="41.4. La formación complementaria recibida fue:" />
-
-            <Spinner
-                android:id="@+id/ans41-4"
+                android:id="@+id/ans17_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -2069,29 +656,19 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="10dp"
                 android:gravity="left|center_vertical"
-                android:text='Para proceder a la encuesta de producción acuícola pulse el botón que dice "ECUPAC", para continuar a la encuesta de pesca artesanal, pulse el botón que dice "ECUPPA"'
+                android:text='Para dirigirse a la sección de la encuesta relacionada con Adopción de la Tecnología, presione el botón.'
                 android:textColor="@android:color/holo_red_dark"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/nextButtonECUPAC"
+                android:id="@+id/nextButtonAT"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Continuar a la ECUPAC" />
-
-            <Button
-                android:id="@+id/nextButtonECUPPA"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="8dp"
-                android:text="Continuar a la ECUPPA" />
+                android:text="Continuar a la sección de AT" />
 
         </LinearLayout>
     </ScrollView>
